@@ -28,14 +28,19 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 
 # Setup
 
-9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
+> 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
-1. Create Workspace 
-1. Assign Capacity 
+1. Login to https://fabric.microsoft.com/
+2. Create a Workspace (named as the login you got to fabric)
+3. Assign Capacity
+4. Check Admin Settings
+5. Check Workloads
 
+Definition of done: all completed
 
+## Advanced path
 
-
+# Note
 Microsoft Fabric lakehouses are designed to provide data engineers and analysts with the benefits of both data lake storage and a relational data warehouse. Apache Spark is a critical technology for big data analytics, and its support within Microsoft Fabric allows you to seamlessly integrate Spark's big data processing capabilities with the other data analytics and visualization tools available on the platform. 
 By using a lakehouse, you can create an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization. The lakehouse provides a unified and scalable platform for storing and managing data, allowing you to easily access and analyze both structured and unstructured data. Additionally, the platform's built-in security and compliance features help ensure that your data is always secure and compliant with industry standards.
 
