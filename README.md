@@ -6,28 +6,20 @@ Join our lakehouse workshop to learn how you can build your own modern end-to-en
 
 By the end of this workshop, you should be well versed in Fabric Data Integration & Data Engineering topics and capable of building an end-to-end workflow that includes ingesting, preparing, serving and operationalizing your data solution. 
 
-
 # Agenda
 
 1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./README.md#setup)
 2. 9:30 - 10:30 - [Exercise 1](./exercise-1/exercise-1.md) 
-3. 10:30 - 10:45 - Break 
+3. 10:30 - 10:45 - Break
 4. 10:45 - 12:00 - [Exercise 2](./exercise-2/exercise-2.md)
 5. 12:00 - 01:00 - Lunch 
-6. 01:05 - 02:15 - Exercise 3
+6. 01:05 - 02:15 - [Exercise 3](./exercise-3/exercise-3.md)
 7. 02:15 - 02:30 - Break
-8. 02:30 - 03:00 - Exercise 4
-8. 03:00 - 03:30 - Exercise 5
+8. 02:30 - 03:00 - [Exercise 4](./exercise-4/exercise-4.md)
+8. 03:00 - 03:30 - [Exercise 5](./exercise-5/exercise-5.md)
 9. 03:30 - 04:00 - Recap
 
-
-
-
-
-
-
 # Setup
-
 > 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
 1. Login to https://fabric.microsoft.com/
@@ -40,9 +32,4 @@ Definition of done: all completed
 
 ## Advanced path
 
-# Note
-Microsoft Fabric lakehouses are designed to provide data engineers and analysts with the benefits of both data lake storage and a relational data warehouse. Apache Spark is a critical technology for big data analytics, and its support within Microsoft Fabric allows you to seamlessly integrate Spark's big data processing capabilities with the other data analytics and visualization tools available on the platform. 
-By using a lakehouse, you can create an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization. The lakehouse provides a unified and scalable platform for storing and managing data, allowing you to easily access and analyze both structured and unstructured data. Additionally, the platform's built-in security and compliance features help ensure that your data is always secure and compliant with industry standards.
 
-Thank you!!
-Microsoft Fabric Team
