@@ -75,3 +75,13 @@ SELECT tipped, COUNT(*) AS tip_freq FROM (
   WHERE [lpepPickupDatetime] BETWEEN '20130101' AND '20131231') tc
 GROUP BY tipped
 ```
+
+### Task 4
+### Objective: Create a workspace managed identity
+
+Creating a workspace identity in Microsoft Fabric involves 3 steps:
+1.  **Navigate** to the workspace and open the workspace settings.
+2.  Select the **Workspace identity** tab.
+3.  Click on the **+ Workspace identity** button to create a new identity.
+
+Once created, the workspace identity details and a list of authorized users will be displayed. The workspace identity is automatically assigned the workspace contributor role and has access to workspace items.
