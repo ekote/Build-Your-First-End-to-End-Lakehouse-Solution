@@ -9,10 +9,10 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 
 # Agenda
 
-1. 9:00 - 9:30 - Introduction, Set Up and Overview of Fabric Data Platform 
+1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./README.md#setup)
 2. 9:30 - 10:30 - [Exercise 1](./exercise-1/exercise-1.md) 
 3. 10:30 - 10:45 - Break 
-4. 10:45 - 12:00 - Exercise 2 
+4. 10:45 - 12:00 - [Exercise 2](./exercise-2/exercise-2.md)
 5. 12:00 - 01:00 - Lunch 
 6. 01:05 - 02:15 - Exercise 3
 7. 02:15 - 02:30 - Break
@@ -26,7 +26,9 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 
 
 
-# First step 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
+# Setup
+
+9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
 1. Create Workspace 
 1. Assign Capacity 
