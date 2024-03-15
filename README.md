@@ -8,8 +8,20 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 
 # Context
 
-You are part of a dynamic data analytics team at a burgeoning tech startup that aims to revolutionize urban mobility and transportation analytics. Your goal is to harness the vast amounts of data generated from New York City's taxi and for-hire vehicle services to improve urban planning, optimize routes, predict demand, and enhance passenger safety. Utilizing Microsoft Fabric, your team will build a comprehensive lakehouse solution that ingests, processes, and analyzes the TLC Trip Record Data to derive actionable insights. 
-By the end of this workshop, your team will have a robust lakehouse platform, designed on the principles of the medallion architecture, to support these objectives and drive innovation in urban transportation.
+Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.
+
+
+Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.
+
+This integrated lakehouse solution will empower your company to:
+* Consolidate both historical and immediate data from various taxi services, offering a unified perspective on the urban transport landscape.
+* Deploy sophisticated data analytics and machine learning techniques to forecast traffic conditions, enhance fleet allocation, and boost operational effectiveness.
+* Supply informed suggestions to urban developers and government officials to aid in the advancement of infrastructure and traffic management.
+* Elevate the travel experience by ensuring reliability, safety, and punctuality in transportation services.
+Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
+
+By the end of this workshop, your collective will possess a formidable lakehouse framework, grounded in the medallion architecture philosophy, ready to underpin your goals and foster innovation within urban transport systems.
+
 
 # Agenda
 
