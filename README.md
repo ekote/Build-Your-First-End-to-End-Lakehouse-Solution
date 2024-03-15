@@ -6,6 +6,11 @@ Join our lakehouse workshop to learn how you can build your own modern end-to-en
 
 By the end of this workshop, you should be well versed in Fabric Data Integration & Data Engineering topics and capable of building an end-to-end workflow that includes ingesting, preparing, serving and operationalizing your data solution. 
 
+# Context
+
+You are part of a dynamic data analytics team at a burgeoning tech startup that aims to revolutionize urban mobility and transportation analytics. Your goal is to harness the vast amounts of data generated from New York City's taxi and for-hire vehicle services to improve urban planning, optimize routes, predict demand, and enhance passenger safety. Utilizing Microsoft Fabric, your team will build a comprehensive lakehouse solution that ingests, processes, and analyzes the TLC Trip Record Data to derive actionable insights. 
+By the end of this workshop, your team will have a robust lakehouse platform, designed on the principles of the medallion architecture, to support these objectives and drive innovation in urban transportation.
+
 # Agenda
 
 1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./README.md#setup)
@@ -22,6 +27,8 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 # Setup
 > 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
+## Mandatory steps
+
 1. Login to https://fabric.microsoft.com/
 2. Create a Workspace (named as the login you got to fabric)
 3. Assign Capacity
@@ -30,6 +37,22 @@ By the end of this workshop, you should be well versed in Fabric Data Integratio
 
 Definition of done: all completed
 
-## Advanced path
+## Advanced steps
 
 
+# Name conventions
+
+## Bronze Layer (Raw Data Management)
+Name: `bronzerawdata`
+
+Description: This is the foundational layer where raw data is ingested directly from various sources, including yellow and green taxi trip records, FHV trip records, and potentially other urban mobility datasets. The data is stored in its original, unmodified form. In the context of your workshop, this involves landing raw TLC Trip Record Data into this layer, ensuring that all raw data remains immutable and traceable for lineage purposes.
+
+## Silver Layer (Refined Data Management)
+Name: `silvercleansed`
+
+Description: In this intermediate layer, data is cleansed, standardized, and enriched to resolve inconsistencies and prepare for more detailed analysis. This includes resolving issues with data quality, standardizing formats, and enriching taxi and FHV data with additional contextual information, such as weather conditions or traffic data. The goal here is to create a reliable, query-optimized dataset that supports more efficient analysis and reporting.
+
+## Gold Layer (Curated Data Management)
+Name: `goldcurrated`
+
+Description: The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
