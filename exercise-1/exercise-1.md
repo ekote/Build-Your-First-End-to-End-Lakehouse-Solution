@@ -1,6 +1,7 @@
 # Exercise 1 - Ingest data from various sources using pipelines and dataflows 
 
 Timebox: 50 minutes
+> Go to [Agenda](./../README.md#agenda)
 
 # Context
 
