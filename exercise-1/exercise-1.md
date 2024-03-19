@@ -7,7 +7,40 @@ Timebox: 60 minutes
 %TODO STORY
 
 
-# Task 1.1 Create a pipeline that ingests data from an ADLS Gen2 account and writes it to Lakehouse.
+## Required to complete the exercise
+* Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
+* SAS Token (Read Only) `sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-08-31T04:00:16Z&st=2024-03-19T20:00:16Z&spr=https&sig=Av5yc0Q3W5bSncVDP2DpfkZ5nbb%2BXj4tqjC1Chwi3Hw%3D`
+
+# Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
+
+![Step](../media/1/1.jpg)
+![Step](../media/1/2.jpg)
+![Step](../media/1/3.jpg)
+![Step](../media/1/4.jpg)
+![Step](../media/1/5.jpg)
+![Step](../media/1/6.jpg)
+![Step](../media/1/7.jpg)
+![Step](../media/1/8.jpg)
+![Step](../media/1/9.jpg)
+![Step](../media/1/10.jpg)
+![Step](../media/1/11.jpg)
+![Step](../media/1/12.jpg)
+![Step](../media/1/13.jpg)
+![Step](../media/1/14.jpg)
+![Step](../media/1/15.jpg)
+![Step](../media/1/16.jpg)
+![Step](../media/1/17.jpg)
+![Step](../media/1/18.jpg)
+![Step](../media/1/19.jpg)
+![Step](../media/1/20.jpg)
+![Step](../media/1/21.jpg)
+![Step](../media/1/22.jpg)
+![Step](../media/1/23.jpg)
+![Step](../media/1/24.jpg)
+![Step](../media/1/25.jpg)
+![Step](../media/1/26.jpg)
+
+
 
 
 
@@ -63,8 +96,6 @@ Easily ingest data into the lakehouse through a variety of methods
 * Use Spark code to connect to data sources using available Spark libraries
 * Leverage shortcuts to create pointers to existing data in OneLake and external storage accounts with no data movement at all
 * Shortcuts behave in the same way as hosted storage
-
-
 
 
 

@@ -88,10 +88,9 @@ Save, schedule and run the notebook as a job
 # Task 2.14 Pivot
 
 
+# Task 2.15 Run OPTIMIZE cmd
 
-
-
-
+# Task 2.16 CODE REVIEW in shared notebook
 
 
 
@@ -136,6 +135,9 @@ transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakeh
 
 In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
 
+TIP WATCH IT
+https://www.youtube.com/watch?v=706MVIBivOU 
+
 
 ## Deployments Pipelines
 
@@ -144,6 +146,11 @@ In this example, we first read data from the bronze Lakehouse using the spark.re
 
 
 ## Data Wrangler
+
+
+## MS SPARK UTILITIES - run another notebook reference run
+
+## Run multiple
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md).
