@@ -2,6 +2,7 @@
 
 > [!NOTE]
 > Timebox: 40 minutes
+> 
 > Back to [Agenda](./../README.md#agenda)
 
 
