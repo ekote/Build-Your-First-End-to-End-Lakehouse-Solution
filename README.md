@@ -7,14 +7,14 @@ Join our lakehouse workshop to learn how you can build your own modern end-to-en
 By the end of this workshop, you should be well versed in Fabric Data Integration & Data Engineering topics and capable of building an end-to-end workflow that includes ingesting, preparing, serving and operationalizing your data solution. 
 
 # Context
-Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.
+Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. **Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.**
 
 This integrated lakehouse solution will empower your company to:
 * Consolidate both historical and immediate data from various taxi services, offering a unified perspective on the urban transport landscape.
 * Deploy sophisticated data analytics and machine learning techniques to forecast traffic conditions, enhance fleet allocation, and boost operational effectiveness.
 * Supply informed suggestions to urban developers and government officials to aid in the advancement of infrastructure and traffic management.
 * Elevate the travel experience by ensuring reliability, safety, and punctuality in transportation services.
-Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
+* Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
 
 
 # Agenda
@@ -37,7 +37,11 @@ Forge a versatile data infrastructure poised to adjust to new trends in urban mo
 
 1. Review
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
-1. Login to https://fabric.microsoft.com/
+1. Go to https://fabric.microsoft.com/
+2. ![Login](./media/setup/1.jpg)
+2. ![Login](./media/setup/2.jpg)
+2. ![Login](./media/setup/3.jpg)
+2. ![Login](./media/setup/4.jpg)
 2. Review
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
 3. Create a Workspace (named as the login you got to fabric)
@@ -61,6 +65,11 @@ TODO
 
 
 # Utils and tools
+
+## Dataset used
+
+Name: TODO
+Source: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 ## Name conventions
 
