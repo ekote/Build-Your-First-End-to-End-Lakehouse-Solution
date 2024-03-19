@@ -37,46 +37,53 @@ The code df.select("vendorID", "tripDistance", "fareAmount", "tipAmount").show(5
 When working with data, one of the initial tasks is to read it into the environment for analysis. Once the data is loaded, basic analysis such as filtering, sorting, and aggregating can be performed. However, as the scale and complexity of the data increase, there is a need for more advanced data engineering scenarios such as data cleansing, transformation, and aggregation. 
 
 
-# Task 2.3 Import Notebook
-
-
-
-2. Load data from Lakehouse tables into Spark DataFrames
-3. Spark vs Pandas
-3. Transform the data using Spark SQL and PySpark APIs
-4. Write the transformed data back to Lakehouse tables and other storage formats (parquet)
-5. Visualize and interact with the data using charts and widgets 
-6. Save, schedule and run the notebook as a job 
-7. WS-level settings overview 
-8. Compute Settings
-8. Creation of Environment
-9. Git 
-
-
-
-
-
-## Create lakehouse and load the data
+## Task 2.3 - Load to Delta
 
 1. Click "Add" to add lakehouse.
-
 2. Select "New lakehouse" and click "Add".
-
 3. Type the name "Bronze", and click "Add".
-
 4. Download the file to your local machine: https://github.com/ekote/azure-architect/raw/master/part-00175-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2745-1.c000.parquet
-
 5. Go to OneLake data hub > your Lakehouse
-
 6. Upload the file
-
 7. Use "Load to Table" feature
 
 
-## The lakehouse is attached to your notebook. It's time to discover the lakehouse artifact!
 
-The most common way to work with data in delta tables in Spark is to use Spark SQL. You can embed SQL statements in other languages (such as PySpark or Scala) by using the spark.sql library.
+# Task 2.4 Import Notebook
+Your task is to import notebook and complete all exercises inside the notebook. 
 
+
+# Task 2.5 Spark vs Pandas
+Your new team members wrote a lot of Pandas code and run it on big cluster. Your task is to explain the best practices to process big data.
+
+
+# Task 2.6 Transform the data using Spark SQL and PySpark APIs
+Your task is to factory the code produced by your colleague. 
+
+
+# Task 2.7 Schedule notebook
+Your task is to schedule notebook to run every hour.
+
+Save, schedule and run the notebook as a job 
+
+# Task 2.8 Workspace-level settings
+
+# Task 2.9 Compute Settings
+
+
+# Task 2.10 Environment
+
+
+# Task 2.11 GIT
+
+
+# Task 2.12 Saved with V-Order?
+
+
+# Task 2.13 DW vs Lakehouse?
+
+
+# Task 2.14 Pivot
 
 
 
@@ -93,7 +100,7 @@ The most common way to work with data in delta tables in Spark is to use Spark S
 
 # Advanced steps
 
-# Medallion architecture
+##  Medallion architecture
 A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
 
 ![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
@@ -107,7 +114,7 @@ Another benefit of a Lakehouse architecture is that it allows you to recreate yo
 Read more [here](https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/simplify-your-lakehouse-architecture-with-azure-databricks-delta/ba-p/2027272).
 
 
-## Medallion architecture in Fabric Lakehouse
+### Medallion architecture in Fabric Lakehouse
 
 After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
 
@@ -126,6 +133,12 @@ transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakeh
 ```
 
 In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
+
+
+## Deployments Pipelines
+
+
+## Rest API
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md).

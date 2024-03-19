@@ -34,6 +34,7 @@ This integrated lakehouse solution will empower your company to:
 > 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
 ## Mandatory steps
+Timebox: 75 minutes
 
 1. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)

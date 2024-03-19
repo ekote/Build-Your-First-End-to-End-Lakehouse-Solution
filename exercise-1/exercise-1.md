@@ -4,10 +4,7 @@ Timebox: 60 minutes
 > Back to [Agenda](./../README.md#agenda)
 
 # Context
-
-
 %TODO STORY
-
 
 1. Create a pipeline that ingests data from an ADLS Gen2 account and writes it to Lakehouse.  
 1. Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
@@ -54,23 +51,7 @@ Easily ingest data into the lakehouse through a variety of methods
 Let's load the data into the lakehouse!
 
 
-## Task 1
-### Objective
-### Definition of done
 
-
-## Task 2
-### Objective
-### Definition of done
-
-
-# Definition of done
-
-
-# Completed? Fill the form
-
-
-And you can go to the next exercise. 
 
 
 > [!IMPORTANT]
@@ -78,3 +59,8 @@ And you can go to the next exercise.
 
 
 # Advanced steps
+
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md).
