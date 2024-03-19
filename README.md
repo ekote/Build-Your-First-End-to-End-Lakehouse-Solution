@@ -16,7 +16,6 @@ This integrated lakehouse solution will empower your company to:
 * Elevate the travel experience by ensuring reliability, safety, and punctuality in transportation services.
 Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
 
-By the end of this workshop, your collective will possess a formidable lakehouse framework, grounded in the medallion architecture philosophy, ready to underpin your goals and foster innovation within urban transport systems.
 
 # Agenda
 
@@ -41,11 +40,15 @@ By the end of this workshop, your collective will possess a formidable lakehouse
 3. Assign Capacity
 4. Check Admin Settings
 5. Check Workloads
-6. Review [Utils and tools](#utils-and-tools)
+6. Read
 
-Definition of done: all completed
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
 
-Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#advanced-steps).
+7. Review [Utils and tools](#utils-and-tools)
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#advanced-steps).
 
 ## Advanced steps
 TODO
