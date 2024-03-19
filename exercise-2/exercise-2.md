@@ -5,12 +5,43 @@ Timebox: 75 minutes
 
 
 # Context
-
-
 %TODO STORY
 
 
-1. Create a notebook
+# Task 2.1 Create a notebook
+
+
+
+
+# Task 2.2 Get data from the lakehouse
+
+To execute the cell code, use the shortcut CTRL + Enter on Windows, or ⌘ + Enter on MacOS. Alternatively, you can click the 'Run' icon (▶️) located on the left side of the code cell.
+
+`df = spark.sql("SELECT * FROM Bronze.NYC_Taxi LIMIT 1000")` - This line of code uses the `spark.sql()` function to run an SQL query on a table called `NYC_Taxi` located in the lakehouse `Bronze`. The query selects all columns `(*)` from the table and limits the result to the first 1000 rows with the `LIMIT 1000` clause. The result of the query is then stored in a PySpark DataFrame called `df`.
+`display(df)` - the `display()` function is used to visualize the contents of a DataFrame in a tabular format. In this case, it visualizes the contents of the df DataFrame created in the previous line.
+
+```pyspark
+df = spark.sql("SELECT * FROM Bronze.nyc_taxi LIMIT 1000")
+display(df)
+```
+Alternatively, you can use the %%sql magic in a notebook to run SQL statements.
+
+```
+%%sql
+SELECT * FROM Bronze.nyc_taxi LIMIT 1000
+```
+
+The code df.select("vendorID", "tripDistance", "fareAmount", "tipAmount").show(5) is used to display the first five rows of a DataFrame called df, and only the columns named: "vendorID", "tripDistance", "fareAmount", "tipAmount". This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
+
+`df.select("vendorID", "tripDistance", "fareAmount", "tipAmount").show(5)`
+
+When working with data, one of the initial tasks is to read it into the environment for analysis. Once the data is loaded, basic analysis such as filtering, sorting, and aggregating can be performed. However, as the scale and complexity of the data increase, there is a need for more advanced data engineering scenarios such as data cleansing, transformation, and aggregation. 
+
+
+# Task 2.3 Import Notebook
+
+
+
 2. Load data from Lakehouse tables into Spark DataFrames
 3. Spark vs Pandas
 3. Transform the data using Spark SQL and PySpark APIs
@@ -22,38 +53,6 @@ Timebox: 75 minutes
 8. Creation of Environment
 9. Git 
 
-
-
-
-**The foundation of Microsoft Fabric is a Lakehouse**, which is built on top of the **OneLake** scalable storage layer and uses **Apache Spark** and **SQL** compute engines for big data processing. A Lakehouse is a unified platform that combines:
-- The flexible and scalable storage of a data lake
-- The ability to query and analyze data of a data warehouse
-
-Some benefits of a lakehouse include:
-- Lakehouses use Spark and SQL engines to process large-scale data and support machine learning or predictive modeling analytics.
-- Lakehouse data is organized in a schema-on-read format, which means you define the schema as needed rather than having a predefined schema.
-- Lakehouses support ACID (Atomicity, Consistency, Isolation, Durability) transactions through Delta Lake formatted tables for data consistency and integrity.
-- Lakehouses are a single location for data engineers, data scientists, and data analysts to access and use data.
-
-A Lakehouse is a great option if you want a scalable analytics solution that maintains data consistency.
-
-Imagine your company has been storing structured data from NYC Taxi's transactional system, such as trip history, passenger counts, and fare information in a data warehouse. However, you have also collected unstructured data from social media, website logs, and third-party sources related to NYC Taxi, which are difficult to manage and analyze using the existing data warehouse infrastructure.
-
-Your company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources. Therefore, the company decides to **leverage Microsoft Fabric's capabilities to analyze and manage these diverse datasets more efficiently**.
-
-
-## Data ingestion into lakehouse
-Easily ingest data into the lakehouse through a variety of methods
-
-* Get files from your computer using direct upload
-* Connect to 120+ data sources and apply multiple transformations using Dataflows or copy petabyte-sized lakes using the copy activity in Pipelines
-* Use Spark code to connect to data sources using available Spark libraries
-* Leverage shortcuts to create pointers to existing data in OneLake and external storage accounts with no data movement at all
-* Shortcuts behave in the same way as hosted storage
-
-Let's load the data into the lakehouse!
-
-Now, please follow along with the instructor.
 
 
 
@@ -82,20 +81,12 @@ Now, please follow along with the instructor.
 The most common way to work with data in delta tables in Spark is to use Spark SQL. You can embed SQL statements in other languages (such as PySpark or Scala) by using the spark.sql library.
 
 
- 
-
-## Task 1
-### Objective
-### Definition of done
-
-
-## Task 2
-### Objective
-### Definition of done
 
 
 
-# Definition of done (and you can go to the next exercise)
+
+
+
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md) or continue with [Advanced steps below](#advanced-steps).

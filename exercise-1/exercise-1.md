@@ -16,7 +16,7 @@ Timebox: 60 minutes
 1. Use the data preview and debug features to inspect the data at each step of the transformation.
 Write the transformed data to a Delta table in the Lakehouse. 
 1. Run the dataflow and monitor the Spark job execution details. 
- 
+1. Discover the Lakehouse 
 
 
 
@@ -24,6 +24,34 @@ Write the transformed data to a Delta table in the Lakehouse.
 Microsoft Fabric lakehouses are designed to provide data engineers and analysts with the benefits of both data lake storage and a relational data warehouse. Apache Spark is a critical technology for big data analytics, and its support within Microsoft Fabric allows you to seamlessly integrate Spark's big data processing capabilities with the other data analytics and visualization tools available on the platform. 
 By using a lakehouse, you can create an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization. The lakehouse provides a unified and scalable platform for storing and managing data, allowing you to easily access and analyze both structured and unstructured data. Additionally, the platform's built-in security and compliance features help ensure that your data is always secure and compliant with industry standards.
 
+
+**The foundation of Microsoft Fabric is a Lakehouse**, which is built on top of the **OneLake** scalable storage layer and uses **Apache Spark** and **SQL** compute engines for big data processing. A Lakehouse is a unified platform that combines:
+- The flexible and scalable storage of a data lake
+- The ability to query and analyze data of a data warehouse
+
+Some benefits of a lakehouse include:
+- Lakehouses use Spark and SQL engines to process large-scale data and support machine learning or predictive modeling analytics.
+- Lakehouse data is organized in a schema-on-read format, which means you define the schema as needed rather than having a predefined schema.
+- Lakehouses support ACID (Atomicity, Consistency, Isolation, Durability) transactions through Delta Lake formatted tables for data consistency and integrity.
+- Lakehouses are a single location for data engineers, data scientists, and data analysts to access and use data.
+
+A Lakehouse is a great option if you want a scalable analytics solution that maintains data consistency.
+
+Imagine your company has been storing structured data from NYC Taxi's transactional system, such as trip history, passenger counts, and fare information in a data warehouse. However, you have also collected unstructured data from social media, website logs, and third-party sources related to NYC Taxi, which are difficult to manage and analyze using the existing data warehouse infrastructure.
+
+Your company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources. Therefore, the company decides to **leverage Microsoft Fabric's capabilities to analyze and manage these diverse datasets more efficiently**.
+
+
+## Data ingestion into lakehouse
+Easily ingest data into the lakehouse through a variety of methods
+
+* Get files from your computer using direct upload
+* Connect to 120+ data sources and apply multiple transformations using Dataflows or copy petabyte-sized lakes using the copy activity in Pipelines
+* Use Spark code to connect to data sources using available Spark libraries
+* Leverage shortcuts to create pointers to existing data in OneLake and external storage accounts with no data movement at all
+* Shortcuts behave in the same way as hosted storage
+
+Let's load the data into the lakehouse!
 
 
 ## Task 1
