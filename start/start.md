@@ -1,7 +1,6 @@
 # Start
-> 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
-
-Timebox: 30 minutes
+> [!NOTE]
+> Timebox: 30 minutes
 > Back to [Agenda](./../README.md#agenda)
 
 

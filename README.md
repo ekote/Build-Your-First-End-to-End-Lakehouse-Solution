@@ -1,5 +1,6 @@
 # Build-Your-First-End-to-End-Lakehouse-Solution
 
+> [!NOTE]
 > Sunday, March 24, Workshop Hours: 9 am – 4 pm 
 
 Join our lakehouse workshop to learn how you can build your own modern end-to-end data solutions using Microsoft Fabric. Gain hands on experience as we guide you through Fabric data integration capabilities including pipelines and dataflows to land data in your lakehouse. Next you will learn how you can further transform your data using notebooks and Spark, and organize, secure, and prepare all your data for serving. Finally, you will learn how different data personas including BI analysts and data scientists can leverage and build on top of the lakehouse data. 
@@ -19,17 +20,17 @@ This integrated lakehouse solution will empower your company to:
 
 # Agenda
 
-1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
-2. 9:30 - 10:30 - [Exercise 1](./exercise-1/exercise-1.md) 
-3. 10:30 - 10:45 - Break 15 minutes
-4. 10:45 - 12:00 - [Exercise 2](./exercise-2/exercise-2.md)
-5. 12:00 - 01:00 - Lunch 60 minutes
-6. 01:05 - 01:35 - [Exercise 3](./exercise-3/exercise-3.md)
-7. 01:35 - 01:40 - Break 5 minutes
-7. 01:40 - 02:40 - [Exercise 4](./exercise-4/exercise-4.md)
-8. 02:40 - 02:50 - Break 10 minutes
-8. 02:50 - 03:30 - [Exercise 5](./exercise-5/exercise-5.md)
-9. 03:30 - 04:00 - Recap
+1. 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
+2. 9:30 am - 10:30 am - [Exercise 1](./exercise-1/exercise-1.md) 
+3. 10:30 am - 10:45 am - Break 15 minutes
+4. 10:45 am - 12:00 pm - [Exercise 2](./exercise-2/exercise-2.md)
+5. 12:00 pm - 01:00 pm - Lunch 60 minutes
+6. 01:05 pm - 01:35 pm - [Exercise 3](./exercise-3/exercise-3.md)
+7. 01:35 pm - 01:40 pm - Break 5 minutes
+7. 01:40 pm - 02:40 pm - [Exercise 4](./exercise-4/exercise-4.md)
+8. 02:40 pm - 02:50 pm - Break 10 minutes
+8. 02:50 pm - 03:30 pm - [Exercise 5](./exercise-5/exercise-5.md)
+9. 03:30 pm - 04:00 pm - Recap
 
 
 # Utils and tools
@@ -65,8 +66,7 @@ Description: The highest level of the lakehouse, where data is further transform
 
 
 ## 🧹 Clean Up
-
-**Once you are done experimenting with Microsoft Fabric, we encourage you to always delete your resources to avoid unwanted charges to your account.**
+Once you are done experimenting with Microsoft Fabric, we encourage you to always delete your resources to avoid unwanted charges to your account.
 
 - To learn about how to delete the resource group that contains your capacity from Microsoft Azure, see [this documentation](https://learn.microsoft.com/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-portal#delete-resource-group/?WT.mc_id=academic-114547-leestott).
 - To learn about how to delete your Fabric workspace, see [this documentation](https://learn.microsoft.com/fabric/data-engineering/tutorial-lakehouse-clean-up/?WT.mc_id=academic-114547-leestott).

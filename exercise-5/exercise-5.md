@@ -1,6 +1,7 @@
 # Exercise 5 - Latest Fabric Features
 
-Timebox: 40 minutes
+> [!NOTE]
+> Timebox: 40 minutes
 > Back to [Agenda](./../README.md#agenda)
 
 

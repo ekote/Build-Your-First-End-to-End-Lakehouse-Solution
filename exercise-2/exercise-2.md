@@ -1,6 +1,7 @@
 # Exercise 2 - Transform data using notebooks and Spark clusters 
 
-Timebox: 75 minutes
+> [!NOTE]
+> Timebox: 75 minutes
 > Back to [Agenda](./../README.md#agenda)
 
 # Context
