@@ -31,4 +31,10 @@ Timebox: 30 minutes
 # Task 5.5 managed private endpoints for Fabric
 * [ ] Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
 
+
 # Task 5.6 Experimental Runtime 1.3 (Spark 3.5 and Delta 3.0 OSS)
+* [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3
+
+
+> [!IMPORTANT]
+> Once completed, go to [Agenda](./../README.md#agenda).

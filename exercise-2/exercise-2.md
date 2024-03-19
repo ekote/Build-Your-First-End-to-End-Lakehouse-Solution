@@ -3,7 +3,6 @@
 Timebox: 75 minutes
 > Back to [Agenda](./../README.md#agenda)
 
-
 # Context
 %TODO STORY
 
@@ -76,9 +75,9 @@ When working with data, one of the initial tasks is to read it into the environm
 
 ## The lakehouse is attached to your notebook. It's time to discover the lakehouse artifact!
 
-
-
 The most common way to work with data in delta tables in Spark is to use Spark SQL. You can embed SQL statements in other languages (such as PySpark or Scala) by using the spark.sql library.
+
+
 
 
 
@@ -93,3 +92,40 @@ The most common way to work with data in delta tables in Spark is to use Spark S
 
 
 # Advanced steps
+
+# Medallion architecture
+A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
+
+![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
+
+This incremental and progressive improvement enables you to maintain data quality and structure while also improving data processing performance. Medallion architectures are sometimes referred to as "multi-hop" architectures because data flows through multiple layers.
+
+One of the main benefits of a Lakehouse architecture is that it provides a simple data model that is easy to understand and implement. Additionally, it enables incremental ETL (extract, transform, load) operations, which means you can add new data to the Lakehouse in a scalable and manageable way.
+
+Another benefit of a Lakehouse architecture is that it allows you to recreate your tables from raw data at any time. This is possible because Delta Lake provides ACID transactions and time travel capabilities, allowing you to track changes to your data and easily roll back to previous versions if necessary.
+
+Read more [here](https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/simplify-your-lakehouse-architecture-with-azure-databricks-delta/ba-p/2027272).
+
+
+## Medallion architecture in Fabric Lakehouse
+
+After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
+
+Here's an example code snippet that shows how you can write data to another Lakehouse:
+
+
+```python
+# read data from the bronze Lakehouse
+bronze_df = spark.read.table("bronze_lakehouse_name.lakehouse_table")
+
+# perform data cleaning and transformation
+# ...
+
+# write the transformed data to the silver Lakehouse
+transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakehouse_name.lakehouse_table")
+```
+
+In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md).
