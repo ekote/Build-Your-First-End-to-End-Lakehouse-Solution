@@ -37,4 +37,4 @@ Timebox: 30 minutes
 
 
 > [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#agenda).
+> Once completed, go to [Agenda](./../README.md#clean-up).

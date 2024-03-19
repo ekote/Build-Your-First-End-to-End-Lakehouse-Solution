@@ -101,3 +101,10 @@ Description: In this intermediate layer, data is cleansed, standardized, and enr
 Lakehouse Name: `goldcurrated`
 
 Description: The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
+
+## 🧹 Clean Up
+
+**Once you are done experimenting with Microsoft Fabric, we encourage you to always delete your resources to avoid unwanted charges to your account.**
+
+- To learn about how to delete the resource group that contains your capacity from Microsoft Azure, see [this documentation](https://learn.microsoft.com/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-portal#delete-resource-group/?WT.mc_id=academic-114547-leestott).
+- To learn about how to delete your Fabric workspace, see [this documentation](https://learn.microsoft.com/fabric/data-engineering/tutorial-lakehouse-clean-up/?WT.mc_id=academic-114547-leestott).
