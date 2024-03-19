@@ -11,21 +11,21 @@ Timebox: 30 minutes
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
 2. Go to https://fabric.microsoft.com/
 3. 
-![Login](./../media/setup/1.jpg)
+![Login](../media/start/1.jpg)
 4. 
-![Login](./../media/setup/2.jpg)
+![Login](../media/start/2.jpg)
 5. 
-![Login](./../media/setup/3.jpg)
+![Login](../media/start/3.jpg)
 6. 
-![Login](./../media/setup/4.jpg)
+![Login](../media/start/4.jpg)
 7. 
-![Login](./../media/setup/5.jpg)
+![Login](../media/start/5.jpg)
 8. 
-![Login](./../media/setup/6.jpg)
+![Login](../media/start/6.jpg)
 9. 
-![Login](./../media/setup/7.jpg)
+![Login](../media/start/7.jpg)
 10. 
-![Login](./../media/setup/8.jpg)
+![Login](../media/start/8.jpg)
 
 11. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)

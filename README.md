@@ -19,7 +19,7 @@ This integrated lakehouse solution will empower your company to:
 
 # Agenda
 
-1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./README.md#setup)
+1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
 2. 9:30 - 10:30 - [Exercise 1](./exercise-1/exercise-1.md) 
 3. 10:30 - 10:45 - Break 15 minutes
 4. 10:45 - 12:00 - [Exercise 2](./exercise-2/exercise-2.md)
