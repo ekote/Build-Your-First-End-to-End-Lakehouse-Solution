@@ -98,7 +98,7 @@ The most common way to work with data in delta tables in Spark is to use Spark S
 # Definition of done (and you can go to the next exercise)
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 3](./exercise-3/exercise-3.md) or continue with [Advanced steps below](#advanced-steps).
+> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md) or continue with [Advanced steps below](#advanced-steps).
 
 
 # Advanced steps

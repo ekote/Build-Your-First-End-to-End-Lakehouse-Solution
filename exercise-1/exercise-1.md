@@ -46,7 +46,7 @@ And you can go to the next exercise.
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 2](./exercise-2/exercise-2.md) or continue with [Advanced steps below](#advanced-steps).
+> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md) or continue with [Advanced steps below](#advanced-steps).
 
 
 # Advanced steps

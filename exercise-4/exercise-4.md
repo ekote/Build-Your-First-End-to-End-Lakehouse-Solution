@@ -6,7 +6,7 @@ Timebox: 30 minutes
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 5](./exercise-5/exercise-5.md) or continue with [Advanced steps below](#advanced-steps).
+> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md) or continue with [Advanced steps below](#advanced-steps).
 
 
 # Advanced steps
