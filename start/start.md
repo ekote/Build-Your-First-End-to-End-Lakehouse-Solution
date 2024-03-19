@@ -34,16 +34,7 @@
 15. Check Workloads
 16. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
-17. Review [Utils and tools](./../README.md#utils-and-tools).
-
-
-> [!IMPORTANT]
-> Once completed, go to [Exercise 1](./../exercise-1/exercise-1.md) or continue with [Advanced steps below](#advanced-steps).
-
-## Advanced steps
-TODO
-
-![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
+17. Review [Naming conventions](./../README.md#naming-conventions).
 
 
 > [!IMPORTANT]

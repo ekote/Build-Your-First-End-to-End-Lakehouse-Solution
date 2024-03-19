@@ -33,40 +33,25 @@ This integrated lakehouse solution will empower your company to:
 9. 03:30 pm - 04:00 pm - Recap
 
 
-# Utils and tools
+# Naming conventions
 
-## Dataset used
-TODO - delete it
-
-Name: TODO
-Source: https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-
-dataset: NYC-Taxi-Green-2015-01.parquet
-
-## Name conventions
-
-### Bronze Layer (Raw Data Management)
+## Bronze Layer (Raw Data Management)
 Lakehouse Name: `bronzerawdata`
 
 Description: This is the foundational layer where raw data is ingested directly from various sources, including yellow and green taxi trip records, FHV trip records, and potentially other urban mobility datasets. The data is stored in its original, unmodified form. In the context of your workshop, this involves landing raw TLC Trip Record Data into this layer, ensuring that all raw data remains immutable and traceable for lineage purposes.
 
-### Silver Layer (Refined Data Management)
+## Silver Layer (Refined Data Management)
 Lakehouse Name: `silvercleansed`
 
 Description: In this intermediate layer, data is cleansed, standardized, and enriched to resolve inconsistencies and prepare for more detailed analysis. This includes resolving issues with data quality, standardizing formats, and enriching taxi and FHV data with additional contextual information, such as weather conditions or traffic data. The goal here is to create a reliable, query-optimized dataset that supports more efficient analysis and reporting.
 
-### Gold Layer (Curated Data Management)
+## Gold Layer (Curated Data Management)
 Lakehouse Name: `goldcurrated`
 
 Description: The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
 
+
 ## Extra resources
 * https://microsoft.github.io/fabricnotes/
 * https://ideas.fabric.microsoft.com/
-
-
-## 🧹 Clean Up
-Once you are done experimenting with Microsoft Fabric, we encourage you to always delete your resources to avoid unwanted charges to your account.
-
-- To learn about how to delete the resource group that contains your capacity from Microsoft Azure, see [this documentation](https://learn.microsoft.com/azure/azure-resource-manager/management/delete-resource-group?tabs=azure-portal#delete-resource-group/?WT.mc_id=academic-114547-leestott).
-- To learn about how to delete your Fabric workspace, see [this documentation](https://learn.microsoft.com/fabric/data-engineering/tutorial-lakehouse-clean-up/?WT.mc_id=academic-114547-leestott).
+* ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
