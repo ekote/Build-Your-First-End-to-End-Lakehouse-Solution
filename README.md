@@ -37,33 +37,33 @@ This integrated lakehouse solution will empower your company to:
 
 1. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
-1. Go to https://fabric.microsoft.com/
-1. 
+2. Go to https://fabric.microsoft.com/
+3. 
 ![Login](./media/setup/1.jpg)
-1. 
+4. 
 ![Login](./media/setup/2.jpg)
-1. 
+5. 
 ![Login](./media/setup/3.jpg)
-1. 
+6. 
 ![Login](./media/setup/4.jpg)
-2. 
+7. 
 ![Login](./media/setup/5.jpg)
-2. 
+8. 
 ![Login](./media/setup/6.jpg)
-2. 
+9. 
 ![Login](./media/setup/7.jpg)
-2. 
+10. 
 ![Login](./media/setup/8.jpg)
 
-2. Review the infographic. 
+11. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
-3. Create a Workspace (named as the login you got to fabric)
-3. Assign Capacity
-4. Check Admin Settings
-5. Check Workloads
-6. Review the infographic. 
+12. Create a Workspace (named as the login you got to fabric)
+13. Assign Capacity
+14. Check Admin Settings
+15. Check Workloads
+16. Review the infographic. 
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
-7. Review [Utils and tools](#utils-and-tools).
+17. Review [Utils and tools](#utils-and-tools).
 
 
 > [!IMPORTANT]
