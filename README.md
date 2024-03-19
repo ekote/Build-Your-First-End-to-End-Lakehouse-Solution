@@ -35,8 +35,12 @@ Forge a versatile data infrastructure poised to adjust to new trends in urban mo
 
 ## Mandatory steps
 
+1. Review
+2. ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
 1. Login to https://fabric.microsoft.com/
-2. Create a Workspace (named as the login you got to fabric)
+2. Review
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
+3. Create a Workspace (named as the login you got to fabric)
 3. Assign Capacity
 4. Check Admin Settings
 5. Check Workloads
@@ -52,7 +56,6 @@ Forge a versatile data infrastructure poised to adjust to new trends in urban mo
 
 ## Advanced steps
 TODO
-
 
 
 
