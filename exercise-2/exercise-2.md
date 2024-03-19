@@ -142,5 +142,8 @@ In this example, we first read data from the bronze Lakehouse using the spark.re
 
 ## Rest API
 
+
+## Data Wrangler
+
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md).

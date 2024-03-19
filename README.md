@@ -103,6 +103,8 @@ Description: The highest level of the lakehouse, where data is further transform
 
 ## Resources
 * https://microsoft.github.io/fabricnotes/
+* https://ideas.fabric.microsoft.com/
+
 
 ## 🧹 Clean Up
 
