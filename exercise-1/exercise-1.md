@@ -1,7 +1,7 @@
 # Exercise 1 - Ingest data from various sources using pipelines and dataflows 
 
-Timebox: 50 minutes
-> Go to [Agenda](./../README.md#agenda)
+Timebox: 60 minutes
+> Back to [Agenda](./../README.md#agenda)
 
 # Context
 
@@ -43,3 +43,10 @@ By using a lakehouse, you can create an end-to-end data analytics solution that 
 
 
 And you can go to the next exercise. 
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 2](./exercise-2/exercise-2.md) or continue with [Advanced steps below](#advanced-steps).
+
+
+# Advanced steps

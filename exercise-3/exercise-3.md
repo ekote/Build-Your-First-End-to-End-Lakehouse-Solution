@@ -1,5 +1,9 @@
 # Exercise 3 - Organize, secure, and prepare data using schemas, permissions, and projects
 
+Timebox: 70 minutes
+> Back to [Agenda](./../README.md#agenda)
+
+
 ```
 ?? TODO
 1.	(DEMO) Azure Data Studio / SSMS
@@ -85,3 +89,10 @@ Creating a workspace identity in Microsoft Fabric involves 3 steps:
 3.  Click on the **+ Workspace identity** button to create a new identity.
 
 Once created, the workspace identity details and a list of authorized users will be displayed. The workspace identity is automatically assigned the workspace contributor role and has access to workspace items.
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 4](./exercise-4/exercise-4.md) or continue with [Advanced steps below](#advanced-steps).
+
+
+# Advanced steps
