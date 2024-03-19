@@ -73,8 +73,7 @@ Timebox: 75 minutes
 ## Advanced steps
 TODO
 
-
-
+![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
 
 
 

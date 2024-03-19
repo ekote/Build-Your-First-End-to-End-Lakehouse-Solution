@@ -47,8 +47,6 @@ When working with data, one of the initial tasks is to read it into the environm
 6. Upload the file
 7. Use "Load to Table" feature
 
-
-
 # Task 2.4 Import Notebook
 Your task is to import notebook and complete all exercises inside the notebook. 
 
@@ -81,7 +79,11 @@ Save, schedule and run the notebook as a job
 
 
 # Task 2.13 DW vs Lakehouse?
+![DW or Lakehouse](https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png)
 
+
+
+![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
 
 # Task 2.14 Pivot
 
