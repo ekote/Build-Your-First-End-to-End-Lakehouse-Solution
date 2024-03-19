@@ -28,11 +28,9 @@ DirectLake mode now eliminates this import requirement by loading the data files
 
 # Task 4.2 Publish the report to the Power BI service and share it with other users 
 
-# Task 4.3 Use Data Science to create a machine learning model (auto ML) that forecast trip duration / something else based on the data 
+# Task 4.3 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
 
-# Task 4.4 Consume the web service from Power BI and add a prediction column to the report 
-
-# Task 4.5 Explore the results and analyze the performance of the model 
+# Task 4.4 Explore and visualize the predictions and model performance from Power BI report using DirectLake.
 
 
 
