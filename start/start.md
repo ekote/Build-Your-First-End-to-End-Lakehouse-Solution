@@ -1,0 +1,51 @@
+# Start
+> 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
+
+Timebox: 30 minutes
+> Back to [Agenda](./../README.md#agenda)
+
+
+## Mandatory steps
+
+1. Review the infographic. 
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
+2. Go to https://fabric.microsoft.com/
+3. 
+![Login](./media/setup/1.jpg)
+4. 
+![Login](./media/setup/2.jpg)
+5. 
+![Login](./media/setup/3.jpg)
+6. 
+![Login](./media/setup/4.jpg)
+7. 
+![Login](./media/setup/5.jpg)
+8. 
+![Login](./media/setup/6.jpg)
+9. 
+![Login](./media/setup/7.jpg)
+10. 
+![Login](./media/setup/8.jpg)
+
+11. Review the infographic. 
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
+12. Create a Workspace (named as the login you got to fabric)
+13. Assign Capacity
+14. Check Admin Settings
+15. Check Workloads
+16. Review the infographic. 
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
+17. Review [Utils and tools](#utils-and-tools).
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#advanced-steps).
+
+## Advanced steps
+TODO
+
+![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
+
+
+> [!IMPORTANT]
+> Once completed, go to [Exercise 1](./exercise-1/exercise-1.md).
