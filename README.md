@@ -42,6 +42,10 @@ This integrated lakehouse solution will empower your company to:
 2. ![Login](./media/setup/2.jpg)
 2. ![Login](./media/setup/3.jpg)
 2. ![Login](./media/setup/4.jpg)
+2. ![Login](./media/setup/5.jpg)
+2. ![Login](./media/setup/6.jpg)
+2. ![Login](./media/setup/7.jpg)
+2. ![Login](./media/setup/8.jpg)
 2. Review
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
 3. Create a Workspace (named as the login you got to fabric)
