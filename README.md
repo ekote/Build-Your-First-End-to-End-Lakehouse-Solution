@@ -7,10 +7,6 @@ Join our lakehouse workshop to learn how you can build your own modern end-to-en
 By the end of this workshop, you should be well versed in Fabric Data Integration & Data Engineering topics and capable of building an end-to-end workflow that includes ingesting, preparing, serving and operationalizing your data solution. 
 
 # Context
-
-Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.
-
-
 Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.
 
 This integrated lakehouse solution will empower your company to:
@@ -21,7 +17,6 @@ This integrated lakehouse solution will empower your company to:
 Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
 
 By the end of this workshop, your collective will possess a formidable lakehouse framework, grounded in the medallion architecture philosophy, ready to underpin your goals and foster innovation within urban transport systems.
-
 
 # Agenda
 
@@ -36,7 +31,7 @@ By the end of this workshop, your collective will possess a formidable lakehouse
 8. 03:00 - 03:30 - [Exercise 5](./exercise-5/exercise-5.md)
 9. 03:30 - 04:00 - Recap
 
-# Setup
+# 1. Setup
 > 9:00 - 9:30 am - Introduction, Set Up and Overview of Fabric Data Platform 
 
 ## Mandatory steps
@@ -46,25 +41,36 @@ By the end of this workshop, your collective will possess a formidable lakehouse
 3. Assign Capacity
 4. Check Admin Settings
 5. Check Workloads
+6. Review [Utils and tools](#Utilsandtools)
 
 Definition of done: all completed
 
+Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#Advancedsteps).
+
 ## Advanced steps
+TODO
 
 
-# Name conventions
 
-## Bronze Layer (Raw Data Management)
+
+
+
+
+# Utils and tools
+
+## Name conventions
+
+### Bronze Layer (Raw Data Management)
 Lakehouse Name: `bronzerawdata`
 
 Description: This is the foundational layer where raw data is ingested directly from various sources, including yellow and green taxi trip records, FHV trip records, and potentially other urban mobility datasets. The data is stored in its original, unmodified form. In the context of your workshop, this involves landing raw TLC Trip Record Data into this layer, ensuring that all raw data remains immutable and traceable for lineage purposes.
 
-## Silver Layer (Refined Data Management)
+### Silver Layer (Refined Data Management)
 Lakehouse Name: `silvercleansed`
 
 Description: In this intermediate layer, data is cleansed, standardized, and enriched to resolve inconsistencies and prepare for more detailed analysis. This includes resolving issues with data quality, standardizing formats, and enriching taxi and FHV data with additional contextual information, such as weather conditions or traffic data. The goal here is to create a reliable, query-optimized dataset that supports more efficient analysis and reporting.
 
-## Gold Layer (Curated Data Management)
+### Gold Layer (Curated Data Management)
 Lakehouse Name: `goldcurrated`
 
 Description: The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
