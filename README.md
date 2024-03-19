@@ -36,7 +36,7 @@ Forge a versatile data infrastructure poised to adjust to new trends in urban mo
 ## Mandatory steps
 
 1. Review
-2. ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
+![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
 1. Login to https://fabric.microsoft.com/
 2. Review
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
@@ -45,9 +45,7 @@ Forge a versatile data infrastructure poised to adjust to new trends in urban mo
 4. Check Admin Settings
 5. Check Workloads
 6. Read
-
 ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
-
 7. Review [Utils and tools](#utils-and-tools)
 
 
