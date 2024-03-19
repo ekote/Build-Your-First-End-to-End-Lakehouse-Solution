@@ -1,6 +1,6 @@
 # Exercise 3 - Organize, secure, and prepare data using schemas, permissions, and projects
 
-Timebox: 70 minutes
+Timebox: 30 minutes
 > Back to [Agenda](./../README.md#agenda)
 
 

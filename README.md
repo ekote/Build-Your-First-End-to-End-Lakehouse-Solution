@@ -21,13 +21,14 @@ This integrated lakehouse solution will empower your company to:
 
 1. 9:00 - 9:30 - [Introduction, Set Up and Overview of Fabric Data Platform](./README.md#setup)
 2. 9:30 - 10:30 - [Exercise 1](./exercise-1/exercise-1.md) 
-3. 10:30 - 10:45 - Break
+3. 10:30 - 10:45 - Break 15 minutes
 4. 10:45 - 12:00 - [Exercise 2](./exercise-2/exercise-2.md)
-5. 12:00 - 01:00 - Lunch 
-6. 01:05 - 02:15 - [Exercise 3](./exercise-3/exercise-3.md)
-7. 02:15 - 02:30 - Break
-8. 02:30 - 03:00 - [Exercise 4](./exercise-4/exercise-4.md)
-8. 03:00 - 03:30 - [Exercise 5](./exercise-5/exercise-5.md)
+5. 12:00 - 01:00 - Lunch 60 minutes
+6. 01:05 - 01:35 - [Exercise 3](./exercise-3/exercise-3.md)
+7. 01:35 - 01:40 - Break 5 minutes
+7. 01:40 - 02:40 - [Exercise 4](./exercise-4/exercise-4.md)
+8. 02:40 - 02:50 - Break 10 minutes
+8. 02:50 - 03:30 - [Exercise 5](./exercise-5/exercise-5.md)
 9. 03:30 - 04:00 - Recap
 
 # 1. Setup
