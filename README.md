@@ -41,11 +41,11 @@ By the end of this workshop, your collective will possess a formidable lakehouse
 3. Assign Capacity
 4. Check Admin Settings
 5. Check Workloads
-6. Review [Utils and tools](#Utilsandtools)
+6. Review [Utils and tools](#utils-and-tools)
 
 Definition of done: all completed
 
-Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#Advancedsteps).
+Once completed, go to [Exercise 1](./exercise-1/exercise-1.md) or continue with [Advanced steps below](#advanced-steps).
 
 ## Advanced steps
 TODO
