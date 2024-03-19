@@ -50,8 +50,3 @@ Lakehouse Name: `goldcurrated`
 
 Description: The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
 
-
-## Extra resources
-* https://microsoft.github.io/fabricnotes/
-* https://ideas.fabric.microsoft.com/
-* ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
