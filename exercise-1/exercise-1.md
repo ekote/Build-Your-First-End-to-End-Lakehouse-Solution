@@ -8,12 +8,11 @@
 # Context
 %TODO STORY
 
+# Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
 ## Required to complete the exercise
 * Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
 * SAS Token (Read Only) `sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-08-31T04:00:16Z&st=2024-03-19T20:00:16Z&spr=https&sig=Av5yc0Q3W5bSncVDP2DpfkZ5nbb%2BXj4tqjC1Chwi3Hw%3D`
-
-# Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
 ![Step](../media/1/1.jpg)
 ![Step](../media/1/2.jpg)
@@ -43,31 +42,7 @@
 ![Step](../media/1/26.jpg)
 
 
-
-
-
-# Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
-
-
-
-# Task 1.3 Monitor the pipeline run and verify the output files in the data lake. 
-
-
-
-# Task 1.4 Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping. 
-
-
-
-# Task 1.5 Use the data preview and debug features to inspect the data at each step of the transformation.
-Write the transformed data to a Delta table in the Lakehouse.
-
-
-
-# Task 1.6 Run the dataflow and monitor the Spark job execution details. 
-
-
-
-# Task 1.7 Discover the Lakehouse 
+# Task 1.2 Discover the Lakehouse 
 
 Microsoft Fabric lakehouses are designed to provide data engineers and analysts with the benefits of both data lake storage and a relational data warehouse. Apache Spark is a critical technology for big data analytics, and its support within Microsoft Fabric allows you to seamlessly integrate Spark's big data processing capabilities with the other data analytics and visualization tools available on the platform. 
 By using a lakehouse, you can create an end-to-end data analytics solution that includes data ingestion, transformation, modeling, and visualization. The lakehouse provides a unified and scalable platform for storing and managing data, allowing you to easily access and analyze both structured and unstructured data. Additionally, the platform's built-in security and compliance features help ensure that your data is always secure and compliant with industry standards.
@@ -100,6 +75,37 @@ Easily ingest data into the lakehouse through a variety of methods
 * Shortcuts behave in the same way as hosted storage
 
 
+# Task 1.3 Create shortcut
+
+## Required to complete the exercise
+* Blob Storage Account URL `https://transportation23kotcorp.dfs.core.windows.net/`
+* SAS Token (Read Only) `sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2024-08-31T05:45:27Z&st=2024-03-19T21:45:27Z&spr=https,http&sig=ifGqJa6706RCFaciJapwOL6vHoKzy9ltno3LznjQMkY%3D`
+
+
+![Step](../media/1/27.jpg)
+![Step](../media/1/28.jpg)
+![Step](../media/1/29.jpg)
+![Step](../media/1/31.jpg)
+![Step](../media/1/32.jpg)
+![Step](../media/1/33.jpg)
+![Step](../media/1/34.jpg)
+![Step](../media/1/35.jpg)
+![Step](../media/1/36.jpg)
+![Step](../media/1/37.jpg)
+![Step](../media/1/38.jpg)
+![Step](../media/1/39.jpg)
+![Step](../media/1/40.jpg)
+![Step](../media/1/41.jpg)
+![Step](../media/1/42.jpg)
+![Step](../media/1/43.jpg)
+![Step](../media/1/44.jpg)
+![Step](../media/1/45.jpg)
+![Step](../media/1/46.jpg)
+![Step](../media/1/47.jpg)
+
+
+
+
 
 
 
@@ -108,6 +114,17 @@ Easily ingest data into the lakehouse through a variety of methods
 
 
 # Advanced steps
+
+# Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
+
+# Task 1.3 Monitor the pipeline run and verify the output files in the data lake.
+
+# Task 1.4 Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
+
+# Task 1.5 Use the data preview and debug features to inspect the data at each step of the transformation.
+Write the transformed data to a Delta table in the Lakehouse.
+
+# Task 1.6 Run the dataflow and monitor the Spark job execution details. 
 
 
 
