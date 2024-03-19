@@ -17,6 +17,14 @@ Timebox: 30 minutes
 # Task 5.3 Autotune Query Tuning
 * [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql
 
+> [!TIP]
+> Autotune query tuning examines individual queries and builds a distinct ML model for each query. It specifically targets:
+> - Repetitive queries
+> - Long-running queries (those with more than 15 seconds of execution)
+> - Spark SQL queries (excluding those written in the RDD API, which are very rare)
+>
+> This feature is compatible with notebooks, Spark Job Definitions, and pipelines.
+
 
 
 # Task 5.4 Single Node Cluster
