@@ -113,6 +113,8 @@ Easily ingest data into the lakehouse through a variety of methods
 > Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md) or continue with [Advanced steps below](#advanced-steps).
 
 
+
+
 # Advanced steps
 
 # Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.

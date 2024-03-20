@@ -47,7 +47,7 @@
 
 
 # Task 5.7 VSCODE
-
+TODO VIDEO
 
 > [!IMPORTANT]
 > Once completed, go to [Agenda](./../README.md#clean-up).

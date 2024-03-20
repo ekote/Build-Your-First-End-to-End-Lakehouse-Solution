@@ -4,6 +4,7 @@
 > Timebox: 75 minutes
 > 
 > Back to [Agenda](./../README.md#agenda)
+> Back to [Exercise 1](./../exercise-1/exercise-1.md)
 
 # Context
 %TODO STORY
@@ -39,7 +40,7 @@ The code df.select("vendorID", "tripDistance", "fareAmount", "tipAmount").show(5
 When working with data, one of the initial tasks is to read it into the environment for analysis. Once the data is loaded, basic analysis such as filtering, sorting, and aggregating can be performed. However, as the scale and complexity of the data increase, there is a need for more advanced data engineering scenarios such as data cleansing, transformation, and aggregation. 
 
 
-## Task 2.3 - Load to Delta
+## Task 2.3 - Side Loading (local upload) and Load to Delta for CSV file
 
 1. Click "Add" to add lakehouse.
 2. Select "New lakehouse" and click "Add".
@@ -48,6 +49,8 @@ When working with data, one of the initial tasks is to read it into the environm
 5. Go to OneLake data hub > your Lakehouse
 6. Upload the file
 7. Use "Load to Table" feature
+
+
 
 # Task 2.4 Import Notebook
 Your task is to import notebook and complete all exercises inside the notebook. 
@@ -137,8 +140,12 @@ transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakeh
 
 In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
 
-TIP WATCH IT
-https://www.youtube.com/watch?v=706MVIBivOU 
+## Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
+
+Watch Fabric Espresso episode as Abhishek and Estera discuss the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
+
+[![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
+
 
 
 ## Deployments Pipelines
@@ -148,9 +155,12 @@ https://www.youtube.com/watch?v=706MVIBivOU
 
 
 ## Data Wrangler
+TODO VIDEO
 
 
 ## MS SPARK UTILITIES - run another notebook reference run
+
+TODO VIDEO
 
 ## Run multiple
 
