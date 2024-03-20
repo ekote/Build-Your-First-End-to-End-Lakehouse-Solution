@@ -25,14 +25,10 @@ In traditional DirectQuery mode, the Power BI engine queries the data directly f
 
 DirectLake mode now eliminates this import requirement by loading the data files directly into memory. Because there's no explicit import process, it's possible to pick up any changes at the source as they occur, thus combining the advantages of DirectQuery and import mode while avoiding their disadvantages. DirectLake mode is therefore the ideal choice for analyzing very large datasets and datasets with frequent updates at the source.
 
+# Task 4.1 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
 
-# Task 4.1 Create a Power BI report that visualizes the data from the data flow pipeline 
+# Task 4.2 Explore and visualize the taxi trip data and predicted trip duration from the machine learning model using a Power BI report and Direct Lake.
 
-# Task 4.2 Publish the report to the Power BI service and share it with other users 
-
-# Task 4.3 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
-
-# Task 4.4 Explore and visualize the predictions and model performance from Power BI report using DirectLake.
 In this exercise, we will use Microsoft Fabric Direct Lake feature that enables direct connectivity from Semantic models to Lakehouse tables in direct query mode with automatic data refresh. In the following steps you will use the prediction data produced in the previous task  *"4.3 Use the Data Science experience to train a machine learning model"*
 ##### Steps to follow.
 
@@ -64,6 +60,9 @@ You can now  create various visuals as per your requirement to generate insight
 6. Visualize Average predictedTripDuration using a map visual.
   - Add a map chart visual and add ***startLat* **to Latitude** *and startLon* **to Longitude fields.
   - Add ***predictedTripDuration* **to bubble size field and switch the aggregation method of predictedTripDuration to Average.
+
+# Task 4.3 Publish the report and share it with other users. 
+
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
