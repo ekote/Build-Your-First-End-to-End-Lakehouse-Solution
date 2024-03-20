@@ -5,11 +5,12 @@
 > 
 > Back to [Agenda](./../README.md#agenda)
 
-# Task 5.1 Know the Updates and Save the links
-* Review monthly updates https://blog.fabric.microsoft.com/en-us/blog/category/monthly-update for the recent three months. Every week there is it a rollout of the new improvements, New features. And the team is gathering all the changes as part of the monthly updates. Tap to your bookmark subject will be always updated. 
-* Review recent updates for https://blog.fabric.microsoft.com/en-US/blog - Sometimes there are updates like for example, manage private endpoint capability. Such a big announcement are included into updates blog post.
-* Pin The website https://microsoft.github.io/fabricnotes/ Created by the Microsoft internal team, who is proud to build a visualization of the common concept with a fabric. Kudos to them.
-* In fabric, we listen to customers needs that's why everyone, including you can suggest the idea that improvement that you want to see in fabric. Please write it here https://ideas.fabric.microsoft.com/ And talk properly according to the workload. We prioritize our features and build a semester plan to answer your needs. I bring it, encourage you to share your idea to switch from reactive to proactive mode when you can impact an influence the product direction. One of the greatest example is the feedback about a new runtimes. That's why during the FabCon We announced a new stage of runtime named experimental. The first task below is exactly about it. 
+# Task 5.1 Stay Updated and Bookmark Essentials
+Dive into the latest and greatest from Fabric
+* **Monthly Digests**: Don't miss out! Head over to the [Fabric Monthly Updates](https://blog.fabric.microsoft.com/en-us/blog/category/monthly-update) and catch up on the past three months' worth of updates. Discover the latest features and improvements rolled out each week, compiled neatly for your convenience. Bookmark this page to keep your knowledge fresh and up-to-date.
+* **Latest Announcements**: Stay in the loop with the most recent news on [Fabric's Blog](https://blog.fabric.microsoft.com/en-US/blog). Here, major updates, like the management of private endpoint capabilities, are discussed in detail. It's a treasure trove of insights and announcements you won't want to miss.
+* **Pin the Visualizations**: Show some love for the internal Microsoft team's creative endeavor at [Fabric Notes](https://microsoft.github.io/fabricnotes/). They've brilliantly visualized common concepts in Fabric, earning well-deserved kudos. Pin this website for a blend of inspiration and innovation.
+* **Voice Your Ideas**: At Fabric, your voice matters. If there's something you'd like to see improved or introduced, express your ideas on [Fabric Ideas](https://ideas.fabric.microsoft.com/). Tailor your suggestions to specific workloads for clarity. We're all ears and ready to adapt our semester plans to meet your needs. This shift from reactive to proactive engagement empowers you to influence Fabric's future direction. An outstanding instance of this is the introduction of experimental runtimes following your feedback. So, why wait? Share your thoughts and be a part of shaping Fabric's evolution.
 
 
 ## Task 5.1 PIVOT & Experimental Public Preview of Runtime 1.3
@@ -53,34 +54,77 @@ As you can see, Each new Runtime version brings more extensive APIs, More method
 
 
 ## Task 5.5 Spark vs Pandas
-Imagine your new team members wrote a lot of Pandas code and run it on big cluster Based on Apache Spark. Your task is to explain the best practices to Your colleague About processing big data Fabric and in general, As those rules applied everywhere.
+Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
-Pandas is simple. Data engineers, data, scientists data, analysts everyone loves pandas. The biggest limitation for pandas Is that it Doesn't understand Paraller architecuter and computations. Meaning that advance on a single machine, I'm a single node.
+### Understanding Pandas:
+Pandas shines due to its simplicity and intuitive design, making it a favorite among data engineers, scientists, and analysts. However, its primary limitation lies in its inability to natively harness parallel architectures and computations. Pandas operates within the confines of single-node, in-memory computations, restricting its scalability and efficiency in processing vast datasets typical in big data scenarios.
 
-Now a note about Spark and the core concept under spark - Data frames
-Spark Dataframes work in distributed manned compared to Pandas Dataframes.  Spark Dataframes are lazily evaluated which basically means that it doesn't execute until and unless an action is called and all the transformations that you have provided are created into a DAG. When you use Spark Dataframes, all the steps that you have mentioned before executions are converted into an optimized plan by Spark itself and you get many other capabilities like AQE(Adaptive Query Execution),DPP (Dynamic Partition Pruning) and much more than a Pandas dataframe can provide.
+### Transition to Spark and its core concepts:
+Apache Spark transcends these limitations by adopting a distributed computing approach. Key distinctions include:
+- **Spark DataFrames**: These are distributed across clusters, enabling parallel data processing far beyond the capacities of a single machine.
+- **Lazy Evaluation**: Spark employs lazy evaluation for DataFrames, constructing a Directed Acyclic Graph (DAG) of transformations that are optimized and executed only when an action is required, enhancing overall execution efficiency.
+- **Advanced Optimizations**: Features like Adaptive Query Execution (AQE) and Dynamic Partition Pruning (DPP) automatically optimize query plans and data partitioning, respectively, something far beyond the reach of Pandas.
 
-So the general rule is:
-> If the data is small enough that you can use pandas to process it, then you likely don't need pyspark. Spark is useful when you have such large data sizes that it doesn't fit into memory in one machine since it can perform distributed computation. That being said, if the computation is complex enough that it could benefit from a lot of parallelization, then you could see an efficiency boost using pyspark. I'm more comfortable with pyspark's APIs than pandas, so I might end up using pyspark anyways, but whether you'll see an efficiency boost depends a lot on the problem.
+### General rule of thumb:
+- Utilize Pandas for datasets that comfortably fit into the memory of a single machine and when the data processing doesn't demand extensive parallelization.
+- Opt for Spark when dealing with massive datasets that exceed single machine capacity, or when tasks benefit significantly from parallelization, despite any existing familiarity with Pandas due to Spark's scalability and optimization features.
 
-There is one innovation, That there is no week without a question about it.
+### Bridging the gap with Koalas:
+Introduced in Spark 3.2, Koalas marries the simplicity of the Pandas API with Spark’s distributed computing prowess. By importing `pandas` API through PySpark:
 
-Starting from Spark 3.2, Koalas has become a part of Spark. In PySpark, you can utilize the pandas API, by using:
-
+```python
 from pyspark import pandas as pd
+```
 
-So now we can use pandas API in spark. We can leverage parallel, computations use of the beautiful and simple syntax. 
+This integration enables data practitioners to apply familiar Pandas-like operations while leveraging Spark's distributed architecture, achieving the best of both worlds.
 
-In fabric a couple of ways how you can Get the code for pandas. One of them is by loading for example CSV file. Please take a look at the example of the screen how we can load to the CSV either to pandas or spark. After this task, I am certain that you know which tool you should use. 
+### Practical application in Fabric:
+In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
 
-Let's go to the next Task which is very about pandas.
+By the end of this task, you should be able to discern the appropriate circumstances for utilizing Pandas versus Spark, ensuring optimal data processing strategies in your big data endeavors.
+
+
+Proceed to your next challenge, which will delve deeper into Pandas, enriching your data manipulation skills in big data contexts.
+
 
 ## Task 5.6 Data Wrangler is my friend
+Immerse yourself in the world of efficient data analysis with Fabric's Data Wrangler. This task is designed to help you leverage Data Wrangler's capabilities to explore and transform Pandas DataFrames effectively. Data Wrangler blends a user-friendly grid-like interface with dynamic data analysis tools, making exploratory data analysis both intuitive and robust.
+
+Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
+
+Step-by-Step Instructions:
+
+### Initial Setup
+Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
+Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
+
+#### Exploratory Data Analysis
+
+Utilize the grid-like data display to review your dataset. Pay attention to the distribution of data, missing values, and data types.
+Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
+Leverage built-in visualizations to understand data distributions, correlations, and outliers. Experiment with different chart types to best represent your data.
+#### Data Cleaning Operations
+
+Identify any inconsistencies, missing values, or outliers within your dataset.
+Apply common data-cleaning operations available in Data Wrangler, such as filling missing values, filtering rows, or correcting data types. Observe how each operation updates the data display in real time.
+Evaluate the impact of your data transformations on the summary statistics and visualizations to ensure they align with your analysis goals.
+
+#### Code Generation and Reusability
+
+As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
+Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
+
+
+#### Documentation and Reflection
+
+Document each step of your exploratory data analysis and data cleaning process within the notebook. Include insights gained, reasons behind specific transformations, and how the changes impact the overall data analysis.
+Reflect on the ease of use, functionalities, and any limitations you encountered while using Data Wrangler. Consider how these aspects can influence your data analysis workflows in future projects.
+
+
 TODO VIDEO
 
-SLIDES HOW TO
+TODO SCREENSHOTS 
 
-Let's continue discussion about pandas because as mentioned, The original pandas just need one node. Now let's jump to the hardware configuration to optimize for panda computation, At the same time, not over invest. 
 
 ## Task 5.7 Single Node Cluster
 * [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute#spark-pools

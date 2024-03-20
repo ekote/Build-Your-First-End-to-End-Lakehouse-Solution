@@ -4,7 +4,7 @@
 
 # Exercise 1 - Extra Tasks
 
-# Task 5.3 Browse Azure resources with Get Data
+# Task 1.1 Browse Azure resources with Get Data
 Source: https://blog.fabric.microsoft.com/en-us/blog/browse-azure-resources-with-get-data?ft=All
 
 With the new ‘browse Azure’ functionality in Get Data, you can easily browse all your Azure resources and automatically connect to them, without going through manually setting up a connection, saving you a lot of time.
@@ -38,16 +38,13 @@ Write the transformed data to a Delta table in the Lakehouse.
 
 # Exercise 2 - Extra Tasks
 
-## Task 2.6 Transform the data using Spark SQL and PySpark APIs
-Your task is to factory the code produced by your colleague. 
-
-
 ## Task 2.7 Schedule notebook
 Your task is to schedule notebook to run every hour.
 
 Save, schedule and run the notebook as a job 
 
 ## Task 2.8 Workspace-level settings
+
 
 ## Task 2.9 Compute Settings
 
