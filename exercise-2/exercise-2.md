@@ -7,44 +7,86 @@
 > Back to [Exercise 1](./../exercise-1/exercise-1.md)
 
 # Context
-%TODO STORY
-
+TODO
 
 # Task 2.1 Copilot for notebooks
 
+With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
+* Chart creation 
+* Filtering data 
+* Applying transformations 
+* Machine learning models
+
+
+Investigate the 'green201501' table within your lakehouse, and seek insights about the dataset. Additionally, inquire how to compute the average trip distance and fare amount by each payment type.
+
+## 1. Accessing Copilot
+Select the Copilot icon found in the notebooks ribbon. This action opens the Copilot chat panel and creates a new cell at the top of your notebook. Note: This cell is essential for initializing a Spark session within a Fabric notebook and must be executed for Copilot to function correctly. Future releases may introduce alternative initialization methods.
+![Step](../media/2/1.jpg)
+
+## 2. Get Started with Copilot
+When the Copilot panel opens, click 'Get Started' to initiate your interaction with the AI assistant.
+![Step](../media/2/2.jpg)
+
+## 3. Library Installation
+Copilot will automatically insert a new cell containing the necessary library installation script. Execute this cell by clicking the 'Play' button to install the required libraries for Copilot functionalities.
+![Step](../media/2/3.jpg)
+
+## 4. Data Privacy and Security Awareness
+Post-installation, you will be presented with a note on data privacy and security. Please read through this to understand how your data is stored and processed. Additionally, guidelines will be provided on how to effectively communicate with Copilot.
+![Step](../media/2/4.jpg)
+
+## 5. Interacting with Copilot
+Now, engage with Copilot by exploring various prompts related to your data. Feel free to ask for code snippets, clarification, or paste the generated code into a new notebook cell. This is an opportunity to explore the capabilities and assistance Copilot offers for data science and engineering tasks.
+
 > Analyze my lakehouse table named green201501 and provide insights about the data.
+> 
 > Can you calculate the average trip distance and fare amount for each payment type?
 
-![Step](../media/2/1.jpg)
-![Step](../media/2/2.jpg)
-![Step](../media/2/3.jpg)
-![Step](../media/2/4.jpg)
 ![Step](../media/2/5.jpg)
+
+
+This quick demonstration aims to highlight the ease of accessing Copilot for insightful data analysis.
 
 
 # Task 2.2 Different ways to get data from the lakehouse
 
-To execute the cell code, use the shortcut CTRL + Enter on Windows, or ⌘ + Enter on MacOS. Alternatively, you can click the 'Run' icon (▶️) located on the left side of the code cell.
+This task focuses on various methods for extracting data from the lakehouse into your notebook for analysis. Below are step-by-step instructions to perform this in your notebook.
 
-`df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")` - This line of code uses the `spark.sql()` function to run an SQL query on a table called `green202301` located in the lakehouse `bronzerawdata`. The query selects all columns `(*)` from the table and limits the result to the first 1000 rows with the `LIMIT 1000` clause. The result of the query is then stored in a PySpark DataFrame called `df`.
-`display(df)` - the `display()` function is used to visualize the contents of a DataFrame in a tabular format. In this case, it visualizes the contents of the df DataFrame created in the previous line.
+## 1. Code Execution Basics
+Remember, to execute code within a cell, use CTRL + Enter on Windows or ⌘ + Enter on MacOS. Alternatively, the 'Run' icon (▶️) next to the code cell can be used.
+
+## 2. Extracting Data Using PySpark
+Enter the following PySpark code in a new cell in your Fabric notebook. This script will retrieve data from a specified lakehouse table. Make sure to replace bronzerawdata and green202301 with your lakehouse and table names if they differ.
 
 ```pyspark
 df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")
 display(df)
 ```
-Alternatively, you can use the %%sql magic in a notebook to run SQL statements.
+
+Explanation of the Code:
+`df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")` - This line of code uses the `spark.sql()` function to run an SQL query on a table called `green202301` located in the lakehouse `bronzerawdata`. The query selects all columns `(*)` from the table and limits the result to the first 1000 rows with the `LIMIT 1000` clause. The result of the query is then stored in a PySpark DataFrame called `df`. `display(df)` - the `display()` function is used to visualize the contents of a DataFrame in a tabular format. In this case, it visualizes the contents of the df DataFrame created in the previous line.
+
+## 3. Using Multiple Programming Languages in Fabric Notebooks
+Fabric Notebooks support various programming languages, including PySpark, Scala, SQL, and R. To switch to SQL, for example, use the %%sql magic command at the beginning of a notebook cell.
+
+![Step](../media/2/6.jpg)
 
 ```
 %%sql
 SELECT * FROM bronzerawdata.green202301 LIMIT 1000
 ```
 
-The code `df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)` is used to display the first five rows of a DataFrame called df, and only the columns named: "vendorID", "tripDistance", "fareAmount", "tipAmount". This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
+Now, let's execute a specific data selection command. This command filters specific columns from the DataFrame and displays the first five rows:
 
 ```df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)```
 
-When working with data, one of the initial tasks is to read it into the environment for analysis. Once the data is loaded, basic analysis such as filtering, sorting, and aggregating can be performed. However, as the scale and complexity of the data increase, there is a need for more advanced data engineering scenarios such as data cleansing, transformation, and aggregation. 
+The code `df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)` is used to display the first five rows of a DataFrame called df, and only the columns named: "vendorID", "tripDistance", "fareAmount", "tipAmount". This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
+
+
+# 4. Understanding Data Workflows
+When working with large datasets, starting with data retrieval sets the foundation for subsequent data analysis tasks, which may include filtering, sorting, and aggregating data. As you delve deeper, you may encounter more complex data engineering tasks such as cleansing, transformation, and aggregation, essential for advanced data analysis and insights extraction.
+
 
 
 ## Task 2.3 - Side Loading (local upload) and Load to Delta for CSV file
@@ -54,7 +96,6 @@ When working with data, one of the initial tasks is to read it into the environm
 6. Upload the file
 7. Use "Load to Table" feature
 
-![Step](../media/2/6.jpg)
 ![Step](../media/2/7.jpg)
 ![Step](../media/2/8.jpg)
 ![Step](../media/2/9.jpg)
