@@ -38,11 +38,4 @@ DirectLake mode now eliminates this import requirement by loading the data files
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md) or continue with [Advanced steps below](#advanced-steps).
-
-
-# Advanced steps
-
-
-> [!IMPORTANT]
-> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md).
+> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md) or continue with [Advanced steps](./../extra/extra.md).

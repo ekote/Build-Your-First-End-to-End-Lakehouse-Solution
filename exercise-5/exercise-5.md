@@ -34,20 +34,4 @@
 
 
 > [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#agenda) or continue with [Advanced steps below](#advanced-steps).
-
-# Advanced steps
-
-# Task 5.5 managed private endpoints for Fabric
-* [ ] Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
-
-
-# Task 5.6 Experimental Runtime 1.3 (Spark 3.5 and Delta 3.0 OSS)
-* [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3
-
-
-# Task 5.7 VSCODE
-TODO VIDEO
-
-> [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#clean-up).
+> Once completed, go to [Agenda](./../README.md#agenda) or continue with [Advanced steps](./../extra/extra.md).

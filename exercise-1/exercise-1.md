@@ -126,25 +126,4 @@ Connection settings:
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md) or continue with [Advanced steps below](#advanced-steps).
-
-
-
-
-# Advanced steps
-
-# Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
-
-# Task 1.3 Monitor the pipeline run and verify the output files in the data lake.
-
-# Task 1.4 Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
-
-# Task 1.5 Use the data preview and debug features to inspect the data at each step of the transformation.
-Write the transformed data to a Delta table in the Lakehouse.
-
-# Task 1.6 Run the dataflow and monitor the Spark job execution details. 
-
-
-
-> [!IMPORTANT]
-> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md).
+> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md) or continue with [Advanced steps](./../extra/extra.md).
