@@ -81,7 +81,7 @@ Now, let's execute a specific data selection command. This command filters speci
 
 ```df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)```
 
-The code `df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)` is used to display the first five rows of a DataFrame called df, and only the columns named: "vendorID", "tripDistance", "fareAmount", "tipAmount". This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
+The code `df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)` is used to display the first five rows of a DataFrame called df, and only the columns named: `vendorID`, `tripDistance`, `fareAmount`, `tipAmount`. This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
 
 
 ## 4. Understanding Data Workflows
@@ -227,7 +227,7 @@ Provide a name for each 'ForEach' element.
 ![Step](../media/2/31.jpg)
 
 ## 5. **Pipeline Variables**
-In the pipeline settings tab, navigate to 'Variables'. Here, create a new variable named "table_name", set its type to "Array", and assign the default value `["green201501", "green202301"]`.
+In the pipeline settings tab, navigate to 'Variables'. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`.
 ![Step](../media/2/32.jpg)
 
 ## 6. **ForEach Settings**
@@ -248,7 +248,7 @@ Choose your workspace.
 
 ## 10. **Select Notebook and Base Parameters**
 Opt for the 'notebook-2' that you uploaded previously.
-Add a new parameter named "table_name", with type 'String' and value "@items()".
+Add a new parameter named `table_name`, with type 'String' and value `@items()`.
 
 ![Step](../media/2/37.jpg)
 
@@ -297,7 +297,7 @@ Review the screenshots provided to compare and confirm the setup in your Lakehou
 
 # Task 2.10 Create Gold Lakehouse (Requirement for Exercise 4)
 
-The final task before delving into data science work (Exercise 4) within the notebook is to create a new Gold Lakehouse named "goldcurated".
+The final task before delving into data science work (Exercise 4) within the notebook is to create a new Gold Lakehouse named `goldcurated`.
 
 Please follow these steps:
 ## 1. From the view of all artifacts you have created inside your workspace, click on the 'New' button.
