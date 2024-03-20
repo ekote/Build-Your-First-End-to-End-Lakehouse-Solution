@@ -30,6 +30,12 @@ Go to https://fabric.microsoft.com/
 
 Create a Workspace (named as the login you got to fabric)
 
+![Login](../media/start/11.jpg)
+![Login](../media/start/12.jpg)
+![Login](../media/start/13.jpg)
+![Login](../media/start/14.jpg)
+![Login](../media/start/15.jpg)
+
 
 Review [Naming conventions](./../README.md#naming-conventions).
 
