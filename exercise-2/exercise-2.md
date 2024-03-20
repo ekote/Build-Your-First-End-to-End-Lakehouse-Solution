@@ -93,12 +93,17 @@ Download notebook from the URL:
 
 # Task 2.7 - Follow the Notebook
 
-
-# Task 2.6 - Automation 
-
+Just read and follow all the exercises from the notebook.
 
 
-# Task 2.8 - Confirm end result
+# Task 2.8 - Automation 
+
+
+
+# Task 2.9 - Confirm end result
+
+
+# Task 2.10 - Recharge your batteries for the next exercise!
 
 
 > [!IMPORTANT]
