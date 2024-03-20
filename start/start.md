@@ -13,7 +13,10 @@ Go to https://fabric.microsoft.com/
 
 ![Login](../media/start/2.jpg)
 
-![Login](../media/start/3.jpg)
+[//]: # (![Login]&#40;../media/start/3.jpg&#41;)
+![Login](../media/start/9.jpg)
+
+![Login](../media/start/10.jpg)
 
 ![Login](../media/start/4.jpg)
 
