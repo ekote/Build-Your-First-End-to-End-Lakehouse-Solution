@@ -138,5 +138,5 @@ Just read and follow all the exercises from the notebook.
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md) or continue with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
 

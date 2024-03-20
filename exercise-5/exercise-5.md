@@ -34,4 +34,4 @@
 
 
 > [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#agenda) or continue with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Agenda](./../README.md#agenda). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).

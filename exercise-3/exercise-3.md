@@ -109,4 +109,4 @@ Once created, the workspace identity details and a list of authorized users will
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md) or continue with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
