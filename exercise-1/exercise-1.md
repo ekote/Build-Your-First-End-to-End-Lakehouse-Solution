@@ -36,7 +36,7 @@ Ensure you are in the Data Factory section. Begin exploring data integration at 
 
 
 ## 3. **Create and Name Your Data Pipeline**
-Name your data pipeline, recommended to be "LoadRawTaxiData". Select 'Pipeline Activity' and then 'Copy Data'.
+Name your data pipeline, recommended to be `LoadRawTaxiData`. Select 'Pipeline Activity' and then 'Copy Data'.
 
 ![Step](../media/1/3.jpg)
 
@@ -111,7 +111,7 @@ Name the table according to the naming conventions, click 'Create', then return 
 ![Step](../media/1/18.jpg)
 
 ## 19. **Detail Copy Activity**
-Name the copy activity to reflect its purpose, e.g., "Load NYC Taxi Green 2015 Jan". Review and, if necessary, adjust the timeout, retry policies, and explore advanced options.
+Name the copy activity to reflect its purpose, e.g., `Load NYC Taxi Green 2015 Jan`. Review and, if necessary, adjust the timeout, retry policies, and explore advanced options.
 ![Step](../media/1/19.jpg)
 
 ## 20. **Validate Pipeline**
@@ -237,7 +237,7 @@ Provide the necessary URL by copying and pasting it from the task description. T
 
 ![Step](../media/1/36.jpg)
 
-**If you encounter the error message "The specified connection name already exists. Try choosing a different name", please make sure that the name you choose for the connection is unique.**
+**If you encounter the error message `The specified connection name already exists. Try choosing a different name`, please make sure that the name you choose for the connection is unique.**
 
 ## 4. Verify ADLS Gen2 Access
 Ensure correct configuration by checking the folder named '2023'. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click 'Next'.
