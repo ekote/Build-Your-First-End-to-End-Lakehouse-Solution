@@ -66,4 +66,3 @@ In this intermediate layer, data is cleansed, standardized, and enriched to reso
 Lakehouse Name: `goldcurrated`
 
 The highest level of the lakehouse, where data is further transformed, modeled, and summarized to support advanced analytics and business intelligence. This layer focuses on deriving actionable insights and supporting high-level decision-making. It could involve aggregating data into meaningful metrics, developing KPIs for urban transportation efficiency, or building machine learning models to predict future trends based on historical patterns.
-

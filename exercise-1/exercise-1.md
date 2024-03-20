@@ -8,6 +8,7 @@
 # Context
 %TODO STORY
 
+
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
 ## Required to complete the exercise
