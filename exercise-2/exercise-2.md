@@ -174,62 +174,127 @@ Verify that your Lakehouse, 'bronzerawdata', is now correctly linked and visible
 
 
 
-
-
-
-
 # Task 2.6 Create a silver lakehouse
+The last task before fully immersing ourselves in data engineering work within the notebook is to create and attach a new Silver Lakehouse. Please follow these steps:
+
+## 1. Click on the pin icon next to the Default Lakehouse, 'bronzerawdata'. Then select 'Add Lakehouse'.
 ![Step](../media/2/24.jpg)
+
+## 2. Choose 'New Lakehouse' and click 'Add'.
 ![Step](../media/2/25.jpg)
+
+## 3. Follow the naming convention and enter a name for the Lakehouse. The suggested name is 'silvercleansed'.
 ![Step](../media/2/26.jpg)
+
+## 4. Confirm that your notebook is now linked to two Lakehouses: the default one (bronze) and the newly added one (silver). Once this is verified, we can begin our data engineering work.
 ![Step](../media/2/27.jpg)
 
 
 # Task 2.7 - Follow the Notebook
 
-Just read and follow all the exercises from the notebook.
+In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. You will complete the notebook task once you see the last sale for the notebook displayed on the screen. 
+
+Good luck.
 
 
 # Task 2.8 - Automation 
 
-## Before you start, do a quality check that:
-1. Lakehouse `bronzerawdata` has two tables: green201501 and green202301.
-2. Lakehouse `bronzerawdata` has one folder in Files section (created by the shortcut), named 2023. 
-3. Lakehouse `bronzerawdata` has one file in Files section, NYC-Taxi-Discounts-Per-Day.csv
-4. Lakehouse `silvercleansed` has three tables: avg_fare_per_month, green201501_cleansed, green201501_discounts.
+Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.
 
+## Pre-Automation Quality Check
+Ensure the following before starting the automation process:
+* Lakehouse bronzerawdata contains two tables: green201501 and green201301.
+* Lakehouse bronzerawdata includes one folder in the Files section, named 2023, created by a shortcut.
+* Lakehouse bronzerawdata has one file in the Files section: NYC-Taxi-Discounts-Per-Day.csv.
+* Lakehouse silvercleansed consists of three tables: avg_fare_per_month, green201501_cleansed, and green201501_discounts.
 
+Once all is set, proceed with the automation.
+
+## 1. **Starting Point**
+Navigate to 'Home' as depicted in the instructions.
 ![Step](../media/2/28.jpg)
+
+## 2. **Data Pipeline Creation**
+Click on 'Data Pipeline' and name the new pipeline `Bronze2Silver`.
 ![Step](../media/2/29.jpg)
+
+## 3. **Pipeline Activity**
+Select the 'ForEach' activity as shown on the screen.
 ![Step](../media/2/30.jpg)
+
+## 4. **General Settings for Each Activity**
+Provide a name for each 'ForEach' element.
 ![Step](../media/2/31.jpg)
+
+## 5. **Pipeline Variables**
+In the pipeline settings tab, navigate to 'Variables'. Here, create a new variable named "table_name", set its type to "Array", and assign the default value `["green201501", "green202301"]`.
 ![Step](../media/2/32.jpg)
+
+## 6. **ForEach Settings**
+In the 'ForEach' settings, select 'Sequential' and specify '10' under 'Batch Count'. To add dynamic content, open the sidebar and select the 'table_name' variable. Confirm by clicking 'OK'.
 ![Step](../media/2/33.jpg)
+
+## 7. **Adding Notebook Activity**
+Under 'Activities', choose 'Notebook'.
 ![Step](../media/2/34.jpg)
+
+## 8. **Notebook Settings**
+Access the 'Settings' tab for the notebook as illustrated.
 ![Step](../media/2/35.jpg)
+
+## 9. **Select Workspace**
+Choose your workspace.
 ![Step](../media/2/36.jpg)
+
+## 10. **Select Notebook and Base Parameters**
+Opt for the 'notebook-2' that you uploaded previously.
+Add a new parameter named "table_name", with type 'String' and value "@items()".
+
 ![Step](../media/2/37.jpg)
+
+## 11. **Validation**
+After configuring, click 'Validate' to ensure there are no errors. Click on 'Run'.
 ![Step](../media/2/38.jpg)
+
+## 12. **Execution**
+Save the settings and initiate the run by clicking the 'Run' button.
 ![Step](../media/2/39.jpg)
+
+## 13. **Observation and Optimization**
+Note that the execution of the two notebooks occurs sequentially, typically taking two minutes each. However, as these notebooks do not depend on each other, consider modifying the pipeline to run the notebooks in parallel for efficiency.
+
 ![Step](../media/2/40.jpg)
 
-["green201501", "green202301"]
+
+Congratulations on completing this significant milestone in data engineering automation! Your skills in automating data processes have now been markedly enhanced.
 
 
+# Task 2.9 - Confirm End Results
 
-# Task 2.9 - Confirm end result
-1. Lakehouse `bronzerawdata` has 
-   1. two tables: green201501 and green202301. 
-   2. one folder in Files section (created by the shortcut), named 2023. 
-   3. one file in Files section, NYC-Taxi-Discounts-Per-Day.csv
-4. Lakehouse `silvercleansed` has:
-   1. six tables: avg_fare_per_month_2015_01, green201501_cleansed, green201501_discounts and avg_fare_per_month_2023_01, green202301_cleansed, green202301_discounts.
+Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes in your Lakehouse environments:
+
+## Lakehouse `bronzerawdata` Confirmation:
+1. **Tables**: Ensure there are two tables present: `green201501` and `green202301`.
+2. **Files Section**: Confirm there is one folder named `2023`, created via the shortcut.
+3. **File Existence**: Verify there is one file in the Files section: `NYC-Taxi-Discounts-Per-Day.csv`.
 
 ![Step](../media/2/51.jpg)
+
+
+## Lakehouse `silvercleansed` Confirmation:
+1. **Tables**: Check that there are six tables:
+   - `avg_fare_per_month_2015_01`
+   - `green201501_cleansed`
+   - `green201501_discounts`
+   - `avg_fare_per_month_2023_01`
+   - `green202301_cleansed`
+   - `green202301_discounts`.
+
 ![Step](../media/2/52.jpg)
 
-# Task 2.10 - Recharge your batteries for the next exercise!
+Review the screenshots provided to compare and confirm the setup in your Lakehouses matches the expected structure.
 
+If all elements align with the requirements above, you're ready to move on to the next exercise, whether it's during a break, lunch, or an advanced step.
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
