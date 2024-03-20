@@ -48,6 +48,10 @@ This integrated lakehouse solution will empower your company to:
 
 # Naming conventions
 
+## Workspace name
+
+Assign a name: `urban-innovation-deNNN`, where NNN represents the number assigned to you. For example, `urban-innovation-de001` (Estera’s workspace).
+
 ## Bronze Layer (Raw Data Management)
 Lakehouse Name: `bronzerawdata`
 
