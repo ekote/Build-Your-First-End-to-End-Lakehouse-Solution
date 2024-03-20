@@ -1,16 +1,4 @@
-# Extra resources
-
-* https://microsoft.github.io/fabricnotes/
-* https://ideas.fabric.microsoft.com/
-* ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
-
-
-
 # Advanced Tasks for Exercise 1
-
 
 ##  Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
 
@@ -30,12 +18,9 @@ Write the transformed data to a Delta table in the Lakehouse.
 
 
 
-## PIVOT & Experimental Public Preview of Runtime 1.3
 
 
 
-## Task 2.5 Spark vs Pandas
-Your new team members wrote a lot of Pandas code and run it on big cluster. Your task is to explain the best practices to process big data.
 
 
 # Task 2.6 Transform the data using Spark SQL and PySpark APIs
@@ -122,8 +107,6 @@ Watch Fabric Espresso episode as Abhishek and Estera discuss the Medallion Archi
 ## Rest API
 
 
-## Data Wrangler
-TODO VIDEO
 
 
 ## MS SPARK UTILITIES - run another notebook reference run
@@ -149,15 +132,10 @@ TODO VIDEO
 > Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md).
 
 
-
 # Advanced Tasks for Exercise 5
 
+
 # Task 5.5 managed private endpoints for Fabric
-* [ ] Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
-
-
-# Task 5.6 Experimental Runtime 1.3 (Spark 3.5 and Delta 3.0 OSS)
-* [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3
 
 
 # Task 5.7 VSCODE
