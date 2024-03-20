@@ -278,7 +278,8 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
 2. **Files Section**: Confirm there is one folder named `2023`, created via the shortcut.
 3. **File Existence**: Verify there is one file in the Files section: `NYC-Taxi-Discounts-Per-Day.csv`.
 
-![Step](../media/2/51.jpg)
+![Step](../media/2/52.jpg)
+
 
 
 ## Lakehouse `silvercleansed` Confirmation:
@@ -290,7 +291,7 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
    - `green202301_cleansed`
    - `green202301_discounts`.
 
-![Step](../media/2/52.jpg)
+![Step](../media/2/51.jpg)
 
 Review the screenshots provided to compare and confirm the setup in your Lakehouses matches the expected structure.
 
