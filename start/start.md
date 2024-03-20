@@ -28,7 +28,7 @@ You have successfully logged in to Microsoft Fabric!
 ![Login](../media/start/4.jpg)
 
 7. Explore Workloads
-Click the Microsoft Fabric icon at the bottom left corner to explore available workloads.
+Click the Microsoft Fabric icon in the bottom left corner to explore available workloads.
 ![Login](../media/start/5.jpg)
 
 8. Provide Feedback
