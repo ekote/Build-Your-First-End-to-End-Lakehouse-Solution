@@ -42,7 +42,7 @@ This integrated lakehouse solution will empower your company to:
 > 02:50 pm - 03:30 pm - [Exercise 5](./exercise-5/exercise-5.md)
 > 
 > 03:30 pm - 04:00 pm - Recap
-> 
+
 
 
 

@@ -105,6 +105,21 @@ Easily ingest data into the lakehouse through a variety of methods
 
 
 
+## Create shortcut to External ADLS Gen2
+
+To create a shortcut, open Lakehouse Explorer and select where to place the shortcut under Tables or Files. Creating a shortcut to Delta formatted table under Tables in Lakehouse Explorer will automatically register it as a table, enabling data access through Spark, SQL endpoint, and default dataset. Spark can access shortcuts in Files for data science projects or for transformation into structured data.
+
+**Objective: In this step, we aim to merge two datasets: the `NYC_Taxi` delta table that currently resides in our lakehouse, and an external dataset located in ADLS Gen 2 that contains information about discounts offered on specific days. The final table will reflect all records from the `NYC_Taxi` dataset with an additional column from the discount dataset, allowing us to see the total discount value per vendor for a given day. This will enable us to gain insights into how vendors offer discounts and how it impacts their revenue.**
+
+
+Connection settings:
+- URL: 
+- Connection: Create new connection
+- Connection name: NewConnectionToADLS
+- Authentication kind: `Shared Access Signature (SAS)`
+- SAS token: 
+
+**If you encounter the error message "The specified connection name already exists. Try choosing a different name", please make sure that the name you choose for the connection is unique.**
 
 
 
