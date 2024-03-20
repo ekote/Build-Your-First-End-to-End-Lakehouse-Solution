@@ -168,13 +168,36 @@ Imagine your company has been storing structured data from NYC Taxi's transactio
 
 Your company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources. Therefore, the company decides to **leverage Microsoft Fabric's capabilities to analyze and manage these diverse datasets more efficiently**.
 
+
+## 1. **Lakehouse Modes Exploration**
+Note that the Lakehouse has two modes: 'Lakehouse' and 'SQL Analytics'. Familiarize yourself with both.
 ![Step](../media/1/27.jpg)
+
+## 2. **Explore Lakehouse Properties**
+In the 'Tables' section of your Lakehouse, click the three dots next to your table name and select 'Properties' from the dropdown menu.
 ![Step](../media/1/28.jpg)
+
+## 3. **Data Format and Management**
+Observe that the table's data format is listed as 'Managed', indicating that the table is a managed entity. Also, note that this table has been optimized using Z-order optimization; further details can be found in the extra section.
 ![Step](../media/1/29.jpg)
+
+## 4. **Review Table Files**
+Return to the Lakehouse overview, expand the table options, and select 'Files' to examine the data. Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
 ![Step](../media/1/30.jpg)
+
+## 5. **Final Lakehouse Overview**
+Navigate back to the main Lakehouse view, expand the table options for the final time, and select 'Maintenance'.
 ![Step](../media/1/31.jpg)
+
+## 6. **Maintenance Options and Optimization**
+Here, you will find options for optimizing file size and vacuuming, which involves removing files that are no longer needed. Both processes can be automated. This section also details how Z-order optimization is applied to your data; hover over the information icon for more details.
 ![Step](../media/1/32.jpg)
+
+## 7. **Completion of Task**
+With the exploration of the Lakehouse's features and maintenance options, this task is now completed.
 ![Step](../media/1/33.jpg)
+
+
 
 # Task 1.3 Create shortcut
 
