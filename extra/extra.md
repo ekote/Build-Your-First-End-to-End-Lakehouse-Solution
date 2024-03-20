@@ -3,6 +3,10 @@
 * https://microsoft.github.io/fabricnotes/
 * https://ideas.fabric.microsoft.com/
 * ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
+
 
 
 # Advanced Tasks for Exercise 1
