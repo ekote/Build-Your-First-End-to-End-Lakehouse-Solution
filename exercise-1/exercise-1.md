@@ -14,6 +14,8 @@ Tasks Overview:
 * Data Ingestion: Initiate by loading historical data assets from the year 2015, a period when Azure Blob Storage was the zenith of data storage solutions. This step will simulate the transition of legacy data into a modern data ecosystem.
 * Data Integration and Analysis: Shift focus to more recent data, specifically from January 2023. During this time, Azure Data Lake Storage Gen 2 (ADLS Gen2) became the benchmark for data storage in Azure. Instead of traditional data copying methods, you will leverage the innovative 'Shortcuts' feature to streamline the integration process within our Lakehouse architecture.
 
+![Data overview](../media/1/data-integration.png)
+
 Timebox: You have one hour to complete these essential tasks. Completing these foundational steps is crucial as they form the groundwork for subsequent exercises in this workshop.
 
 For those who complete the primary tasks ahead of time, we've prepared additional challenges. These are designed to deepen your understanding and skills in data engineering. You'll find these at the bottom of the page.
