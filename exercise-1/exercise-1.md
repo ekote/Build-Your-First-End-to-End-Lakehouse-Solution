@@ -170,7 +170,13 @@ Your company's new directive is to improve its decision-making capabilities by a
 
 
 ## 1. **Lakehouse Modes Exploration**
-Note that the Lakehouse has two modes: 'Lakehouse' and 'SQL Analytics'. Familiarize yourself with both.
+You can work with the data in the lakehouse in two modes:
+
+1. Lake mode enables you to add and interact with tables, files, and folders in the Lakehouse.
+2. **SQL Endpoint enables you to use SQL to query the tables in the lakehouse and manage its relational data model. It allows you to run Transact-SQL statements to query, filter, aggregate, and otherwise explore data in lakehouse tables.**
+
+Fabric's data warehouse experience allows you to transition from the lake view of the Lakehouse (which supports data engineering and Apache Spark) to the SQL experiences that a traditional data warehouse would provide.
+
 ![Step](../media/1/27.jpg)
 
 ## 2. **Explore Lakehouse Properties**
