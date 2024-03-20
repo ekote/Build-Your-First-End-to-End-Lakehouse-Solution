@@ -98,24 +98,54 @@ Just read and follow all the exercises from the notebook.
 
 # Task 2.8 - Automation 
 
+## Before you start, do a quality check that:
+1. Lakehouse `bronzerawdata` has two tables: green201501 and green202301.
+2. Lakehouse `bronzerawdata` has one folder in Files section (created by the shortcut), named 2023. 
+3. Lakehouse `bronzerawdata` has one file in Files section, NYC-Taxi-Discounts-Per-Day.csv
+4. Lakehouse `silvercleansed` has three tables: avg_fare_per_month, green201501_cleansed, green201501_discounts.
+
+
+![Step](../media/2/28.jpg)
+![Step](../media/2/29.jpg)
+![Step](../media/2/30.jpg)
+![Step](../media/2/31.jpg)
+![Step](../media/2/32.jpg)
+![Step](../media/2/33.jpg)
+![Step](../media/2/34.jpg)
+![Step](../media/2/35.jpg)
+![Step](../media/2/36.jpg)
+![Step](../media/2/37.jpg)
+![Step](../media/2/38.jpg)
+![Step](../media/2/39.jpg)
+![Step](../media/2/40.jpg)
+
+["green201501", "green202301"]
+
 
 
 # Task 2.9 - Confirm end result
+1. Lakehouse `bronzerawdata` has 
+   1. two tables: green201501 and green202301. 
+   2. one folder in Files section (created by the shortcut), named 2023. 
+   3. one file in Files section, NYC-Taxi-Discounts-Per-Day.csv
+4. Lakehouse `silvercleansed` has:
+   1. six tables: avg_fare_per_month_2015_01, green201501_cleansed, green201501_discounts and avg_fare_per_month_2023_01, green202301_cleansed, green202301_discounts.
 
+![Step](../media/2/51.jpg)
+![Step](../media/2/52.jpg)
 
 # Task 2.10 - Recharge your batteries for the next exercise!
+
+
 
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md) or continue with [Advanced steps below](#advanced-steps).
 
-
-
 # Advanced steps
 
+
 # PIVOT & Experimental Public Preview of Runtime 1.3
-
-
 
 
 
@@ -152,8 +182,6 @@ Save, schedule and run the notebook as a job
 
 
 ![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
-
-# Task 2.14 Pivot
 
 
 # Task 2.15 Run OPTIMIZE cmd

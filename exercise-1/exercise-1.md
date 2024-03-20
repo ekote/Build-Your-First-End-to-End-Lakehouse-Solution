@@ -85,6 +85,7 @@ Easily ingest data into the lakehouse through a variety of methods
 ![Step](../media/1/27.jpg)
 ![Step](../media/1/28.jpg)
 ![Step](../media/1/29.jpg)
+![Step](../media/1/30.jpg)
 ![Step](../media/1/31.jpg)
 ![Step](../media/1/32.jpg)
 ![Step](../media/1/33.jpg)
