@@ -22,7 +22,9 @@ This integrated lakehouse solution will empower your company to:
 
 > [!IMPORTANT]
 > 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
+> 
 > 9:30 am - 10:30 am - [Exercise 1](./exercise-1/exercise-1.md) 
+> 
 > 10:30 am - 10:45 am - Break 15 minutes
 > 10:45 am - 12:00 pm - [Exercise 2](./exercise-2/exercise-2.md)
 > 12:00 pm - 01:00 pm - Lunch 60 minutes
