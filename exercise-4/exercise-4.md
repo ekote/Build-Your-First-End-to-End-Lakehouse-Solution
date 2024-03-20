@@ -26,11 +26,14 @@ In traditional DirectQuery mode, the Power BI engine queries the data directly f
 DirectLake mode now eliminates this import requirement by loading the data files directly into memory. Because there's no explicit import process, it's possible to pick up any changes at the source as they occur, thus combining the advantages of DirectQuery and import mode while avoiding their disadvantages. DirectLake mode is therefore the ideal choice for analyzing very large datasets and datasets with frequent updates at the source.
 
 # Task 4.1 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
+## Objective<p>
+In the context of this exercise, you will take the role of a data scientist who has been given the task to explore, clean and transform a dataset containing taxicab trip data, and build a machine learning model to predict trip duration at scale on a large dataset.
+We will use the The New York taxi greencab dataset, which is a large-scale dataset containing taxi trips in the city from 2009 to 2018. The dataset includes various features such as pick-up and drop-off dates, times, locations, fares, payment types, and passenger counts.The dataset can be used for various purposes such as analyzing traffic patterns, demand trends, pricing strategies, and driver behavior.
 
 **Import exercise notebook **
-> You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly. For detailed instructions on importing a notebook, please refer to [Exercise 2:Importing Notebooks]([exercise-2.md](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/main/exercise-2/exercise-2.md#1-importing-the-notebook)
+> You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly. For detailed instructions on importing a notebook, please refer to [Exercise 2 - Importing Notebooks](../exercise-2/exercise-2.md#1-importing-the-notebook)
 
-For this task please download [Exercise 4 - Consume Data using Data Science](exercise-4/Exercise 4 - Consume Data using Data Science.ipynb) notebook
+For this task please download [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb) notebook to your machine and follow the import notebook steps. Once imported please open the notebook and follow the steps outlined to completed the task.
 
 # Task 4.2 Explore and visualize the taxi trip data and predicted trip duration from the machine learning model using a Power BI report and Direct Lake.
 
