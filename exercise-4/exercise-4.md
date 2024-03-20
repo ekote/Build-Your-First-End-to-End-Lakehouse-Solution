@@ -27,6 +27,11 @@ DirectLake mode now eliminates this import requirement by loading the data files
 
 # Task 4.1 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
 
+**Import exercise notebook **
+> You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly. For detailed instructions on importing a notebook, please refer to [Exercise 2:Importing Notebooks]([exercise-2.md](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/main/exercise-2/exercise-2.md#1-importing-the-notebook)
+
+For this task please download [Exercise 4 - Consume Data using Data Science](exercise-4/Exercise 4 - Consume Data using Data Science.ipynb) notebook
+
 # Task 4.2 Explore and visualize the taxi trip data and predicted trip duration from the machine learning model using a Power BI report and Direct Lake.
 
 In this exercise, we will use Microsoft Fabric Direct Lake feature that enables direct connectivity from Semantic models to Lakehouse tables in direct query mode with automatic data refresh. In the following steps you will use the prediction data produced in the previous task  *"4.3 Use the Data Science experience to train a machine learning model"*
