@@ -198,49 +198,84 @@ With the exploration of the Lakehouse's features and maintenance options, this t
 ![Step](../media/1/33.jpg)
 
 
-
 # Task 1.3 Create shortcut
+This task focuses on accessing and leveraging tax data from the year 2023, enhancing our Lakehouse with critical financial insights without the overhead of traditional data movement.
 
-## Required to complete the exercise
+Your mission is to access the 2023 tax data that has been accumulating since 1982, making it readily available for analysis and decision-making within our Lakehouse environment. The key here is efficiency and innovation, as we aim to streamline our data operations.
+
+Task Details:
+* In this task, you will utilize the 'Shortcuts' feature, a powerful tool that enables direct access to data without the necessity of copying it into the Lakehouse. This approach not only saves time but also reduces storage costs and maintains data integrity by eliminating unnecessary duplication.
+* By employing the 'Shortcuts' strategy, you will achieve 'Zero Data Movement'. This means you will directly point to the existing tax data from 2023, enabling real-time access and analysis without the overhead of traditional data transfer methods.
+
+Benefits of This Approach:
+* Efficiency: Access data in real-time without the delays associated with copying large datasets.
+* Cost-effectiveness: Reduce storage costs by avoiding duplicate data in our Lakehouse.
+* Data Integrity: Maintain a single source of truth by accessing data directly from its original location.
+
+Remember, our team is here to guide you through every step of this process. Do not hesitate to reach out if you encounter any challenges or have questions about the 'Shortcuts' feature and its implementation.
+
+
+## 1. Expand Table Options
+Expand on the options for the table section by clicking the three dots for the tables. Then, select the 'New Shortcut' option.
+![Step](../media/1/34.jpg)
+
+## 2. Shortcut Options
+There are multiple source options available for accessing data directly without copying. Currently, shortcuts support data from OneLake, Amazon S3, Azure Data Lake Storage Gen2, and Dataverse. Select 'Azure Data Lake Storage Gen2' as indicated on the screen and click 'Next'.
+![Step](../media/1/35.jpg)
+
+## 3. Configure New Shortcut
+Provide the necessary URL by copying and pasting it from the task description. Then, choose your connection, retaining the automatically generated name if possible. For authentication, select 'SAS token', paste the provided token, and then click 'Next' after filling in all details.
+
 * Blob Storage Account URL `https://transportation23kotcorp.dfs.core.windows.net/`
 * SAS Token (Read Only) `sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2024-08-31T05:45:27Z&st=2024-03-19T21:45:27Z&spr=https,http&sig=ifGqJa6706RCFaciJapwOL6vHoKzy9ltno3LznjQMkY%3D`
 
-
-
-![Step](../media/1/34.jpg)
-![Step](../media/1/35.jpg)
 ![Step](../media/1/36.jpg)
-![Step](../media/1/37.jpg)
-![Step](../media/1/38.jpg)
-![Step](../media/1/39.jpg)
-![Step](../media/1/40.jpg)
-![Step](../media/1/41.jpg)
-![Step](../media/1/42.jpg)
-![Step](../media/1/43.jpg)
-![Step](../media/1/44.jpg)
-![Step](../media/1/45.jpg)
-![Step](../media/1/46.jpg)
-![Step](../media/1/47.jpg)
-
-
-
-## Create shortcut to External ADLS Gen2
-
-To create a shortcut, open Lakehouse Explorer and select where to place the shortcut under Tables or Files. Creating a shortcut to Delta formatted table under Tables in Lakehouse Explorer will automatically register it as a table, enabling data access through Spark, SQL endpoint, and default dataset. Spark can access shortcuts in Files for data science projects or for transformation into structured data.
-
-**Objective: In this step, we aim to merge two datasets: the `NYC_Taxi` delta table that currently resides in our lakehouse, and an external dataset located in ADLS Gen 2 that contains information about discounts offered on specific days. The final table will reflect all records from the `NYC_Taxi` dataset with an additional column from the discount dataset, allowing us to see the total discount value per vendor for a given day. This will enable us to gain insights into how vendors offer discounts and how it impacts their revenue.**
-
-
-Connection settings:
-- URL: 
-- Connection: Create new connection
-- Connection name: NewConnectionToADLS
-- Authentication kind: `Shared Access Signature (SAS)`
-- SAS token: 
 
 **If you encounter the error message "The specified connection name already exists. Try choosing a different name", please make sure that the name you choose for the connection is unique.**
 
+## 4. Verify ADLS Gen2 Access
+Ensure correct configuration by checking the folder named '2023'. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click 'Next'.
+![Step](../media/1/37.jpg)
 
+## 5. Shortcut Configuration Success
+Successfully configured access to your data via shortcuts, without needing to copy it. The shortcut should now appear under the 'Files' section, indicating a link to a folder containing Parquet files.
+![Step](../media/1/38.jpg)
+
+## 6. Transform Parquet Data
+To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select 'Load Tables'.
+![Step](../media/1/39.jpg)
+
+## 7. Select New Table
+Choose the 'New Table' option as presented on the screen.
+![Step](../media/1/40.jpg)
+
+## 8. Name New Table
+Name the new table following the provided naming conventions, then click 'Load'.
+![Step](../media/1/41.jpg)
+
+## 9. Notification of Loading Process
+Acknowledge the notification indicating that your file is currently being loaded into the table.
+![Step](../media/1/42.jpg)
+
+## 10. Refresh Lakehouse
+After the loading process completes, refresh the Lakehouse by clicking the three dots next to the table and selecting 'Refresh'. A new table should now be visible.
+![Step](../media/1/43.jpg)
+
+## 11. Open in Notebook
+Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table. To attach the Lakehouse to the notebook, click on the arrow next to 'Lake House' and select your previously created Lakehouse, 'bronzerawdata'.
+![Step](../media/1/44.jpg)
+
+## 12. Verify Notebook Configuration
+Following the correct execution, you should observe two tables under the 'Tables' section and one folder under 'Files'. Confirm everything is correct, then run the cell containing the PySpark code by clicking the run icon.
+![Step](../media/1/45.jpg)
+
+## 13. Execute Query
+The query should execute within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
+![Step](../media/1/46.jpg)
+
+## 14. Confirm Default Lakehouse
+Ensure that the 'bronzerawdata' Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
+![Step](../media/1/47.jpg)
 
 
 > [!IMPORTANT]
