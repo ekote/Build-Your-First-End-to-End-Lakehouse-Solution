@@ -295,7 +295,26 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
 
 Review the screenshots provided to compare and confirm the setup in your Lakehouses matches the expected structure.
 
+# Task 2.10 Create Gold Lakehouse (Requirement for Exercise 4)
+
+The final task before delving into data science work (Exercise 4) within the notebook is to create a new Gold Lakehouse named "goldcurated".
+
+Please follow these steps:
+## 1. From the view of all artifacts you have created inside your workspace, click on the 'New' button.
+![Step](../media/2/60.jpg)
+
+## 2. Then select 'Lakehouse' from the extensive list.
+![Step](../media/2/61.jpg)
+
+## 3. Adhere to the naming convention and enter a name for the Lakehouse. The suggested name is 'goldcurated'.
+![Step](../media/2/62.jpg)
+
+## 4. Confirm that your Gold Lakehouse has been created.
+![Step](../media/2/63.jpg)
+
+
 If all elements align with the requirements above, you're ready to move on to the next exercise, whether it's during a break, lunch, or an advanced step.
+
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).

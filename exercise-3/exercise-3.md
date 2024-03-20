@@ -14,7 +14,6 @@
 3.	Sharing
 3.1.	Share lakehouse
 3.2.	share notebook
-4.	VSCode
 5.	[*] Enforce RLS thru the SQL endpoint
 6.	Create a workspace-managed identity
 7.	Create a project and link it to a DevOps repository
