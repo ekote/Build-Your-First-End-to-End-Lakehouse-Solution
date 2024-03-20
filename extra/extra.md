@@ -1,4 +1,23 @@
-# Advanced Tasks for Exercise 1
+> [!NOTE]
+> 
+> Back to [Agenda](./../README.md#agenda)
+
+# Exercise 1 - Extra Tasks
+
+# Task 5.3 Browse Azure resources with Get Data
+Source: https://blog.fabric.microsoft.com/en-us/blog/browse-azure-resources-with-get-data?ft=All
+
+With the new ‘browse Azure’ functionality in Get Data, you can easily browse all your Azure resources and automatically connect to them, without going through manually setting up a connection, saving you a lot of time.
+
+Using the regular path in Get Data to create a new connection, you always need to fill in your endpoint, URL or server and database name when connecting to Azure resources like Azure Blob, Azure Data Lake gen2 and Synapse. This is a bit of a tedious process and does not allow for easy data discovery.
+
+Supported data sources:
+* Azure Blob
+* Azure Data Lake gen 2
+* Synapse
+
+When cover you to try Functionality on your own. Why? Because it is The best way to access the data of our synapse from the factory. In this task, you do not need to do anything. I'd rather acknowledge that newest functionality. The question I would like to leave you with is:
+* For those who has the synapse workload - How we can plan, And execute efficient migration to fabric? You may ask me why do I need it? That's why I included the video with Guy, Product manager accountable for hardware, spark compute, And he's explaining that we just movement to fabric, Your workload will run faster. Why? Because synapse is mostly based on The hardware SKU Which is older comparing to fabric skU. And with the new SKU There are improvements for CPR and memory management. This elements have the biggest impact to run your spark computation Faster. 
 
 ##  Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
 
@@ -14,39 +33,35 @@ Write the transformed data to a Delta table in the Lakehouse.
 > [!IMPORTANT]
 > Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md).
 
-# Advanced Tasks for Exercise 2
 
 
 
+# Exercise 2 - Extra Tasks
 
-
-
-
-
-# Task 2.6 Transform the data using Spark SQL and PySpark APIs
+## Task 2.6 Transform the data using Spark SQL and PySpark APIs
 Your task is to factory the code produced by your colleague. 
 
 
-# Task 2.7 Schedule notebook
+## Task 2.7 Schedule notebook
 Your task is to schedule notebook to run every hour.
 
 Save, schedule and run the notebook as a job 
 
-# Task 2.8 Workspace-level settings
+## Task 2.8 Workspace-level settings
 
-# Task 2.9 Compute Settings
-
-
-# Task 2.10 Environment
+## Task 2.9 Compute Settings
 
 
-# Task 2.11 GIT
+## Task 2.10 Environment
 
 
-# Task 2.12 Saved with V-Order?
+## Task 2.11 GIT
 
 
-# Task 2.13 DW vs Lakehouse?
+## Task 2.12 Saved with V-Order?
+
+
+## Task 2.13 DW vs Lakehouse?
 ![DW or Lakehouse](https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png)
 
 
@@ -54,9 +69,9 @@ Save, schedule and run the notebook as a job
 ![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
 
 
-# Task 2.15 Run OPTIMIZE cmd
+## Task 2.15 Run OPTIMIZE cmd
 
-# Task 2.16 CODE REVIEW in shared notebook
+## Task 2.16 CODE REVIEW in shared notebook
 
 
 ##  Medallion architecture
@@ -120,23 +135,39 @@ TODO VIDEO
 
 
 
-# Advanced Tasks for Exercise 3
-
+# Exercise 3 - Extra Tasks
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md).
 
-# Advanced Tasks for Exercise 4
 
+# Exercise 4 - Extra Tasks
 > [!IMPORTANT]
 > Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md).
 
 
-# Advanced Tasks for Exercise 5
+# Exercise 5 - Extra Tasks
+
+## Task 5.5 managed private endpoints for Fabric
 
 
-# Task 5.5 managed private endpoints for Fabric
-
-
-# Task 5.7 VSCODE
+## Task 5.7 VSCODE
 TODO VIDEO
+
+
+# Core
+
+## SaaS vs PaaS
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
+
+
+## Fabric Licensing
+* ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
+
+## Fabric UI
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
+
+## Fabric Capacities
+* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
+
+## What is Apache Spark
