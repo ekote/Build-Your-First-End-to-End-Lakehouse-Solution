@@ -40,14 +40,18 @@ Post-installation, you will be presented with a note on data privacy and securit
 ## 5. Interacting with Copilot
 Now, engage with Copilot by exploring various prompts related to your data. Feel free to ask for code snippets, clarification, or paste the generated code into a new notebook cell. This is an opportunity to explore the capabilities and assistance Copilot offers for data science and engineering tasks.
 
-> Analyze my lakehouse table named green201501 and provide insights about the data.
-> 
-> Can you calculate the average trip distance and fare amount for each payment type?
+> [!TIP]
+> Please feel free to ask Copilot any questions to deepen your understanding of the dataset and enhance our workshop experience.
+> Just an example: `Analyze my lakehouse table named green201501 and provide insights about the data`. 
 
 ![Step](../media/2/5.jpg)
 
-
 This quick demonstration aims to highlight the ease of accessing Copilot for insightful data analysis.
+
+> [!IMPORTANT]  
+> Copilot is here to support and guide, to "co-pilot", not to control and "pilot". 
+> We'll move forward with our structured activities and that documentation, allowing them to serve as our copilot instead of using Copilot directly.
+
 
 ---
 
