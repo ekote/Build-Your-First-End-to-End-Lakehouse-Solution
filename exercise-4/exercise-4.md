@@ -6,6 +6,7 @@
 > Back to [Agenda](./../README.md#agenda) | [Exercise 3](./../exercise-3/exercise-3.md)
 
 # Context
+
 The data in your lakehouse tables is included in a dataset that defines a relational model for your data. You can edit this dataset, defining custom measures, hierarchies, aggregations, and other elements of a data model. You can then use the dataset as the source for a Power BI report that enables you to visualize and analyze the data.
 
 You can leverage the **DirectLake** feature to create Power BI datasets directly on top of your data stored in the Lakehouse. DirectLake enhances query performance when dealing with large data volumes and seamlessly integrates with Lakehouse workloads that read and write Parquet files. By combining the data visualization capabilities of Power BI with the centralized storage and tabular schema of a data lakehouse, you can implement an end-to-end analytics solution on a single platform.
@@ -16,6 +17,8 @@ Use the **Visualize button** to create a new Power BI report from the results of
 
 You can also use the **New report button** to create a new Power BI report from the contents of your entire data warehouse. Using the New report button opens the Power BI service experience where you can build and save your report for use by the business.
 
+---
+
 # DirectLake vs DirectQuery in Power BI
 ![Direct Lake Super Power](https://microsoft.github.io/fabricnotes/images/notes/14-direct-lake.png)
 
@@ -25,15 +28,38 @@ In traditional DirectQuery mode, the Power BI engine queries the data directly f
 
 DirectLake mode now eliminates this import requirement by loading the data files directly into memory. Because there's no explicit import process, it's possible to pick up any changes at the source as they occur, thus combining the advantages of DirectQuery and import mode while avoiding their disadvantages. DirectLake mode is therefore the ideal choice for analyzing very large datasets and datasets with frequent updates at the source.
 
-# Task 4.1 Use the Data Science experience to train a machine learning model to predict trip duration using data from Fabric lakehouse.
-## Objective<p>
-In the context of this exercise, you will take the role of a data scientist who has been given the task to explore, clean and transform a dataset containing taxicab trip data, and build a machine learning model to predict trip duration at scale on a large dataset.
-We will use the The New York taxi greencab dataset, which is a large-scale dataset containing taxi trips in the city from 2009 to 2018. The dataset includes various features such as pick-up and drop-off dates, times, locations, fares, payment types, and passenger counts.The dataset can be used for various purposes such as analyzing traffic patterns, demand trends, pricing strategies, and driver behavior.
+---
 
-**Import exercise notebook**
-> You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly. For detailed instructions on importing a notebook, please refer to [Exercise 2 - Importing Notebooks](../exercise-2/exercise-2.md#1-importing-the-notebook)
+# Task 4.1 Predict Trip Duration Using Data Science in Fabric Lakehouse
 
-For this task please download [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb) notebook to your machine and follow the import notebook steps. Once imported please open the notebook and follow the steps outlined to completed the task.
+In this exercise, you will take on the role of a data scientist tasked with exploring, cleaning, and transforming a dataset containing taxi trip data. You will build a machine learning model to predict the duration of taxi trips using the New York taxi greencab dataset from 2009 to 2018, which includes information like pickup and drop-off times, locations, fares, and passenger counts.
+
+1. **Download the Exercise Notebook**:
+   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task.
+
+2. **Import the Notebook into Fabric Workspace**:
+   - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
+   - Import the downloaded notebook by following the instructions provided in "Exercise 2 - Importing Notebooks". This involves selecting the option to import existing notebooks and choosing the downloaded .ipynb file from your local computer.
+
+3. **Follow Notebook Instructions**:
+   - Once the notebook is imported into your Fabric workspace, open it.
+   - Follow the detailed steps outlined within the notebook. These will guide you through:
+     - Data exploration and cleaning: Understand the dataset's structure, clean any inconsistencies, and prepare the data for modeling.
+     - Feature engineering: Create new features from the existing data to help improve the predictive power of your machine learning model.
+     - Model training: Select and train a machine learning model using the prepared dataset.
+     - Evaluation: Assess the performance of your model based on standard metrics.
+
+4. **Complete the Exercise**:
+   - Work through each step in the notebook, executing code cells and noting any insights or observations.
+   - Make sure to save your progress as you work through the notebook.
+
+5. **Document Your Findings**:
+   - Document any significant findings, challenges faced, and the results of your model training and evaluation within the notebook.
+   - Prepare a brief summary of your approach, the model's performance, and any conclusions or next steps you propose.
+
+
+---
+
 
 # Task 4.2 Explore and visualize the taxi trip data and predicted trip duration from the machine learning model using a Power BI report and Direct Lake.
 
@@ -49,6 +75,9 @@ In this exercise, we will use Microsoft Fabric Direct Lake feature that enables 
 ![new Semantic Model](../media/4/NewReportfromSemanticModel.png)
 
 You can now  create various visuals as per your requirement to generate insights from the prediction dataset or follow the steps outlined below.
+
+---
+
 
 #### Sample Visuals to analyze predictedTripDuration.
 
@@ -77,6 +106,9 @@ You can now  create various visuals as per your requirement to generate insight
     You can now rearranng the layout and modify the aesthetics of the visuals as per your requirement and the report is ready to be published.
 
     ![Final report](../media/4/Report.png)
+
+
+---
 
 
 # Task 4.3 Publish the report and share it with other users. 
