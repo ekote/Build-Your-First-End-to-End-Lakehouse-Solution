@@ -77,6 +77,12 @@ SELECT tipped, COUNT(*) AS tip_freq FROM (
   WHERE [lpepPickupDatetime] BETWEEN '20130101' AND '20131231') tc
 GROUP BY tipped
 ```
+### Task 4
+### Share a Lakehouse
+
+### Task 5
+### Share a Notebook
+
 
 <!-- ### Task 4
 ### Objective: Create a workspace managed identity
