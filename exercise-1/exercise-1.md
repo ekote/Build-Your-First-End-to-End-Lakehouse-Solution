@@ -17,6 +17,8 @@ For those who complete the primary tasks ahead of time, we've prepared [addition
 > [!TIP]
 > This exercise contains extensive content, but the primary focus will be on interacting with the UI. Expect to engage directly by clicking on various elements. Please prepare for this hands-on approach and ensure you are energized for active participation.
 
+---
+
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
 ## 1. **Switch to Data Factory View**
@@ -141,10 +143,14 @@ In the 'Tables' section, observe the new table and preview the data it contains.
 
 ![Step](../media/1/26.jpg)
 
+---
 
 > [!TIP]
+> Congratulations on completing the first and most significant task of Exercise 1! **Now, please take a moment to check your timing. If you are halfway through the allotted time for the entire Exercise 1, consider skipping Task 1.2 and proceed directly to [1.3 Create a shortcut](#task-13-create-shortcut)** as this 1.3 task is required for the Exercise 2 'Transform data using notebooks and Spark clusters'.
 > 
+> Remember, you can always return to this exercise later.
 
+---
 
 # Task 1.2 Discover the Lakehouse 
 
@@ -203,6 +209,7 @@ Here, you will find options for optimizing file size and vacuuming, which involv
 With the exploration of the Lakehouse's features and maintenance options, this task is now completed.
 ![Step](../media/1/33.jpg)
 
+---
 
 # Task 1.3 Create shortcut
 This task focuses on accessing and leveraging tax data from the year 2023, enhancing our Lakehouse with critical financial insights without the overhead of traditional data movement.
