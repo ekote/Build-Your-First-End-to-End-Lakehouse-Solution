@@ -209,14 +209,14 @@ In this task, follow the notebooks and the code provided, as well as all the ins
 
 # Task 2.8 - Automation 
 
-Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.
-
+Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.0
+0
 ## Pre-Automation Quality Check
 Ensure the following before starting the automation process:
-* Lakehouse bronzerawdata contains two tables: green201501 and green201301.
-* Lakehouse bronzerawdata includes one folder in the Files section, named 2023, created by a shortcut.
-* Lakehouse bronzerawdata has one file in the Files section: NYC-Taxi-Discounts-Per-Day.csv.
-* Lakehouse silvercleansed consists of three tables: avg_fare_per_month, green201501_cleansed, and green201501_discounts.
+* Lakehouse `bronzerawdata` contains two tables: `green201501` and `green201301`.
+* Lakehouse `bronzerawdata` includes one folder in the Files section, named `2023`, created by a shortcut.
+* Lakehouse `bronzerawdata` has one file in the Files section: `NYC-Taxi-Discounts-Per-Day.csv`.
+* Lakehouse `silvercleansed` consists of three tables: `green2015_avg_fare_per_month`, `green201501_cleansed`, and `green201501_discounts`.
 
 Once all is set, proceed with the automation.
 
@@ -295,10 +295,10 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
 
 ## Lakehouse `silvercleansed` Confirmation:
 1. **Tables**: Check that there are six tables:
-   - `avg_fare_per_month_2015_01`
+   - `green201501_avg_fare_per_month_2015_01`
    - `green201501_cleansed`
    - `green201501_discounts`
-   - `avg_fare_per_month_2023_01`
+   - `green202301_avg_fare_per_month_2023_01`
    - `green202301_cleansed`
    - `green202301_discounts`.
 
@@ -308,7 +308,7 @@ Review the screenshots provided to compare and confirm the setup in your Lakehou
 
 ---
 
-# Task 2.10 Create Gold Lakehouse (Requirement for Exercise 4)
+# Task 2.10 Create Gold Lakehouse (required for Exercise 4)
 
 The final task before delving into data science work (Exercise 4) within the notebook is to create a new Gold Lakehouse named `goldcurated`.
 
@@ -325,8 +325,6 @@ Please follow these steps:
 ## 4. Confirm that your Gold Lakehouse has been created.
 ![Step](../media/2/63.jpg)
 
-
-If all elements align with the requirements above, you're ready to move on to the next exercise, whether it's during a break, lunch, or an advanced step.
 
 
 > [!IMPORTANT]
