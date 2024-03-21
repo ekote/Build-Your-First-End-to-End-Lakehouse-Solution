@@ -15,11 +15,6 @@
 3.	Sharing
 3.1.	Share lakehouse
 3.2.	share notebook
-<!--
-5.	[*] Enforce RLS thru the SQL endpoint
-6.	Create a workspace-managed identity
-7.	Create a project and link it to a DevOps repository
--->
 ```
 
 The **SQL Analytics Endpoint** of a Fabric Lakehouse Offers a SQL-based experience for analyzing data in lakehouse delta tables using T-SQL language, with features like saving functions, generating views, and applying SQL security.
