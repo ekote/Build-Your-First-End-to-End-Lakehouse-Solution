@@ -31,7 +31,7 @@ DirectLake mode now eliminates this import requirement by loading the data files
 In the context of this exercise, you will take the role of a data scientist who has been given the task to explore, clean and transform a dataset containing taxicab trip data, and build a machine learning model to predict trip duration at scale on a large dataset.
 We will use the The New York taxi greencab dataset, which is a large-scale dataset containing taxi trips in the city from 2009 to 2018. The dataset includes various features such as pick-up and drop-off dates, times, locations, fares, payment types, and passenger counts.The dataset can be used for various purposes such as analyzing traffic patterns, demand trends, pricing strategies, and driver behavior.
 
-**Import exercise notebook **
+**Import exercise notebook**
 > You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly. For detailed instructions on importing a notebook, please refer to [Exercise 2 - Importing Notebooks](../exercise-2/exercise-2.md#1-importing-the-notebook)
 
 For this task please download [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb) notebook to your machine and follow the import notebook steps. Once imported please open the notebook and follow the steps outlined to completed the task.
