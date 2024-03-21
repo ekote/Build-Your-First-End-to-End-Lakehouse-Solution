@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 60 minutes
 > 
-> [Back to Agenda](./../README.md#agenda) | [Back to Start Steps](./../start/start.md) | [Up next: Exercise 2](./../exercise-2/exercise-2.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Start Steps](./../start/start.md) | [Up next Exercise 2](./../exercise-2/exercise-2.md)
 
 # Context
 We will focus on integrating two data sources from NYC Taxi data: one from 2015 and the second from 2023. The table below presents the metaphors we will use to integrate the data:

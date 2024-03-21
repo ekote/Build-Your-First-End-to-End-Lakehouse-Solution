@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 75 minutes
 > 
-> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 1](./../exercise-1/exercise-1.md) | [Up next: Exercise 3](./../exercise-3/exercise-3.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 1](./../exercise-1/exercise-1.md) | [Up next Exercise 3](./../exercise-3/exercise-3.md)
 
 
 # Context
