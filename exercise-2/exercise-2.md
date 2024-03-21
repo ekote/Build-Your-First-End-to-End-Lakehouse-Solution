@@ -148,7 +148,7 @@ Once you start the upload, you'll receive a notification indicating that the imp
 ![Step](../media/2/17.jpg)
 
 ## 3. Accessing the Imported Notebook
-After the import completes, locate the newly imported notebook in the `urban-innovation-de{NNN}`, where NNN represents the number assigned to you. Click on the three dots associated with the notebook and select `Open Notebook'. For convenience, you can open the notebook in the background, which will make its icon continuously accessible from the vertical sidebar on the left.
+After the import completes, locate the newly imported notebook in the `urban-innovation-de{NNN}`, where NNN represents the number assigned to you. Click on the three dots associated with the notebook and select `Open Notebook`. For convenience, you can open the notebook in the background, which will make its icon continuously accessible from the vertical sidebar on the left.
 ![Step](../media/2/18.jpg)
 
 
