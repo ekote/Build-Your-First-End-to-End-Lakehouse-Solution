@@ -39,7 +39,7 @@ In this exercise, you will take on the role of a data scientist tasked with expl
 
 2. **Import the Notebook into Fabric Workspace**:
    - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
-   - Import the downloaded notebook by following the instructions provided in "Exercise 2 - Importing Notebooks". This involves selecting the option to import existing notebooks and choosing the downloaded .ipynb file from your local computer.
+   - Import the downloaded notebook by following the instructions provided in [Exercise 2 - Importing Notebooks](../exercise-2/exercise-2.md#1-importing-the-notebook). This involves selecting the option to import existing notebooks and choosing the downloaded .ipynb file from your local computer.
 
 3. **Follow Notebook Instructions**:
    - Once the notebook is imported into your Fabric workspace, open it.
