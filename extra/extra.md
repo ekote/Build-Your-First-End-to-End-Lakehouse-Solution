@@ -2,6 +2,8 @@
 > 
 > Back to [Agenda](./../README.md#agenda) | [Start Steps](./../start/start.md) | [Exercise 1](./../exercise-1/exercise-1.md) | [Exercise 2](./../exercise-2/exercise-2.md) | [Exercise 3](./../exercise-3/exercise-3.md) | [Exercise 4](./../exercise-4/exercise-4.md) | [Exercise 5](./../exercise-5/exercise-5.md)
 
+---
+
 # Exercise 1 - Extra Tasks
 
 ##  Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
@@ -75,6 +77,7 @@ result_table_name = f"{table_name}_avg_fare_per_month"
 average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"silvercleansed.{result_table_name}")
 ```
 
+![Medallion Architecture](./../media/1/medarch.jpg)
 
 ### Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
 
