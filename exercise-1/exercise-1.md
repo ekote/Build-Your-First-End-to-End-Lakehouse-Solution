@@ -228,8 +228,8 @@ Benefits of This Approach:
 Remember, our team is here to guide you through every step of this process. Do not hesitate to reach out if you encounter any challenges or have questions about the `Shortcuts` feature and its implementation.
 
 
-## 1. Expand Table Options
-Expand on the options for the table section by clicking the three dots for the tables. Then, select the `New Shortcut` option.
+## 1. Expand File Options
+Expand on the options for the file section by clicking the three dots for the `Files`. Then, select the `New Shortcut` option.
 ![Step](../media/1/34.jpg)
 
 ## 2. Shortcut Options
