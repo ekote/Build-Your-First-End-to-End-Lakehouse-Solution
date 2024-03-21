@@ -3,21 +3,22 @@
 > [!NOTE]
 > Sunday, March 24, Workshop Hours: 9 am – 4 pm 
 
-Join our lakehouse workshop to learn how you can build your own modern end-to-end data solutions using Microsoft Fabric. Gain hands on experience as we guide you through Fabric data integration capabilities including pipelines and dataflows to land data in your lakehouse. Next you will learn how you can further transform your data using notebooks and Spark, and organize, secure, and prepare all your data for serving. Finally, you will learn how different data personas including BI analysts and data scientists can leverage and build on top of the lakehouse data. 
+Join our workshop to master building end-to-end data solutions with Microsoft Fabric. Learn to integrate, transform, and manage data in a lakehouse, utilizing Fabric pipelines, dataflows, notebooks, and Spark. Understand how BI analysts and data scientists utilize lakehouse data to enhance decision-making.
 
-By the end of this workshop, you should be well versed in Fabric Data Integration & Data Engineering topics and capable of building an end-to-end workflow that includes ingesting, preparing, serving and operationalizing your data solution. 
+**Workshop Goals:**
+- Master Fabric Data Integration and Data Engineering and Data Science.
+- Develop a complete data workflow: ingestion, preparation, serving, and operationalization.
 
-# Context
-Within your team at an innovative tech startup, you are spearheading efforts to transform urban mobility and transportation analysis. 
+**Project Context: Urban Mobility Transformation**
+- Use Microsoft Fabric to analyze New York City's taxi data for improved urban planning and transportation safety.
+- Aim: Better traffic forecasting, route management, and safety measures, leading to enhanced urban transport services and infrastructure.
 
-**Your mission centers around leveraging the comprehensive datasets from New York City's taxi and for-hire vehicle operations to refine urban planning, streamline routes, forecast demand, and augment safety measures. With the aid of Microsoft Fabric, your squad is set to construct a detailed lakehouse solution adept at ingesting, processing, and scrutinizing TLC Trip Record Data to extract pertinent insights.**
-
-This integrated lakehouse solution will empower your company to:
-* Consolidate both historical and immediate data from various taxi services, offering a unified perspective on the urban transport landscape.
-* Deploy sophisticated data analytics and machine learning techniques to forecast traffic conditions, enhance fleet allocation, and boost operational effectiveness.
-* Supply informed suggestions to urban developers and government officials to aid in the advancement of infrastructure and traffic management.
-* Elevate the travel experience by ensuring reliability, safety, and punctuality in transportation services.
-* Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
+**Lakehouse Solution Benefits:**
+- Unified urban transport data analysis.
+- Enhanced fleet management and traffic forecasting.
+- Data-driven urban development insights.
+- Improved transportation reliability and safety.
+- Adaptable data infrastructure for future urban mobility trends.
 
 ![Diagram](./media/start/diagram.png)
 
