@@ -61,6 +61,11 @@ Give your new workspace a name, adhering to the provided naming convention. Veri
 Congratulations, your new workspace has been successfully created! This dedicated space is for you to innovate and build today.
 ![Login](../media/start/15.jpg)
 
+## 16. Download the exercise files
+Clone the workshop github repository or Download Zip of the repository to your local machine.
+
+![Download Repo](../media/start/CloneDownloadRepo.png)
+
 ---
 # Naming conventions
 
