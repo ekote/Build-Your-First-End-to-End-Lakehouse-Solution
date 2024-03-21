@@ -1,4 +1,4 @@
-# Build-Your-First-End-to-End-Lakehouse-Solution
+# Build Your First End to End Lakehouse Solution
 
 > [!NOTE]
 > Sunday, March 24, Workshop Hours: 9 am – 4 pm 
