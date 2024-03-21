@@ -19,6 +19,8 @@ This integrated lakehouse solution will empower your company to:
 * Elevate the travel experience by ensuring reliability, safety, and punctuality in transportation services.
 * Forge a versatile data infrastructure poised to adjust to new trends in urban mobility and assimilate future data sources.
 
+![Diagram](./media/start/diagram.png)
+
 # Agenda
 
 > [!IMPORTANT]
