@@ -189,13 +189,44 @@ Ensure that the scheduling aligns with your data processing goals and operationa
 
 
 
-## Create a new Spark Pool on the Workspace-level settings
-![Monitoring](./../media/extra/12.jpg)
-![Monitoring](./../media/extra/13.jpg)
-![Monitoring](./../media/extra/14.jpg)
-![Monitoring](./../media/extra/15.jpg)
-![Monitoring](./../media/extra/16.jpg)
-![Monitoring](./../media/extra/17.jpg)
+## Create a New Spark Pool with Workspace Settings
+
+In this exercise, you'll be addressing the lack of dynamic job execution capability by creating a new Spark pool within the workspace settings. 
+
+1. **Navigate to Workspace Settings**:
+   - Go to the workspace view in your Microsoft Fabric environment.
+   - Click on the three dots (ellipsis) to access the workspace settings.
+     ![Workspace Settings](./../media/extra/13.jpg)
+
+2. **Access Data Engineering/Science Settings**:
+   - Click on "Data Engineering/Science" and then select "Spark Settings".
+   - Click on the "Default Pool for Workspace" and expand the selection to view more options.
+     ![Spark Settings](./../media/extra/14.jpg)
+
+3. **Create a New Spark Pool**:
+   - Click on the "New Pool" button to start configuring a new Spark pool.
+     ![New Pool](./../media/extra/15.jpg)
+
+4. **Configure the New Spark Pool**:
+   - Assign a meaningful name to your new Spark pool.
+   - Select the node size for your pool. Although GPU machines might be available, for now, select "Memory Optimized" and choose, for example, a "Small" node size.
+   - Enable auto-scaling to allow the pool to adjust based on workload automatically.
+   - Enable "Dynamic Allocation for Executors" to optimize resource utilization during job execution.
+   - Always remember to save your changes after configuring the settings.
+     ![Pool Configuration](./../media/extra/16.jpg)
+
+5. **Finalize and Save Changes**:
+   - After configuring the new Spark pool, Microsoft Fabric will redirect you back to the Spark settings screen.
+   - A message will appear at the top part of the screen indicating that there are unsaved changes. Ensure to review and save these changes.
+     ![Unsaved Changes](./../media/extra/17.jpg)
+
+6. **Verification**:
+   - Verify that the new Spark pool is listed in your workspace settings.
+   - Ensure that dynamic job execution is enabled for this new pool.
+
+
+Creating and configuring a new Spark pool with dynamic allocation and auto-scaling features can significantly improve the efficiency and performance of data processing tasks. Pay attention to the job execution times and resource utilization before and after implementing the new pool to measure the improvements.
+
 
 
 ## Use Environment to tailor your runtime
