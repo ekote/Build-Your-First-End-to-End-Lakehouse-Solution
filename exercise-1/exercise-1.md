@@ -156,6 +156,10 @@ In the `Tables` section, observe the new table and preview the data it contains.
 
 ---
 
+<details>
+
+<summary>Task 1.2 Discover the Lakehouse </summary>
+
 # Task 1.2 Discover the Lakehouse 
 
 Microsoft Fabric lakehouses are designed to provide data engineers and analysts with the benefits of both data lake storage and a relational data warehouse. Apache Spark is a critical technology for big data analytics, and its support within Microsoft Fabric allows you to seamlessly integrate Spark's big data processing capabilities with the other data analytics and visualization tools available on the platform. 
@@ -213,7 +217,12 @@ Here, you will find options for optimizing file size and vacuuming, which involv
 With the exploration of the Lakehouse's features and maintenance options, this task is now completed.
 ![Step](../media/1/33.jpg)
 
+
+</details>
+
+
 ---
+
 
 # Task 1.3 Create shortcut
 This task focuses on accessing and leveraging tax data from the year 2023, enhancing our Lakehouse with critical financial insights without the overhead of traditional data movement.
