@@ -3,14 +3,14 @@
 > Back to [Agenda](./../README.md#agenda) | [Start Steps](./../start/start.md) | [Exercise 1](./../exercise-1/exercise-1.md) | [Exercise 2](./../exercise-2/exercise-2.md) | [Exercise 3](./../exercise-3/exercise-3.md) | [Exercise 4](./../exercise-4/exercise-4.md) | [Exercise 5](./../exercise-5/exercise-5.md)
 
 # List of extra exercises
-#### Specify the file format and compression type for the sink datasets in Data Factory
-#### Monitor the pipeline run and verify the output
-#### Create a dataflow that reads data from a CSV file
-#### Medallion architecture
-#### Schedule your notebook
-#### Create a new Spark Pool on the Workspace-level settings
-#### Use Environment to tailor your runtime
-#### Saved with V-Order?
+#### [Specify the file format and compression type for the sink datasets in Data Factory](##specify-the-file-format-and-compression-type-for-sink-datasets-in-data-factory)
+#### [Monitor the pipeline run and verify the output](#monitor-the-pipeline-run-and-verify-the-output-1)
+#### [Create a dataflow that reads data from a CSV file](#create-a-dataflow-that-reads-data-from-a-csv-file-1)
+#### [Medallion architecture](#medallion-architecture-1)
+#### [Schedule your notebook](#schedule-your-notebook-for-multiple-daily-runs)
+#### [Create a new Spark Pool on the Workspace-level settings]()
+[//]: # (#### [Use Environment to tailor your runtime]&#40;&#41;)
+#### [Saved with V-Order?](#verify-v-order)
 
 ---
 
