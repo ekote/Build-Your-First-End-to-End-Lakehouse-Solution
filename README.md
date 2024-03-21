@@ -1,7 +1,7 @@
 # Build Your First End to End Lakehouse Solution
 
 > [!NOTE]
-> Sunday, March 24, Workshop Hours: 9 am – 4 pm 
+> Sunday, March 24, Workshop Hours: 9 am – 4 pm PDT (Pacific Daylight Time)
 
 Join our workshop to master building end-to-end data solutions with Microsoft Fabric. Learn to integrate, transform, and manage data in a lakehouse, utilizing Fabric pipelines, dataflows, notebooks, and Spark. Understand how BI analysts and data scientists utilize lakehouse data to enhance decision-making.
 
