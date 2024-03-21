@@ -73,9 +73,9 @@ In this exercise, you will explore and visualize taxi trip data, including the p
 
 3. **Generate a New Power BI Report**:
    - In the semantic model UI, click the ***New report*** button on the top ribbon. This will open the Power BI report authoring page in a new browser tab.
+   
      ![New Report from Semantic Model](../media/4/NewReportfromSemanticModel.png)
 
-  <br> 
 
 > [!IMPORTANT]  
 > You can now create various visuals as per your requirement to generate insights from the prediction dataset or follow the steps outlined below.
