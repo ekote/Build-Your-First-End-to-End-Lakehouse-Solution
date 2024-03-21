@@ -48,8 +48,6 @@ This integrated lakehouse solution will empower your company to:
 
 [Advanced, extra steps](./extra/extra.md).
 
-![Overview](./media/start/overview.png)
-
 # Naming conventions
 
 ## Workspace name
