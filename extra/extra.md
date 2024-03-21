@@ -4,21 +4,6 @@
 
 # Exercise 1 - Extra Tasks
 
-# Task 1.1 Browse Azure resources with Get Data
-Source: https://blog.fabric.microsoft.com/en-us/blog/browse-azure-resources-with-get-data?ft=All
-
-With the new ‘browse Azure’ functionality in Get Data, you can easily browse all your Azure resources and automatically connect to them, without going through manually setting up a connection, saving you a lot of time.
-
-Using the regular path in Get Data to create a new connection, you always need to fill in your endpoint, URL or server and database name when connecting to Azure resources like Azure Blob, Azure Data Lake gen2 and Synapse. This is a bit of a tedious process and does not allow for easy data discovery.
-
-Supported data sources:
-* Azure Blob
-* Azure Data Lake gen 2
-* Synapse
-
-When cover you to try Functionality on your own. Why? Because it is The best way to access the data of our synapse from the factory. In this task, you do not need to do anything. I'd rather acknowledge that newest functionality. The question I would like to leave you with is:
-* For those who has the synapse workload - How we can plan, And execute efficient migration to fabric? You may ask me why do I need it? That's why I included the video with Guy, Product manager accountable for hardware, spark compute, And he's explaining that we just movement to fabric, Your workload will run faster. Why? Because synapse is mostly based on The hardware SKU Which is older comparing to fabric skU. And with the new SKU There are improvements for CPR and memory management. This elements have the biggest impact to run your spark computation Faster. 
-
 ##  Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
 
 ## Task 1.3 Monitor the pipeline run and verify the output files in the data lake.
@@ -30,11 +15,75 @@ Write the transformed data to a Delta table in the Lakehouse.
 
 ## Task 1.6 Run the dataflow and monitor the Spark job execution details. 
 
-> [!IMPORTANT]
-> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md).
+##  Medallion architecture
+A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
+
+![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
+
+This incremental and progressive improvement enables you to maintain data quality and structure while also improving data processing performance. Medallion architectures are sometimes referred to as "multi-hop" architectures because data flows through multiple layers.
+
+One of the main benefits of a Lakehouse architecture is that it provides a simple data model that is easy to understand and implement. Additionally, it enables incremental ETL (extract, transform, load) operations, which means you can add new data to the Lakehouse in a scalable and manageable way.
+
+Another benefit of a Lakehouse architecture is that it allows you to recreate your tables from raw data at any time. This is possible because Delta Lake provides ACID transactions and time travel capabilities, allowing you to track changes to your data and easily roll back to previous versions if necessary.
+
+### Medallion architecture in Fabric Lakehouse
+
+After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
+
+Here's an example code snippet that shows how you can write data to another Lakehouse:
+
+```python
+# read data from the bronze Lakehouse
+bronze_df = spark.read.table("bronze_lakehouse_name.lakehouse_table")
+
+# perform data cleaning and transformation
+# ...
+
+# write the transformed data to the silver Lakehouse
+transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakehouse_name.lakehouse_table")
+
+```
+In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
+
+Our real case, one more time:
+
+```python
+table_name  = "green201501"
+
+data_collection = table_name[:-6]  # Extracts all characters except the last six (assumes these are non-digits)
+extracted_year = table_name[-6:-2]  # Extracts the four digits representing the year
+extracted_month = table_name[-2:]  # Extracts the last two digits representing the month
+
+from pyspark.sql.functions import col, year, month, dayofmonth, avg
+
+# !!!!
+# READING RAW DATA FROM DEFAULT (RAW) LAKEHOUSE
+df = spark.read.table(table_name)
+
+# Calculate average fare amount per month
+average_fare_per_month = (
+    df
+    .groupBy(year("lpep_pickup_datetime").alias("year"), month("lpep_pickup_datetime").alias("month"))
+    .agg(avg("fare_amount").alias("average_fare"))
+    .orderBy("year", "month")
+)
+display(average_fare_per_month)
+
+result_table_name = f"{table_name}_avg_fare_per_month"
+
+# Save the results to a new delta table - SILVERCLEANSED LAKEHOUSE - SILVER LAYER
+average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"silvercleansed.{result_table_name}")
+```
+
+
+### Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
+
+Watch Fabric Espresso episode as Abhishek discuss and demo the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
+[![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
 
 
 
+---
 
 # Exercise 2 - Extra Tasks
 
@@ -71,47 +120,8 @@ Save, schedule and run the notebook as a job
 ## Task 2.16 CODE REVIEW in shared notebook
 
 
-##  Medallion architecture
-A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
 
-![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
-
-This incremental and progressive improvement enables you to maintain data quality and structure while also improving data processing performance. Medallion architectures are sometimes referred to as "multi-hop" architectures because data flows through multiple layers.
-
-One of the main benefits of a Lakehouse architecture is that it provides a simple data model that is easy to understand and implement. Additionally, it enables incremental ETL (extract, transform, load) operations, which means you can add new data to the Lakehouse in a scalable and manageable way.
-
-Another benefit of a Lakehouse architecture is that it allows you to recreate your tables from raw data at any time. This is possible because Delta Lake provides ACID transactions and time travel capabilities, allowing you to track changes to your data and easily roll back to previous versions if necessary.
-
-Read more [here](https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/simplify-your-lakehouse-architecture-with-azure-databricks-delta/ba-p/2027272).
-
-
-### Medallion architecture in Fabric Lakehouse
-
-After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
-
-Here's an example code snippet that shows how you can write data to another Lakehouse:
-
-
-```python
-# read data from the bronze Lakehouse
-bronze_df = spark.read.table("bronze_lakehouse_name.lakehouse_table")
-
-# perform data cleaning and transformation
-# ...
-
-# write the transformed data to the silver Lakehouse
-transformed_df.write.format("delta").mode("overwrite").saveAsTable("silver_lakehouse_name.lakehouse_table")
-```
-
-In this example, we first read data from the bronze Lakehouse using the spark.read method. We then perform data cleaning and transformation on the bronze_df DataFrame. Finally, we write the transformed data to the silver Lakehouse using the transformed_df.write method, specifying the path to the silver Lakehouse and setting the save mode to "overwrite" to replace any existing data.
-
-## Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
-
-Watch Fabric Espresso episode as Abhishek and Estera discuss the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
-
-[![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
-
-
+---
 
 ## Deployments Pipelines
 
