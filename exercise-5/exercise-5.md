@@ -134,7 +134,7 @@ Microsoft Fabric creates and manages managed private endpoints based on the inpu
 
 Follow the GIF which presents e2e demo on how to create manage private endpoint.
 
-![mpe](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-overview/managed_private_endpoint.gif)
+![mpe](../media/5/managed_private_endpoint_velocity.gif)
 
 ---
 
