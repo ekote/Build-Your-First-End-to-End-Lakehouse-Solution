@@ -70,7 +70,7 @@ Explore the unique capabilities of UDTFs for comprehensive data transformations:
 4. Perform the transformations and observe the outcome on a subset of the data, applying a 5% discount as an example.
 
 
-```pyspark
+```python
 from pyspark.sql.functions import udtf
 from pyspark.sql.types import Row
 
