@@ -173,7 +173,7 @@ This integration enables data practitioners to apply familiar Pandas-like operat
 ### 5. Practical application in Fabric:
 In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
 
-Proceed to your next challenge, which will delve deeper into Pandas, enriching your data manipulation skills in big data contexts.
+Chech [How to read and write data with Pandas in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/read-write-pandas).
 
 ---
 
