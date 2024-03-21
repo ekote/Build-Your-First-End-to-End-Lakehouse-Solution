@@ -160,20 +160,20 @@ Please look out for further announcements regarding Autotune throughout the week
 # Spark vs Pandas
 Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
-## 1. Understanding Pandas
+## Understanding Pandas
 Pandas shines due to its simplicity and intuitive design, making it a favorite among data engineers, scientists, and analysts. However, its primary limitation lies in its inability to natively harness parallel architectures and computations. Pandas operates within the confines of single-node, in-memory computations, restricting its scalability and efficiency in processing vast datasets typical in big data scenarios.
 
-## 2. Transition to Spark and its core concepts
+## Transition to Spark and its core concepts
 Apache Spark transcends these limitations by adopting a distributed computing approach. Key distinctions include:
 - **Spark DataFrames**: These are distributed across clusters, enabling parallel data processing far beyond the capacities of a single machine.
 - **Lazy Evaluation**: Spark employs lazy evaluation for DataFrames, constructing a Directed Acyclic Graph (DAG) of transformations that are optimized and executed only when an action is required, enhancing overall execution efficiency.
 - **Advanced Optimizations**: Features like Adaptive Query Execution (AQE) and Dynamic Partition Pruning (DPP) automatically optimize query plans and data partitioning, respectively, something far beyond the reach of Pandas.
 
-## 3. General rule of thumb
+## General rule of thumb
 - Utilize Pandas for datasets that comfortably fit into the memory of a single machine and when the data processing doesn't demand extensive parallelization.
 - Opt for Spark when dealing with massive datasets that exceed single machine capacity, or when tasks benefit significantly from parallelization, despite any existing familiarity with Pandas due to Spark's scalability and optimization features.
 
-## 4. Bridging the gap with Koalas
+## Bridging the gap with Koalas
 Introduced in Spark 3.2, Koalas marries the simplicity of the Pandas API with Spark’s distributed computing prowess. By importing `pandas` API through PySpark:
 
 ```python
@@ -182,7 +182,7 @@ from pyspark import pandas as pd
 
 This integration enables data practitioners to apply familiar Pandas-like operations while leveraging Spark's distributed architecture, achieving the best of both worlds.
 
-## 5. Practical application in Fabric:
+## Practical application in Fabric:
 In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
 
 Chech [How to read and write data with Pandas in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/read-write-pandas).
@@ -195,7 +195,7 @@ Immerse yourself in the world of efficient data analysis with Fabric's Data Wran
 Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
 
 
-## 1. Initial Setup
+## Initial Setup
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
 
@@ -204,7 +204,7 @@ Load a Pandas DataFrame that you wish to analyze. If you don't have a specific d
 ![Step](../media/5/dw2.jpg)
 ![Step](../media/5/dw3.jpg)
 
-## 2. Exploratory Data Analysis
+## Exploratory Data Analysis
 
 Utilize the grid-like data display to review your dataset. Pay attention to the distribution of data, missing values, and data types.
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
@@ -214,13 +214,13 @@ Leverage built-in visualizations to understand data distributions, correlations,
 ![Step](../media/5/dw5.jpg)
 ![Step](../media/5/dw6.jpg)
 
-## 3. Data Cleaning Operations
+## Data Cleaning Operations
 
 Identify any inconsistencies, missing values, or outliers within your dataset.
 Apply common data-cleaning operations available in Data Wrangler, such as filling missing values, filtering rows, or correcting data types. Observe how each operation updates the data display in real time.
 Evaluate the impact of your data transformations on the summary statistics and visualizations to ensure they align with your analysis goals.
 
-## 4. Code Generation and Reusability
+## Code Generation and Reusability
 
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
@@ -237,7 +237,7 @@ Save the generated code back to your notebook as a reusable function. This pract
 
 Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
 
-## 1. Install the Synapse VS Code extension for the Web
+## Install the Synapse VS Code extension for the Web
 
 1. Go to https://insider.vscode.dev from your browser.
 1. Select the **Extensions** icon in the left navigation bar.
@@ -247,7 +247,7 @@ Visual Studio Code for the Web provides a free, zero-install Microsoft Visual St
 ![VSCODE](../media/5/vs1.jpg)
 
 
-## 2. Open a notebook (e.g., notebook-2) with the Synapse VS Code extension for the Web
+## Open a notebook (e.g., notebook-2) with the Synapse VS Code extension for the Web
 
 You can open a notebook in the VS Code for the Web experience by clicking the **Open in VS Code(Web)** button on the notebook authoring page in the Fabric portal. After you select the button, a separate browser tab is opened with the VS Code for the web experience. If you haven't already installed the extension, it is automatically installed, and activated, and the notebook is opened.
 ![VSCODE](../media/5/vs2.jpg)
