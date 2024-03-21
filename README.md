@@ -44,7 +44,7 @@ This integrated lakehouse solution will empower your company to:
 > 
 > 03:30 pm - 04:00 pm - Recap
 
-[Advanced, extra steps](./../extra/extra.md).
+[Advanced, extra steps](./extra/extra.md).
 
 ![Overview](./media/start/overview.png)
 
