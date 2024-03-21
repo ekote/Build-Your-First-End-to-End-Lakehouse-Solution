@@ -122,8 +122,6 @@ Managed virtual networks are virtual networks that are created and managed by Mi
 
 ![MPE-OVERVIEW](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-vnets-fabric-overview/managed-vnets-overview.gif)
 
-
-
 Managed private endpoints are added to a workspace. Workspace admins can create and delete managed private endpoint connections from the workspace settings of a Fabric Workspace.
 
 ![demo-mpe](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-vnets-fabric-overview/creating-private-endpoint-animation.gif)

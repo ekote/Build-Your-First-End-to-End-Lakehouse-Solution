@@ -23,6 +23,10 @@ This integrated lakehouse solution will empower your company to:
 
 # Agenda
 
+> [!TIP]
+> You can progress through these exercises at your own pace. While we have structured logical breaks within the session, these are merely suggestions. You are not required to stop if you prefer to continue working. These breaks are provided to accommodate those who may need them. Feel free to continue through the material as fits your learning style and needs.
+
+
 > [!IMPORTANT]
 > 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
 > 
