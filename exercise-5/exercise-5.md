@@ -182,17 +182,25 @@ Immerse yourself in the world of efficient data analysis with Fabric's Data Wran
 
 Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
 
-Step-by-Step Instructions:
 
 ### 1. Initial Setup
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
+
+![Step](../media/5/dw.jpg)
+![Step](../media/5/dw1.jpg)
+![Step](../media/5/dw2.jpg)
+![Step](../media/5/dw3.jpg)
 
 #### 2. Exploratory Data Analysis
 
 Utilize the grid-like data display to review your dataset. Pay attention to the distribution of data, missing values, and data types.
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
 Leverage built-in visualizations to understand data distributions, correlations, and outliers. Experiment with different chart types to best represent your data.
+
+![Step](../media/5/dw4.jpg)
+![Step](../media/5/dw5.jpg)
+![Step](../media/5/dw6.jpg)
 
 #### 3. Data Cleaning Operations
 
@@ -205,6 +213,9 @@ Evaluate the impact of your data transformations on the summary statistics and v
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
 
+![Step](../media/5/dw7.jpg)
+
+### To learn more, I encourage you to watch the Fabric Espresso episode about Data Wrangler.
 [![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)
 
 
