@@ -77,6 +77,22 @@ SELECT tipped, COUNT(*) AS tip_freq FROM (
   WHERE [lpepPickupDatetime] BETWEEN '20130101' AND '20131231') tc
 GROUP BY tipped
 ```
+##### 5. Create a view that to Get Average Fares and Total Fares by Passenger Count, using the SQL in step 3.
+```
+CREATE VIEW [dbo].[viGetAverageFares]
+AS 
+SELECT DISTINCT [passengerCount], 
+ROUND(SUM ([fareAmount]),0) as TotalFares,
+ROUND (AVG ([fareAmount]),0) as AvgFares
+FROM [FabricCClkh001].[dbo].[nyctaxi_green]
+GROUP BY [passengerCount]
+ORDER BY  AvgFares DESC
+```
+
+##### 6. Query view viGetAverageFares.
+```
+SELECT * FROM [FabricCClkh001].[dbo].[viGetAverageFares]
+```
 ### Task 4
 ### Sharing a Lakehouse
 
