@@ -25,7 +25,7 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 # Agenda
 
 > [!TIP]
-> **You can progress through these exercises at your own pace. While we have structured logical breaks within the session, these are merely suggestions. You are not required to stop if you prefer to continue working. These breaks are provided to accommodate those who may need them. Feel free to continue through the material as fits your learning style and needs.**
+> You can progress through these exercises at your own pace. While we have structured logical breaks within the session, these are merely suggestions. You are not required to stop if you prefer to continue working. These breaks are provided to accommodate those who may need them. Feel free to continue through the material as fits your learning style and needs.
 
 
 > [!IMPORTANT]
