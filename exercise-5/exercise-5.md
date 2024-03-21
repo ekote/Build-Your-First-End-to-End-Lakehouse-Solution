@@ -101,14 +101,29 @@ Now, apply this knowledge to calculate comprehensive costs beyond the example.
 
 ---
 
-## Task 5.8 Managed Private Endpoints
-* Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
+## Task - Managed Private Endpoints
+
+Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. Managed virtual networks provide network isolation for Fabric Spark workloads, meaning that the compute clusters are deployed in a dedicated network and are no longer part of the shared virtual network. Managed virtual networks also enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
 
+![MPE-OVERVIEW](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-vnets-fabric-overview/managed-vnets-overview.gif)
+
+
+
+Managed private endpoints are added to a workspace. Workspace admins can create and delete managed private endpoint connections from the workspace settings of a Fabric Workspace.
+
+![demo-mpe](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-vnets-fabric-overview/creating-private-endpoint-animation.gif)
+
+Managed private endpoints are connections that workspace admins can create to access data sources that are behind a firewall or that are blocked from accessing from the public internet. Managed private endpoints allow Fabric Spark workloads to securely access data sources without exposing them to the public network or requiring complex network configurations. The private endpoints provide a secure way to connect and access the data from these data sources using items such as notebooks and Spark job definitions.
+
+Microsoft Fabric creates and manages managed private endpoints based on the inputs from the workspace admin. Workspace admins can set up managed private endpoints from the workspace settings by specifying the resource ID of the data source, identifying the target subresource, and providing a justification for the private endpoint request. Managed private endpoints support various data sources, such as Azure Storage, Azure SQL Database and many more.
+
+Follow the GIF which presents e2e demo on how to create manage private endpoint.
+![MPE](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-overview/managed_private_endpoint.gif)
 
 ---
 
-## Task 5.4 Autotune Query Tuning
+## Task - Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
 
 This week marks the transition of Autotune to public review, accessible across all regions. This presents you with a unique opportunity to view a demonstration that has yet to be released to the public. Below, you will find a link to this exclusive demo.
@@ -129,7 +144,7 @@ Please look out for further announcements regarding Autotune throughout the week
 
 ---
 
-## Task 5.5 Spark vs Pandas
+## Task - Spark vs Pandas
 Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
 ### 1. Understanding Pandas
@@ -161,7 +176,7 @@ Proceed to your next challenge, which will delve deeper into Pandas, enriching y
 
 ---
 
-## Task 5.6 Data Wrangler is my friend
+## Task - Data Wrangler is my friend
 Immerse yourself in the world of efficient data analysis with Fabric's Data Wrangler. This task is designed to help you leverage Data Wrangler's capabilities to explore and transform Pandas DataFrames effectively. Data Wrangler blends a user-friendly grid-like interface with dynamic data analysis tools, making exploratory data analysis both intuitive and robust.
 
 Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
@@ -191,14 +206,10 @@ Save the generated code back to your notebook as a reusable function. This pract
 
 [![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)
 
----
-
-## Task 5.7 Single Node Cluster
-*  Review https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute#spark-pools
 
 ---
 
-## Task 5.9 VSCode (WEB)
+## Task - VSCode (WEB)
 
 Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
 
