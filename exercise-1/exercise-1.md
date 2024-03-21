@@ -14,10 +14,8 @@ Tasks Overview:
 
 For those who complete the primary tasks ahead of time, we've prepared [additional challenges](./../extra/extra.md). These are designed to deepen your understanding and skills in data engineering. You'll find these at the bottom of the page. Questions are not just welcome; they are encouraged! Feel free to reach out to any of our hosts throughout the session. Collaboration and curiosity are key components of success in this exercise.
 
-
-
-
-Let the data engineering journey begin! 
+> [!TIP]
+> This exercise contains extensive content, but the primary focus will be on interacting with the UI. Expect to engage directly by clicking on various elements. Please prepare for this hands-on approach and ensure you are energized for active participation.
 
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
