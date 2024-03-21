@@ -14,6 +14,15 @@ By the end of the workshop, we will have completed the implementation of the med
 
 ---
 
+> [!TIP]
+> Take a moment to check your timing and plan to complete Exercise 2. If you are concerned about delays and need a thorough walkthrough of each required exercise, consider skipping Task 2.1 (Copilot for notebooks) and proceed directly to [Task 2.2 Different ways to get data from the lakehouse](#task-22-different-ways-to-get-data-from-the-lakehouse).
+> 
+> Remember, you can always return to this exercise later.
+
+<details>
+
+<summary> # Task 2.1 Copilot for notebooks </summary>
+
 # Task 2.1 Copilot for notebooks
 
 With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
@@ -56,6 +65,7 @@ This quick demonstration aims to highlight the ease of accessing Copilot for ins
 > Copilot is here to support and guide, to "co-pilot", not to control and "pilot". 
 > We'll move forward with our structured activities and that documentation, allowing them to serve as our copilot instead of using Copilot directly.
 
+</details>
 
 ---
 
