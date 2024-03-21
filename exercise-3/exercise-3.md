@@ -33,6 +33,7 @@ To retrieve the SQL connection string for a Lakehouse SQL analytics endpoint you
 
 1. Navigate to your workspace, select the Lakehouse SQL analytics endpoint item, and select More options.
 2. Select Copy SQL connection string to copy the connection string to your clipboard.
+![CopyConnection](../media/3/CopyConnectionString.png)
 3. Once you have the connection string, you can use it to connect to your SQL analytics endpoint or Warehouse using tools like SQL Server Management Studio or Azure Data Studio.
 ### Task 2
 ### Objective: Connect to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS)
@@ -51,47 +52,46 @@ To connect to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), y
 ##### 1. Get the count of rows in NYC Taxi table
 ```
 SELECT COUNT(*)
-FROM [FabricCClkh001].[dbo].[nyctaxi_green]
+FROM [silvercleansed].[dbo].[green201501_cleansed]
 ```
 ##### 2. Get Average Fare and Tip Amount
 ```
-SELECT ROUND(AVG([fareAmount]),2) AS [Average Fare], 
-ROUND(AVG([tipAmount]),2) AS [Average Tip] 
-FROM [FabricCClkh001].[dbo].[nyctaxi_green]
+SELECT ROUND(AVG([fare_amount]),2) AS [Average Fare], 
+ROUND(AVG([tip_amount]),2) AS [Average Tip] 
+FROM [silvercleansed].[dbo].[green201501_cleansed]
 ```
 
 ##### 3. Get Average Fares and Total Fares by Passenger Count
 ```
-SELECT DISTINCT [passengerCount], 
-ROUND(SUM ([fareAmount]),0) as TotalFares,
-ROUND (AVG ([fareAmount]),0) as AvgFares
-FROM [FabricCClkh001].[dbo].[nyctaxi_green]
-GROUP BY [passengerCount]
+SELECT DISTINCT [passenger_count], 
+ROUND(SUM ([fare_amount]),0) as TotalFares,
+ROUND (AVG ([fare_amount]),0) as AvgFares
+FROM [silvercleansed].[dbo].[green201501_cleansed]
+GROUP BY [passenger_count]
 ORDER BY  AvgFares DESC
 ```
 ##### 4. Get Compare Tipped vs Not Tipped trip numbers
 ```
 SELECT tipped, COUNT(*) AS tip_freq FROM (
-  SELECT CASE WHEN (tipAmount > 0) THEN 1 ELSE 0 END AS tipped, tipAmount
-  FROM [FabricCClkh001].[dbo].[nyctaxi_green]
-  WHERE [lpepPickupDatetime] BETWEEN '20130101' AND '20131231') tc
+  SELECT CASE WHEN (tip_amount > 0) THEN 1 ELSE 0 END AS tipped, tip_amount
+  FROM [silvercleansed].[dbo].[green201501_cleansed]
+  WHERE [lpep_pickup_datetime] BETWEEN '20150101' AND '20151231') tc
 GROUP BY tipped
 ```
 ##### 5. Create a view that to Get Average Fares and Total Fares by Passenger Count, using the SQL in step 3.
 ```
 CREATE VIEW [dbo].[viGetAverageFares]
 AS 
-SELECT DISTINCT [passengerCount], 
-ROUND(SUM ([fareAmount]),0) as TotalFares,
-ROUND (AVG ([fareAmount]),0) as AvgFares
-FROM [FabricCClkh001].[dbo].[nyctaxi_green]
-GROUP BY [passengerCount]
-ORDER BY  AvgFares DESC
+SELECT DISTINCT [passenger_count], 
+ROUND(SUM ([fare_amount]),0) as TotalFares,
+ROUND (AVG ([fare_amount]),0) as AvgFares
+FROM [silvercleansed].[dbo].[green201501_cleansed]
+GROUP BY [passenger_count]
 ```
 
 ##### 6. Query view viGetAverageFares.
 ```
-SELECT * FROM [FabricCClkh001].[dbo].[viGetAverageFares]
+SELECT * FROM [silvercleansed].[dbo].[viGetAverageFares]
 ```
 ### Task 4
 ### Sharing a Lakehouse
