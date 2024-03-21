@@ -286,6 +286,11 @@ Following the correct execution, you should observe two tables under the `Tables
 The query should execute within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
 ![Step](../media/1/46.jpg)
 
+> [!WARNING]
+> In Fabric, when you attach a Lakehouse to a notebook, metadata is saved in the notebook file. If you share this notebook by exporting and downloading it, the person receiving it will see a warning that it was linked to another Lakehouse. To prevent this, clear the notebook's attachments before sharing. If receiving a notebook with attachments, assign it to a new Lakehouse to avoid conflicts. 
+> For CI/CD, remember that artifacts contain metadata showing their connections.
+> ![Step](../media/1/warning.png) 
+
 ## 1.3.14. Confirm Default Lakehouse
 Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
 ![Step](../media/1/47.jpg)
