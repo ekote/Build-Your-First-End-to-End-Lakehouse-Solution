@@ -2,9 +2,19 @@
 > 
 > Back to [Agenda](./../README.md#agenda) | [Start Steps](./../start/start.md) | [Exercise 1](./../exercise-1/exercise-1.md) | [Exercise 2](./../exercise-2/exercise-2.md) | [Exercise 3](./../exercise-3/exercise-3.md) | [Exercise 4](./../exercise-4/exercise-4.md) | [Exercise 5](./../exercise-5/exercise-5.md)
 
+# List of extra exercises
+## Specify the file format and compression type for the sink datasets in Data Factory
+## Monitor the pipeline run and verify the output
+## Create a dataflow that reads data from a CSV file
+## Medallion architecture
+## Schedule your notebook
+## Create a new Spark Pool on the Workspace-level settings
+## Use Environment to tailor your runtime
+## Saved with V-Order?
+
 ---
 
-# Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
+# Specify the file format and compression type for the sink datasets in Data Factory
 ![Compression](./../media/extra/1.jpg)
 ![Compression](./../media/extra/2.jpg)
 
@@ -19,7 +29,7 @@
 ![Monitoring](./../media/extra/8.jpg)
 ![Monitoring](./../media/extra/9.jpg)
 
-# Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
+# Create a dataflow that reads data from a CSV file
 
 
 ---
@@ -91,11 +101,11 @@ average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"sil
 Watch Fabric Espresso episode as Abhishek discuss and demo the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
 [![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
 
-
+Task: 
 
 ---
 
-## Schedule notebook
+# Schedule your notebook
 Your task is to schedule notebook to run every hour.
 Save, schedule and run the notebook as a job 
 
@@ -103,7 +113,7 @@ Save, schedule and run the notebook as a job
 ![Monitoring](./../media/extra/11.jpg)
 
 
-## Workspace-level settings
+## Create a new Spark Pool on the Workspace-level settings
 ![Monitoring](./../media/extra/12.jpg)
 ![Monitoring](./../media/extra/13.jpg)
 ![Monitoring](./../media/extra/14.jpg)
@@ -112,7 +122,7 @@ Save, schedule and run the notebook as a job
 ![Monitoring](./../media/extra/17.jpg)
 
 
-## Environments
+## Use Environment to tailor your runtime
 ![Monitoring](./../media/extra/18.jpg)
 ![Monitoring](./../media/extra/19.jpg)
 ![Monitoring](./../media/extra/20.jpg)
@@ -131,7 +141,6 @@ Save, schedule and run the notebook as a job
 ![DW or Lakehouse](https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png)
 
 ![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
-
 
 ## SaaS vs PaaS
 * ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
