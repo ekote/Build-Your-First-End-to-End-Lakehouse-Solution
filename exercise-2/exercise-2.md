@@ -6,7 +6,7 @@
 > Back to [Agenda](./../README.md#agenda) | [Exercise 1](./../exercise-1/exercise-1.md)
 
 # Context
-TODO
+In this exercise, we will explore data engineering tasks aimed at transforming raw data into a refined silver layer.
 
 ---
 
