@@ -4,19 +4,43 @@
 
 # List of extra exercises
 #### Specify the file format and compression type for the sink datasets in Data Factory
-## Monitor the pipeline run and verify the output
-## Create a dataflow that reads data from a CSV file
-## Medallion architecture
-## Schedule your notebook
-## Create a new Spark Pool on the Workspace-level settings
-## Use Environment to tailor your runtime
-## Saved with V-Order?
+#### Monitor the pipeline run and verify the output
+#### Create a dataflow that reads data from a CSV file
+#### Medallion architecture
+#### Schedule your notebook
+#### Create a new Spark Pool on the Workspace-level settings
+#### Use Environment to tailor your runtime
+#### Saved with V-Order?
 
 ---
 
 # Specify the file format and compression type for the sink datasets in Data Factory
-![Compression](./../media/extra/1.jpg)
-![Compression](./../media/extra/2.jpg)
+
+# Specify the File Format and Compression Type for Sink Datasets in Data Factory
+
+Based on Wikipedia, Snappy (formerly known as Zippy) is a fast data compression and decompression library developed by Google. It prioritizes high speed over maximum compression, offering significant speed benefits: 250 MB/s compression and 500 MB/s decompression using a single core of a circa 2011 2.26 GHz Core i7 processor. However, it provides 20–100% lower compression ratio compared to gzip. For more details, you can refer to the [Snappy article on Wikipedia](https://en.wikipedia.org/wiki/Snappy_(compression)).
+
+Given this information, you might question the decision to use gzip instead of Snappy and how you can modify this setting. Here's how to proceed:
+
+1. Navigate to Data Factory and open the first pipeline you have created, which loads raw data into a bronze Lakehouse.
+2. In the pipeline, go to the 'Source' tab and then click 'Settings'.
+3. The next step is to review all the compression types supported for the Parquet format. Deciding on the correct compression type can be challenging; therefore, let's compare the two main types: Snappy and gzip.
+
+   - **Snappy**: As noted from Wikipedia, it is designed for high speed rather than maximum compression.
+   - **Gzip**: This compression tool does not specifically consider the data structure within the file, but often results in better overall compression for Parquet files.
+
+Your choice should be guided by what you intend to do with the data being loaded into the bronze layer and how it will be used subsequently, for example, whether it will be moved to the silver or gold layers and how frequently it will be accessed.
+
+You can change your compression type in the settings menu of the source tab:
+
+![Compression Settings](./../media/extra/1.jpg)
+
+Based on benchmarks, gzip is more suited for long-term static storage, making it the preferred choice for data in the Gold layer. For data that is accessed more frequently (hot data), Snappy or LZO might be better options:
+
+![Compression Comparison](https://i.stack.imgur.com/Cq3Jx.png)
+
+Choosing the right compression type depends on your specific needs: data access patterns, storage costs, and performance requirements.
+
 
 ---
 

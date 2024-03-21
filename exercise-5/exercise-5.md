@@ -7,7 +7,16 @@
 > 
 > Back to [Exercise 4](./../exercise-4/exercise-4.md)
 
-# Task 5.1 Stay Updated and Bookmark Essentials
+# List of extra exercises
+#### Stay Updated and Bookmark Essentials
+#### Fabric Runtimes and Python User-defined Table Functions (UDTFs)
+#### Managed Private Endpoints
+#### Autotune Query Tuning
+#### Spark vs Pandas
+#### Data Wrangler is my friend
+#### VSCode (WEB)
+
+# Stay Updated and Bookmark Essentials
 Dive into the latest and greatest from Fabric
 * **Monthly Digests**: Don't miss out! Head over to the [Fabric Monthly Updates](https://blog.fabric.microsoft.com/en-us/blog/category/monthly-update) and catch up on the past three months' worth of updates. Discover the latest features and improvements rolled out each week, compiled neatly for your convenience. Bookmark this page to keep your knowledge fresh and up-to-date.
 * **Latest Announcements**: Stay in the loop with the most recent news on [Fabric's Blog](https://blog.fabric.microsoft.com/en-US/blog). Here, major updates, like the management of private endpoint capabilities, are discussed in detail. It's a treasure trove of insights and announcements you won't want to miss.
@@ -19,7 +28,7 @@ Dive into the latest and greatest from Fabric
 
 ---
 
-## Task 5.1 Fabric Runtimes and Python User-defined Table Functions (UDTFs)
+## Fabric Runtimes and Python User-defined Table Functions (UDTFs)
 
 ### Understanding Apache Spark Runtimes in Fabric
 Fabric Runtime, an Azure-integrated platform, is built on Apache Spark, facilitating large-scale data engineering and data science tasks. It amalgamates significant components from both proprietary and open-source domains to deliver an extensive data processing environment. Here, we refer to it as Fabric Runtime for simplicity.
@@ -106,7 +115,7 @@ Now, apply this knowledge to calculate comprehensive costs beyond the example.
 
 ---
 
-## Task - Managed Private Endpoints
+## Managed Private Endpoints
 
 Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. Managed virtual networks provide network isolation for Fabric Spark workloads, meaning that the compute clusters are deployed in a dedicated network and are no longer part of the shared virtual network. Managed virtual networks also enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
@@ -131,7 +140,7 @@ Follow the GIF which presents e2e demo on how to create manage private endpoint.
 
 ---
 
-## Task - Autotune Query Tuning
+## Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
 
 This week marks the transition of Autotune to public review, accessible across all regions. This presents you with a unique opportunity to view a demonstration that has yet to be released to the public. Below, you will find a link to this exclusive demo.
@@ -152,7 +161,7 @@ Please look out for further announcements regarding Autotune throughout the week
 
 ---
 
-## Task - Spark vs Pandas
+## Spark vs Pandas
 Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
 ### 1. Understanding Pandas
@@ -184,7 +193,7 @@ Chech [How to read and write data with Pandas in Microsoft Fabric](https://learn
 
 ---
 
-## Task - Data Wrangler is my friend
+## Data Wrangler is my friend
 Immerse yourself in the world of efficient data analysis with Fabric's Data Wrangler. This task is designed to help you leverage Data Wrangler's capabilities to explore and transform Pandas DataFrames effectively. Data Wrangler blends a user-friendly grid-like interface with dynamic data analysis tools, making exploratory data analysis both intuitive and robust.
 
 Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
@@ -228,7 +237,7 @@ Save the generated code back to your notebook as a reusable function. This pract
 
 ---
 
-## Task - VSCode (WEB)
+## VSCode (WEB)
 
 Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
 
