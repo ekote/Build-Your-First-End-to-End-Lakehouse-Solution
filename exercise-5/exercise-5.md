@@ -44,21 +44,21 @@ Refer to the following table for a detailed comparison of Apache Spark versions 
 
 The objective of this task is to dive into the newer runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
 
-## 1. Integrating Experimental Public Preview Runtime 1.3
+### 1. Integrating Experimental Public Preview Runtime 1.3
 Switch to the experimental Runtime version 1.3 to utilize new features:
 
 1. Navigate to the 'Workspace settings' within your Fabric workspace.
 2. Access the 'Data Engineering/Science' tab and select 'Spark Settings'.
 3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 Experimental (Spark 3.5, Delta 3 OSS)', and confirm your changes. This sets Runtime 1.3 as your default.
 
-## 2. Initiating a New Notebook
+### 2. Initiating a New Notebook
 Create and configure a new notebook:
 
 1. Start a new notebook session in your workspace.
 2. Note that Spark 3.5 sessions may take 2-5 minutes to initiate due to the absence of starter pools in the early experimental phase.
 3. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
 
-## 3. Exploring UDTFs with Fabric
+### 3. Exploring UDTFs with Fabric
 Explore the unique capabilities of UDTFs for comprehensive data transformations:
 1. Consider the real-world scenario of taxi fares, where the final cost encompasses various elements beyond the base fare, such as taxes, tips, and additional charges.
 2. Utilize UDTFs to calculate and apply these additional costs in one operation, enhancing data analysis and insight extraction from your datasets.
@@ -98,7 +98,7 @@ Each new Runtime version introduces an expanded API, new methods, and transforma
 Now, apply this knowledge to calculate comprehensive costs beyond the example. 
 
 
-# Task 5.4 Autotune Query Tuning
+## Task 5.4 Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
 
 This week marks the transition of Autotune to public review, accessible across all regions. This presents you with a unique opportunity to view a demonstration that has yet to be released to the public. Below, you will find a link to this exclusive demo.
