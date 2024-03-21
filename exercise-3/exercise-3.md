@@ -78,7 +78,7 @@ SELECT tipped, COUNT(*) AS tip_freq FROM (
 GROUP BY tipped
 ```
 ### Task 4
-### Share a Lakehouse
+### Sharing a Lakehouse
 
 To share a Lakehouse, click the <b>Share</b> button next to the lakehouse name in the <b>Workspace</b>. 
 
@@ -95,7 +95,28 @@ This will open the <b>Sharing dialog</b>
 
 
 ### Task 5
-### Share a Notebook
+### Sharing a Notebook
+
+Sharing a notebook is a convenient way for you to collaborate with team members. You can share a notebook with specified permissions granted.
+1. Select Share on the notebook toolbar.
+
+![image](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/496e0f19-3d63-4e6f-9698-1adcbdf2f052)
+
+2. Select the corresponding category of people who can view this notebook. You can choose Share, Edit, or Run permissions for the recipients.
+
+![image](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f6674e9e-791e-4f7b-84b6-43b2140e0e6d)
+
+3. After you select Apply, you can either send the notebook directly or copy the link to others. Recipients can then open the notebook with the corresponding view granted by their permission level.
+
+![image](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/0a097d72-0a5e-4617-8920-6fd0439d8cad)
+
+5. To further manage your notebook permissions, select Workspace item list > More options, and then select Manage permissions. From that screen, you can update the existing notebook access and permissions.
+
+![image](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b37e8de8-36d8-4a4b-accb-4b67c901f26a)
+
+
+
+
 
 
 <!-- ### Task 4
