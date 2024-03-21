@@ -5,7 +5,7 @@
 
 Join our workshop to master building end-to-end data solutions with Microsoft Fabric. Learn to integrate, transform, and manage data in a lakehouse, utilizing Fabric pipelines, dataflows, notebooks, and Spark. Understand how BI analysts and data scientists utilize lakehouse data to enhance decision-making.
 
-**Workshop Goals:**
+**Workshop Goals**
 - Master Fabric Data Integration and Data Engineering and Data Science.
 - Develop a complete data workflow: ingestion, preparation, serving, and operationalization.
 
@@ -13,7 +13,7 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 - Use Microsoft Fabric to analyze New York City's taxi data for improved urban planning and transportation safety.
 - Aim: Better traffic forecasting, route management, and safety measures, leading to enhanced urban transport services and infrastructure.
 
-**Lakehouse Solution Benefits:**
+**Lakehouse Solution Benefits**
 - Unified urban transport data analysis.
 - Enhanced fleet management and traffic forecasting.
 - Data-driven urban development insights.
