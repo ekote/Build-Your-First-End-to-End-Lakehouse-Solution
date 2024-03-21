@@ -85,14 +85,13 @@ To share a Lakehouse, click the <b>Share</b> button next to the lakehouse name i
 ![LakehouseShare](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f33d4f80-d24e-4804-b81f-ea4fd2f3188d)
 
 This will open the <b>Sharing dialog</b>
-
-
-![LakehouseSharingDialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
-
 1. Enter name or email address of users who you want to share the Lakehouse with.
 2. Check the boxes to grant appropriate permissions. Lakehouse sharing by default grants lakehouse, associated SQL endpoint, and default semantic model.
 3. To send a mail check the box <b>"Notify recipients by mail"</b>. Include an optional message.
 4. Click <b>Grant</b>.
+
+![LakehouseSharingDialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
+
 
 
 ### Task 5
