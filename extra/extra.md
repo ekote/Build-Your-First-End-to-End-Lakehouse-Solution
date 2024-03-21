@@ -44,14 +44,41 @@ Choosing the right compression type depends on your specific needs: data access 
 
 ---
 
-# Monitor the pipeline run and verify the output
-![Monitoring](./../media/extra/3.jpg)
-![Monitoring](./../media/extra/4.jpg)
-![Monitoring](./../media/extra/5.jpg)
-![Monitoring](./../media/extra/6.jpg)
-![Monitoring](./../media/extra/7.jpg)
-![Monitoring](./../media/extra/8.jpg)
-![Monitoring](./../media/extra/9.jpg)
+# Monitor the Pipeline Run and Verify the Output
+
+The Microsoft Fabric Monitoring hub allows users to monitor activities from a centralized location. Note that the hub only displays activities for items you have permission to view.
+
+In this exercise, we will check the monitoring application for our pipeline and notebooks.
+
+1. To open the Monitoring hub, select "Monitoring hub" from the navigation pane. The hub displays information in a table format, listing Fabric activities by start time, with the latest activities at the top.
+
+2. Use the "Filter" button to refine the results in the monitoring hub table as shown in the screenshot. This makes navigation easier.
+   ![Monitoring](./../media/extra/3.jpg)
+
+3. Based on the filtered results, open the specific pipeline as demonstrated in the following image:
+   ![Monitoring](./../media/extra/4.jpg)
+
+4. Inside the monitoring hub, switch to the "Gantt Tab" to observe the notebook execution times. A successful execution is indicated by the prevalent green color.
+   ![Monitoring](./../media/extra/5.jpg)
+
+5. Click on the name of the notebook you are monitoring.
+   ![Monitoring](./../media/extra/6.jpg)
+
+6. In the notebook's detailed view, focus on two important sections: the Spark monitoring URL and the monitoring snapshot. Click on "Monitoring Snapshot".
+   ![Monitoring](./../media/extra/7.jpg)
+
+7. Inside the monitoring snapshot, scroll through to view the executed values within the notebook, ensuring full transparency of the operations carried out.
+   ![Monitoring](./../media/extra/8.jpg)
+
+8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green201501".
+
+9. Observe the execution details such as the duration, default lake house setting, and queue duration to understand the efficiency and performance of your job.
+
+10. Return to the "Resources" tab to review metrics such as total duration, total idle time, and efficiency. A low efficiency percentage, like 15%, suggests there is significant room for improvement in the pipeline, code, and compute settings.
+    ![Monitoring](./../media/extra/9.jpg)
+
+Consider sharing any optimization strategies with the workshop hosts and your colleagues to enhance the overall efficiency of your pipeline.
+
 
 # Create a dataflow that reads data from a CSV file
 
