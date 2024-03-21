@@ -35,7 +35,7 @@ Navigate to the Data Factory section by following the numbered instructions on t
 Ensure you are in the Data Factory section. Begin exploring data integration at scale using data pipelines.
 
 > [!IMPORTANT]  
-> Note that that it takes a couple of seconds to come up with data pipeline pop up window in which you can specify the name. Be cautious. 
+> Note that that it takes a couple of seconds to come up with data pipeline pop up window in which you can specify the name. Be patient, no need to repeat. 
 
 ![Step](../media/1/2.jpg)
 

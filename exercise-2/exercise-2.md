@@ -92,7 +92,7 @@ When working with large datasets, starting with data retrieval sets the foundati
 This set of instructions will guide you through the process of downloading external data and integrating it into your Lakehouse for comprehensive analysis.
 
 ## 1. Downloading Data
-Navigate to the [provided URL](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/NYC-Taxi-Discounts-Per-Day.csv) to download a CSV file containing information on discounts applied to users on a specific date. This data is vital for comprehensive analysis and is generated for your convenience. Download the file to your local machine from this link: Download Discount Data
+Navigate to the [provided URL](raw.githubusercontent.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/fabcon/exercise-2/NYC-Taxi-Discounts-Per-Day.csv){:target="_blank"} to download a CSV file containing information on discounts applied to users on a specific date. This data is vital for comprehensive analysis and is generated for your convenience. Download the file to your local machine from this link: Download Discount Data
 ![Step](../media/2/7.jpg)
 
 ## 2. Uploading Data to the Lakehouse
