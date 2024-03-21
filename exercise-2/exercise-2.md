@@ -21,7 +21,7 @@ By the end of the workshop, we will have completed the implementation of the med
 
 <details>
 
-<summary> # Task 2.1 Copilot for notebooks </summary>
+<summary> Task 2.1 Copilot for notebooks </summary>
 
 # Task 2.1 Copilot for notebooks
 
