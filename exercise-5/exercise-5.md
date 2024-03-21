@@ -76,6 +76,11 @@ Explore the unique capabilities of UDTFs for comprehensive data transformations:
 3. Apply the provided example code to a specific table from either your bronze or silver lakehouse data, focusing on the 'fare_amount' column.
 4. Perform the transformations and observe the outcome on a subset of the data, applying a 5% discount as an example.
 
+![Step](../media/5/1.jpg)
+
+<details>
+
+<summary>Check the answer</summary>
 
 ```python
 from pyspark.sql.functions import udtf
@@ -104,8 +109,7 @@ spark.udtf.register("calculate_individual_costs", TaxiFareUDTF)
 spark.sql("SELECT * FROM calculate_individual_costs(TABLE(SELECT fare_amount FROM bronzerawdata.green_tripdata_2023_01 LIMIT 20), 5)").show()
 ```
 
-
-![Step](../media/5/1.jpg)
+</details>
 
 Each new Runtime version introduces an expanded API, new methods, and transformations, enhancing the efficiency and capabilities of data processing. Moreover, the latest GA runtime versions typically outperform their predecessors due to continuous improvements by both the open-source community and the Microsoft product groups.
 
