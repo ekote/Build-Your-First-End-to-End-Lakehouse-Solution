@@ -14,8 +14,6 @@
 
 ---
 
-# Specify the file format and compression type for the sink datasets in Data Factory
-
 # Specify the File Format and Compression Type for Sink Datasets in Data Factory
 
 Based on Wikipedia, Snappy (formerly known as Zippy) is a fast data compression and decompression library developed by Google. It prioritizes high speed over maximum compression, offering significant speed benefits: 250 MB/s compression and 500 MB/s decompression using a single core of a circa 2011 2.26 GHz Core i7 processor. However, it provides 20–100% lower compression ratio compared to gzip. For more details, you can refer to the [Snappy article on Wikipedia](https://en.wikipedia.org/wiki/Snappy_(compression)).
