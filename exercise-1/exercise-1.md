@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 60 minutes
 > 
-> Back to [Agenda](./../README.md#agenda) | [Start Steps](./../start/start.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Start Steps](./../start/start.md) | [Up next: Exercise 2](./../exercise-2/exercise-2.md)
 
 # Context
 We will focus on integrating two data sources from NYC Taxi data: one from 2015 and the second from 2023. The table below presents the metaphors we will use to integrate the data:
@@ -302,4 +302,4 @@ Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).

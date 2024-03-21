@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 60 minutes
 > 
-> Back to [Agenda](./../README.md#agenda) | [Exercise 3](./../exercise-3/exercise-3.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 3](./../exercise-3/exercise-3.md) | [Up next: Exercise 5](./../exercise-5/exercise-5.md)
 
 # Context
 
@@ -143,4 +143,4 @@ In this task, you will publish the Power BI report created in the previous task 
 ---
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).

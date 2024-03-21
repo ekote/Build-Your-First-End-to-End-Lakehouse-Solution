@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 40 minutes
 > 
-> Back to [Agenda](./../README.md#agenda) | [Exercise 4](./../exercise-4/exercise-4.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 4](./../exercise-4/exercise-4.md) | [Up next: Extra steps](./../extra/extra.md)
 
 # List of extra exercises
 ##### [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials-1)
@@ -272,4 +272,4 @@ You can run a notebook in the VS Code for the web experience by selecting the **
 
 ---
 > [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#agenda). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Agenda](./../README.md#agenda). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).

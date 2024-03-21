@@ -3,7 +3,8 @@
 > [!NOTE]
 > Timebox: 75 minutes
 > 
-> Back to [Agenda](./../README.md#agenda) | [Exercise 1](./../exercise-1/exercise-1.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 1](./../exercise-1/exercise-1.md) | [Up next: Exercise 3](./../exercise-3/exercise-3.md)
+
 
 # Context
 In this exercise, we will explore data engineering tasks aimed at transforming raw data into a refined silver layer.
@@ -338,5 +339,5 @@ Please follow these steps:
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
 

@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 30 minutes
 > 
-> Back to [Agenda](./../README.md#agenda) | [Exercise 2](./../exercise-2/exercise-2.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 2](./../exercise-2/exercise-2.md) | [Up next: Exercise 4](./../exercise-4/exercise-4.md)
 
 
 The **SQL Analytics Endpoint** of a Fabric Lakehouse Offers a SQL-based experience for analyzing data in lakehouse delta tables using T-SQL language, with features like saving functions, generating views, and applying SQL security.
@@ -183,4 +183,4 @@ Learn how to share a notebook with team members within your workspace, allowing 
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).

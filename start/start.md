@@ -1,6 +1,6 @@
 # Start
 > [!NOTE]
-> Timebox: 30 minutes | [Agenda](./../README.md#agenda)
+> Timebox: 30 minutes | [Back to Agenda](./../README.md#agenda) | [Up next: Exercise 1](./../exercise-1/exercise-1.md)
 
 ## 1. Navigate to the Microsoft Fabric Website
 
@@ -92,4 +92,4 @@ The highest level of the lakehouse, where data is further transformed, modeled, 
 ---
 
 > [!IMPORTANT]
-> Once completed, proceed to [Exercise 1](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
+> Once completed, proceed to [Exercise 1](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
