@@ -6,13 +6,13 @@
 > Back to [Agenda](./../README.md#agenda) | [Exercise 4](./../exercise-4/exercise-4.md)
 
 # List of extra exercises
-#### Stay Updated and Bookmark Essentials
-#### Fabric Runtimes and Python User-defined Table Functions (UDTFs)
-#### Managed Private Endpoints
-#### Autotune Query Tuning
-#### Spark vs Pandas
-#### Data Wrangler is my friend
-#### VSCode (WEB)
+##### [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials-1)
+##### [Fabric Runtimes and Python User-defined Table Functions (UDTFs)](#fabric-runtimes-and-python-user-defined-table-functions-udtfs-1)
+##### [Managed Private Endpoints](#managed-private-endpoints-1)
+##### [Autotune Query Tuning](#autotune-query-tuning-1)
+##### [Spark vs Pandas](#spark-vs-pandas-1)
+##### [Data Wrangler is my friend](#data-wrangler-is-my-friend-1)
+##### [VSCode (WEB)](#vscode-web-1)
 
 # Stay Updated and Bookmark Essentials
 Dive into the latest and greatest from Fabric
@@ -26,9 +26,9 @@ Dive into the latest and greatest from Fabric
 
 ---
 
-## Fabric Runtimes and Python User-defined Table Functions (UDTFs)
+# Fabric Runtimes and Python User-defined Table Functions (UDTFs)
 
-### Understanding Apache Spark Runtimes in Fabric
+## Understanding Apache Spark Runtimes in Fabric
 Fabric Runtime, an Azure-integrated platform, is built on Apache Spark, facilitating large-scale data engineering and data science tasks. It amalgamates significant components from both proprietary and open-source domains to deliver an extensive data processing environment. Here, we refer to it as Fabric Runtime for simplicity.
 
 Essential Components of Fabric Runtime:
@@ -55,21 +55,21 @@ Refer to the following table for a detailed comparison of Apache Spark versions 
 
 The objective of this task is to dive into the newer runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
 
-### 1. Integrating Experimental Public Preview Runtime 1.3
+## 1. Integrating Experimental Public Preview Runtime 1.3
 Switch to the experimental Runtime version 1.3 to utilize new features:
 
 1. Navigate to the 'Workspace settings' within your Fabric workspace.
 2. Access the 'Data Engineering/Science' tab and select 'Spark Settings'.
 3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 Experimental (Spark 3.5, Delta 3 OSS)', and confirm your changes. This sets Runtime 1.3 as your default.
 
-### 2. Initiating a New Notebook
+## 2. Initiating a New Notebook
 Create and configure a new notebook:
 
 1. Start a new notebook session in your workspace.
 2. Note that Spark 3.5 sessions may take 2-5 minutes to initiate due to the absence of starter pools in the early experimental phase.
 3. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
 
-### 3. Exploring UDTFs with Fabric
+## 3. Exploring UDTFs with Fabric
 Explore the unique capabilities of UDTFs for comprehensive data transformations:
 1. Consider the real-world scenario of taxi fares, where the final cost encompasses various elements beyond the base fare, such as taxes, tips, and additional charges.
 2. Utilize UDTFs to calculate and apply these additional costs in one operation, enhancing data analysis and insight extraction from your datasets.
@@ -113,7 +113,7 @@ Now, apply this knowledge to calculate comprehensive costs beyond the example.
 
 ---
 
-## Managed Private Endpoints
+# Managed Private Endpoints
 
 Managed virtual networks are virtual networks that are created and managed by Microsoft Fabric for each Fabric workspace. Managed virtual networks provide network isolation for Fabric Spark workloads, meaning that the compute clusters are deployed in a dedicated network and are no longer part of the shared virtual network. Managed virtual networks also enable network security features such as managed private endpoints, and private link support for Data Engineering and Data Science items in Microsoft Fabric that use Apache Spark.
 
@@ -138,7 +138,7 @@ Follow the GIF which presents e2e demo on how to create manage private endpoint.
 
 ---
 
-## Autotune Query Tuning
+# Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
 
 This week marks the transition of Autotune to public review, accessible across all regions. This presents you with a unique opportunity to view a demonstration that has yet to be released to the public. Below, you will find a link to this exclusive demo.
@@ -159,23 +159,23 @@ Please look out for further announcements regarding Autotune throughout the week
 
 ---
 
-## Spark vs Pandas
+# Spark vs Pandas
 Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
-### 1. Understanding Pandas
+## 1. Understanding Pandas
 Pandas shines due to its simplicity and intuitive design, making it a favorite among data engineers, scientists, and analysts. However, its primary limitation lies in its inability to natively harness parallel architectures and computations. Pandas operates within the confines of single-node, in-memory computations, restricting its scalability and efficiency in processing vast datasets typical in big data scenarios.
 
-### 2. Transition to Spark and its core concepts
+## 2. Transition to Spark and its core concepts
 Apache Spark transcends these limitations by adopting a distributed computing approach. Key distinctions include:
 - **Spark DataFrames**: These are distributed across clusters, enabling parallel data processing far beyond the capacities of a single machine.
 - **Lazy Evaluation**: Spark employs lazy evaluation for DataFrames, constructing a Directed Acyclic Graph (DAG) of transformations that are optimized and executed only when an action is required, enhancing overall execution efficiency.
 - **Advanced Optimizations**: Features like Adaptive Query Execution (AQE) and Dynamic Partition Pruning (DPP) automatically optimize query plans and data partitioning, respectively, something far beyond the reach of Pandas.
 
-### 3. General rule of thumb
+## 3. General rule of thumb
 - Utilize Pandas for datasets that comfortably fit into the memory of a single machine and when the data processing doesn't demand extensive parallelization.
 - Opt for Spark when dealing with massive datasets that exceed single machine capacity, or when tasks benefit significantly from parallelization, despite any existing familiarity with Pandas due to Spark's scalability and optimization features.
 
-### 4. Bridging the gap with Koalas
+## 4. Bridging the gap with Koalas
 Introduced in Spark 3.2, Koalas marries the simplicity of the Pandas API with Spark’s distributed computing prowess. By importing `pandas` API through PySpark:
 
 ```python
@@ -184,20 +184,20 @@ from pyspark import pandas as pd
 
 This integration enables data practitioners to apply familiar Pandas-like operations while leveraging Spark's distributed architecture, achieving the best of both worlds.
 
-### 5. Practical application in Fabric:
+## 5. Practical application in Fabric:
 In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
 
 Chech [How to read and write data with Pandas in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/read-write-pandas).
 
 ---
 
-## Data Wrangler is my friend
+# Data Wrangler is my friend
 Immerse yourself in the world of efficient data analysis with Fabric's Data Wrangler. This task is designed to help you leverage Data Wrangler's capabilities to explore and transform Pandas DataFrames effectively. Data Wrangler blends a user-friendly grid-like interface with dynamic data analysis tools, making exploratory data analysis both intuitive and robust.
 
 Dive deep into the functionalities of Data Wrangler within Fabric, focusing specifically on Pandas DataFrames. Your task will be segmented into actionable steps, guiding you through the process of data exploration, visualization, and transformation within this powerful tool.
 
 
-### 1. Initial Setup
+## 1. Initial Setup
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
 
@@ -206,7 +206,7 @@ Load a Pandas DataFrame that you wish to analyze. If you don't have a specific d
 ![Step](../media/5/dw2.jpg)
 ![Step](../media/5/dw3.jpg)
 
-#### 2. Exploratory Data Analysis
+## 2. Exploratory Data Analysis
 
 Utilize the grid-like data display to review your dataset. Pay attention to the distribution of data, missing values, and data types.
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
@@ -216,26 +216,26 @@ Leverage built-in visualizations to understand data distributions, correlations,
 ![Step](../media/5/dw5.jpg)
 ![Step](../media/5/dw6.jpg)
 
-#### 3. Data Cleaning Operations
+## 3. Data Cleaning Operations
 
 Identify any inconsistencies, missing values, or outliers within your dataset.
 Apply common data-cleaning operations available in Data Wrangler, such as filling missing values, filtering rows, or correcting data types. Observe how each operation updates the data display in real time.
 Evaluate the impact of your data transformations on the summary statistics and visualizations to ensure they align with your analysis goals.
 
-#### 4. Code Generation and Reusability
+## 4. Code Generation and Reusability
 
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
 
 ![Step](../media/5/dw7.jpg)
 
-### To learn more, I encourage you to watch the Fabric Espresso episode about Data Wrangler.
+## To learn more, I encourage you to watch the Fabric Espresso episode about Data Wrangler.
 [![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)
 
 
 ---
 
-## VSCode (WEB)
+# VSCode (WEB)
 
 Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
 
@@ -266,7 +266,7 @@ You can run a notebook in the VS Code for the web experience by selecting the **
 ![VSCODE](../media/5/vs6.jpg)
 
 
-### To learn more, I encourage you to watch the Fabric Espresso episode about VSCode.
+## To learn more, I encourage you to watch the Fabric Espresso episode about VSCode.
 
 [![FabricEspresso](https://img.youtube.com/vi/A9SjAyZ_JSc/0.jpg)](https://www.youtube.com/watch?v=A9SjAyZ_JSc)
 
