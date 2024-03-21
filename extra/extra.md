@@ -96,7 +96,7 @@ One of the main benefits of a Lakehouse architecture is that it provides a simpl
 
 Another benefit of a Lakehouse architecture is that it allows you to recreate your tables from raw data at any time. This is possible because Delta Lake provides ACID transactions and time travel capabilities, allowing you to track changes to your data and easily roll back to previous versions if necessary.
 
-## Medallion architecture in Fabric Lakehouse
+## Review the Medallion Architecture in Fabric Lakehouse
 
 After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
 
@@ -152,16 +152,41 @@ average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"sil
 Watch Fabric Espresso episode as Abhishek discuss and demo the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
 [![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
 
-Task: 
 
 ---
 
-# Schedule your notebook
-Your task is to schedule notebook to run every hour.
-Save, schedule and run the notebook as a job 
 
-![Monitoring](./../media/extra/10.jpg)
-![Monitoring](./../media/extra/11.jpg)
+# Schedule Your Notebook for Multiple Daily Runs
+
+In this exercise, you'll learn how to schedule a notebook to run multiple times a day using the scheduling feature, a simpler alternative to using pipelines for single notebooks.
+
+1. **Access the Notebook**:
+   - Open the notebook from the second exercise. 
+   - Click on the scheduling icon presented in the screenshot to access the scheduling options.
+     ![Scheduling Icon](./../media/extra/10.jpg)
+
+2. **Configure the Schedule**:
+   - Switch to the "Schedule" tab where you will find various options to set up your notebook's schedule.
+   - Start by enabling the schedule function to make the notebook run automatically according to your specified timing.
+     ![Schedule Tab](./../media/extra/11.jpg)
+
+3. **Define the Schedule Details**:
+   - Set the notebook to repeat daily.
+   - Schedule the execution times for your notebook, for example, at 7:00 AM and 10:00 AM. Ensure that these times align with your workflow and data processing needs.
+   - Specify the start and end dates for the scheduled runs, defining how long the notebook should follow this schedule.
+   - Select the appropriate time zone for your schedule, ensuring accuracy in execution times.
+
+4. **Apply and Confirm Changes**:
+   - After configuring the settings, apply the changes to activate the schedule.
+   - Verify that the schedule has been set correctly and aligns with your requirements.
+
+5. **Monitoring and Historical Analysis**:
+   - Once the schedule is active, monitor the executions through the Monitoring hub. This will allow you to observe the runs and ensure they are occurring as planned.
+   - Use historical analysis within the Monitoring hub to assess the performance and output of your scheduled notebook runs over time.
+
+Ensure that the scheduling aligns with your data processing goals and operational hours. Scheduling notebooks to run during off-peak hours can help optimize resource usage and reduce costs. Document any challenges or insights gained during this exercise to share with your team or for future reference.
+
+
 
 
 ## Create a new Spark Pool on the Workspace-level settings
