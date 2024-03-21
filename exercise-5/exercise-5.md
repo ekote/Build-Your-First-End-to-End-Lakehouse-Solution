@@ -4,6 +4,8 @@
 > Timebox: 40 minutes
 > 
 > Back to [Agenda](./../README.md#agenda)
+> 
+> Back to [Exercise 4](./../exercise-4/exercise-4.md)
 
 # Task 5.1 Stay Updated and Bookmark Essentials
 Dive into the latest and greatest from Fabric
