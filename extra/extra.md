@@ -4,20 +4,26 @@
 
 ---
 
-# Exercise 1 - Extra Tasks
+# Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
+![Compression](./../media/extra/1.jpg)
+![Compression](./../media/extra/2.jpg)
 
-##  Task 1.2 Use a Copy Data activity to configure the source and sink datasets, and specify the file format and compression type.
+---
 
-## Task 1.3 Monitor the pipeline run and verify the output files in the data lake.
+# Monitor the pipeline run and verify the output
+![Compression](./../media/extra/3.jpg)
+![Compression](./../media/extra/4.jpg)
+![Compression](./../media/extra/5.jpg)
+![Compression](./../media/extra/6.jpg)
+![Compression](./../media/extra/7.jpg)
+![Compression](./../media/extra/8.jpg)
+![Compression](./../media/extra/9.jpg)
 
-## Task 1.4 Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
+# Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
 
-## Task 1.5 Use the data preview and debug features to inspect the data at each step of the transformation.
-Write the transformed data to a Delta table in the Lakehouse.
+---
 
-## Task 1.6 Run the dataflow and monitor the Spark job execution details. 
-
-##  Medallion architecture
+# Medallion architecture
 A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
 
 ![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
@@ -28,7 +34,7 @@ One of the main benefits of a Lakehouse architecture is that it provides a simpl
 
 Another benefit of a Lakehouse architecture is that it allows you to recreate your tables from raw data at any time. This is possible because Delta Lake provides ACID transactions and time travel capabilities, allowing you to track changes to your data and easily roll back to previous versions if necessary.
 
-### Medallion architecture in Fabric Lakehouse
+## Medallion architecture in Fabric Lakehouse
 
 After performing data cleaning and transformation on your Lakehouse data, you can save the resulting data back to another Lakehouse to reflect the "bronze->silver->gold" pattern.
 
@@ -79,7 +85,7 @@ average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"sil
 
 ![Medallion Architecture](./../media/1/medarch.jpg)
 
-### Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
+## Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
 
 Watch Fabric Espresso episode as Abhishek discuss and demo the Medallion Architecture Data Design and Lakehouse Patterns in Microsoft Fabric Data Factory.  
 [![FabricEspresso](https://img.youtube.com/vi/706MVIBivOU/0.jpg)](https://www.youtube.com/watch?v=706MVIBivOU)
