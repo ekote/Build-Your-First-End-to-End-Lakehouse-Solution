@@ -80,7 +80,7 @@ SELECT tipped, COUNT(*) AS tip_freq FROM (
 GROUP BY tipped
 ```
 
-### Task 4
+<!-- ### Task 4
 ### Objective: Create a workspace managed identity
 
 Creating a workspace identity in Microsoft Fabric involves 3 steps:
@@ -89,7 +89,7 @@ Creating a workspace identity in Microsoft Fabric involves 3 steps:
 3.  Click on the **+ Workspace identity** button to create a new identity.
 
 Once created, the workspace identity details and a list of authorized users will be displayed. The workspace identity is automatically assigned the workspace contributor role and has access to workspace items.
-
+-->
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
