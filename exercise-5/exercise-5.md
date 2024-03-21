@@ -80,7 +80,7 @@ Explore the unique capabilities of UDTFs for comprehensive data transformations:
 
 <details>
 
-<summary>Check the answer</summary>
+<summary>Click here to expand the details and check the code</summary>
 
 ```python
 from pyspark.sql.functions import udtf
