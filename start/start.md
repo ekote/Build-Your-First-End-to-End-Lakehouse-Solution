@@ -4,7 +4,6 @@
 
 ## 1. Navigate to the Microsoft Fabric Website
 
-
 > [!TIP]
 > We recommend using Incognito mode during this workshop to avoid automatic redirects related to your usual Fabric or Power BI tenants. Incognito prevents the browser from using your default work profile, making it easier to follow along without interruptions.
 
