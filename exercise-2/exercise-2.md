@@ -8,6 +8,9 @@
 # Context
 In this exercise, we will explore data engineering tasks aimed at transforming raw data into a refined silver layer.
 
+By the end of the workshop, we will have completed the implementation of the medallion architecture:
+![Data overview](../media/2/intro.png)
+
 ---
 
 # Task 2.1 Copilot for notebooks
