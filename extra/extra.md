@@ -1,6 +1,18 @@
 > [!NOTE]
 > 
 > Back to [Agenda](./../README.md#agenda)
+> 
+> Back to [Start Steps](./../start/start.md)
+> 
+> Back to [Exercise 1](./../exercise-1/exercise-1.md)
+> 
+> Back to [Exercise 2](./../exercise-2/exercise-2.md)
+> 
+> Back to [Exercise 3](./../exercise-3/exercise-3.md)
+> 
+> Back to [Exercise 4](./../exercise-4/exercise-4.md)
+> 
+> Back to [Exercise 5](./../exercise-5/exercise-5.md)
 
 # Exercise 1 - Extra Tasks
 
