@@ -228,35 +228,81 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
 Creating and configuring a new Spark pool with dynamic allocation and auto-scaling features can significantly improve the efficiency and performance of data processing tasks. Pay attention to the job execution times and resource utilization before and after implementing the new pool to measure the improvements.
 
 
+# Verify V-Order
 
-## Use Environment to tailor your runtime
-![Monitoring](./../media/extra/18.jpg)
-![Monitoring](./../media/extra/19.jpg)
-![Monitoring](./../media/extra/20.jpg)
-![Monitoring](./../media/extra/21.jpg)
-![Monitoring](./../media/extra/22.jpg)
-![Monitoring](./../media/extra/23.jpg)
-![Monitoring](./../media/extra/24.jpg)
+V-Order is a write-time optimization for Parquet files that enhances read performance under Microsoft Fabric compute engines like Power BI, SQL, and Spark. It applies sorting, compression, and other optimizations, providing cost efficiency and improved performance.
 
-## Saved with V-Order?
-![Monitoring](./../media/extra/25.jpg)
-![Monitoring](./../media/extra/26.jpg)
-![Monitoring](./../media/extra/27.jpg)
+In this exercise, you will verify whether a table has been saved with or without V-Order optimization. 
+
+1. **Prepare the Environment**:
+   - Create a new notebook in your workspace.
+   - Load a large table into a DataFrame for testing the effects of V-Order.
+
+2. **Experiment Setup**:
+   - In the first cell of the notebook, disable V-Order optimization and save the DataFrame as a new table.
+   - In a separate cell, enable V-Order optimization and save the DataFrame as another table.
+   - Execute both cells to create two versions of the table: one with V-Order enabled and one without.
+     ![Notebook Setup](./../media/extra/25.jpg)
+
+3. **Verify File Properties**:
+   - Navigate to the Lakehouse, then to Lakehouse Explorer.
+   - Locate your tables, click on the three dots next to the table names, and select "View Files".
+   - Enter the `_delta_log` folder and open the JSON files associated with both tables.
+     ![Lakehouse Explorer](./../media/extra/26.jpg)
+
+4. **Compare File Contents**:
+   - Reformat the JSON files for easier comparison.
+   - Check for the presence of V-Order optimization indicators, typically found in the tags section of the JSON log.
+   - Pay attention to the number of output rows and the size of output bytes between the tables saved with and without V-Order.
+     ![File Comparison](./../media/extra/27.jpg)
 
 
-## DW vs Lakehouse?
-![DW or Lakehouse](https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png)
+Review the [Microsoft documentation on Delta optimization and V-Order](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) for a deeper understanding and context.  By understanding the impact and functioning of V-Order, you can make informed decisions about its use in your data storage and processing strategies. Remember, the goal is not just to see if V-Order is applied, but also to understand its benefits and implications.
 
-![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
 
-## SaaS vs PaaS
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
 
-## Fabric Licensing
-* ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
+[//]: # ()
+[//]: # (## Use Environment to tailor your runtime)
 
-## Fabric UI
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png)
+[//]: # (![Monitoring]&#40;./../media/extra/18.jpg&#41;)
 
-## Fabric Capacities
-* ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
+[//]: # (![Monitoring]&#40;./../media/extra/19.jpg&#41;)
+
+[//]: # (![Monitoring]&#40;./../media/extra/20.jpg&#41;)
+
+[//]: # (![Monitoring]&#40;./../media/extra/21.jpg&#41;)
+
+[//]: # (![Monitoring]&#40;./../media/extra/22.jpg&#41;)
+
+[//]: # (![Monitoring]&#40;./../media/extra/23.jpg&#41;)
+
+[//]: # (![Monitoring]&#40;./../media/extra/24.jpg&#41;)
+
+[//]: # ()
+[//]: # ()
+[//]: # (## DW vs Lakehouse?)
+
+[//]: # (![DW or Lakehouse]&#40;https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png&#41;)
+
+[//]: # ()
+[//]: # (![Two endpoints]&#40;https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png&#41;)
+
+[//]: # ()
+[//]: # (## SaaS vs PaaS)
+
+[//]: # (* ![Fabric Basic]&#40;https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png&#41;)
+
+[//]: # ()
+[//]: # (## Fabric Licensing)
+
+[//]: # (* ![Fabric Licensing]&#40;https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png&#41;)
+
+[//]: # ()
+[//]: # (## Fabric UI)
+
+[//]: # (* ![Fabric Basic]&#40;https://microsoft.github.io/fabricnotes/images/notes/02-understand-fabric-ui.png&#41;)
+
+[//]: # ()
+[//]: # (## Fabric Capacities)
+
+[//]: # (* ![Fabric Basic]&#40;https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png&#41;)
