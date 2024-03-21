@@ -176,7 +176,7 @@ Learn how to share a notebook with team members within your workspace, allowing 
      ![Manage Permissions](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b37e8de8-36d8-4a4b-accb-4b67c901f26a)
 
 
-> [!IMPORTANT]
+> [!NOTE]
 > Be mindful of the data and information contained in the notebook when sharing, ensuring that only the appropriate parties receive access. Review your organization’s policies on data sharing and collaboration to comply with security and privacy standards. Document any issues or challenges encountered during the sharing process for future reference or to seek assistance.
 
 ---
