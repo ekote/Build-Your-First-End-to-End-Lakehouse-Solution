@@ -1,8 +1,6 @@
 # Start
 > [!NOTE]
-> Timebox: 30 minutes
-> 
-> Back to [Agenda](./../README.md#agenda)
+> Timebox: 30 minutes | [Agenda](./../README.md#agenda)
 
 ## 1. Navigate to the Microsoft Fabric Website
 Visit the Microsoft Fabric website at https://fabric.microsoft.com/.

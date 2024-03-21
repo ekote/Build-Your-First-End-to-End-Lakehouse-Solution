@@ -3,9 +3,7 @@
 > [!NOTE]
 > Timebox: 40 minutes
 > 
-> Back to [Agenda](./../README.md#agenda)
-> 
-> Back to [Exercise 4](./../exercise-4/exercise-4.md)
+> Back to [Agenda](./../README.md#agenda) | [Exercise 4](./../exercise-4/exercise-4.md)
 
 # List of extra exercises
 #### Stay Updated and Bookmark Essentials

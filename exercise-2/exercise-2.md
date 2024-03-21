@@ -3,9 +3,7 @@
 > [!NOTE]
 > Timebox: 75 minutes
 > 
-> Back to [Agenda](./../README.md#agenda)
-> 
-> Back to [Exercise 1](./../exercise-1/exercise-1.md)
+> Back to [Agenda](./../README.md#agenda) | [Exercise 1](./../exercise-1/exercise-1.md)
 
 # Context
 TODO

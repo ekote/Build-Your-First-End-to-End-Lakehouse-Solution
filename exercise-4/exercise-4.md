@@ -3,8 +3,7 @@
 > [!NOTE]
 > Timebox: 60 minutes
 > 
-> Back to [Agenda](./../README.md#agenda)
-> Back to [Exercise 3](./../exercise-3/exercise-3.md)
+> Back to [Agenda](./../README.md#agenda) | [Exercise 3](./../exercise-3/exercise-3.md)
 
 # Context
 The data in your lakehouse tables is included in a dataset that defines a relational model for your data. You can edit this dataset, defining custom measures, hierarchies, aggregations, and other elements of a data model. You can then use the dataset as the source for a Power BI report that enables you to visualize and analyze the data.
