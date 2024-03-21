@@ -20,7 +20,7 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 - Improved transportation reliability and safety.
 - Adaptable data infrastructure for future urban mobility trends.
 
-![Diagram](./media/start/diagram.png)
+![Build Your First End to End Lakehouse Solution](./media/start/diagram.png)
 
 # Agenda
 
@@ -51,4 +51,4 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 > 
 > 03:30 pm - 04:00 pm - Recap
 
-[Advanced, extra steps](./extra/extra.md).
+[Extra steps](./extra/extra.md).

@@ -78,7 +78,7 @@ In this exercise, we will check the monitoring application for our pipeline and 
 Consider sharing any optimization strategies with the workshop hosts and your colleagues to enhance the overall efficiency of your pipeline.
 
 
-# Create a dataflow that reads data from a CSV file
+[//]: # (# Create a dataflow that reads data from a CSV file)
 
 
 ---
