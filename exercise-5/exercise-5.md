@@ -15,6 +15,8 @@ Dive into the latest and greatest from Fabric
 > [!IMPORTANT]
 > This is also a great opportunity to remind you to always use the latest GA runtime version. Experiment with the Preview version, but for production-level workloads, use the GA version. Additionally, we will soon publish the lifecycle for runtimes. We aim to introduce a new release every six months, and a natural consequence for Spark is that we will have to run deprecation cycles for outdated, unsupported runtimes. Migrate your production workloads before the deprecation date because once the runtime is deprecated, there will be no way to create new pools, and your jobs will be disabled within 90 days following the deprecation.
 
+---
+
 ## Task 5.1 Fabric Runtimes and Python User-defined Table Functions (UDTFs)
 
 ### Understanding Apache Spark Runtimes in Fabric
@@ -97,6 +99,14 @@ Each new Runtime version introduces an expanded API, new methods, and transforma
 
 Now, apply this knowledge to calculate comprehensive costs beyond the example. 
 
+---
+
+## Task 5.8 Managed Private Endpoints
+* Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
+
+
+
+---
 
 ## Task 5.4 Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
@@ -105,7 +115,7 @@ This week marks the transition of Autotune to public review, accessible across a
 
 Please look out for further announcements regarding Autotune throughout the week. We are excited to share more information about this innovative feature with you.
 
-* [Watch the exclusive demo](https://1drv.ms/v/s!ApCaji7rcQaQ3rNv8g7pBnLdrwQBfQ?e=R7GiEq) that has not been previously released.
+* [Watch the exclusive demo](https://1drv.ms/v/s!ApCaji7rcQaQ3rNv8g7pBnLdrwQBfQ?e=R7GiEq) that has not been yet released.
 
 * For more information on Autotune, please review the documentation available at [Autotune in Fabric Data Engineering](https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql).
 
@@ -117,24 +127,25 @@ Please look out for further announcements regarding Autotune throughout the week
 >
 > This feature is compatible with notebooks, Spark Job Definitions, and pipelines.
 
+---
 
 ## Task 5.5 Spark vs Pandas
 Your mission, in that task, involves guiding new team members through the labyrinth of big data processing, particularly in leveraging Apache Spark over Pandas for substantial datasets. This advice is pivotal not only within the Fabric ecosystem but universally in the big data domain.
 
-### Understanding Pandas:
+### 1. Understanding Pandas
 Pandas shines due to its simplicity and intuitive design, making it a favorite among data engineers, scientists, and analysts. However, its primary limitation lies in its inability to natively harness parallel architectures and computations. Pandas operates within the confines of single-node, in-memory computations, restricting its scalability and efficiency in processing vast datasets typical in big data scenarios.
 
-### Transition to Spark and its core concepts:
+### 2. Transition to Spark and its core concepts
 Apache Spark transcends these limitations by adopting a distributed computing approach. Key distinctions include:
 - **Spark DataFrames**: These are distributed across clusters, enabling parallel data processing far beyond the capacities of a single machine.
 - **Lazy Evaluation**: Spark employs lazy evaluation for DataFrames, constructing a Directed Acyclic Graph (DAG) of transformations that are optimized and executed only when an action is required, enhancing overall execution efficiency.
 - **Advanced Optimizations**: Features like Adaptive Query Execution (AQE) and Dynamic Partition Pruning (DPP) automatically optimize query plans and data partitioning, respectively, something far beyond the reach of Pandas.
 
-### General rule of thumb:
+### 3. General rule of thumb
 - Utilize Pandas for datasets that comfortably fit into the memory of a single machine and when the data processing doesn't demand extensive parallelization.
 - Opt for Spark when dealing with massive datasets that exceed single machine capacity, or when tasks benefit significantly from parallelization, despite any existing familiarity with Pandas due to Spark's scalability and optimization features.
 
-### Bridging the gap with Koalas:
+### 4. Bridging the gap with Koalas
 Introduced in Spark 3.2, Koalas marries the simplicity of the Pandas API with Spark’s distributed computing prowess. By importing `pandas` API through PySpark:
 
 ```python
@@ -143,14 +154,12 @@ from pyspark import pandas as pd
 
 This integration enables data practitioners to apply familiar Pandas-like operations while leveraging Spark's distributed architecture, achieving the best of both worlds.
 
-### Practical application in Fabric:
+### 5. Practical application in Fabric:
 In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
-
-By the end of this task, you should be able to discern the appropriate circumstances for utilizing Pandas versus Spark, ensuring optimal data processing strategies in your big data endeavors.
-
 
 Proceed to your next challenge, which will delve deeper into Pandas, enriching your data manipulation skills in big data contexts.
 
+---
 
 ## Task 5.6 Data Wrangler is my friend
 Immerse yourself in the world of efficient data analysis with Fabric's Data Wrangler. This task is designed to help you leverage Data Wrangler's capabilities to explore and transform Pandas DataFrames effectively. Data Wrangler blends a user-friendly grid-like interface with dynamic data analysis tools, making exploratory data analysis both intuitive and robust.
@@ -159,46 +168,73 @@ Dive deep into the functionalities of Data Wrangler within Fabric, focusing spec
 
 Step-by-Step Instructions:
 
-### Initial Setup
+### 1. Initial Setup
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
 
-#### Exploratory Data Analysis
+#### 2. Exploratory Data Analysis
 
 Utilize the grid-like data display to review your dataset. Pay attention to the distribution of data, missing values, and data types.
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
 Leverage built-in visualizations to understand data distributions, correlations, and outliers. Experiment with different chart types to best represent your data.
-#### Data Cleaning Operations
+
+#### 3. Data Cleaning Operations
 
 Identify any inconsistencies, missing values, or outliers within your dataset.
 Apply common data-cleaning operations available in Data Wrangler, such as filling missing values, filtering rows, or correcting data types. Observe how each operation updates the data display in real time.
 Evaluate the impact of your data transformations on the summary statistics and visualizations to ensure they align with your analysis goals.
 
-#### Code Generation and Reusability
+#### 4. Code Generation and Reusability
 
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
 
-[![FabricEspresso](https://img.youtube.com/vi/g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=g6KveKQXu4)
+[![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)
 
+---
 
 ## Task 5.7 Single Node Cluster
-* [ ] Review https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute#spark-pools
+*  Review https://learn.microsoft.com/en-us/fabric/data-engineering/spark-compute#spark-pools
+
+---
+
+## Task 5.9 VSCode (WEB)
+
+Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
+
+## 1. Install the Synapse VS Code extension for the Web
+
+1. Go to https://insider.vscode.dev from your browser.
+1. Select the **Extensions** icon in the left navigation bar.
+1. Search for **Synapse** and select the **Synapse VS Code - Remotes** extension
+1. click **Install**.
+
+![VSCODE](../media/5/vs1.jpg)
 
 
+## 2. Open a notebook (e.g., notebook-2) with the Synapse VS Code extension for the Web
+
+You can open a notebook in the VS Code for the Web experience by clicking the **Open in VS Code(Web)** button on the notebook authoring page in the Fabric portal. After you select the button, a separate browser tab is opened with the VS Code for the web experience. If you haven't already installed the extension, it is automatically installed, and activated, and the notebook is opened.
+![VSCODE](../media/5/vs2.jpg)
+![VSCODE](../media/5/vs3.jpg)
+![VSCODE](../media/5/vs4.jpg)
 
 
-## Task 5.8 Managed Private Endpoints
-* [ ] Review https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-overview 
+## Run notebooks in the VS Code for the Web experience
+
+You can run a notebook in the VS Code for the web experience by selecting the **Run** button in the notebook editor. Before you run the notebook, make sure to select the **Synapse VS Code -Remote** as the kernel. The kernel is selected in the top right corner of the notebook editor.
+
+![VSCODE](../media/5/vs5.jpg)
+
+![VSCODE](../media/5/vs6.jpg)
 
 
+### To learn more, I encourage you to watch the Fabric Espresso episode about VSCode.
 
-## Task 5.9 VSCode (APP and WEB)
 [![FabricEspresso](https://img.youtube.com/vi/A9SjAyZ_JSc/0.jpg)](https://www.youtube.com/watch?v=A9SjAyZ_JSc)
 
 
 
-
-
+---
 > [!IMPORTANT]
 > Once completed, go to [Agenda](./../README.md#agenda). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
