@@ -101,6 +101,11 @@ When working with large datasets, starting with data retrieval sets the foundati
 
 
 # Task 2.3 - Side Loading (local upload) and Load to Delta for CSV file
+
+We aim to expand the bronze layer by loading additional data. Below is a table that provides an updated view of the types of data we are loading into the bronze layer and the methods we are using for this purpose.
+![Data overview](../media/1/data-integration.png)
+
+
 This set of instructions will guide you through the process of downloading external data and integrating it into your Lakehouse for comprehensive analysis.
 
 ## 2.3.1. Downloading Data

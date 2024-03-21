@@ -6,18 +6,22 @@
 > Back to [Agenda](./../README.md#agenda) | [Start Steps](./../start/start.md)
 
 # Context
+We will focus on integrating two data sources from NYC Taxi data: one from 2015 and the second from 2023. The table below presents the metaphors we will use to integrate the data:
+![Data overview](../media/1/data-integration-one.png)
+
 Tasks Overview:
 * Data Ingestion: Initiate by loading historical data assets from the year 2015, a period when Azure Blob Storage was the zenith of data storage solutions. This step will simulate the transition of legacy data into a modern data ecosystem.
 * Data Integration and Analysis: Shift focus to more recent data, specifically from January 2023. During this time, Azure Data Lake Storage Gen 2 (ADLS Gen2) became the benchmark for data storage in Azure. Instead of traditional data copying methods, you will leverage the innovative `Shortcuts` feature to streamline the integration process within our Lakehouse architecture.
 
-![Data overview](../media/1/data-integration.png)
+By the end of the workshop, we will have completed the first step, the bronze layer, of the medallion architecture:
+![Data overview](../media/1/intro.png)
 
 For those who complete the primary tasks ahead of time, we've prepared [additional challenges](./../extra/extra.md). These are designed to deepen your understanding and skills in data engineering. You'll find these at the bottom of the page. Questions are not just welcome; they are encouraged! Feel free to reach out to any of our hosts throughout the session. Collaboration and curiosity are key components of success in this exercise.
 
+---
+
 > [!TIP]
 > This exercise contains extensive content, but the primary focus will be on interacting with the UI. Expect to engage directly by clicking on various elements. Please prepare for this hands-on approach and ensure you are energized for active participation.
-
----
 
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
