@@ -20,9 +20,10 @@ You can also use the **New report button** to create a new Power BI report from 
 ---
 
 # DirectLake vs DirectQuery in Power BI
-![Direct Lake Super Power](https://microsoft.github.io/fabricnotes/images/notes/14-direct-lake.png)
 
 Power BI is natively integrated in the whole Fabric experience. This native integration brings a unique mode, called DirectLake, of accessing the data from the lakehouse to provide the most performant query and reporting experience. DirectLake mode is a groundbreaking new engine capability to analyze very large datasets in Power BI. The technology is based on the idea of loading parquet-formatted files directly from a data lake without having to query a data warehouse or lakehouse endpoint, and without having to import or duplicate data into a Power BI dataset. DirectLake is a fast path to load the data from the data lake straight into the Power BI engine, ready for analysis.
+
+![Direct Lake Super Power](https://microsoft.github.io/fabricnotes/images/notes/14-direct-lake.png)
 
 In traditional DirectQuery mode, the Power BI engine queries the data directly from the data source every time it's queried and hence query performance depends on the speed data can be retrieved from the data source. This method avoids having to copy the data; any changes at the source are immediately reflected in the query results while in the import mode. And yet performance is better because the data is readily available in memory without having to query the data source each time. However, the Power BI engine must first copy the data into the dataset at refresh time. Any changes at the source are only picked up during the next data refresh.
 
@@ -53,35 +54,33 @@ In this exercise, you will take on the role of a data scientist tasked with expl
    - Work through each step in the notebook, executing code cells and noting any insights or observations.
    - Make sure to save your progress as you work through the notebook.
 
-5. **Document Your Findings**:
-   - Document any significant findings, challenges faced, and the results of your model training and evaluation within the notebook.
-   - Prepare a brief summary of your approach, the model's performance, and any conclusions or next steps you propose.
-
-
 ---
 
+# Task 4.2 Explore and Visualize Taxi Trip Data Using Power BI and Direct Lake
 
-# Task 4.2 Explore and visualize the taxi trip data and predicted trip duration from the machine learning model using a Power BI report and Direct Lake.
+In this exercise, you will explore and visualize taxi trip data, including the predicted trip durations from the machine learning model you developed in Task 4.1. You will use Microsoft Fabric's Direct Lake feature for direct connectivity and create a Power BI report to analyze the data.
 
-In this exercise, we will use Microsoft Fabric Direct Lake feature that enables direct connectivity from Semantic models to Lakehouse tables in direct query mode with automatic data refresh. In the following steps you will use the prediction data produced in the previous task  *"4.1 Use the Data Science experience to train a machine learning model"*
-##### Steps to follow.
+### Steps to Follow
 
-1. Navigate to the goldcurated lakehouse artifact in your workspace, that you used as part of the previous exercises and open the lakehouse UI.
+1. **Access the Lakehouse Artifact**:
+   - Navigate to the "goldcurated" lakehouse artifact within your workspace, used in previous exercises.
+   - Open the lakehouse UI to begin working with the data.
 
-2. Click on the "New semantic model" button on the top ribbon, and in the dialog box enter the name for the semantic model (NYCTaxiTrips) and select **greentaxi_predicted** and click confirm to create a new semantic model linked to the predictions data produced in exercise 4.1
-![new Semantic Model](../media/4/NewSemanticModel.png)
+2. **Create a New Semantic Model**:
+   - Click the "New semantic model" button on the top ribbon.
+   - In the dialog, name the semantic model (e.g., NYCTaxiTrips) and select **greentaxi_predicted** as the data source. Confirm to create the semantic model linked to your predictive data.
+     ![New Semantic Model](../media/4/NewSemanticModel.png)
 
-3. On the semantic model UI click on the ***New report*** button on the top ribbon to open the Power BI report authoring page in a new browser window.
-![new Semantic Model](../media/4/NewReportfromSemanticModel.png)
+3. **Generate a New Power BI Report**:
+   - In the semantic model UI, click the ***New report*** button on the top ribbon. This will open the Power BI report authoring page in a new browser tab.
+     ![New Report from Semantic Model](../media/4/NewReportfromSemanticModel.png)
 
-You can now  create various visuals as per your requirement to generate insights from the prediction dataset or follow the steps outlined below.
-
----
-
+> [!IMPORTANT]  
+> You can now create various visuals as per your requirement to generate insights from the prediction dataset or follow the steps outlined below.
 
 #### Sample Visuals to analyze predictedTripDuration.
 
-1.  Create a Slicer visualization for pickupDate.
+1. Create a Slicer visualization for pickupDate.
     - Select the slicer option from the visualizations pane and select ***pickupDate*** from the data pane and drop it on the created slicer visualization field of the date slider visual.
 
 2. Visualize Average tripDuration and predictedTripDuration by timeBins using a clustered column chart.
@@ -91,8 +90,8 @@ You can now  create various visuals as per your requirement to generate insight
     - Add an area chart visual and add ***weekDayName* **onto X-axis, ***trip_duration*** to Y-axis and ***predictedTripDuration*** to secondary Y-axis. Switch aggregation method to Average for both Y-axes.
 
 4. Add Card visuals for overall predictedTripDuration and tripDuration.
-    - Add a Card Visual and add predictedTripDuration to the fields and switch aggregation method to Average.
-  - Add a Card Visual and add TripDuration to the fields and switch aggregation method to Average.
+   - Add a Card Visual and add predictedTripDuration to the fields and switch aggregation method to Average.
+   - Add a Card Visual and add TripDuration to the fields and switch aggregation method to Average.
 
 5. Visualize Average tripDuration and predictedTripDuration by pickupDate using line chart.
     - Add a line chart visual and add ***pickupDate*** onto X-axis, ***tripDuration*** and ***predictedTripDuration*** to Y-axis and switch aggregation method to Average for both fields.
@@ -100,37 +99,46 @@ You can now  create various visuals as per your requirement to generate insight
 6. Create Card Visuals for single view of key metrics.
    - Add a Card visual and drag ***tip_amount*** to fields and switch aggregation method to median.
    - Add 2nd Card visual and drag ***fare_amount*** to fields and switch aggregation method to average.
-   - Add 3rd Card visual and drag ***predictedtrip_duration*** to fields and switch aggregation method to average.
-    - Add 4th Card visual and drag ***trip_duration*** to fields and switch aggregation method to average.
+   - Add 3rd Card visual and drag ***predictedtrip_duration*** to fields and switch aggregation method to average. 
+   - Add 4th Card visual and drag ***trip_duration*** to fields and switch aggregation method to average.
 
-    You can now rearranng the layout and modify the aesthetics of the visuals as per your requirement and the report is ready to be published.
+  You can now rearrange the layout and modify the aesthetics of the visuals as per your requirement and the report is ready to be published.
 
-    ![Final report](../media/4/Report.png)
+  ![Final report](../media/4/Report.png)
+
+
+> [!TIP]
+> Remember to save and publish your report, making it accessible to stakeholders for review and decision-making.
 
 
 ---
 
 
-# Task 4.3 Publish the report and share it with other users. 
-In this task, we will publish the PowerBI report created in the previous task and share it with other users from your organisation.
+# Task 4.3 Publish and Share the Power BI Report
 
-##### Steps to follow.
-1. On the report editor page under the File menu click on
-Save or Save As option to open the report save dialog box. 2. Provide a name for the report; example *NYC Taxi Trip Analysis*
-3. Select a target workspace to publish the report and click Save.
-![Save report](../media/4/SaveReport.png)
-4. Your Power BI report is now available as an artifact in your workspace and is ready for sharing and consumption.
+In this task, you will publish the Power BI report created in the previous task to your Power BI workspace and share it with other users within your organization.
 
-    ![Report](../media/4/PublishedreportWS.png)
+1. **Save and Name the Report**:
+   - In the Power BI report editor, navigate to the File menu and select the Save or Save As option to open the report save dialog box.
+   - Enter a name for your report, for example, *NYC Taxi Trip Analysis*.
+   - Choose a target workspace within Power BI where you want the report to be published and click Save.
+     ![Save Report](../media/4/SaveReport.png)
 
-4. To share this report with other users, you can follow these steps:
-    - Open the report from the workspace, click on ‘Share’ from the top navigation bar.
-    - In the ‘Send link’ dialog, you’ll have the option to copy the sharing link or share it via Outlook, PowerPoint, and Teams to people in your organization.
-    - Manage permissions to the report as needed. You can allow recipients to view and interact with the report, but they won’t be able to edit it.
+2. **Publish the Report**:
+   - Once saved, your Power BI report will be available as an artifact in the chosen workspace, ready for sharing and consumption.
+     ![Published Report in Workspace](../media/4/PublishedreportWS.png)
 
-    For a more detailed guide on sharing, please refer to [Sharing and Collaboration](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards).
+3. **Share the Report**:
+   - Open the published report from your workspace.
+   - Click on ‘Share’ from the top navigation bar to open the sharing options.
+   - In the ‘Send link’ dialog, choose whether to copy the sharing link or share it directly via Outlook, PowerPoint, and Teams to people in your organization.
+   - Set the appropriate permissions for the report. Typically, you can allow recipients to view and interact with the report without granting editing permissions.
 
-<br>
+
+> [!TIP]
+> Ensure that the report is correctly formatted and contains all relevant insights before sharing. Also, be mindful of data privacy and security when sharing reports, especially if they contain sensitive information. Review the [Sharing and Collaboration](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards) guide from Microsoft for more details on sharing options and best practices. This task will help you understand how to effectively disseminate information and insights gained from your data analysis within your organization.
+
+---
 
 > [!IMPORTANT]
 > Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [Advanced steps](./../extra/extra.md).
