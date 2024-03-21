@@ -11,15 +11,16 @@
 ---
 
 # Monitor the pipeline run and verify the output
-![Compression](./../media/extra/3.jpg)
-![Compression](./../media/extra/4.jpg)
-![Compression](./../media/extra/5.jpg)
-![Compression](./../media/extra/6.jpg)
-![Compression](./../media/extra/7.jpg)
-![Compression](./../media/extra/8.jpg)
-![Compression](./../media/extra/9.jpg)
+![Monitoring](./../media/extra/3.jpg)
+![Monitoring](./../media/extra/4.jpg)
+![Monitoring](./../media/extra/5.jpg)
+![Monitoring](./../media/extra/6.jpg)
+![Monitoring](./../media/extra/7.jpg)
+![Monitoring](./../media/extra/8.jpg)
+![Monitoring](./../media/extra/9.jpg)
 
 # Create a dataflow that reads data from a CSV file in the data lake and performs some transformations, such as filtering, joining, aggregating, and mapping.
+
 
 ---
 
@@ -94,88 +95,46 @@ Watch Fabric Espresso episode as Abhishek discuss and demo the Medallion Archite
 
 ---
 
-# Exercise 2 - Extra Tasks
-
-## Task 2.7 Schedule notebook
+## Schedule notebook
 Your task is to schedule notebook to run every hour.
-
 Save, schedule and run the notebook as a job 
 
-## Task 2.8 Workspace-level settings
+![Monitoring](./../media/extra/10.jpg)
+![Monitoring](./../media/extra/11.jpg)
 
 
-## Task 2.9 Compute Settings
+## Workspace-level settings
+![Monitoring](./../media/extra/12.jpg)
+![Monitoring](./../media/extra/13.jpg)
+![Monitoring](./../media/extra/14.jpg)
+![Monitoring](./../media/extra/15.jpg)
+![Monitoring](./../media/extra/16.jpg)
+![Monitoring](./../media/extra/17.jpg)
 
 
-## Task 2.10 Environment
+## Environments
+![Monitoring](./../media/extra/18.jpg)
+![Monitoring](./../media/extra/19.jpg)
+![Monitoring](./../media/extra/20.jpg)
+![Monitoring](./../media/extra/21.jpg)
+![Monitoring](./../media/extra/22.jpg)
+![Monitoring](./../media/extra/23.jpg)
+![Monitoring](./../media/extra/24.jpg)
+
+## Saved with V-Order?
+![Monitoring](./../media/extra/25.jpg)
+![Monitoring](./../media/extra/26.jpg)
+![Monitoring](./../media/extra/27.jpg)
 
 
-## Task 2.11 GIT
-
-
-## Task 2.12 Saved with V-Order?
-
-
-## Task 2.13 DW vs Lakehouse?
+## DW vs Lakehouse?
 ![DW or Lakehouse](https://microsoft.github.io/fabricnotes/images/notes/04-lakehouse-vs-warehouse.png)
-
-
 
 ![Two endpoints](https://microsoft.github.io/fabricnotes/images/notes/12-sql-endpoints.png)
 
 
-## Task 2.15 Run OPTIMIZE cmd
-
-## Task 2.16 CODE REVIEW in shared notebook
-
-
-
----
-
-## Deployments Pipelines
-
-
-## Rest API
-
-
-
-
-## MS SPARK UTILITIES - run another notebook reference run
-
-TODO VIDEO
-
-## Run multiple
-
-> [!IMPORTANT]
-> Once completed, go to [Exercise 3](./../exercise-3/exercise-3.md).
-
-
-
-# Exercise 3 - Extra Tasks
-
-> [!IMPORTANT]
-> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md).
-
-
-# Exercise 4 - Extra Tasks
-> [!IMPORTANT]
-> Once completed, go to [Exercise 5](./../exercise-5/exercise-5.md).
-
-
-# Exercise 5 - Extra Tasks
-
-## Task 5.5 managed private endpoints for Fabric
-
-
-## Task 5.7 VSCODE
-TODO VIDEO
-
-
-# Core
-
 ## SaaS vs PaaS
 * ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/03-fabric-saas-product.png)
-
 
 ## Fabric Licensing
 * ![Fabric Licensing](https://microsoft.github.io/fabricnotes/images/notes/13-fabric-licensing.png)
@@ -185,5 +144,3 @@ TODO VIDEO
 
 ## Fabric Capacities
 * ![Fabric Basic](https://microsoft.github.io/fabricnotes/images/notes/08-fabric-lingo-part-1.png)
-
-## What is Apache Spark
