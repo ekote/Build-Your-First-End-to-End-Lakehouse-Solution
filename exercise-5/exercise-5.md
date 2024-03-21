@@ -119,6 +119,7 @@ Managed private endpoints are connections that workspace admins can create to ac
 Microsoft Fabric creates and manages managed private endpoints based on the inputs from the workspace admin. Workspace admins can set up managed private endpoints from the workspace settings by specifying the resource ID of the data source, identifying the target subresource, and providing a justification for the private endpoint request. Managed private endpoints support various data sources, such as Azure Storage, Azure SQL Database and many more.
 
 Follow the GIF which presents e2e demo on how to create manage private endpoint.
+
 ![MPE](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-overview/managed_private_endpoint.gif)
 
 ---
