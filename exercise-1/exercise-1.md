@@ -295,7 +295,7 @@ Acknowledge the notification indicating that your file is currently being loaded
 After the loading process completes, refresh the Lakehouse by clicking the three dots next to the table and selecting `Refresh`. A new table should now be visible.
 
 ## 1.3.12. Open in Notebook
-Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table. To attach the Lakehouse to the notebook, click on the arrow next to `Lake House` and select your previously created Lakehouse, `bronzerawdata`.
+Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table.
 ![Step](../media/1/43.jpg)
 
 ![Step](../media/1/44.jpg)
