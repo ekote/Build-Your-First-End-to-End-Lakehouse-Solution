@@ -57,7 +57,9 @@ The goal of this task is to establish a connection to a Fabric SQL Endpoint usin
    - In the `Server name` field of the connection window, paste the SQL connection string you previously copied. This string should correspond to your Fabric SQL Endpoint.
 
 3. **Authentication**:
-   - For the authentication method, select `Microsoft Entra multifactor authentication (MFA)` from the options. This ensures a secure connection utilizing modern authentication methods.
+   - For the authentication method, select `Microsoft Entra Password` from the options. This ensures a secure connection utilizing modern authentication methods.
+
+    ![password](./../media/3/pwd.jpg)
 
 4. **Enter User Credentials**:
    - In the authentication window that appears, enter your workshop user email or your enterprise email ID. Follow the prompts to complete the multifactor authentication process.
