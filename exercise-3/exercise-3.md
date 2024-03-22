@@ -4,6 +4,12 @@
 > Timebox: 30 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 2](./../exercise-2/exercise-2.md) | [Up next Exercise 4](./../exercise-4/exercise-4.md)
+> #### List of exercises:
+> * [Task 3.1 Retrieve Lakehouse SQL Analytics Endpoint Connection String](#task-31-retrieve-lakehouse-sql-analytics-endpoint-connection-string)
+> * [Task 3.2 Connect to a Fabric SQL Endpoint Using SQL Server Management Studio (SSMS)](#task-32-connect-to-a-fabric-sql-endpoint-using-sql-server-management-studio-ssms)
+> * [Task 3.3 Execute T-SQL Queries on Lakehouse Delta Tables](#task-33-execute-t-sql-queries-on-lakehouse-delta-tables)
+> * [Task 3.4 Sharing a Lakehouse](#task-34-sharing-a-lakehouse)
+> * [Task 3.5 Sharing a Notebook for Collaboration](#task-35-sharing-a-notebook-for-collaboration)
 
 
 The **SQL Analytics Endpoint** of a Fabric Lakehouse Offers a SQL-based experience for analyzing data in lakehouse delta tables using T-SQL language, with features like saving functions, generating views, and applying SQL security.
