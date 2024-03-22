@@ -40,7 +40,7 @@ DirectLake mode now eliminates this import requirement by loading the data files
 In this exercise, you will take on the role of a data scientist tasked with exploring, cleaning, and transforming a dataset containing taxi trip data. You will build a machine learning model to predict the duration of taxi trips using the New York taxi greencab dataset from 2009 to 2018, which includes information like pickup and drop-off times, locations, fares, and passenger counts.
 
 1. **Download the Exercise Notebook**:
-   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task.
+   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. [This screenshot presents the steps to do it](./../media/extra/download-notebook-2.jpg).
 
 2. **Import the Notebook into Fabric Workspace**:
    - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
