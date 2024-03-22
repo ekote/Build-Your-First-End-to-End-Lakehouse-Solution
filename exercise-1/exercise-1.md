@@ -130,6 +130,11 @@ Ensure the pipeline is error-free by clicking `Validate`. Once validated, close 
 Save your pipeline settings by clicking `Save`, then initiate the pipeline by clicking `Run`.
 ![Step](../media/1/21.jpg)
 
+
+> [!NOTE]
+> Fabric's intelligent compute resources are dynamically adjusted based on historical usage, peak demands, and current activity levels. With nearly 600 of us today working simultaneously, primarily within the same region, startup times for Spark compute instances may be longer than usual. Typically, our starter pool initiates new Spark sessions in about 10 seconds. However, due to today's high volume, we may transition to the on-demand pool, resulting in wait times of approximately 2 to 3 minutes for some sessions.
+
+
 ## 1.1.22. **Monitor Pipeline Execution**
 Observe the notification indicating the pipeline is running, then switch to the `Output` tab.
 ![Step](../media/1/22.jpg)

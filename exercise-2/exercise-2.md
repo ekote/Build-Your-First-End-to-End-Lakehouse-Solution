@@ -24,6 +24,11 @@ In this exercise, we will explore data engineering tasks aimed at transforming r
 By the end of the workshop, we will have completed the implementation of the medallion architecture:
 ![Data overview](../media/2/intro.png)
 
+
+
+> [!NOTE]
+> Fabric's intelligent compute resources are dynamically adjusted based on historical usage, peak demands, and current activity levels. With nearly 600 of us today working simultaneously, primarily within the same region, startup times for Spark compute instances may be longer than usual. Typically, our starter pool initiates new Spark sessions in about 10 seconds. However, due to today's high volume, we may transition to the on-demand pool, resulting in wait times of approximately 2 to 3 minutes for some sessions.
+
 ---
 
 # Task 2.1 Copilot for notebooks
