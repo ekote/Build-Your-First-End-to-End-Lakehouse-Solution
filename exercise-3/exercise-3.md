@@ -48,7 +48,7 @@ Ensure that you handle the connection string securely, as it provides access to 
 > [!TIP]
 > If you are interested in lineage and connecting through Azure Data Studio, [proceed to this additional exercise](./../extra/extra.md#lineage).
  
-The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS.
+The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS. [Download the latest generally available (GA) version of SQL Server Management Studio (SSMS) 20.0 (485 MB)](https://aka.ms/ssmsfullsetup)
 
 1. **Open SQL Server Management Studio**:
    - Launch SSMS on your computer. The `Connect to Server` window should automatically appear upon opening the application. If you're already in SSMS but not connected, navigate to Object Explorer, click `Connect`, and then select `Database Engine`.
