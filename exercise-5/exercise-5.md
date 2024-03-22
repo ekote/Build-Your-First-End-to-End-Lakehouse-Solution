@@ -57,6 +57,9 @@ Refer to the following table for a detailed comparison of Apache Spark versions 
 The objective of this task is to dive into the newer runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
 
 ## 1. Integrating Experimental Public Preview Runtime 1.3
+
+Open Fabric with [using that link (Mandatory)](https://app.fabric.microsoft.com/home?debug.enableEnvironment=1&experience=power-bi).
+
 Switch to the experimental Runtime version 1.3 to utilize new features:
 
 1. Navigate to the 'Workspace settings' within your Fabric workspace.
