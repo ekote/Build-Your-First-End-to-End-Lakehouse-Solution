@@ -261,6 +261,8 @@ You will complete the 2.7 notebook task once you see the last code cell that wil
 
 Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.
 
+
+TODO
 > [!TIP]
 > Refresh your lakehouse (use thee dots "..." and then refresh button) to dobule check if the tables are in the lakehouse. 
 
@@ -290,6 +292,8 @@ Provide a name for each `ForEach` element.
 ![Step](../media/2/31.jpg)
 
 ## 2.8.5. **Pipeline Variables**
+Firstly, click on the background pane (first step from the screenshot in the pink rectangle) to see the tab with parameters and variables.
+
 In the pipeline settings tab, navigate to `Variables`. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`.
 ![Step](../media/2/32.jpg)
 
