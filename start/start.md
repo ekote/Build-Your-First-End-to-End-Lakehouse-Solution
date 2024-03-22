@@ -67,6 +67,10 @@ Congratulations, your new workspace has been successfully created! This dedicate
 
 To ensure smooth operation for multiple concurrent workshops happening today, you need to adjust the default configuration of the compute cluster in your Fabric workspace to scale down the maximum number of nodes to 2.
 
+> [!NOTE]  
+>  This task is crucial for optimizing resource usage and ensuring that the workshops run smoothly for all participants. By reducing the maximum number of nodes to 2, you help manage the load on the system and improve the experience for everyone involved. Ensure that the changes are correctly applied and monitor the system for any impacts on performance or resource allocation.
+
+
 1. **Navigate to Workspace Settings**:
    - Confirm that you are within the correct workspace view.
    - Access the workspace settings as indicated in the Fabric UI.
@@ -85,9 +89,6 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
 
 ![One Node](./../media/extra/onenode3.jpg)
 
-
-> [!NOTE]  
->  This task is crucial for optimizing resource usage and ensuring that the workshops run smoothly for all participants. By reducing the maximum number of nodes to 2, you help manage the load on the system and improve the experience for everyone involved. Ensure that the changes are correctly applied and monitor the system for any impacts on performance or resource allocation.
 
 ## 16. Download the exercise files
 Clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon) or Download Zip of the repository to your local machine.
