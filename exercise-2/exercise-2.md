@@ -261,6 +261,8 @@ In this task, follow the notebooks and the code provided, as well as all the ins
 
 You will complete the 2.7 notebook task once you see the last code cell that will lead you back here to Task 2.8. 
 
+> [!NOTE]  
+> If you have completed Notebook 2.7 and are seeking advanced challenges, please review the notebook and list all the improvements you would suggest. I have intentionally left a couple of areas with room for improvement. Once you identify those areas, feel free to discuss them with the instructors. 
 
 ---
 
@@ -269,9 +271,8 @@ You will complete the 2.7 notebook task once you see the last code cell that wil
 Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.
 
 
-TODO
 > [!TIP]
-> Refresh your lakehouse (use thee dots "..." and then refresh button) to dobule check if the tables are in the lakehouse. 
+> Refresh your lakehouse (use the three dots "..." and then click the refresh button) to double-check if the tables are in the lakehouse.
 
 ## Pre-Automation Quality Check
 Ensure the following before starting the automation process:
