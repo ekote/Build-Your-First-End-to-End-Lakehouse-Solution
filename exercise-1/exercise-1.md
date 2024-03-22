@@ -115,7 +115,7 @@ Expand the `Advanced Options` and select the desired table action, such as `Appe
 ![Step](../media/1/17.jpg)
 
 ## 1.1.18. **Set Table Name**
-Name the table according to [the naming conventions](./../start/naming-convention.md), click `Create`, then return to the `General` tab.
+Name the table as `green201501` according to [the naming conventions](./../start/naming-convention.md), click `Create`, then return to the `General` tab.
 ![Step](../media/1/18.jpg)
 
 ## 1.1.19. **Detail Copy Activity**
