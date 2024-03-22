@@ -62,10 +62,38 @@ Give your new workspace a name, adhering to the provided naming convention. Veri
 Congratulations, your new workspace has been successfully created! This dedicated space is for you to innovate and build today.
 ![Login](../media/start/15.jpg)
 
-## 15. Download the exercise files
+
+## 15. Adjust default pool size to 2 nodes
+
+To ensure smooth operation for multiple concurrent workshops happening today, you need to adjust the default configuration of the compute cluster in your Fabric workspace to scale down the maximum number of nodes to 2.
+
+1. **Navigate to Workspace Settings**:
+   - Confirm that you are within the correct workspace view.
+   - Access the workspace settings as indicated in the Fabric UI.
+
+![One Node](./../media/extra/onenode1.jpg)
+
+2. **Modify Default Pool Configuration**:
+   - Locate the "default pool for workspace" setting.
+   - Click on the pencil icon (marked as "1" in the provided screenshot) to edit the pool settings.
+
+![One Node](./../media/extra/onenode2.jpg)
+
+3. **Adjust Autoscale Settings and Save Changes**:
+   - In the default pool configuration, change the autoscale maximum setting from 10 to 2. This limits the maximum number of nodes to 2 to prevent resource over-allocation.
+   - Confirm and save your modifications to the default pool settings.
+
+![One Node](./../media/extra/onenode3.jpg)
+
+
+> [!NOTE]  
+>  This task is crucial for optimizing resource usage and ensuring that the workshops run smoothly for all participants. By reducing the maximum number of nodes to 2, you help manage the load on the system and improve the experience for everyone involved. Ensure that the changes are correctly applied and monitor the system for any impacts on performance or resource allocation.
+
+## 16. Download the exercise files
 Clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon) or Download Zip of the repository to your local machine.
 
 ![Download Repo](../media/start/CloneDownloadRepo.png)
+
 
 ---
 

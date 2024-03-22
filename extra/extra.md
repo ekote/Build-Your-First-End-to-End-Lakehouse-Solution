@@ -24,15 +24,6 @@ Description TODO
 ![HC](./../media/extra/hc2.jpg)
 ![HC](./../media/extra/hc3.jpg)
 
-# One Node Cluster
-
-Description TODO
-
-![One Node](./../media/extra/onenode1.jpg)
-![One Node](./../media/extra/onenode2.jpg)
-![One Node](./../media/extra/onenode3.jpg)
-
-
 # Lineage
 
 Description TODO
@@ -247,6 +238,10 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
    - After configuring the new Spark pool, Microsoft Fabric will redirect you back to the Spark settings screen.
    - A message will appear at the top part of the screen indicating that there are unsaved changes. Ensure to review and save these changes.
      ![Unsaved Changes](./../media/extra/17.jpg)
+
+
+> [!IMPORTANT]  
+> If you change the default pool from Starter Pool to a Custom Spark pool you may see longer session start (~3 minutes).
 
 6. **Verification**:
    - Verify that the new Spark pool is listed in your workspace settings.

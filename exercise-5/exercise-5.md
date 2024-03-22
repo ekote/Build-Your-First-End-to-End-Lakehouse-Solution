@@ -14,7 +14,6 @@
 > *  [VSCode (WEB)](#vscode-web-1)
 
 
-
 # Stay Updated and Bookmark Essentials
 Dive into the latest and greatest from Fabric
 * **Monthly Digests**: Don't miss out! Head over to the [Fabric Monthly Updates](https://blog.fabric.microsoft.com/en-us/blog/category/monthly-update) and catch up on the past three months' worth of updates. Discover the latest features and improvements rolled out each week, compiled neatly for your convenience. Bookmark this page to keep your knowledge fresh and up-to-date.
