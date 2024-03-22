@@ -188,6 +188,11 @@ Imagine your company has been storing structured data from NYC Taxi's transactio
 Your company's new directive is to improve its decision-making capabilities by analyzing data in various formats across multiple sources. Therefore, the company decides to **leverage Microsoft Fabric's capabilities to analyze and manage these diverse datasets more efficiently**.
 
 
+When creating shortcuts in a lakehouse, you must understand the folder structure of the item. Lakehouses are composed of two top level folders: the Tables folder and the Files folder. The Tables folder represents the managed portion of the lakehouse, while the Files folder is the unmanaged portion of the lakehouse. In the Tables folder, you can only create shortcuts at the top level. Shortcuts aren't supported in other subdirectories of the Tables folder. If the target of the shortcut contains data in the Delta\Parquet format, the lakehouse automatically synchronizes the metadata and recognizes the folder as a table. In the Files folder, there are no restrictions on where you can create shortcuts. You can create them at any level of the folder hierarchy. Table discovery doesn't happen in the Files folder.
+
+![Shortcuts](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-shortcuts/lake-view-table-view.png)
+
+
 ## 1.2.1. **Lakehouse Modes Exploration**
 You can work with the data in the lakehouse in two modes:
 
