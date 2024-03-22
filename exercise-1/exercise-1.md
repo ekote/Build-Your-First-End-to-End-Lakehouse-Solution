@@ -4,6 +4,10 @@
 > Timebox: 60 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Start Steps](./../start/start.md) | [Up next Exercise 2](./../exercise-2/exercise-2.md)
+> #### List of exercises:
+> * [Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)](#task-11-create-a-pipeline-that-ingests-data-from-an-external-azure-blob-storage-account-and-writes-it-to-lakehouse-bronze-layer)
+> * [Task 1.2 Discover the Lakehouse](#task-12-discover-the-lakehouse)
+> * [Task 1.3 Create shortcut](#task-13-create-shortcut)
 
 # Context
 We will focus on integrating two data sources from NYC Taxi data: one from 2015 and the second from 2023. The table below presents the metaphors we will use to integrate the data:
