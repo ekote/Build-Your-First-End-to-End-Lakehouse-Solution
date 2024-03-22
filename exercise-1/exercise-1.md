@@ -281,31 +281,30 @@ Successfully configured access to your data via shortcuts, without needing to co
 To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load Tables`.
 ![Step](../media/1/39.jpg)
 
-## 1.3.7. Select New Table
-Choose the `New Table` option as presented on the screen.
+## 1.3.7. Select and Name New Table
+Choose the `New Table` option as presented on the screen and Name the new table as `green202301` as we follow [the provided naming conventions](./../start/naming-convention.md), then click `Load`.
 ![Step](../media/1/40.jpg)
 
-## 1.3.8. Name New Table
-Name the new table following [the provided naming conventions](./../start/naming-convention.md), then click `Load`.
 ![Step](../media/1/41.jpg)
 
-## 1.3.9. Notification of Loading Process
+## 1.3.10. Notification of Loading Process
 Acknowledge the notification indicating that your file is currently being loaded into the table.
 ![Step](../media/1/42.jpg)
 
-## 1.3.10. Refresh Lakehouse
+## 1.3.11. Refresh Lakehouse
 After the loading process completes, refresh the Lakehouse by clicking the three dots next to the table and selecting `Refresh`. A new table should now be visible.
+
+## 1.3.12. Open in Notebook
+Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table. To attach the Lakehouse to the notebook, click on the arrow next to `Lake House` and select your previously created Lakehouse, `bronzerawdata`.
 ![Step](../media/1/43.jpg)
 
-## 1.3.11. Open in Notebook
-Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table. To attach the Lakehouse to the notebook, click on the arrow next to `Lake House` and select your previously created Lakehouse, `bronzerawdata`.
 ![Step](../media/1/44.jpg)
 
-## 1.3.12. Verify Notebook Configuration
+## 1.3.13. Verify Notebook Configuration
 Following the correct execution, you should observe two tables under the `Tables` section and one folder under `Files`. Confirm everything is correct, then run the cell containing the PySpark code by clicking the run icon.
 ![Step](../media/1/45.jpg)
 
-## 1.3.13. Execute Query
+## 1.3.14. Execute Query
 The query should execute within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
 ![Step](../media/1/46.jpg)
 
@@ -315,7 +314,7 @@ The query should execute within a few seconds, demonstrating the seamless integr
 > 
 > ![Step](../media/1/warning.png) 
 
-## 1.3.14. Confirm Default Lakehouse
+## 1.3.15. Confirm Default Lakehouse
 Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
 ![Step](../media/1/47.jpg)
 

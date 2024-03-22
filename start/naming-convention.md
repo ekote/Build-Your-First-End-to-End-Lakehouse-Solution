@@ -8,6 +8,7 @@ Assign a name: `urban-innovation-deNNN`, where NNN represents the number assigne
 
 ## Table names
 * Task 1.1.18 - `green201501`
+* Task 1.3.7 - `green202301`
 
 ## Bronze Layer (Raw Data Management)
 Lakehouse Name: `bronzerawdata`
