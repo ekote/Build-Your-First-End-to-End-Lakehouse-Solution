@@ -57,7 +57,9 @@ The objective of this task is to dive into the newer runtime version, specifical
 
 ## 1. Integrating Experimental Public Preview Runtime 1.3
 
-Open Fabric with [using that link (Mandatory)](https://app.fabric.microsoft.com/home?debug.enableEnvironment=1&experience=power-bi).
+
+> [!IMPORTANT]  
+> To complete this exercise, you must open Fabric [using this mandatory link](https://app.fabric.microsoft.com/home?debug.enableEnvironment=1&experience=power-bi). The link contains additional flags to make the newest runtime available in that specific region. Feel free to discuss with instructors how Fabric is distributed, the various regions, and the connections between the tenant's region and the capacity region.
 
 Switch to the experimental Runtime version 1.3 to utilize new features:
 
