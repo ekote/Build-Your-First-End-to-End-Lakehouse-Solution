@@ -4,8 +4,8 @@
 > Timebox: 40 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 4](./../exercise-4/exercise-4.md) | [Up next Extra steps](./../extra/extra.md)
-> #### List of extra exercises
-> ##### [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials-1)
+> #### List of extra exercises:
+>   ##### [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials-1)
 > ##### [Fabric Runtimes and Python User-defined Table Functions (UDTFs)](#fabric-runtimes-and-python-user-defined-table-functions-udtfs-1)
 > ##### [Managed Private Endpoints](#managed-private-endpoints-1)
 > ##### [Autotune Query Tuning](#autotune-query-tuning-1)
