@@ -8,7 +8,6 @@
 > *  [Medallion architecture](#medallion-architecture-1)
 > *  [Schedule your notebook](#schedule-your-notebook-for-multiple-daily-runs)
 > *  [Create a new Spark Pool on the Workspace-level settings]()
-[//]: # (#### [Use Environment to tailor your runtime]&#40;&#41;)
 > *  [Saved with V-Order?](#verify-v-order)
 
 ---
