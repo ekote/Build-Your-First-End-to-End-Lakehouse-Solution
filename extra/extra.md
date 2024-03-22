@@ -6,13 +6,33 @@
 > #### List of extra exercises:
 > * [Specify the file format and compression type for the sink datasets in Data Factory](##specify-the-file-format-and-compression-type-for-sink-datasets-in-data-factory)
 > *  [Monitor the pipeline run and verify the output](#monitor-the-pipeline-run-and-verify-the-output-1)
-> *  [Create a dataflow that reads data from a CSV file](#create-a-dataflow-that-reads-data-from-a-csv-file-1)
+> *  [Create a dataflow that reads data from a CSV file - TODO](#create-a-dataflow-that-reads-data-from-a-csv-file-1)
 > *  [Medallion architecture](#medallion-architecture-1)
 > *  [Schedule your notebook](#schedule-your-notebook-for-multiple-daily-runs)
 > *  [Create a new Spark Pool on the Workspace-level settings]()
 > *  [Saved with V-Order?](#verify-v-order)
 
 ---
+
+# High concurrency mode in Fabric Spark
+
+![HC](./../media/extra/hc1.jpg)
+![HC](./../media/extra/hc2.jpg)
+![HC](./../media/extra/hc3.jpg)
+
+# One Node Cluster
+
+![One Node](./../media/extra/onenode1.jpg)
+![One Node](./../media/extra/onenode2.jpg)
+![One Node](./../media/extra/onenode3.jpg)
+
+
+# Lineage
+
+![Lineage](./../media/extra/linage1.jpg)
+![Lineage](./../media/extra/linage2.jpg)
+![Lineage](./../media/extra/linage3.jpg)
+
 
 # Specify the File Format and Compression Type for Sink Datasets in Data Factory
 
@@ -78,7 +98,9 @@ In this exercise, we will check the monitoring application for our pipeline and 
 Consider sharing any optimization strategies with the workshop hosts and your colleagues to enhance the overall efficiency of your pipeline.
 
 
-[//]: # (# Create a dataflow that reads data from a CSV file)
+# Create a dataflow that reads data from a CSV file
+
+TODO
 
 
 ---
