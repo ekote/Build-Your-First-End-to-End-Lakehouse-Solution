@@ -321,4 +321,4 @@ Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 2](./../exercise-2/exercise-2.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, go to [next exercise (Exercise 2)](./../exercise-2/exercise-2.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).

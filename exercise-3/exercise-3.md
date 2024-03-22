@@ -190,4 +190,4 @@ Learn how to share a notebook with team members within your workspace, allowing 
 
 
 > [!IMPORTANT]
-> Once completed, go to [Exercise 4](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, go to [next exercise (Exercise 4)](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
