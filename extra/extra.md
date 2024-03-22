@@ -16,11 +16,15 @@
 
 # High concurrency mode in Fabric Spark
 
+Description TODO
+
 ![HC](./../media/extra/hc1.jpg)
 ![HC](./../media/extra/hc2.jpg)
 ![HC](./../media/extra/hc3.jpg)
 
 # One Node Cluster
+
+Description TODO
 
 ![One Node](./../media/extra/onenode1.jpg)
 ![One Node](./../media/extra/onenode2.jpg)
@@ -28,6 +32,8 @@
 
 
 # Lineage
+
+Description TODO
 
 ![Lineage](./../media/extra/linage1.jpg)
 ![Lineage](./../media/extra/linage2.jpg)
