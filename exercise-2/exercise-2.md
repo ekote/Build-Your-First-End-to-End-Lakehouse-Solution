@@ -90,14 +90,17 @@ This task focuses on various methods for extracting data from the lakehouse into
 Remember, to execute code within a cell, use CTRL + Enter on Windows or ⌘ + Enter on MacOS. Alternatively, the `Run` icon (▶️) next to the code cell can be used.
 
 ## 2.2.2. Extracting Data Using PySpark
-Enter the following PySpark code in a new cell in your Fabric notebook. This script will retrieve data from a specified lakehouse table. Make sure to replace bronzerawdata and green202301 with your lakehouse and table names if they differ.
+Enter the following PySpark code in a new cell in your Fabric notebook. This script will retrieve data from a specified lakehouse table. Make sure to replace `bronzerawdata` and green202301 with your lakehouse and table names if they differ.
+
+> [!TIP]
+> This is a repetition of Exercise 1.3.11, but with additional explanation. Skip it if you do not need the code explanation.
 
 ```pyspark
 df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")
 display(df)
 ```
 
-Explanation of the Code:
+Explanation of the code:
 `df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")` - This line of code uses the `spark.sql()` function to run an SQL query on a table called `green202301` located in the lakehouse `bronzerawdata`. The query selects all columns `(*)` from the table and limits the result to the first 1000 rows with the `LIMIT 1000` clause. The result of the query is then stored in a PySpark DataFrame called `df`. `display(df)` - the `display()` function is used to visualize the contents of a DataFrame in a tabular format. In this case, it visualizes the contents of the df DataFrame created in the previous line.
 
 
