@@ -63,7 +63,7 @@ Congratulations, your new workspace has been successfully created! This dedicate
 ![Login](../media/start/15.jpg)
 
 ## 15. Download the exercise files
-Clone the workshop GitHub repository or Download Zip of the repository to your local machine.
+Clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon) or Download Zip of the repository to your local machine.
 
 ![Download Repo](../media/start/CloneDownloadRepo.png)
 
