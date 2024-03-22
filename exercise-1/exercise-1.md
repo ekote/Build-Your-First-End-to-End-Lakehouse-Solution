@@ -143,7 +143,7 @@ In the sidebar, review details such as total duration and the amount of data tra
 ![Step](../media/1/24.jpg)
 
 ## 1.1.25. **Access Your Workspace**
-In your workspace, you should find the `Load Raw Taxi Data` pipeline and the `BronzeRawData` Lakehouse. Enter the Lakehouse.
+In your workspace, you should find the `LoadRawTaxiData` pipeline and the `bronzerawdata` Lakehouse. Enter the Lakehouse.
 ![Step](../media/1/25.jpg)
 
 ## 1.1.26. **Review Data Table**
