@@ -58,7 +58,8 @@ A sidebar will appear with a list of all accessible subscriptions. Follow the in
 ![Login](../media/start/13.jpg)
 
 ## 14. Name Your Workspace
-Give your new workspace a name, adhering to the provided naming convention. Verify the name and click `Apply.` Refer to the [Naming conventions](#naming-conventions) for guidance.
+Give your new workspace a name, adhering to the provided naming convention. Verify the name and click `Apply.` Follow the naming convention and assign a name: `urban-innovation-deNNN`, where `NNN` represents the number assigned to you. For example, `urban-innovation-de001` (Estera’s workspace).
+
 ![Login](../media/start/14.jpg)
 
 ## 15. Workspace Creation Complete
@@ -97,4 +98,4 @@ The highest level of the lakehouse, where data is further transformed, modeled, 
 ---
 
 > [!IMPORTANT]
-> Once completed, proceed to [Exercise 1](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, proceed to [next exercise (1)](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
