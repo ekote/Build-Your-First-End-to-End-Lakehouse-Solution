@@ -250,14 +250,14 @@ The last task before fully immersing ourselves in data engineering work within t
 
 # Task 2.7 Follow the Notebook
 
-In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. You will complete the notebook task once you see the last sale for the notebook displayed on the screen.
+In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. You will complete the notebook task once you see the last code cell that will lead you back here to Task 2.8. 
 
 ---
 
 # Task 2.8 Automation 
 
-Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.0
-0
+Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.
+
 ## Pre-Automation Quality Check
 Ensure the following before starting the automation process:
 * Lakehouse `bronzerawdata` contains two tables: `green201501` and `green201301`.
