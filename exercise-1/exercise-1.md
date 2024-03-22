@@ -159,7 +159,7 @@ In the `Tables` section, observe the new table and preview the data it contains.
 > [!TIP]
 > Congratulations on completing the first and most significant task (Task 1.1) of Exercise 1! 
 >
-> **Now, please take a moment to check your timing. If you are halfway through the allotted time for the entire Exercise 1, consider skipping Task 1.2 and proceed directly to [1.3 Create a shortcut](#task-13-create-shortcut)** as this 1.3 task is required for the Exercise 2 `Transform data using notebooks and Spark clusters`.
+> **Now, please take a moment to check your timing. If you are halfway through the allotted time for the entire Exercise 1, consider skipping Task 1.2 and proceed directly to [1.3 Create a shortcut](#task-13-create-shortcut)** as this 1.3 task is required for the  `Exercise 2 - Transform data using notebooks and Spark clusters`.
 > 
 > Remember, you can always return to this exercise later.
 

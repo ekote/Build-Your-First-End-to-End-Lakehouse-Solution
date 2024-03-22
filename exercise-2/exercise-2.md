@@ -4,6 +4,18 @@
 > Timebox: 75 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 1](./../exercise-1/exercise-1.md) | [Up next Exercise 3](./../exercise-3/exercise-3.md)
+> #### List of exercises:
+> * [Task 2.1 Copilot for notebooks](#task-21-copilot-for-notebooks)
+> * [Task 2.2 Different ways to get data from the lakehouse](#task-22-different-ways-to-get-data-from-the-lakehouse)
+> * [Task 2.3 Side Loading (local upload) and Load to Delta for CSV file](#task-23-side-loading-local-upload-and-load-to-delta-for-csv-file)
+> * [Task 2.4 Import pre-made notebook](#task-24-import-pre-made-notebook)
+> * [Task 2.5 Attach the bronze Lakehouse](#task-25-attach-the-bronze-lakehouse)
+> * [Task 2.6 Create a silver lakehouse](#task-26-create-a-silver-lakehouse)
+> * [Task 2.7 Follow the Notebook](#task-27-follow-the-notebook)
+> * [Task 2.8 Automation](#task-28-automation)
+> * [Task 2.9 Confirm End Results](#task-29-confirm-end-results)
+> * [Task 2.10 Create Gold Lakehouse (required for Exercise 4)](#task-210-create-gold-lakehouse-required-for-exercise-4)
+
 
 
 # Context
@@ -14,6 +26,8 @@ By the end of the workshop, we will have completed the implementation of the med
 
 ---
 
+# Task 2.1 Copilot for notebooks
+
 > [!TIP]
 > Take a moment to check your timing and plan to complete Exercise 2. If you are concerned about delays and need a thorough walkthrough of each required exercise, consider skipping Task 2.1 (Copilot for notebooks) and proceed directly to [Task 2.2 Different ways to get data from the lakehouse](#task-22-different-ways-to-get-data-from-the-lakehouse).
 > 
@@ -23,7 +37,6 @@ By the end of the workshop, we will have completed the implementation of the med
 
 <summary> Task 2.1 Copilot for notebooks </summary>
 
-# Task 2.1 Copilot for notebooks
 
 With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
 * Chart creation 
@@ -111,7 +124,7 @@ When working with large datasets, starting with data retrieval sets the foundati
 ---
 
 
-# Task 2.3 - Side Loading (local upload) and Load to Delta for CSV file
+# Task 2.3 Side Loading (local upload) and Load to Delta for CSV file
 
 We aim to expand the bronze layer by loading additional data. Below is a table that provides an updated view of the types of data we are loading into the bronze layer and the methods we are using for this purpose.
 ![Data overview](../media/1/data-integration.png)
@@ -160,6 +173,8 @@ Finally, transition to the `Data Engineering` tab, adhering to the instructions 
 ---
 
 # Task 2.4 Import pre-made notebook 
+
+> [!NOTE]  
 > You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
 
 ## 2.4.1. Importing the Notebook
@@ -224,13 +239,13 @@ The last task before fully immersing ourselves in data engineering work within t
 
 ---
 
-# Task 2.7 - Follow the Notebook
+# Task 2.7 Follow the Notebook
 
 In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. You will complete the notebook task once you see the last sale for the notebook displayed on the screen.
 
 ---
 
-# Task 2.8 - Automation 
+# Task 2.8 Automation 
 
 Congratulations, you have completed the advanced data engineering notebook. Now, let's focus on automation. Considering we have just two tables, imagine the scenario where you need to process 50 tables or 50 different Parquet data sources. In such cases, the most efficient approach is to build and prioritize a data pipeline. This is the aim of the task at hand – to establish automation.0
 0
@@ -303,7 +318,7 @@ Congratulations on completing this significant milestone in data engineering aut
 
 ---
 
-# Task 2.9 - Confirm End Results
+# Task 2.9 Confirm End Results
 
 Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes in your Lakehouse environments:
 
