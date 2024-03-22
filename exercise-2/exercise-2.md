@@ -250,7 +250,10 @@ The last task before fully immersing ourselves in data engineering work within t
 
 # Task 2.7 Follow the Notebook
 
-In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. You will complete the notebook task once you see the last code cell that will lead you back here to Task 2.8. 
+In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. **Execute all code cells there, and all the steps.**. 
+
+You will complete the 2.7 notebook task once you see the last code cell that will lead you back here to Task 2.8. 
+
 
 ---
 
