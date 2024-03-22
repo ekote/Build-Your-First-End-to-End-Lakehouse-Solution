@@ -51,4 +51,4 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 > 
 > 03:30 pm - 04:00 pm - Recap
 
-[Extra steps](./extra/extra.md).
+[Extra exercises](./extra/extra.md).
