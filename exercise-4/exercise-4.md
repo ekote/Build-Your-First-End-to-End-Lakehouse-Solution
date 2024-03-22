@@ -4,6 +4,10 @@
 > Timebox: 60 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 3](./../exercise-3/exercise-3.md) | [Up next Exercise 5](./../exercise-5/exercise-5.md)
+> #### List of exercises:
+> * [Task 4.1 Predict Trip Duration Using Data Science in Fabric Lakehouse](#task-41-predict-trip-duration-using-data-science-in-fabric-lakehouse)
+> * [Task 4.2 Explore and Visualize Taxi Trip Data Using Power BI and Direct Lake](#task-42-explore-and-visualize-taxi-trip-data-using-power-bi-and-direct-lake)
+> * [Task 4.3 Publish and Share the Power BI Report](#task-43-publish-and-share-the-power-bi-report)
 
 # Context
 
