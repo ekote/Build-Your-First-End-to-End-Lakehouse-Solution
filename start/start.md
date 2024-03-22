@@ -98,4 +98,4 @@ The highest level of the lakehouse, where data is further transformed, modeled, 
 ---
 
 > [!IMPORTANT]
-> Once completed, proceed to [next exercise (1)](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, proceed to [next exercise (Exercise 1)](./../exercise-1/exercise-1.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
