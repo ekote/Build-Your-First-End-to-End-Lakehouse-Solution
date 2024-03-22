@@ -103,7 +103,7 @@ Switch to the `Destination` tab, select `Storage Workspace`, then `Lakehouse` an
 ![Step](../media/1/14.jpg)
 
 ## 1.1.15. **Name the Lakehouse**
-Follow the naming conventions provided, input the name, and click `Create`.
+Follow [the naming conventions provided](./../start/naming-convention.md), input the name, and click `Create`.
 ![Step](../media/1/15.jpg)
 
 ## 1.1.16. **Review Lakehouse**
@@ -115,7 +115,7 @@ Expand the `Advanced Options` and select the desired table action, such as `Appe
 ![Step](../media/1/17.jpg)
 
 ## 1.1.18. **Set Table Name**
-Name the table according to the naming conventions, click `Create`, then return to the `General` tab.
+Name the table according to [the naming conventions](./../start/naming-convention.md), click `Create`, then return to the `General` tab.
 ![Step](../media/1/18.jpg)
 
 ## 1.1.19. **Detail Copy Activity**
@@ -286,7 +286,7 @@ Choose the `New Table` option as presented on the screen.
 ![Step](../media/1/40.jpg)
 
 ## 1.3.8. Name New Table
-Name the new table following the provided naming conventions, then click `Load`.
+Name the new table following [the provided naming conventions](./../start/naming-convention.md), then click `Load`.
 ![Step](../media/1/41.jpg)
 
 ## 1.3.9. Notification of Loading Process

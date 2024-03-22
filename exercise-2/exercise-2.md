@@ -211,7 +211,7 @@ Choose the option to select an `Existing Lakehouse` from the available choices. 
 ![Step](../media/2/21.jpg)
 
 ## 2.5.4. Choosing Your Lakehouse
-From the list of available Lakehouses, identify and select your own, named `bronzerawdata` or similar, based on your project or team naming conventions. Be careful to choose the correct one to ensure accurate data analysis. Once confirmed, click `Add` to attach it to your notebook.
+From the list of available Lakehouses, identify and select your own, named `bronzerawdata`. Be careful to choose the correct one to ensure accurate data analysis. Once confirmed, click `Add` to attach it to your notebook.
 ![Step](../media/2/22.jpg)
 
 ## 2.5.5. Confirmation
