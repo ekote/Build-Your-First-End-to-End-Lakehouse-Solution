@@ -44,11 +44,32 @@ To enable HC for your notebook follow the steps:
 
 # Lineage
 
-Description TODO
+Understand the relationships and flow of data within your Fabric workspace using the lineage view. Every workspace automatically has a lineage view.
 
-![Lineage](./../media/extra/linage1.jpg)
-![Lineage](./../media/extra/linage2.jpg)
-![Lineage](./../media/extra/linage3.jpg)
+1. **Access Lineage View**:
+   - Navigate to the workspace toolbar within your Fabric environment.
+   - Open the lineage view to visualize how different items within your workspace are interconnected.
+     ![Lineage View](./../media/extra/linage1.jpg)
+
+2. **Explore Workspace Items and Connections**:
+   - In the lineage view, examine the connections between all the items located in your workspace.
+   - Identify and understand upstream connections that are one level up and external to the workspace. These are marked by the external workspace's name on the item card. 
+
+3. **Highlight Specific Item Lineage**:
+   - To highlight the lineage for a specific item, select the arrow at the bottom right corner of the card.
+   
+     ![Specific Item Lineage](./../media/extra/linage2.jpg)
+
+4. **Understand External Tool Integration**:
+   - Recognize the role of external tools like Azure Data Studio in managing and developing databases across different platforms.
+   - Note how Azure Data Studio supports various databases and enhances workflow with features like IntelliSense, code snippets, and source control integration.
+   
+     ![Connecting with Azure Data Studio](./../media/extra/linage4.jpg)
+
+    Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server. Browse the extension library for more database support options including MySQL, PostgreSQL, and CosmosDB. Azure Data Studio's familiar interface offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. Engineered with the data platform user in mind, its extensibility allows users to customize their experience by installing the extensions relevant to their workflow, including database migrations, charting, GitHub Copilot, and more!
+
+> [!TIP]
+> For a deeper understanding and comparison between SQL Server Management Studio (SSMS) and Azure Data Studio, visit the following link: [Azure Data Studio and SSMS Feature Comparison](https://learn.microsoft.com/en-us/azure-data-studio/what-is-azure-data-studio#feature-comparison-with-sql-server-management-studio-ssms).
 
 
 # Specify the File Format and Compression Type for Sink Datasets in Data Factory
