@@ -315,7 +315,7 @@ Choose your workspace.
 
 ## 2.8.10. **Select Notebook and Base Parameters**
 Opt for the `notebook-2` that you uploaded previously.
-Add a new parameter named `table_name`, with type `String` and value `@items()`.
+Add a new parameter named `table_name`, with type `String` and value `@item()`. `@item()` comes again from dynamic content (Pipeline expression builder).
 
 ![Step](../media/2/37.jpg)
 
