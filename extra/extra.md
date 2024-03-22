@@ -34,6 +34,7 @@ To enable HC for your notebook follow the steps:
 ![HC](./../media/extra/hc2.jpg)
 
 3. Once the notebook has been attached, you can start executing the notebook steps instantly.
+
 ![HC](./../media/extra/hc3.jpg)
 
 [Read more here.](https://learn.microsoft.com/en-us/fabric/data-engineering/configure-high-concurrency-session-notebooks)
