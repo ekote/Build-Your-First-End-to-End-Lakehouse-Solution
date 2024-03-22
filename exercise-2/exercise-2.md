@@ -185,8 +185,10 @@ Finally, transition to the `Data Engineering` tab, adhering to the instructions 
 > You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
 
 ## 2.4.1. Importing the Notebook
-Ensure you are in the `Data Engineering` context of your Fabric workspace. Then, navigate to the `Home` section where you'll find an option to upload notebooks, symbolized by a notebook icon. Click this icon to open the upload sidebar, similar to how you previously uploaded a file. From here, choose the notebook you've recently downloaded, named [notebook-2.ipynb](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/notebook-2.ipynb), and initiate the upload.
-![Step](../media/2/16.jpg)
+Ensure you are in the `Data Engineering` context of your Fabric workspace. Then, navigate to your workspace, and select the `New` where you'll find an option to upload notebooks, symbolized by a notebook icon. 
+
+Click this icon to open the upload sidebar, similar to how you previously uploaded a file. From here, choose the notebook you've recently downloaded, named [notebook-2.ipynb](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/notebook-2.ipynb), and initiate the upload.
+![Step](../media/2/importnotebook.jpg)
 
 ## 2.4.2. Import Notification
 Once you start the upload, you'll receive a notification indicating that the import of the file is underway. Wait for this process to complete; it typically takes only a few moments.
