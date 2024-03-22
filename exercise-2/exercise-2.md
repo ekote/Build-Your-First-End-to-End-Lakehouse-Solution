@@ -100,6 +100,7 @@ display(df)
 Explanation of the Code:
 `df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")` - This line of code uses the `spark.sql()` function to run an SQL query on a table called `green202301` located in the lakehouse `bronzerawdata`. The query selects all columns `(*)` from the table and limits the result to the first 1000 rows with the `LIMIT 1000` clause. The result of the query is then stored in a PySpark DataFrame called `df`. `display(df)` - the `display()` function is used to visualize the contents of a DataFrame in a tabular format. In this case, it visualizes the contents of the df DataFrame created in the previous line.
 
+
 ## 2.2.3. Using Multiple Programming Languages in Fabric Notebooks
 Fabric Notebooks support various programming languages, including PySpark, Scala, SQL, and R. To switch to SQL, for example, use the %%sql magic command at the beginning of a notebook cell.
 
@@ -112,7 +113,10 @@ SELECT * FROM bronzerawdata.green202301 LIMIT 1000
 
 Now, let's execute a specific data selection command. This command filters specific columns from the DataFrame and displays the first five rows:
 
-```df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)```
+```
+%%pyspark
+df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)
+```
 
 The code `df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)` is used to display the first five rows of a DataFrame called df, and only the columns named: `vendorID`, `tripDistance`, `fareAmount`, `tipAmount`. This is a useful function when working with large datasets to quickly inspect the data and ensure that it has been loaded correctly.
 
