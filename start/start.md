@@ -74,7 +74,7 @@ Clone the workshop GitHub repository or Download Zip of the repository to your l
 # Naming conventions
 
 > [!TIP]
-> Please review the naming conventions as that is crucial for all the exercises to run smoothly.
+> Please review the naming conventions as that is crucial for all the exercises to run smoothly. **No action needed, just review and ack the naming convention**.
 
 ## Workspace name
 Assign a name: `urban-innovation-deNNN`, where NNN represents the number assigned to you. For example, `urban-innovation-de001` (Estera’s workspace).
