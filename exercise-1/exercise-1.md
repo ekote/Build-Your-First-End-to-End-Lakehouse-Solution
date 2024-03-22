@@ -1,4 +1,4 @@
-# Exercise 1 - Ingest data from various sources using pipelines and dataflows 
+# Exercise 1 - Ingest data from various sources using pipelines 
 
 > [!NOTE]
 > Timebox: 60 minutes
