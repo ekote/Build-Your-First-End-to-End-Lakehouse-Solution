@@ -67,6 +67,8 @@ Switch to the experimental Runtime version 1.3 to utilize new features:
 2. Access the 'Data Engineering/Science' tab and select 'Spark Settings'.
 3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 Experimental (Spark 3.5, Delta 3 OSS)', and confirm your changes. This sets Runtime 1.3 as your default.
 
+![Steps](https://learn.microsoft.com/en-us/fabric/data-engineering/media/mrs/runtime13.png#lightbox)
+
 ## 2. Initiating a New Notebook
 Create and configure a new notebook:
 
