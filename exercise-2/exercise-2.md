@@ -299,19 +299,27 @@ Provide a name for each `ForEach` element.
 ## 2.8.5. **Pipeline Variables**
 Firstly, click on the background pane (first step from the screenshot in the pink rectangle) to see the tab with parameters and variables.
 
-In the pipeline settings tab, navigate to `Variables`. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`.
+In the pipeline settings tab, navigate to `Variables`. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`. **Follow the specific step presented in the screenshot.**
+
 ![Step](../media/2/32.jpg)
 
 ## 2.8.6. **ForEach Settings**
-In the `ForEach` settings, select `Sequential`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`.
+In the `ForEach` settings, select `Sequential`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`. **Follow the specific step presented in the screenshot.**
+
 ![Step](../media/2/33.jpg)
+
+> [!NOTE]  
+> Sequential specifies whether the loop should be executed sequentially or in parallel. Maximum of 50 loop iterations can be executed at once in parallel. For example, if you have a ForEach activity iterating over a copy activity with 10 different source and sink datasets with isSequential set to False, all copies are executed at once.
+> 
+> And this "Sequential" mode may not be the best strategy for this task, especially since we want to run the same notebook for two different tables in parallel. If you arrived at the same conclusion, then that's a very astute observation. Feel free to chat about it with instructors.
+
 
 ## 2.8.7. **Adding Notebook Activity**
 Under `Activities`, choose `Notebook`.
 ![Step](../media/2/34.jpg)
 
 ## 2.8.8. **Notebook Settings**
-Access the `Settings` tab for the notebook as illustrated.
+From the General Tab (presented in the screenshot), go the `Settings` tab for the notebook, as illustrated.
 ![Step](../media/2/35.jpg)
 
 ## 2.8.9. **Select Workspace**
@@ -338,7 +346,7 @@ Note that the execution of the two notebooks occurs sequentially, typically taki
 ![Step](../media/2/40.jpg)
 
 
-Congratulations on completing this significant milestone in data engineering automation! Your skills in automating data processes have now been markedly enhanced.
+**Congratulations on completing this significant milestone in data engineering automation! Your skills in automating data processes have now been markedly enhanced.**
 
 ---
 
