@@ -22,10 +22,10 @@ The goal is to obtain the SQL connection string for your Lakehouse's SQL analyti
 
 1. **Access the Analytics Endpoint**:
    - Go to your workspace and find the Lakehouse SQL analytics endpoint.
-   - Click on "More options" (usually represented by three dots or an ellipsis icon) associated with the analytics endpoint.
+   - Click on `More options` (usually represented by three dots or an ellipsis icon) associated with the analytics endpoint.
 
 2. **Copy the SQL Connection String**:
-   - From the available options, select "Copy SQL connection string".
+   - From the available options, select `Copy SQL connection string`.
    - This action copies the connection string to your clipboard, ensuring you have the necessary information to establish a SQL connection.
      ![Copy Connection String](../media/3/CopyConnectionString.png)
 
@@ -43,13 +43,13 @@ Ensure that you handle the connection string securely, as it provides access to 
 The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS.
 
 1. **Open SQL Server Management Studio**:
-   - Launch SSMS on your computer. The "Connect to Server" window should automatically appear upon opening the application. If you're already in SSMS but not connected, navigate to Object Explorer, click "Connect", and then select "Database Engine".
+   - Launch SSMS on your computer. The `Connect to Server` window should automatically appear upon opening the application. If you're already in SSMS but not connected, navigate to Object Explorer, click `Connect`, and then select `Database Engine`.
 
 2. **Enter Server Details**:
-   - In the "Server name" field of the connection window, paste the SQL connection string you previously copied. This string should correspond to your Fabric SQL Endpoint.
+   - In the `Server name` field of the connection window, paste the SQL connection string you previously copied. This string should correspond to your Fabric SQL Endpoint.
 
 3. **Authentication**:
-   - For the authentication method, select "Microsoft Entra multifactor authentication (MFA)" from the options. This ensures a secure connection utilizing modern authentication methods.
+   - For the authentication method, select `Microsoft Entra multifactor authentication (MFA)` from the options. This ensures a secure connection utilizing modern authentication methods.
 
 4. **Enter User Credentials**:
    - In the authentication window that appears, enter your workshop user email or your enterprise email ID. Follow the prompts to complete the multifactor authentication process.
@@ -64,7 +64,7 @@ The goal of this task is to establish a connection to a Fabric SQL Endpoint usin
 
 # Task 3.3 Execute T-SQL Queries on Lakehouse Delta Tables
 
-Execute a series of T-SQL queries on the Lakehouse Delta tables, particularly focusing on data analysis of the NYC Taxi table from the "silvercleansed" database. These queries will help you understand data aggregation, view creation, and basic SQL operations within your Lakehouse environment.
+Execute a series of T-SQL queries on the Lakehouse Delta tables, particularly focusing on data analysis of the NYC Taxi table from the `silvercleansed` database. These queries will help you understand data aggregation, view creation, and basic SQL operations within your Lakehouse environment.
 
 1. **Count Rows in the NYC Taxi Table**:
    - Execute the following SQL query to get the total number of rows in the `green201501_cleansed` table:
@@ -137,10 +137,11 @@ Learn how to share a Lakehouse with team members or stakeholders within your wor
 2. **Configure Sharing Settings**:
    - In the Sharing dialog, enter the name or email address of the individuals you wish to share the Lakehouse with.
    - Assign the appropriate permissions by checking the relevant boxes. By default, sharing the Lakehouse grants access to the lakehouse, the associated SQL endpoint, and the default semantic model.
-     ![Lakehouse Sharing Dialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
+   
+   ![Lakehouse Sharing Dialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
 
 3. **Notification Settings**:
-   - If you want to notify the recipients via email, check the **"Notify recipients by mail"** option.
+   - If you want to notify the recipients via email, check the **`Notify recipients by mail`** option.
    - Include an optional message to provide context or instructions for the recipients.
 
 4. **Finalize Sharing**:
