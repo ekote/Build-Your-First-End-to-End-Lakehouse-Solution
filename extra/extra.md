@@ -18,11 +18,25 @@
 
 # High concurrency mode in Fabric Spark
 
-Description TODO
+High concurrency mode allows users to share the same Spark sessions in Fabric Spark for data engineering and data science workloads. An item like a notebook uses a standard Spark session for its execution. In high concurrency mode, the Spark session can support independent execution of multiple items within individual read-eval-print loop (REPL) cores that exist within the Spark application. These REPL cores provide isolation for each item, and prevent local notebook variables from being overwritten by variables with the same name from other notebooks sharing the same session.
+
+> > [!TIP]
+> In the case of custom pools with high concurrency mode, users get 36X faster session start experience compared to a standard Spark session.
+
+How to enable it? follow the steps. 
+
+1. Navigate to the Run tab in the menu ribbon and select on the session type dropdown that has Standard selected as the default option. Select New high concurrency session.
 
 ![HC](./../media/extra/hc1.jpg)
+
+2. Once the high concurrency session has started, you could now add upto 10 notebooks in the high concurrency session.
+
 ![HC](./../media/extra/hc2.jpg)
+
+3. Once the notebook has been attached, you can start executing the notebook steps instantly.
 ![HC](./../media/extra/hc3.jpg)
+
+[Read more here.](https://learn.microsoft.com/en-us/fabric/data-engineering/configure-high-concurrency-session-notebooks)
 
 # Lineage
 
