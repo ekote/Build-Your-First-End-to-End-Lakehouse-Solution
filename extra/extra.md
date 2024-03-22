@@ -23,7 +23,7 @@ High concurrency mode allows users to share the same Spark sessions in Fabric Sp
 > [!TIP]
 > In the case of custom pools with high concurrency mode, users get 36X faster session start experience compared to a standard Spark session.
 
-How to enable it? follow the steps. 
+To enable HC for your notebook follow the steps:
 
 1. Navigate to the Run tab in the menu ribbon and select on the session type dropdown that has Standard selected as the default option. Select New high concurrency session.
 
