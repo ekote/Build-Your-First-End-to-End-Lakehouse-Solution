@@ -40,7 +40,7 @@ By the end of the workshop, we will have completed the implementation of the med
 
 <details>
 
-<summary> Task 2.1 Copilot for notebooks </summary>
+<summary> Click here to expand the Task 2.1 Copilot for notebooks </summary>
 
 
 With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
