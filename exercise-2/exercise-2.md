@@ -298,7 +298,7 @@ In the pipeline settings tab, navigate to `Variables`. Here, create a new variab
 ![Step](../media/2/32.jpg)
 
 ## 2.8.6. **ForEach Settings**
-In the `ForEach` settings, select `Sequential` and specify `10` under `Batch Count`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`.
+In the `ForEach` settings, select `Sequential`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`.
 ![Step](../media/2/33.jpg)
 
 ## 2.8.7. **Adding Notebook Activity**
