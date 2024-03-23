@@ -1,4 +1,4 @@
-# Exercise 3 - Organize, secure, and prepare data using schemas, permissions, and projects
+# Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS
 
 > [!NOTE]
 > Timebox: 30 minutes

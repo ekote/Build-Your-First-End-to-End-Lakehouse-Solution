@@ -1,4 +1,4 @@
-# Exercise 2 - Transform data using notebooks and Spark clusters 
+# Exercise 2 - Transform data using Notebooks and Spark clusters 
 
 > [!NOTE]
 > Timebox: 75 minutes
