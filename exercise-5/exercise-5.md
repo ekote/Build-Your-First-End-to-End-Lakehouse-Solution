@@ -153,19 +153,19 @@ Taking SQL server as an example, users can navigate to the Azure portal and sear
 
 1. On the Resource page, select **Networking** from the navigation menu and then select the **Private Access** tab.
 
-   :::image type="content" source="./media/security-managed-private-endpoints-create/networking-private-access-tab.png" alt-text="Screenshot showing the Private access tab on the Networking page of a resource in the Azure portal.":::
+   ![Screenshot showing the Private access tab on the Networking page of a resource in the Azure portal](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-create/networking-private-access-tab.png)
 
 1. Data source administrators should be able to view the active private endpoint connections and new connection requests.
 
-    :::image type="content" source="./media/security-managed-private-endpoints-create/new-connection-requests.png" alt-text="Screenshot showing pending requests on the Private access tab.":::
+    ![Screenshot showing pending requests on the Private access tab](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-create/new-connection-requests.png)
 
 1. Admins can either *Approve* or *Reject* by providing a business justification.
 
-    :::image type="content" source="./media/security-managed-private-endpoints-create/approve-reject-request.png" alt-text="Screenshot showing the approval form.":::
+    ![Screenshot showing the approval form.](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-create/approve-reject-request.png)
 
 1. Once the request has been approved or rejected by the data source admin, the status is updated in the Fabric workspace settings page upon refresh.
 
-    :::image type="content" source="./media/security-managed-private-endpoints-create/endpoint-request-approved-state.png" alt-text="Screenshot showing the managed private endpoint in the approved state.":::
+    ![Screenshot showing the managed private endpoint in the approved state.](https://learn.microsoft.com/en-us/fabric/security/media/security-managed-private-endpoints-create/endpoint-request-approved-state.png)
 
 1. When the status has changed to *approved*, the endpoint can be used in notebooks or Spark job definitions to access the data stored in the data source from Fabric workspace.
 
