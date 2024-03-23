@@ -40,7 +40,7 @@ By the end of the workshop, we will have completed the implementation of the med
 
 <details>
 
-<summary> Click here to expand the Task 2.1 Copilot for notebooks </summary>
+<summary> Click <ins>here</ins> to expand the Task 2.1 Copilot for notebooks </summary>
 
 
 With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
@@ -100,7 +100,7 @@ Enter the following PySpark code in a new cell in your Fabric notebook. This scr
 > [!TIP]
 > This is a repetition of Exercise 1.3.11, but with additional explanation. Skip it if you do not need the code explanation.
 
-```pyspark
+```python
 df = spark.sql("SELECT * FROM bronzerawdata.green202301 LIMIT 1000")
 display(df)
 ```
@@ -114,14 +114,14 @@ Fabric Notebooks support various programming languages, including PySpark, Scala
 
 ![Step](../media/2/6.jpg)
 
-```
+```python
 %%sql
 SELECT * FROM bronzerawdata.green202301 LIMIT 1000
 ```
 
 Now, let's execute a specific data selection command. This command filters specific columns from the DataFrame and displays the first five rows:
 
-```
+```python
 %%pyspark
 df.select("VendorID", "trip_distance", "fare_amount", "tip_amount").show(5)
 ```
@@ -260,7 +260,7 @@ The last task before fully immersing ourselves in data engineering work within t
 In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. **Execute all code cells there, and all the steps.**. 
 
 > [!IMPORTANT]
-> Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.**. 
+> Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.** 
 
 You will complete the 2.7 notebook task once you see the last code cell that will lead you back here to Task 2.8. 
 
@@ -353,10 +353,10 @@ Note that the execution of the two notebooks occurs sequentially, typically taki
 
 > [!TIP]
 > (1) Instead of iterating through notebooks with a ForEach loop, you may consider structuring your approach to input various values into a single notebook execution. This can be complemented by coding loops within the notebook itself. 
+> 
 > (2) Utilize the `mssparkutils.notebook.runMultiple()` method to execute multiple notebooks in parallel, enhancing efficiency and saving time. This method is particularly useful when you do not need to wait for each notebook to complete before starting another. For an introduction and detailed usage, execute `mssparkutils.notebook.help("runMultiple")`. Here’s an illustrative example: 
-> ```python
-> mssparkutils.notebook.runMultiple(["NotebookSimple", "NotebookSimple2"])
-> ```
+> `mssparkutils.notebook.runMultiple(["NotebookA", "NotebookB"])`
+> 
 > Explore more about this feature [here](https://learn.microsoft.com/en-us/fabric/data-engineering/microsoft-spark-utilities#reference-run-multiple-notebooks-in-parallel).
 
 --- 
