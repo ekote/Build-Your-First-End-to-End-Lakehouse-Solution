@@ -91,10 +91,9 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
 
 
 ## 16. Download the exercise files
-Clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon) or Download Zip of the repository to your local machine.
-
-![Download Repo](../media/start/CloneDownloadRepo.png)
-
+ 
+[Click here to download the repository as a Zip](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.zip) or [here to download tar.gz package](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.tar.gz) to your local machine. Alternatively, you can clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon)."
+![Download or Clone Repository](../media/start/CloneDownloadRepo.png)
 
 ---
 
