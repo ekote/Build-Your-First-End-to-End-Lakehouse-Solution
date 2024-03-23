@@ -197,7 +197,7 @@ Ensure you are in the `Data Engineering` context of your Fabric workspace. Then,
 Click this icon to open the upload sidebar, similar to how you previously uploaded a file. From here, choose the notebook you've recently downloaded, named [notebook-2.ipynb](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/notebook-2.ipynb), and initiate the upload.
 ![Step](../media/2/importnotebook.jpg)
 
-## 2.4.2. Import Notification
+## 2.4.2. Notification
 Once you start the upload, you'll receive a notification indicating that the import of the file is underway. Wait for this process to complete; it typically takes only a few moments.
 ![Step](../media/2/17.jpg)
 
@@ -258,6 +258,9 @@ The last task before fully immersing ourselves in data engineering work within t
 # Task 2.7 Follow the Notebook
 
 In this task, follow the notebooks and the code provided, as well as all the instructions written in the code. **Execute all code cells there, and all the steps.**. 
+
+> [!IMPORTANT]
+> Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.**. 
 
 You will complete the 2.7 notebook task once you see the last code cell that will lead you back here to Task 2.8. 
 
@@ -348,6 +351,15 @@ Note that the execution of the two notebooks occurs sequentially, typically taki
 
 ![Step](../media/2/40.jpg)
 
+> [!TIP]
+> (1) Instead of iterating through notebooks with a ForEach loop, you may consider structuring your approach to input various values into a single notebook execution. This can be complemented by coding loops within the notebook itself. 
+> (2) Utilize the `mssparkutils.notebook.runMultiple()` method to execute multiple notebooks in parallel, enhancing efficiency and saving time. This method is particularly useful when you do not need to wait for each notebook to complete before starting another. For an introduction and detailed usage, execute `mssparkutils.notebook.help("runMultiple")`. Here’s an illustrative example: 
+> ```python
+> mssparkutils.notebook.runMultiple(["NotebookSimple", "NotebookSimple2"])
+> ```
+> Explore more about this feature [here](https://learn.microsoft.com/en-us/fabric/data-engineering/microsoft-spark-utilities#reference-run-multiple-notebooks-in-parallel).
+
+--- 
 
 **Congratulations on completing this significant milestone in data engineering automation! Your skills in automating data processes have now been markedly enhanced.**
 
