@@ -1,7 +1,7 @@
 # Start
 > [!NOTE]
 > Timebox: 30 minutes | [Back to Agenda](./../README.md#agenda) | [Up next Exercise 1](./../exercise-1/exercise-1.md)
-
+   
 ## 1. Navigate to the Microsoft Fabric Website
 
 > [!TIP]
