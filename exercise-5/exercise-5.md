@@ -145,6 +145,33 @@ Follow the GIF which presents e2e demo on how to create manage private endpoint.
 
 ![mpe](../media/5/managed_private_endpoint_velocity.gif)
 
+
+> [!NOTE]
+> The MPE must be approved on the target resource. 
+
+Taking SQL server as an example, users can navigate to the Azure portal and search for the "SQL Server" resource.
+
+1. On the Resource page, select **Networking** from the navigation menu and then select the **Private Access** tab.
+
+   :::image type="content" source="./media/security-managed-private-endpoints-create/networking-private-access-tab.png" alt-text="Screenshot showing the Private access tab on the Networking page of a resource in the Azure portal.":::
+
+1. Data source administrators should be able to view the active private endpoint connections and new connection requests.
+
+    :::image type="content" source="./media/security-managed-private-endpoints-create/new-connection-requests.png" alt-text="Screenshot showing pending requests on the Private access tab.":::
+
+1. Admins can either *Approve* or *Reject* by providing a business justification.
+
+    :::image type="content" source="./media/security-managed-private-endpoints-create/approve-reject-request.png" alt-text="Screenshot showing the approval form.":::
+
+1. Once the request has been approved or rejected by the data source admin, the status is updated in the Fabric workspace settings page upon refresh.
+
+    :::image type="content" source="./media/security-managed-private-endpoints-create/endpoint-request-approved-state.png" alt-text="Screenshot showing the managed private endpoint in the approved state.":::
+
+1. When the status has changed to *approved*, the endpoint can be used in notebooks or Spark job definitions to access the data stored in the data source from Fabric workspace.
+
+Click [here](https://learn.microsoft.com/en-us/fabric/security/security-managed-private-endpoints-create#supported-data-sources) to review the list of supported data sources.
+
+
 ---
 
 # Autotune Query Tuning

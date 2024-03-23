@@ -190,7 +190,7 @@ Finally, transition to the `Data Engineering` tab, adhering to the instructions 
 > You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
 
 ## 2.4.1. Importing the Notebook
-If you have not downloaded the repository ([Step 16. Download the exercise files](./../start/start.md#16-download-the-exercise-files)), ** you can download just a separate notebook. [This screenshot presents the steps to do that.](./../media/extra/download-notebook.jpg)**
+If you have not downloaded the repository ([Step 16. Download the exercise files](./../start/start.md#16-download-the-exercise-files)), **you can download just a separate notebook. [This screenshot presents the steps to do that.](./../media/extra/download-notebook.jpg)**
 
 Ensure you are in the `Data Engineering` context of your Fabric workspace. Then, navigate to your workspace, and select the `New` where you'll find an option to upload notebooks, symbolized by a notebook icon. 
 
