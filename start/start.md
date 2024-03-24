@@ -19,6 +19,10 @@ Input your password in the designated field and click the `Sign In` button.
 
 ## 4. Update Your Password
 You are required to update your password upon first login. Please follow the prompts to do so.
+
+> [!TIP]  
+> **We advise you to write your password on the back side of the business card along with your login details, in case you may need to restart your PC and forget the password.**
+
 ![Login](../media/start/9.jpg)
 
 ## 5. Setup Multi-Factor Authentication (MFA)
