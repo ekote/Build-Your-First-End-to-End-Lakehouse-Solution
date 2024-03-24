@@ -8,11 +8,11 @@
 > * [Lineage](#lineage)
 > * [Specify the file format and compression type for the sink datasets in Data Factory](##specify-the-file-format-and-compression-type-for-sink-datasets-in-data-factory)
 > *  [Monitor the pipeline run and verify the output](#monitor-the-pipeline-run-and-verify-the-output)
-> *  [Create a dataflow that reads data from a CSV file - TODO](#create-a-dataflow-that-reads-data-from-a-csv-file)
 > *  [Medallion architecture](#medallion-architecture)
 > *  [Schedule your notebook](#schedule-your-notebook-for-multiple-daily-runs)
 > *  [Create a new Spark Pool on the Workspace-level settings]()
 > *  [Saved with V-Order?](#verify-v-order)
+> *  [Merge](#merge)
 
 ---
 
@@ -315,6 +315,37 @@ In this exercise, you will verify whether a table has been saved with or without
 
 Review the [Microsoft documentation on Delta optimization and V-Order](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) for a deeper understanding and context.  By understanding the impact and functioning of V-Order, you can make informed decisions about its use in your data storage and processing strategies. Remember, the goal is not just to see if V-Order is applied, but also to understand its benefits and implications.
 
+# Merge
+
+Delta Lake MERGE command allows users to update a delta table with advanced conditions. It can update data from a source table, view or DataFrame into a target table by using MERGE command. However, the current algorithm isn't fully optimized for handling unmodified rows. The Microsoft Spark Delta team implemented a custom Low Shuffle Merge optimization, unmodified rows are excluded from an expensive shuffling operation that is needed for updating matched rows.
+
+The implementation is controlled by the [spark.microsoft.delta.merge.lowShuffle.enabled](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/low-shuffle-merge-for-apache-spark) configuration, enabled by default in the runtime. It requires no code changes and is fully compatible with the open-source distribution of Delta Lake. To learn more about Low Shuffle Merge usage scenarios, read the article Low Shuffle Merge optimization on Delta tables.
+
+# Task: Managing NYC Green Taxi Data with Merge Operations
+
+### Objective:
+Enhance your understanding of data handling within Fabric Spark by loading, updating, and inserting NYC Green Taxi data. Utilize the Merge statement to manage financial records across different timeframes.
+
+1. **Data Collection**:
+   - Download NYC Green Taxi data for multiple months and years from the original source: [NYC TLC Trip Record Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+   - Select specific time periods to focus on, such as different months or years.
+
+2. **Data Loading to Bronze Layer**:
+   - Choose your preferred method to load the downloaded taxi data into the 'bronze' layer in Fabric Spark.
+   - Create and configure the necessary tables to store the taxi data, ensuring they include financial metrics like income per taxi.
+
+3. **Scenario Preparation**: 
+   - Develop two scenarios:
+     a. **Historical Update**: Prepare a dataset from one of the months with altered financial figures to simulate the need for historical data correction.
+     b. **Conditional Insertion**: Identify conditions for new data (e.g., trips from a new month, changes in fare amounts) that should trigger insertions into a separate table.
+
+4. **Merge Statement Construction**:
+   - For the Historical Update scenario, write a Merge statement that updates existing records in the bronze&silver layer with the corrected data based on unique identifiers.
+   - For the Conditional Insertion scenario, construct a Merge statement that inserts new records into a different table when specific conditions are met, such as new trip entries or updated fares.
+
+5. **Execution and Validation**:
+   - Execute both Merge statements in your Fabric Spark notebooks.
+   - Validate the outcomes by verifying that the bronze and silver layer accurately reflects historical corrections and that the separate table correctly includes new or updated records.
 
 
 [//]: # ()
