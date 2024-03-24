@@ -264,8 +264,10 @@ In this task, follow the notebooks and the code provided, as well as all the ins
 
 You will complete the 2.7 notebook task once you see the last code cell that will lead you back here to Task 2.8. 
 
-> [!NOTE]  
-> If you have completed Notebook 2.7 and are seeking advanced challenges, please review the notebook and list all the improvements you would suggest. I have intentionally left a couple of areas with room for improvement. Once you identify those areas, feel free to discuss them with the instructors. 
+> [!TIP]  
+> If you have completed Notebook 2.7 and are seeking advanced challenges, please review the notebook and list all the improvements you would suggest. I have intentionally left a couple of areas with room for improvement. Once you identify those areas, feel free to discuss them with the instructors.
+> 
+> **Please repeat the exercise from [1.4 Management of Spark Sessions](./../exercise-1/#task-14-management-of-spark-sessions), and check if you have any additional ongoing and active Spark sessions. If so, please cancel them.**
 
 ---
 

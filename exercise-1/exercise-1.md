@@ -8,6 +8,7 @@
 > * [Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)](#task-11-create-a-pipeline-that-ingests-data-from-an-external-azure-blob-storage-account-and-writes-it-to-lakehouse-bronze-layer)
 > * [Task 1.2 Discover the Lakehouse](#task-12-discover-the-lakehouse)
 > * [Task 1.3 Create shortcut](#task-13-create-shortcut)
+> * [Task 1.4 Management of Spark Sessions](#task-14-management-of-spark-sessions)
 
 # Context
 We will focus on integrating two data sources from NYC Taxi data: one from 2015 and the second from 2023. The table below presents the metaphors we will use to integrate the data:
@@ -332,7 +333,7 @@ Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook
 ![Step](../media/1/47.jpg)
 
 
-## 1.3.14 Management of Spark Sessions
+## Task 1.4 Management of Spark Sessions
 Learn to manage and terminate Spark sessions within your workspace to ensure efficient resource utilization and cost management.
 
 Note that the default session expiration time for Starter and Spark Pools is set to 20 minutes. A Spark pool will be deallocated if not used for 2 minutes after session expiration.
