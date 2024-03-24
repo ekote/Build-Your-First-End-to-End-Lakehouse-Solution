@@ -82,6 +82,7 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
 ![One Node](./../media/extra/onenode1.jpg)
 
 2. **Modify Default Pool Configuration**:
+   - Go to Data Engineering / Data Science (it's under PowerBI) -> and then click on Spark settings. 
    - Locate the "default pool for workspace" setting.
    - Click on the pencil icon (marked as "1" in the provided screenshot) to edit the pool settings.
 
