@@ -321,9 +321,8 @@ Delta Lake MERGE command allows users to update a delta table with advanced cond
 
 The implementation is controlled by the [spark.microsoft.delta.merge.lowShuffle.enabled](https://learn.microsoft.com/en-us/azure/synapse-analytics/spark/low-shuffle-merge-for-apache-spark) configuration, enabled by default in the runtime. It requires no code changes and is fully compatible with the open-source distribution of Delta Lake. To learn more about Low Shuffle Merge usage scenarios, read the article Low Shuffle Merge optimization on Delta tables.
 
-# Task: Managing NYC Green Taxi Data with Merge Operations
+## Managing NYC Green Taxi Data with Merge Operations
 
-### Objective:
 Enhance your understanding of data handling within Fabric Spark by loading, updating, and inserting NYC Green Taxi data. Utilize the Merge statement to manage financial records across different timeframes.
 
 1. **Data Collection**:
