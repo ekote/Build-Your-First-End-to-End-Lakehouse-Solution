@@ -31,24 +31,25 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 > [!IMPORTANT]
 > 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
 > 
-> 9:30 am - 10:30 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
+> 9:30 am - 10:00 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
 > 
-> 10:30 am - 10:45 am - Break 15 minutes
+> 10:00 am - 10:15 am - Coffee break 15 minutes
 > 
-> 10:45 am - 12:00 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
+> 10:15 am - 10:45 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md)
 > 
-> 12:00 pm - 01:00 pm - Lunch 60 minutes
+> 10:45 am - 11:45 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
 > 
-> 01:05 pm - 01:35 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
+> 11:45 am - 12:45 pm - Lunch 60 minutes
 > 
-> 01:35 pm - 01:40 pm - Break 5 minutes
+> 12:45 pm - 01:15 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
 > 
-> 01:40 pm - 02:40 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
+> 01:15 pm - 01:25 pm - Break 10 minutes
 > 
-> 02:40 pm - 02:50 pm - Break 10 minutes
+> 01:25 pm - 02:25 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
 > 
-> 02:50 pm - 03:30 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
+> 02:25 pm - 02:35 pm - Break 10 minutes
 > 
-> 03:30 pm - 04:00 pm - Recap
+> 02:35 pm - 03:05 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
 > 
-> [Extra exercises](./extra/extra.md)
+> 03:05 pm - 04:00 pm - Buffer, Recap and [Extra exercises](./extra/extra.md)
+> 
