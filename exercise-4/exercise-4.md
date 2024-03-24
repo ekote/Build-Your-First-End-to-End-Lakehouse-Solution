@@ -95,14 +95,10 @@ In this exercise, you will explore and visualize taxi trip data, including the p
 3. Visualize Average tripDuration and predictedTripDuration by weekDayName.
     - Add an area chart visual and add ***weekDayName* **onto X-axis, ***trip_duration*** to Y-axis and ***predictedTripDuration*** to secondary Y-axis. Switch aggregation method to Average for both Y-axes.
 
-4. Add Card visuals for overall predictedTripDuration and tripDuration.
-   - Add a Card Visual and add predictedTripDuration to the fields and switch aggregation method to Average.
-   - Add a Card Visual and add TripDuration to the fields and switch aggregation method to Average.
-
-5. Visualize Average tripDuration and predictedTripDuration by pickupDate using line chart.
+4. Visualize Average tripDuration and predictedTripDuration by pickupDate using line chart.
     - Add a line chart visual and add ***pickupDate*** onto X-axis, ***tripDuration*** and ***predictedTripDuration*** to Y-axis and switch aggregation method to Average for both fields.
 
-6. Create Card Visuals for single view of key metrics.
+5. Create Card Visuals for single view of key metrics.
    - Add a Card visual and drag ***tip_amount*** to fields and switch aggregation method to median.
    - Add 2nd Card visual and drag ***fare_amount*** to fields and switch aggregation method to average.
    - Add 3rd Card visual and drag ***predictedtrip_duration*** to fields and switch aggregation method to average. 
