@@ -368,7 +368,7 @@ Note that the default session expiration time for Starter and Spark Pools is set
 
      ![Termination Confirmation](../media/extra/mh7.jpg)
 
-**Discuss with instructors the impact of Fabric capacities and Fabric regions, as well as the intelligent pooling mechanism, and the variance between workshop and real-world scenarios.** 
+**Discuss with instructors the impact of Fabric capacities and Fabric regions, [concurrency limits](https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing), as well as the intelligent pooling mechanism, and the variance between workshop and real-world scenarios.** 
 
 
 > [!IMPORTANT]
