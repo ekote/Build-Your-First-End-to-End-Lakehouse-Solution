@@ -244,13 +244,13 @@ With the exploration of the Lakehouse's features and maintenance options, this t
 
 
 # Task 1.3 Create shortcut
-This task focuses on accessing and leveraging tax data from the year 2023, enhancing our Lakehouse with critical financial insights without the overhead of traditional data movement.
+This task focuses on accessing and leveraging NYC Taxi data from the year 2023, enhancing our Lakehouse with critical financial insights without the overhead of traditional data movement.
 
-Your mission is to access the 2023 tax data that has been accumulating since 1982, making it readily available for analysis and decision-making within our Lakehouse environment. The key here is efficiency and innovation, as we aim to streamline our data operations.
+Your mission is to access the 2023 NYC Taxi data that has been accumulating since 1982, making it readily available for analysis and decision-making within our Lakehouse environment. The key here is efficiency and innovation, as we aim to streamline our data operations.
 
 Task Details:
 * In this task, you will utilize the `Shortcuts` feature, a powerful tool that enables direct access to data without the necessity of copying it into the Lakehouse. This approach not only saves time but also reduces storage costs and maintains data integrity by eliminating unnecessary duplication.
-* By employing the `Shortcuts` strategy, you will achieve `Zero Data Movement`. This means you will directly point to the existing tax data from 2023, enabling real-time access and analysis without the overhead of traditional data transfer methods.
+* By employing the `Shortcuts` strategy, you will achieve `Zero Data Movement`. This means you will directly point to the existing NYC Taxi data from 2023, enabling real-time access and analysis without the overhead of traditional data transfer methods.
 
 Benefits of This Approach:
 * Efficiency: Access data in real-time without the delays associated with copying large datasets.
