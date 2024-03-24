@@ -216,6 +216,9 @@ In the `Tables` section of your Lakehouse, click the three dots next to your tab
 Observe that the table's data format is listed as `Managed`, indicating that the table is a managed entity. Also, note that this table has been optimized using Z-order optimization; further details can be found in the extra section.
 ![Step](../media/1/29.jpg)
 
+> [!TIP]
+> Explore managed vs unmanaged tables for Fabric Spark by [reviewing an article written by our teammate Aitor, who is part of the Customer Advisory Team](https://murggu.medium.com/creating-managed-and-external-spark-tables-in-fabric-lakehouse-ef6212e75e81).
+
 ## 1.2.4. **Review Table Files**
 Return to the Lakehouse overview, expand the table options, and select `Files` to examine the data. Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
 ![Step](../media/1/30.jpg)
@@ -282,7 +285,7 @@ Ensure correct configuration by checking the folder named `2023`. Inside it, loc
 Successfully configured access to your data via shortcuts, without needing to copy it. The shortcut should now appear under the `Files` section, indicating a link to a folder containing Parquet files.
 ![Step](../media/1/38.jpg)
 
-## 1.3.6. Transform Parquet Data
+## 1.3.6. Load to Table (Delta Table) Parquet Data
 To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load Tables`.
 ![Step](../media/1/39.jpg)
 
@@ -313,7 +316,7 @@ Following the correct execution, you should observe two tables under the `Tables
 The query should execute within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
 
 > [!IMPORTANT]
-> Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.**. 
+> Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.**.
 
 
 ![Step](../media/1/46.jpg)
@@ -327,6 +330,45 @@ The query should execute within a few seconds, demonstrating the seamless integr
 ## 1.3.13. Confirm Default Lakehouse
 Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
 ![Step](../media/1/47.jpg)
+
+
+## 1.3.14 Management of Spark Sessions
+Learn to manage and terminate Spark sessions within your workspace to ensure efficient resource utilization and cost management.
+
+Note that the default session expiration time for Starter and Spark Pools is set to 20 minutes. A Spark pool will be deallocated if not used for 2 minutes after session expiration.
+
+**Action required <ins>after</ins> you follow the provided screenshots and descriptions.**
+
+### Steps for demo Spark Session Timeout Duration:
+
+1.  On the screenshot I demo loading parquet data into a Delta table using the 'Load to Table' feature.
+   
+     ![Load Data](../media/extra/mh1.jpg)
+2. The table creation was successful as indicated by the notification on the screen. I navigate to the monitoring hub to showcase the current activity.
+
+     ![Monitoring Hub](../media/extra/mh2.jpg)
+
+
+2. Inside the Monitoring Hub, we observe, the activity is still running. Read the explanation for why; it's presented in the screenshot. Click on the three dots "..." and select "View details",
+
+     ![View Details](../media/extra/mh3.jpg)
+
+3. In the details view, point out the crucial information. Pay special attention to the highlighted content in the screenshot.
+     ![Session Details](../media/extra/mh4.jpg)
+
+4. After reviewing all the callouts elements, the necessity to cancell the session is clear. Let me show you how to do that. Again, click on the three dots, and click 'cancel'.
+
+     ![Cancel Session](../media/extra/mh5.jpg)
+   
+    Display how to confirm this action by choosing "Yes, stop".
+
+    ![Confirm Termination](../media/extra/mh6.jpg)
+
+5. Confirm that the session has been successfully terminated as seen on screen.
+
+     ![Termination Confirmation](../media/extra/mh7.jpg)
+
+**Discuss with instructors the impact of Fabric capacities and Fabric regions, as well as the intelligent pooling mechanism, and the variance between workshop and real-world scenarios.** 
 
 
 > [!IMPORTANT]
