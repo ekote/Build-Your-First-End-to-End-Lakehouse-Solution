@@ -280,6 +280,10 @@ Provide the necessary URL by copying and pasting it from the task description. T
 
 ## 1.3.4. Verify ADLS Gen2 Access
 Ensure correct configuration by checking the folder named `2023`. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click `Next`.
+
+> ![!IMPORTANT]
+> We are creating a demo to a folder named 2023, and you need to just observe and ack that inside that folder there is a required file (as presented on the screenshot). 
+
 ![Step](../media/1/37.jpg)
 
 ## 1.3.5. Shortcut Configuration Success
@@ -342,7 +346,7 @@ Note that the default session expiration time for Starter and Spark Pools is set
 
 ### Steps for demo Spark Session Timeout Duration:
 
-1.  On the screenshot I demo loading parquet data into a Delta table using the 'Load to Table' feature.
+1.  On the screenshot I demo (via the screenshots, there is no live or gif demo) loading parquet data into a Delta table using the 'Load to Table' feature.
    
      ![Load Data](../media/extra/mh1.jpg)
 2. The table creation was successful as indicated by the notification on the screen. I navigate to the monitoring hub to showcase the current activity.
