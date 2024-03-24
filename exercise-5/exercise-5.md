@@ -113,7 +113,7 @@ class TaxiFareUDTF:
 spark.udtf.register("calculate_individual_costs", TaxiFareUDTF)
 
 # Python UDTFs can also take a TABLE as input argument, and it can be used in conjunction with scalar input arguments. By default, you are allowed to have only one TABLE argument as input, primarily for performance reasons. If you need to have more than one TABLE input argument, you can enable this by setting the spark.sql.tvf.allowMultipleTableArguments.enabled configuration to true.
-spark.sql("SELECT * FROM calculate_individual_costs(TABLE(SELECT fare_amount FROM bronzerawdata.green_tripdata_2023_01 LIMIT 20), 5)").show()
+spark.sql("SELECT * FROM calculate_individual_costs(TABLE(SELECT fare_amount FROM bronzerawdata.<figure out the table name :) > LIMIT 20), 5)").show()
 ```
 
 </details>
