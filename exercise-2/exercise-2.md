@@ -281,7 +281,7 @@ Congratulations, you have completed the advanced data engineering notebook. Now,
 
 ## Pre-Automation Quality Check
 Ensure the following before starting the automation process:
-* Lakehouse `bronzerawdata` contains two tables: `green201501` and `green201301`.
+* Lakehouse `bronzerawdata` contains two tables: `green201501` and `green202301`.
 * Lakehouse `bronzerawdata` includes one folder in the Files section, named `2023`, created by a shortcut.
 * Lakehouse `bronzerawdata` has one file in the Files section: `NYC-Taxi-Discounts-Per-Day.csv`.
 * Lakehouse `silvercleansed` consists of three tables: `green2015_avg_fare_per_month`, `green201501_cleansed`, and `green201501_discounts`.
