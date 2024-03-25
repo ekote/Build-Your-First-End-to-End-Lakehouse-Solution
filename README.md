@@ -20,7 +20,7 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 - Improved transportation reliability and safety.
 - Adaptable data infrastructure for future urban mobility trends.
 
-![Build Your First End to End Lakehouse Solution](./media/start/diagram.png)
+![Build Your First End to End Lakehouse Solution](screenshots/start/diagram.png)
 
 # Agenda
 
@@ -29,7 +29,7 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 
 
 > [!IMPORTANT]
-> 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](./start/start.md)
+> 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
 > 
 > 9:30 am - 10:00 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
 > 
@@ -51,5 +51,5 @@ Join our workshop to master building end-to-end data solutions with Microsoft Fa
 > 
 > 02:35 pm - 03:05 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
 > 
-> 03:05 pm - 04:00 pm - Buffer, Recap and [Extra exercises](./extra/extra.md)
+> 03:05 pm - 04:00 pm - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
 > 

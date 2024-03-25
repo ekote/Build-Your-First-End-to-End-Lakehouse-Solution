@@ -40,7 +40,7 @@ DirectLake mode now eliminates this import requirement by loading the data files
 In this exercise, you will take on the role of a data scientist tasked with exploring, cleaning, and transforming a dataset containing taxi trip data. You will build a machine learning model to predict the duration of taxi trips using the New York taxi greencab dataset containing data from 2015, which includes information like pickup and drop-off times, locations, fares, and passenger counts. You will then apply the machine learning model to generate predictions on greencab from the year 2023 asnd save them to lakehouse.
 
 1. **Download the Exercise Notebook**:
-   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. [This screenshot presents the steps to do it](./../media/extra/download-notebook-2.jpg).
+   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. [This screenshot presents the steps to do it](../screenshots/extra/download-notebook-2.jpg).
 
 2. **Import the Notebook into Fabric Workspace**:
    - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
@@ -73,12 +73,12 @@ In this exercise, you will explore and visualize taxi trip data, including the p
 2. **Create a New Semantic Model**:
    - Click the "New semantic model" button on the top ribbon.
    - In the dialog, name the semantic model (e.g., NYCTaxiTrips) and select **greentaxi_predicted** as the data source. Confirm to create the semantic model linked to your predictive data.
-     ![New Semantic Model](../media/4/NewSemanticModel.png)
+     ![New Semantic Model](../screenshots/4/NewSemanticModel.png)
 
 3. **Generate a New Power BI Report**:
    - In the semantic model UI, click the ***New report*** button on the top ribbon. This will open the Power BI report authoring page in a new browser tab.
    
-     ![New Report from Semantic Model](../media/4/NewReportfromSemanticModel.png)
+     ![New Report from Semantic Model](../screenshots/4/NewReportfromSemanticModel.png)
 
 
 > [!IMPORTANT]  
@@ -106,7 +106,7 @@ In this exercise, you will explore and visualize taxi trip data, including the p
 
   You can now rearrange the layout and modify the aesthetics of the visuals as per your requirement and the report is ready to be published.
 
-  ![Final report](../media/4/Report.png)
+  ![Final report](../screenshots/4/Report.png)
 
 
 > [!TIP]
@@ -124,11 +124,11 @@ In this task, you will publish the Power BI report created in the previous task 
    - In the Power BI report editor, navigate to the File menu and select the Save or Save As option to open the report save dialog box.
    - Enter a name for your report, for example, *NYC Taxi Trip Analysis*.
    - Choose a target workspace within Power BI where you want the report to be published and click Save.
-     ![Save Report](../media/4/SaveReport.png)
+     ![Save Report](../screenshots/4/SaveReport.png)
 
 2. **Publish the Report**:
    - Once saved, your Power BI report will be available as an artifact in the chosen workspace, ready for sharing and consumption.
-     ![Published Report in Workspace](../media/4/PublishedreportWS.png)
+     ![Published Report in Workspace](../screenshots/4/PublishedreportWS.png)
 
 3. **Share the Report**:
    - Open the published report from your workspace.
@@ -143,4 +143,4 @@ In this task, you will publish the Power BI report created in the previous task 
 ---
 
 > [!IMPORTANT]
-> Once completed, go to [next exercise (Exercise 5)](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, go to [next exercise (Exercise 5)](./../exercise-5/exercise-5.md). If time permits before the next exercise begins, consider continuing with [extra steps](../exercise-extra/extra.md).

@@ -33,7 +33,7 @@ The goal is to obtain the SQL connection string for your Lakehouse's SQL analyti
 2. **Copy the SQL Connection String**:
    - From the available options, select `Copy SQL connection string`.
    - This action copies the connection string to your clipboard, ensuring you have the necessary information to establish a SQL connection.
-     ![Copy Connection String](../media/3/CopyConnectionString.png)
+     ![Copy Connection String](../screenshots/3/CopyConnectionString.png)
 
 3. **Utilize the Connection String**:
    - With the connection string now on your clipboard, you can use it to connect to your Lakehouse SQL analytics endpoint.
@@ -46,7 +46,7 @@ Ensure that you handle the connection string securely, as it provides access to 
 
 # Task 3.2 Connect to a Fabric SQL Endpoint Using SQL Server Management Studio (SSMS)
 > [!TIP]
-> If you are interested in lineage and connecting through Azure Data Studio, [proceed to this additional exercise](./../extra/extra.md#lineage).
+> If you are interested in lineage and connecting through Azure Data Studio, [proceed to this additional exercise](../exercise-extra/extra.md#lineage).
  
 The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS. [Download the latest generally available (GA) version of SQL Server Management Studio (SSMS) 20.0 (485 MB)](https://aka.ms/ssmsfullsetup)
 
@@ -59,7 +59,7 @@ The goal of this task is to establish a connection to a Fabric SQL Endpoint usin
 3. **Authentication**:
    - For the authentication method, select `Microsoft Entra Password` from the options. This ensures a secure connection utilizing modern authentication methods.
 
-    ![password](./../media/3/pwd.jpg)
+    ![password](../screenshots/3/pwd.jpg)
 
 4. **Enter User Credentials**:
    - In the authentication window that appears, enter your workshop user email or your enterprise email ID. Follow the prompts to complete the multifactor authentication process.
@@ -194,4 +194,4 @@ Learn how to share a notebook with team members within your workspace, allowing 
 
 
 > [!IMPORTANT]
-> Once completed, go to [next exercise (Exercise 4)](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, go to [next exercise (Exercise 4)](./../exercise-4/exercise-4.md). If time permits before the next exercise begins, consider continuing with [extra steps](../exercise-extra/extra.md).

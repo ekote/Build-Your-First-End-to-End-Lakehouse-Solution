@@ -22,7 +22,7 @@
 In this exercise, we will explore data engineering tasks aimed at transforming raw data into a refined silver layer.
 
 By the end of the workshop, we will have completed the implementation of the medallion architecture:
-![Data overview](../media/2/intro.png)
+![Data overview](../screenshots/2/intro.png)
 
 
 
@@ -54,19 +54,19 @@ Investigate the `green201501` table within your lakehouse, and seek insights abo
 
 ## 2.1.1. Accessing Copilot
 Select the Copilot icon found in the notebooks ribbon. This action opens the Copilot chat panel and creates a new cell at the top of your notebook. Note: This cell is essential for initializing a Spark session within a Fabric notebook and must be executed for Copilot to function correctly. Future releases may introduce alternative initialization methods.
-![Step](../media/2/1.jpg)
+![Step](../screenshots/2/1.jpg)
 
 ## 2.1.2. Get Started with Copilot
 When the Copilot panel opens, click `Get Started` to initiate your interaction with the AI assistant.
-![Step](../media/2/2.jpg)
+![Step](../screenshots/2/2.jpg)
 
 ## 2.1.3. Library Installation
 Copilot will automatically insert a new cell containing the necessary library installation script. Execute this cell by clicking the `Play` button to install the required libraries for Copilot functionalities.
-![Step](../media/2/3.jpg)
+![Step](../screenshots/2/3.jpg)
 
 ## 2.1.4. Data Privacy and Security Awareness
 Post-installation, you will be presented with a note on data privacy and security. Please read through this to understand how your data is stored and processed. Additionally, guidelines will be provided on how to effectively communicate with Copilot.
-![Step](../media/2/4.jpg)
+![Step](../screenshots/2/4.jpg)
 
 ## 2.1.5. Interacting with Copilot
 Now, engage with Copilot by exploring various prompts related to your data. Feel free to ask for code snippets, clarification, or paste the generated code into a new notebook cell. This is an opportunity to explore the capabilities and assistance Copilot offers for data science and engineering tasks.
@@ -75,7 +75,7 @@ Now, engage with Copilot by exploring various prompts related to your data. Feel
 > Please feel free to ask Copilot any questions to deepen your understanding of the dataset and enhance our workshop experience.
 > Just an example: `Analyze my lakehouse table named green201501 and provide insights about the data`. 
 
-![Step](../media/2/5.jpg)
+![Step](../screenshots/2/5.jpg)
 
 This quick demonstration aims to highlight the ease of accessing Copilot for insightful data analysis.
 
@@ -112,7 +112,7 @@ Explanation of the code:
 ## 2.2.3. Using Multiple Programming Languages in Fabric Notebooks
 Fabric Notebooks support various programming languages, including PySpark, Scala, SQL, and R. To switch to SQL, for example, use the %%sql magic command at the beginning of a notebook cell.
 
-![Step](../media/2/6.jpg)
+![Step](../screenshots/2/6.jpg)
 
 ```python
 %%sql
@@ -139,7 +139,7 @@ When working with large datasets, starting with data retrieval sets the foundati
 # Task 2.3 Side Loading (local upload) and Load to Delta for CSV file
 
 We aim to expand the bronze layer by loading additional data. Below is a table that provides an updated view of the types of data we are loading into the bronze layer and the methods we are using for this purpose.
-![Data overview](../media/1/data-integration.png)
+![Data overview](../screenshots/1/data-integration.png)
 
 
 This set of instructions will guide you through the process of downloading external data and integrating it into your Lakehouse for comprehensive analysis.
@@ -150,34 +150,34 @@ Open Link in a New Tab [provided URL](https://raw.githubusercontent.com/ekote/Bu
 > [!TIP]
 > Download the file to your local machine from this link [Download Discount Data](https://raw.githubusercontent.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/fabcon/exercise-2/NYC-Taxi-Discounts-Per-Day.csv).
 
-![Step](../media/2/7.jpg)
+![Step](../screenshots/2/7.jpg)
 
 ## 2.3.2. Uploading Data to the Lakehouse
 To integrate this discount data with existing datasets:
 * Go to the `Files` section in your Lakehouse. 
 * Click on the three dots to access additional options and select the `Upload` button. 
 * Choose `Upload Files` from the menu.
-![Step](../media/2/10.jpg)
+![Step](../screenshots/2/10.jpg)
 
 ## 2.3.3. File Selection for Upload
 Select the recently downloaded file, likely named NYC-Taxi-Discounts-Per-Day.csv, then initiate the upload by clicking the `Upload` button.
-![Step](../media/2/11.jpg)
+![Step](../screenshots/2/11.jpg)
 
 ## 2.3.4. Verifying Upload to the Lakehouse
 The file should upload within a few seconds. This method provides a straightforward approach to augmenting your Lakehouse data.
-![Step](../media/2/12.jpg)
+![Step](../screenshots/2/12.jpg)
 
 ## 2.3.5. Refreshing and Locating the File
 Refresh the Lakehouse's `Files` section to view the newly uploaded file. Employ the drag-and-drop feature to move this file into your notebook. This action will generate a cell prepopulated with code, which you can execute to review the new data.
-![Step](../media/2/13.jpg)
+![Step](../screenshots/2/13.jpg)
 
 ## 2.3.6. Renaming the Notebook
 Assign an appropriate name to your notebook reflecting its purpose, such as `Data Exploration` or `Discount Analysis`, to maintain clarity and organization within your projects.
-![Step](../media/2/14.jpg)
+![Step](../screenshots/2/14.jpg)
 
 ## 2.3.7. Switching to Data Engineering View
 Finally, transition to the `Data Engineering` tab, adhering to the instructions depicted on-screen, to continue your data analysis journey with the newly integrated datasets.
-![Step](../media/2/15.jpg)
+![Step](../screenshots/2/15.jpg)
 
 
 [//]: # (![Step]&#40;../media/2/8.jpg&#41;)
@@ -190,20 +190,20 @@ Finally, transition to the `Data Engineering` tab, adhering to the instructions 
 > You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
 
 ## 2.4.1. Importing the Notebook
-If you have not downloaded the repository ([Step 16. Download the exercise files](./../start/start.md#16-download-the-exercise-files)), **you can download just a separate notebook. [This screenshot presents the steps to do that.](./../media/extra/download-notebook.jpg)**
+If you have not downloaded the repository ([Step 16. Download the exercise files](../exercise-0-setup/start.md#16-download-the-exercise-files)), **you can download just a separate notebook. [This screenshot presents the steps to do that.](../screenshots/extra/download-notebook.jpg)**
 
 Ensure you are in the `Data Engineering` context of your Fabric workspace. Then, navigate to your workspace, and select the `New` where you'll find an option to upload notebooks, symbolized by a notebook icon. 
 
 Click this icon to open the upload sidebar, similar to how you previously uploaded a file. From here, choose the notebook you've recently downloaded, named [notebook-2.ipynb](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/notebook-2.ipynb), and initiate the upload.
-![Step](../media/2/importnotebook.jpg)
+![Step](../screenshots/2/importnotebook.jpg)
 
 ## 2.4.2. Notification
 Once you start the upload, you'll receive a notification indicating that the import of the file is underway. Wait for this process to complete; it typically takes only a few moments.
-![Step](../media/2/17.jpg)
+![Step](../screenshots/2/17.jpg)
 
 ## 2.4.3. Accessing the Imported Notebook
 After the import completes, locate the newly imported notebook in the `urban-innovation-de{NNN}`, where NNN represents the number assigned to you. Click on the three dots associated with the notebook and select `Open Notebook`. For convenience, you can open the notebook in the background, which will make its icon continuously accessible from the vertical sidebar on the left.
-![Step](../media/2/18.jpg)
+![Step](../screenshots/2/18.jpg)
 
 
 Congratulations, you've successfully completed the task and enhanced your data engineering capabilities with a pre-made notebook!
@@ -216,23 +216,23 @@ This step-by-step guide will help you to integrate your Lakehouse with the pre-m
 
 ## 2.5.1. Accessing Lakehouse Options
 In your opened notebook, locate the section referring to Lakehouses, typically shown in the screenshot provided within the notebook. Click on this section to view your Lakehouse options.
-![Step](../media/2/19.jpg)
+![Step](../screenshots/2/19.jpg)
 
 ## 2.5.2. Adding a Lakehouse
 Within the Lakehouse options, click on the `Add` button to initiate the process of linking a Lakehouse to your notebook.
-![Step](../media/2/20.jpg)
+![Step](../screenshots/2/20.jpg)
 
 ## 2.5.3. Selecting the Existing Lakehouse
 Choose the option to select an `Existing Lakehouse` from the available choices. After making this selection, click the `Add` button to proceed.
-![Step](../media/2/21.jpg)
+![Step](../screenshots/2/21.jpg)
 
 ## 2.5.4. Choosing Your Lakehouse
 From the list of available Lakehouses, identify and select your own, named `bronzerawdata`. Be careful to choose the correct one to ensure accurate data analysis. Once confirmed, click `Add` to attach it to your notebook.
-![Step](../media/2/22.jpg)
+![Step](../screenshots/2/22.jpg)
 
 ## 2.5.5. Confirmation
 Verify that your Lakehouse, `bronzerawdata`, is now correctly linked and visible within your notebook settings. This confirmation ensures that you are all set for executing data-related tasks within the notebook.
-![Step](../media/2/23.jpg)
+![Step](../screenshots/2/23.jpg)
 
 
 ---
@@ -242,16 +242,16 @@ Verify that your Lakehouse, `bronzerawdata`, is now correctly linked and visible
 The last task before fully immersing ourselves in data engineering work within the notebook is to create and attach a new Silver Lakehouse. Please follow these steps:
 
 ## 2.6.1. Click on the pin icon next to the Default Lakehouse, `bronzerawdata`. Then select `Add Lakehouse`.
-![Step](../media/2/24.jpg)
+![Step](../screenshots/2/24.jpg)
 
 ## 2.6.2. Choose `New Lakehouse` and click `Add`.
-![Step](../media/2/25.jpg)
+![Step](../screenshots/2/25.jpg)
 
 ## 2.6.3. Follow the naming convention and enter a name for the Lakehouse. The suggested name is `silvercleansed`.
-![Step](../media/2/26.jpg)
+![Step](../screenshots/2/26.jpg)
 
 ## 2.6.4. Confirm that your notebook is now linked to two Lakehouses: the default one (bronze) and the newly added one (silver). Once this is verified, we can begin our data engineering work.
-![Step](../media/2/27.jpg)
+![Step](../screenshots/2/27.jpg)
 
 ---
 
@@ -290,31 +290,31 @@ Once all is set, proceed with the automation.
 
 ## 2.8.1. **Starting Point**
 Navigate to `Home` as depicted in the instructions.
-![Step](../media/2/28.jpg)
+![Step](../screenshots/2/28.jpg)
 
 ## 2.8.2. **Data Pipeline Creation**
 Click on `Data Pipeline` and name the new pipeline `Bronze2Silver`.
-![Step](../media/2/29.jpg)
+![Step](../screenshots/2/29.jpg)
 
 ## 2.8.3. **Pipeline Activity**
 Select the `ForEach` activity as shown on the screen.
-![Step](../media/2/30.jpg)
+![Step](../screenshots/2/30.jpg)
 
 ## 2.8.4. **General Settings for Each Activity**
 Provide a name for each `ForEach` element.
-![Step](../media/2/31.jpg)
+![Step](../screenshots/2/31.jpg)
 
 ## 2.8.5. **Pipeline Variables**
 Firstly, click on the background pane (first step from the screenshot in the pink rectangle) to see the tab with parameters and variables.
 
 In the pipeline settings tab, navigate to `Variables`. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`. **Follow the specific step presented in the screenshot.**
 
-![Step](../media/2/32.jpg)
+![Step](../screenshots/2/32.jpg)
 
 ## 2.8.6. **ForEach Settings**
 In the `ForEach` settings, select `Sequential`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`. **Follow the specific step presented in the screenshot.**
 
-![Step](../media/2/33.jpg)
+![Step](../screenshots/2/33.jpg)
 
 > [!NOTE]  
 > Sequential specifies whether the loop should be executed sequentially or in parallel. Maximum of 50 loop iterations can be executed at once in parallel. For example, if you have a ForEach activity iterating over a copy activity with 10 different source and sink datasets with isSequential set to False, all copies are executed at once.
@@ -324,34 +324,34 @@ In the `ForEach` settings, select `Sequential`. To add dynamic content, open the
 
 ## 2.8.7. **Adding Notebook Activity**
 Under `Activities`, choose `Notebook`.
-![Step](../media/2/34.jpg)
+![Step](../screenshots/2/34.jpg)
 
 ## 2.8.8. **Notebook Settings**
 From the General Tab (presented in the screenshot), go the `Settings` tab for the notebook, as illustrated.
-![Step](../media/2/35.jpg)
+![Step](../screenshots/2/35.jpg)
 
 ## 2.8.9. **Select Workspace**
 Choose your workspace.
-![Step](../media/2/36.jpg)
+![Step](../screenshots/2/36.jpg)
 
 ## 2.8.10. **Select Notebook and Base Parameters**
 Opt for the `notebook-2` that you uploaded previously.
 Add a new parameter named `table_name`, with type `String` and value `@item()`. `@item()` comes again from dynamic content (Pipeline expression builder).
 
-![Step](../media/2/37.jpg)
+![Step](../screenshots/2/37.jpg)
 
 ## 2.8.11. **Validation**
 After configuring, click `Validate` to ensure there are no errors. Click on `Run`.
-![Step](../media/2/38.jpg)
+![Step](../screenshots/2/38.jpg)
 
 ## 2.8.12. **Execution**
 Save the settings and initiate the run by clicking the `Run` button.
-![Step](../media/2/39.jpg)
+![Step](../screenshots/2/39.jpg)
 
 ## 2.8.13. **Observation and Optimization**
 Note that the execution of the two notebooks occurs sequentially, typically taking two minutes each. However, as these notebooks do not depend on each other, consider modifying the pipeline to run the notebooks in parallel for efficiency.
 
-![Step](../media/2/40.jpg)
+![Step](../screenshots/2/40.jpg)
 
 > [!TIP]
 > (1) Instead of iterating through notebooks with a ForEach loop, you may consider structuring your approach to input various values into a single notebook execution. This can be complemented by coding loops within the notebook itself. 
@@ -376,7 +376,7 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
 2. **Files Section**: Confirm there is one folder named `2023`, created via the shortcut.
 3. **File Existence**: Verify there is one file in the Files section: `NYC-Taxi-Discounts-Per-Day.csv`.
 
-![Step](../media/2/52.jpg)
+![Step](../screenshots/2/52.jpg)
 
 ## Lakehouse `silvercleansed` Confirmation:
 1. **Tables**: Check that there are six tables:
@@ -387,7 +387,7 @@ Upon completing Exercises 1 and 2, it's crucial to verify the following outcomes
    - `green202301_cleansed`
    - `green202301_discounts`.
 
-![Step](../media/2/51.jpg)
+![Step](../screenshots/2/51.jpg)
 
 Review the screenshots provided to compare and confirm the setup in your Lakehouses matches the expected structure.
 
@@ -399,19 +399,19 @@ The final task before delving into data science work (Exercise 4) within the not
 
 Please follow these steps:
 ## 2.10.1. From the view of all artifacts you have created inside your workspace, click on the `New` button.
-![Step](../media/2/60.jpg)
+![Step](../screenshots/2/60.jpg)
 
 ## 2.10.2. Then select `Lakehouse` from the extensive list.
-![Step](../media/2/61.jpg)
+![Step](../screenshots/2/61.jpg)
 
 ## 2.10.3. Adhere to the naming convention and enter a name for the Lakehouse. The suggested name is `goldcurated`.
-![Step](../media/2/62.jpg)
+![Step](../screenshots/2/62.jpg)
 
 ## 2.10.4. Confirm that your Gold Lakehouse has been created.
-![Step](../media/2/63.jpg)
+![Step](../screenshots/2/63.jpg)
 
 
 
 > [!IMPORTANT]
-> Once completed, go to [next exercise (Exercise 3)](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [extra steps](./../extra/extra.md).
+> Once completed, go to [next exercise (Exercise 3)](./../exercise-3/exercise-3.md). If time permits before the next exercise begins, consider continuing with [extra steps](../exercise-extra/extra.md).
 
