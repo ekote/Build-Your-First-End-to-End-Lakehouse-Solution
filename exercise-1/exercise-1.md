@@ -281,7 +281,7 @@ Provide the necessary URL by copying and pasting it from the task description. T
 ## 1.3.4. Verify ADLS Gen2 Access
 Ensure correct configuration by checking the folder named `2023`. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click `Next`.
 
-> ![!IMPORTANT]
+> [!IMPORTANT]
 > We are creating a demo to a folder named 2023, and you need to just observe and ack that inside that folder there is a required file (as presented on the screenshot). 
 
 ![Step](../screenshots/1/37.jpg)
