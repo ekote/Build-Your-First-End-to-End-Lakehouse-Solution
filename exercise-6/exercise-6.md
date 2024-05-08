@@ -12,7 +12,7 @@ In this exercise, you will work with text data consisting of reviews of taxi tri
 
 Firstly, we need to access taxi trip review data. To do so, we need to follow the steps below:
 
-1. Download the file with reviews to your local machine. [Download Reviews Data](exervice-6/reviews.parquet).
+1. Download the file with reviews to your local machine. [Download Reviews Data](exercise-6/reviews.parquet).
 2. Upload the additional data to your Bronze Lakehouse, just like during exercise 2:
 * Go to the `Files` section in your Bronze Lakehouse. 
 * Click on the three dots to access additional options and select the `Upload` button. 
@@ -22,7 +22,7 @@ The file should upload within a few seconds.
 After obtaining the data you are ready to start the exercise:
 
 1. **Download the Exercise Notebook**:
-   - Download the provided Jupyter notebook, [Exercise 6 - Enrich the data with GenAI](exervice-6/Exercise-6.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. 
+   - Download the provided Jupyter notebook, [Exercise 6 - Enrich the data with GenAI](exercise-6/Exercise-6.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. 
 
 2. **Import the Notebook into Fabric Workspace**:
    - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
