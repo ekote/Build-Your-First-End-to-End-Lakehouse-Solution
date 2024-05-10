@@ -45,7 +45,7 @@ Join the workshop to master building end-to-end data solutions with Microsoft Fa
 >
 > 16:20 – 16:30 (10 min) - Break
 >
-> 16:30 – 17:00 (30 min) - Exercise 6 – Open AI
+> 16:30 – 17:00 (30 min) - [Exercise 6 - Open AI](./exercise-6/exercise-6.md)
 >
 > 17:00 – 17:30 (30 min) - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
 > 

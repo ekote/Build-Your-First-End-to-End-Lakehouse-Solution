@@ -3,7 +3,7 @@
 > [!NOTE]
 > Timebox: 40 minutes
 > 
-> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 4](./../exercise-4/exercise-4.md) | [Up next extra exercises](../exercise-extra/extra.md)
+> [Back to Agenda](./../README.md#agenda) | [Back to Exercise 4](./../exercise-4/exercise-4.md) | [Up next Exercise 6](../exercise-6/exercise-6.md)
 > #### List of exercises:
 > *  [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials)
 > *  [Fabric Runtimes and Python User-defined Table Functions (UDTFs)](#fabric-runtimes-and-python-user-defined-table-functions-udtfs)
