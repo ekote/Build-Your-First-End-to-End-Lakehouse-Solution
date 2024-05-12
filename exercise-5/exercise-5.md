@@ -219,7 +219,7 @@ This integration enables data practitioners to apply familiar Pandas-like operat
 ## Practical application in Fabric:
 In Fabric, data loading practices vary between Pandas and Spark. Below is an example demonstrating how to load a CSV file into both frameworks. This comparison not only highlights syntax differences but also emphasizes when to employ each framework based on dataset size and computational needs.
 
-Chech [How to read and write data with Pandas in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/read-write-pandas).
+Check [How to read and write data with Pandas in Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/data-science/read-write-pandas).
 
 ---
 
@@ -306,4 +306,4 @@ You can run a notebook in the VS Code for the web experience by selecting the **
 
 ---
 > [!IMPORTANT]
-> Once completed, go to [Agenda](./../README.md#agenda). If time permits before the next exercise begins, consider continuing with [extra steps](../exercise-extra/extra.md).
+> Once completed, go to [Excercise 6](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/sqlday/exercise-6/exercise-6.md) or to [Agenda](./../README.md#agenda).
