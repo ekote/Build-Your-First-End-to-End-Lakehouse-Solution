@@ -35,3 +35,7 @@ After obtaining the data you are ready to start the exercise:
 4. **Complete the Exercise**:
    - Work through each step in the notebook, executing code cells and noting any insights or observations.
    - Make sure to save your progress as you work through the notebook.
+  
+> [!IMPORTANT]
+>
+> If time permits before the next exercise begins, consider continuing with [extra steps](../exercise-extra/extra.md).
