@@ -26,27 +26,23 @@ Join the workshop to master building end-to-end data solutions with Microsoft Fa
 
 
 > [!IMPORTANT]
-> 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+> 9:00 am - 9:45 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
 > 
-> 9:30 am - 10:00 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
+> 9:45 am - 11:00 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
 > 
-> 10:00 am - 10:15 am - Coffee break 15 minutes
+> 11:00 am - 11:15 am - Coffee break 15 minutes
 > 
-> 10:15 am - 10:45 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md)
+> 11:15 am - 12:30 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
 > 
-> 10:45 am - 11:45 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
+> 12:30 pm - 13:15 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
 > 
-> 11:45 am - 12:45 pm - Lunch 60 minutes
+> 13:15 pm - 14:00 pm - Lunch 45 minutes
 > 
-> 12:45 pm - 01:15 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
+> 14:00 pm - 15:20 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
 > 
-> 01:15 pm - 01:25 pm - Break 10 minutes
+> 15:20 pm - 16:20 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
 > 
-> 01:25 pm - 02:25 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
+> 16:20 pm - 16:30 pm - Break 10 minutes
 > 
-> 02:25 pm - 02:35 pm - Break 10 minutes
-> 
-> 02:35 pm - 03:05 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
-> 
-> 03:05 pm - 04:00 pm - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
+> 16:30 pm - 17:00 pm - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
 >
