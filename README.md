@@ -32,17 +32,21 @@ Join the workshop to master building end-to-end data solutions with Microsoft Fa
 > 
 > 11:00 am - 11:15 am - Coffee break 15 minutes
 > 
-> 11:15 am - 12:30 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
+> 11:15 am - 12:00 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
+>
+> 12:00 pm - 13:00 pm - Lunch 60 minutes
+>
+> 13:00 pm - 13:30 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md) (c-d)
 > 
-> 12:30 pm - 13:15 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
+> 13:30 pm - 14:10 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
+>
+> 14:10 pm - 14:20 pm - Break 10 minutes
 > 
-> 13:15 pm - 14:00 pm - Lunch 45 minutes
+> 14:20 pm - 15:40 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
 > 
-> 14:00 pm - 15:20 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
-> 
-> 15:20 pm - 16:20 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
-> 
-> 16:20 pm - 16:30 pm - Break 10 minutes
+> 15:40 pm - 15:50 pm - Break 10 minutes
+>
+> 15:50 pm - 16:30 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
 > 
 > 16:30 pm - 17:00 pm - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
 >
