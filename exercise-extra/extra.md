@@ -4,6 +4,7 @@
 > 
 > Back to [Agenda](./../README.md#agenda) | [Start Steps](../exercise-0-setup/start.md) | [Exercise 1](./../exercise-1/exercise-1.md) | [Exercise 2](./../exercise-2/exercise-2.md) | [Exercise 3](./../exercise-3/exercise-3.md) | [Exercise 4](./../exercise-4/exercise-4.md) | [Exercise 5](./../exercise-5/exercise-5.md)
 > #### List of extra exercises:
+> * [Copilot for notebooks](#copilot-for-notebooks)
 > * [SQL Analytics Endpoint](#sql-analytics-endpoint)
 > * [Connect to a Fabric SQL Endpoint Using SQL Server Management Studio (SSMS)](#connect-to-a-fabric-sql-endpoint-using-sql-server-management-studio-ssms)
 > * [Execute T-SQL Queries on Lakehouse Delta Tables](#execute-t-sql-queries-on-lakehouse-delta-tables)
@@ -21,6 +22,47 @@
 
 ---
 
+# Copilot for notebooks
+
+With Copilot for Data Science and Data Engineering, you can chat with an AI assistant that can help you handle your data analysis and visualization tasks. You can ask the Copilot questions about lakehouse tables, Power BI Datasets, or Pandas/Spark dataframes inside notebooks. Copilot answers in natural language or code snippets. Copilot can also generate data-specific code for you, depending on the task. For example, Copilot for Data Science and Data Engineering can generate code for:
+* Chart creation 
+* Filtering data 
+* Applying transformations 
+* Machine learning models
+
+
+Investigate the `green201501` table within your lakehouse, and seek insights about the dataset. Additionally, inquire how to compute the average trip distance and fare amount by each payment type.
+
+## Accessing Copilot
+Open an existing notebook(like ***Just exploration***) in your workspace or create a new notebook. Select the `Copilot` icon found in the notebooks ribbon. This action opens the Copilot chat panel. When you click on `Get started` and it creates a new cell at the top of your notebook. Note: This cell is essential for initializing a Spark session within a Fabric notebook and must be executed for Copilot to function correctly. Future releases may introduce alternative initialization methods and this step might not longer be necessary.
+![Step](../screenshots/extra/CopilotStart.png)
+
+## Get Started with Copilot
+When the Copilot panel opens, click `Get Started` to initiate your interaction with the AI assistant.
+![Step](../screenshots/extra/CopilotGetStart.png)
+
+## Library Installation
+Copilot will automatically insert a new cell containing the necessary library installation script. Execute this cell by clicking the `Play` button to install the required libraries for Copilot functionalities.
+![Step](../screenshots/2/3.jpg)
+
+## Data Privacy and Security Awareness
+Post-installation, you will be presented with a note on data privacy and security. Please read through this to understand how your data is stored and processed. Additionally, guidelines will be provided on how to effectively communicate with Copilot.
+![Step](../screenshots/extra/CopilotPrivacy.png)
+
+## Interacting with Copilot
+Now, engage with Copilot by exploring various prompts related to your data. Feel free to ask for code snippets, clarification, or paste the generated code into a new notebook cell. This is an opportunity to explore the capabilities and assistance Copilot offers for data science and engineering tasks.
+
+> [!TIP]
+> Please feel free to ask Copilot any questions to deepen your understanding of the dataset and enhance our workshop experience.
+> Just an example: `Analyze my table named green201501 and provide insights about the data`. 
+
+![Step](../screenshots/extra/InteractCopilot.png)
+
+This quick demonstration aims to highlight the ease of accessing Copilot for insightful data analysis.
+
+> [!IMPORTANT]  
+> Copilot is here to support and guide, to "co-pilot", not to control and "pilot". 
+> We'll move forward with our structured activities and that documentation, allowing them to serve as our copilot instead of using Copilot directly.
 
 
 # SQL Analytics Endpoint
@@ -151,13 +193,13 @@ Learn how to share a Lakehouse with team members or stakeholders within your wor
 1. **Navigate to Your Lakehouse**:
    - In your Workspace, locate the Lakehouse you wish to share.
    - Click the **Share** button located next to the lakehouse name.
-     ![Lakehouse Share](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f33d4f80-d24e-4804-b81f-ea4fd2f3188d)
+     ![Lakehouse Share](../screenshots/extra/SharingLakehouse01.png)
 
 2. **Configure Sharing Settings**:
    - In the Sharing dialog, enter the name or email address of the individuals you wish to share the Lakehouse with.
    - Assign the appropriate permissions by checking the relevant boxes. By default, sharing the Lakehouse grants access to the lakehouse, the associated SQL endpoint, and the default semantic model.
    
-   ![Lakehouse Sharing Dialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
+   ![Lakehouse Sharing Dialog](../screenshots/extra/SharingLakehouse02.png)
 
 3. **Notification Settings**:
    - If you want to notify the recipients via email, check the **`Notify recipients by mail`** option.
@@ -178,7 +220,7 @@ Learn how to share a notebook with team members within your workspace, allowing 
 1. **Open the Notebook**:
    - Navigate to the notebook that you wish to share.
    - Click on the **Share** button located on the notebook toolbar.
-     ![Share Button](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/496e0f19-3d63-4e6f-9698-1adcbdf2f052)
+     ![Share Button](../screenshots/extra/SharingNotebook.png)
 
 2. **Set Permissions**:
    - In the sharing settings, select the category of **people who can view this notebook**.
@@ -234,7 +276,7 @@ Understand the relationships and flow of data within your Fabric workspace using
 1. **Access Lineage View**:
    - Navigate to the workspace toolbar within your Fabric environment.
    - Open the lineage view to visualize how different items within your workspace are interconnected.
-     ![Lineage View](../screenshots/extra/linage1.jpg)
+     ![Lineage View](../screenshots/extra/Lineage1.png)
 
 2. **Explore Workspace Items and Connections**:
    - In the lineage view, examine the connections between all the items located in your workspace.
@@ -243,13 +285,13 @@ Understand the relationships and flow of data within your Fabric workspace using
 3. **Highlight Specific Item Lineage**:
    - To highlight the lineage for a specific item, select the arrow at the bottom right corner of the card.
    
-     ![Specific Item Lineage](../screenshots/extra/linage2.jpg)
+     ![Specific Item Lineage](../screenshots/extra/Lineage2.png)
 
 4. **Understand External Tool Integration**:
    - Recognize the role of external tools like Azure Data Studio in managing and developing databases across different platforms.
    - Note how Azure Data Studio supports various databases and enhances workflow with features like IntelliSense, code snippets, and source control integration.
    
-     ![Connecting with Azure Data Studio](../screenshots/extra/linage4.jpg)
+     ![Connecting with Azure Data Studio](../screenshots/extra/Lineage3.png)
 
     Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server. Browse the extension library for more database support options including MySQL, PostgreSQL, and CosmosDB. Azure Data Studio's familiar interface offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. Engineered with the data platform user in mind, its extensibility allows users to customize their experience by installing the extensions relevant to their workflow, including database migrations, charting, GitHub Copilot, and more!
 
@@ -274,7 +316,7 @@ Your choice should be guided by what you intend to do with the data being loaded
 
 You can change your compression type in the settings menu of the source tab:
 
-![Compression Settings](../screenshots/extra/1.jpg)
+![Compression Settings](../screenshots/extra/FileFormat.png)
 
 Based on benchmarks, gzip is more suited for long-term static storage, making it the preferred choice for data in the Gold layer. For data that is accessed more frequently (hot data), Snappy or LZO might be better options:
 
@@ -291,32 +333,32 @@ The Microsoft Fabric Monitoring hub allows users to monitor activities from a ce
 
 In this exercise, we will check the monitoring application for our pipeline and notebooks.
 
-1. To open the Monitoring hub, select "Monitoring hub" from the navigation pane. The hub displays information in a table format, listing Fabric activities by start time, with the latest activities at the top.
+1. To open the Monitoring hub, select "Monitoring" from the navigation pane. The hub displays information in a table format, listing Fabric activities by start time, with the latest activities at the top.
 
 2. Use the "Filter" button to refine the results in the monitoring hub table as shown in the screenshot. This makes navigation easier.
-   ![Monitoring](../screenshots/extra/3.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring.png)
 
 3. Based on the filtered results, open the specific pipeline as demonstrated in the following image:
-   ![Monitoring](../screenshots/extra/4.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring2.png)
 
 4. Inside the monitoring hub, switch to the "Gantt Tab" to observe the notebook execution times. A successful execution is indicated by the prevalent green color.
-   ![Monitoring](../screenshots/extra/5.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring3.png)
 
 5. Click on the name of the notebook you are monitoring.
-   ![Monitoring](../screenshots/extra/6.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring4.png)
 
 6. In the notebook's detailed view, focus on two important sections: the Spark monitoring URL and the monitoring snapshot. Click on "Monitoring Snapshot".
-   ![Monitoring](../screenshots/extra/7.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring5.png)
 
 7. Inside the monitoring snapshot, scroll through to view the executed values within the notebook, ensuring full transparency of the operations carried out.
-   ![Monitoring](../screenshots/extra/8.jpg)
+   ![Monitoring](../screenshots/extra/Monitoring6.png)
 
 8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green201501".
 
 9. Observe the execution details such as the duration, default lake house setting, and queue duration to understand the efficiency and performance of your job.
 
 10. Return to the "Resources" tab to review metrics such as total duration, total idle time, and efficiency. A low efficiency percentage, like 15%, suggests there is significant room for improvement in the pipeline, code, and compute settings.
-    ![Monitoring](../screenshots/extra/9.jpg)
+    ![Monitoring](../screenshots/extra/Monitoring7.jpg)
 
 Consider sharing any optimization strategies with the workshop hosts and your colleagues to enhance the overall efficiency of your pipeline.
 
@@ -382,7 +424,7 @@ result_table_name = f"{table_name}_avg_fare_per_month"
 average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"silvercleansed.{result_table_name}")
 ```
 
-![Medallion Architecture](../screenshots/1/medarch.jpg)
+![Medallion Architecture](../screenshots/extra/medarch01.png)
 
 ## Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
 
@@ -400,12 +442,12 @@ In this exercise, you'll learn how to schedule a notebook to run multiple times 
 1. **Access the Notebook**:
    - Open the notebook from the second exercise. 
    - Click on the scheduling icon presented in the screenshot to access the scheduling options.
-     ![Scheduling Icon](../screenshots/extra/10.jpg)
+     ![Scheduling Icon](../screenshots/extra/ScheduleNotebook1.png)
 
 2. **Configure the Schedule**:
    - Switch to the "Schedule" tab where you will find various options to set up your notebook's schedule.
    - Start by enabling the schedule function to make the notebook run automatically according to your specified timing.
-     ![Schedule Tab](../screenshots/extra/11.jpg)
+     ![Schedule Tab](../screenshots/extra/ScheduleNotebook2.png)
 
 3. **Define the Schedule Details**:
    - Set the notebook to repeat daily.
@@ -438,11 +480,11 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
 2. **Access Data Engineering/Science Settings**:
    - Click on "Data Engineering/Science" and then select "Spark Settings".
    - Click on the "Default Pool for Workspace" and expand the selection to view more options.
-     ![Spark Settings](../screenshots/extra/14.jpg)
+     ![Spark Settings](../screenshots/extra/NewSpark2.png)
 
 3. **Create a New Spark Pool**:
    - Click on the "New Pool" button to start configuring a new Spark pool.
-     ![New Pool](../screenshots/extra/15.jpg)
+     ![New Pool](../screenshots/extra/NewSpark3.png)
 
 4. **Configure the New Spark Pool**:
    - Assign a meaningful name to your new Spark pool.
@@ -450,12 +492,12 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
    - Enable auto-scaling to allow the pool to adjust based on workload automatically.
    - Enable "Dynamic Allocation for Executors" to optimize resource utilization during job execution.
    - Always remember to save your changes after configuring the settings.
-     ![Pool Configuration](../screenshots/extra/16.jpg)
+     ![Pool Configuration](../screenshots/extra/NewSpark4.png)
 
 5. **Finalize and Save Changes**:
    - After configuring the new Spark pool, Microsoft Fabric will redirect you back to the Spark settings screen.
    - A message will appear at the top part of the screen indicating that there are unsaved changes. Ensure to review and save these changes.
-     ![Unsaved Changes](../screenshots/extra/17.jpg)
+     ![Unsaved Changes](../screenshots/extra/NewSpark5.png)
 
 
 > [!IMPORTANT]  
@@ -483,13 +525,13 @@ In this exercise, you will verify whether a table has been saved with or without
    - In the first cell of the notebook, disable V-Order optimization and save the DataFrame as a new table.
    - In a separate cell, enable V-Order optimization and save the DataFrame as another table.
    - Execute both cells to create two versions of the table: one with V-Order enabled and one without.
-     ![Notebook Setup](../screenshots/extra/25.jpg)
+     ![Notebook Setup](../screenshots/extra/Vorder1.png)
 
 3. **Verify File Properties**:
    - Navigate to the Lakehouse, then to Lakehouse Explorer.
    - Locate your tables, click on the three dots next to the table names, and select "View Files".
    - Enter the `_delta_log` folder and open the JSON files associated with both tables.
-     ![Lakehouse Explorer](../screenshots/extra/26.jpg)
+     ![Lakehouse Explorer](../screenshots/extra/Vorder2.png)
 
 4. **Compare File Contents**:
    - Reformat the JSON files for easier comparison.
