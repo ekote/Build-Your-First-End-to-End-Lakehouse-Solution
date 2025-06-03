@@ -1,7 +1,7 @@
-# Exercise 4 - Serve and consume data using Power BI and Data Science 
+# Exercise 4 - Generate and Serve Insights using Data Science and Power BI
 
 > [!NOTE]
-> Timebox: 60 minutes
+> Timebox: 75 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 3](./../exercise-3/exercise-3.md) | [Up next Exercise 5](./../exercise-5/exercise-5.md)
 > #### List of exercises:
@@ -10,6 +10,10 @@
 > * [Task 4.3 Publish and Share the Power BI Report](#task-43-publish-and-share-the-power-bi-report)
 
 # Context
+Microsoft Fabric provides Data Science experiences that enable users to perform comprehensive data science workflows. These workflows cover the entire data science process, from data exploration and preparation to experimentation, modeling, model scoring, and serving predictive insights in Power BI Reports. In Fabric each step of the Data Science process is powered by both native built features like Data Wrangler, NotebookUtils, MLFlow, SynapseML, Copilot, Power BI etc. in addition to numerous open-source libraries enabling a Data Scientist to built a machine learning solution. The below diagram outlines an end-to-end Data Science process and the Fabric features relevant to the process.
+
+![End-to-End Data Science](../screenshots/4/EndtoEndDataScience.png)
+
 
 The data in your lakehouse tables is included in a dataset that defines a relational model for your data. You can edit this dataset, defining custom measures, hierarchies, aggregations, and other elements of a data model. You can then use the dataset as the source for a Power BI report that enables you to visualize and analyze the data.
 
@@ -40,11 +44,11 @@ DirectLake mode now eliminates this import requirement by loading the data files
 In this exercise, you will take on the role of a data scientist tasked with exploring, cleaning, and transforming a dataset containing taxi trip data. You will build a machine learning model to predict the duration of taxi trips using the New York taxi greencab dataset containing data from 2015, which includes information like pickup and drop-off times, locations, fares, and passenger counts. You will then apply the machine learning model to generate predictions on greencab from the year 2023 asnd save them to lakehouse.
 
 1. **Download the Exercise Notebook**:
-   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. [This screenshot presents the steps to do it](../screenshots/extra/download-notebook-2.jpg).
+   - Download the provided Jupyter notebook, [Exercise 4 - Consume Data using Data Science](Exercise%204%20-%20Consume%20Data%20using%20Data%20Science.ipynb), to your local computer. This notebook contains the steps you will follow to complete the task. [This screenshot presents the steps to do it](../screenshots/4/4.1.1.png).
 
 2. **Import the Notebook into Fabric Workspace**:
    - Navigate to your Fabric workspace, either in the Data Engineering or Data Science section.
-   - Import the downloaded notebook by following the instructions provided in [Exercise 2 - Importing Notebooks](../exercise-2/exercise-2.md#1-importing-the-notebook). This involves selecting the option to import existing notebooks and choosing the downloaded .ipynb file from your local computer.
+   - Import the downloaded notebook by following the instructions provided in [Exercise 2.3.1 - Importing Notebooks](https://github.com/AnetaKn/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/exercise-2.md#231-importing-notebook). This involves selecting the option to import existing notebooks and choosing the downloaded .ipynb file from your local computer.
 
 3. **Follow Notebook Instructions**:
    - Once the notebook is imported into your Fabric workspace, open it.

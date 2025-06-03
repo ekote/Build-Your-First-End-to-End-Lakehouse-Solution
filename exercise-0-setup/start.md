@@ -10,64 +10,68 @@
 Visit the Microsoft Fabric website at https://fabric.microsoft.com/.
 
 ## 2. Log In with Assigned Credentials
-Use the credentials provided on the business card located on your table.
+Use the provided credentials.
 ![Login](../screenshots/start/1.jpg)
 
 ## 3. Enter Your Password and Sign In
-Input your password in the designated field and click the `Sign In` button.
+Input your password in the designated field and click the `Sign in` button.
 ![Login](../screenshots/start/2.jpg)
 
 ## 4. Update Your Password
 You are required to update your password upon first login. Please follow the prompts to do so.
 
 > [!TIP]  
-> **We advise you to write your password on the back side of the business card along with your login details, in case you may need to restart your PC and forget the password.**
+> **We advise you to write down your password along with your login details, in case you may need to restart your PC and forget the password.**
 
 ![Login](../screenshots/start/9.jpg)
 
 ## 5. Setup Multi-Factor Authentication (MFA)
-As per Tenants' policy, setting up MFA is required. However, you can defer this by selecting `Ask Me Later.`
+As per Tenants' policy, setting up MFA is required. However, you can defer this by selecting `Ask later.`
 ![Login](../screenshots/start/10.jpg)
 
 ## 6. Welcome to Microsoft Fabric
 You have successfully logged in to Microsoft Fabric!
-![Login](../screenshots/start/4.jpg)
+![Login](../screenshots/start/Welcome.png)
+
+If you don't see the screen as above, click on the icon in the bottom left corner and click on  `Fabric ->` in the fly-out pane.
+![Login](../screenshots/start/Flyout.png)
+
 
 ## 7. Explore Workloads
-Click the Microsoft Fabric icon in the bottom left corner to explore available workloads.
-![Login](../screenshots/start/5.jpg)
+Click the Workloads icon on the left side to explore available workloads.
+![Login](../screenshots/start/Workloads1.png)
+
+Scroll down to see your Fabric workloads.
+![Login](../screenshots/start/Workloads2.png)
 
 ## 8. Explore Help Options
 Use the on-screen numbers as a guide to explore all available help options.
-![Login](../screenshots/start/7.jpg)
+![Login](../screenshots/start/Help.png)
 
 ## 9. Explore Settings and Admin Portal
 Follow the on-screen instructions to explore the settings. Note that while you cannot configure settings due to access restrictions, you are welcome to browse.
-![Login](../screenshots/start/8.jpg)
+![Login](../screenshots/start/Settings.png)
 
-## 10. Navigate Back and Create a Workspace
-Return to the main screen and click on `Synapse Data Engineering` to begin creating a new workspace.
-![Login](../screenshots/start/11.jpg)
-
-## 11. Access Workspaces
+## 10. Create a New Workspace. 
 Click on the `Workspaces` icon located on the left part of the screen.
-![Login](../screenshots/start/12.jpg)
+A sidebar will appear with a list of all accessible subscriptions. Follow the instructions and click `New workspace`.
+![Login](../screenshots/start/Workspace1.png)
 
-## 12. Create a New Workspace
-A sidebar will appear with a list of all accessible subscriptions. Follow the instructions and click `New Workspace.`
-![Login](../screenshots/start/13.jpg)
+## 11. Name Your Workspace
+Give your new workspace a name, adhering to the provided naming convention. Verify the name and click `Apply`. Follow the naming convention and assign a name: `urban-innovation-deNNN`, where `NNN` represents the number assigned to you. For example, `urban-innovation-de001`.
 
-## 13. Name Your Workspace
-Give your new workspace a name, adhering to the provided naming convention. Verify the name and click `Apply.` Follow the naming convention and assign a name: `urban-innovation-deNNN`, where `NNN` represents the number assigned to you. For example, `urban-innovation-de001` (Estera’s workspace).
+![Login](../screenshots/start/Workspace2.png)
 
-![Login](../screenshots/start/14.jpg)
+Expand `Advanced` and make sure you assign this workspace to a Fabric Trial capacity. Then click `Apply` button.
 
-## 14. Workspace Creation Complete
+![Login](../screenshots/start/Workspace3.png)
+
+## 12. Workspace Creation Complete
 Congratulations, your new workspace has been successfully created! This dedicated space is for you to innovate and build today.
-![Login](../screenshots/start/15.jpg)
+![Login](../screenshots/start/Workspace4.png)
 
 
-## 15. Adjust default pool size to 2 nodes
+## 13. Adjust default pool size to 2 nodes
 
 To ensure smooth operation for multiple concurrent workshops happening today, you need to adjust the default configuration of the compute cluster in your Fabric workspace to scale down the maximum number of nodes to 2.
 
@@ -79,26 +83,26 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
    - Confirm that you are within the correct workspace view.
    - Access the workspace settings as indicated in the Fabric UI.
 
-![One Node](../screenshots/extra/onenode1.jpg)
+![One Node](../screenshots/start/Node1.PNG)
 
 2. **Modify Default Pool Configuration**:
    - Go to Data Engineering / Data Science (it's under PowerBI) -> and then click on Spark settings. 
    - Locate the "default pool for workspace" setting.
    - Click on the pencil icon (marked as "1" in the provided screenshot) to edit the pool settings.
 
-![One Node](../screenshots/extra/onenode2.jpg)
+![One Node](../screenshots/start/Node2.PNG)
 
 3. **Adjust Autoscale Settings and Save Changes**:
    - In the default pool configuration, change the autoscale maximum setting from 10 to 2. This limits the maximum number of nodes to 2 to prevent resource over-allocation.
    - Confirm and save your modifications to the default pool settings.
 
-![One Node](../screenshots/extra/onenode3.jpg)
+![One Node](../screenshots/start/Node3.PNG)
 
 
-## 16. Download the exercise files
+## 14. Download the exercise files
  
 [Click here to download the repository as a Zip](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.zip) or [here to download tar.gz package](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.tar.gz) to your local machine. Alternatively, you can clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon)."
-![Download or Clone Repository](../screenshots/start/CloneDownloadRepo.png)
+![Download or Clone Repository](../screenshots/start/Clone.png)
 
 ---
 

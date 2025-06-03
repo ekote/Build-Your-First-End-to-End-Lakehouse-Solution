@@ -30,132 +30,141 @@ For those who complete the primary tasks ahead of time, we've prepared [addition
 
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
-## 1.1.1. **Switch to Data Factory View**
-Navigate to the Data Factory section by following the numbered instructions on the screenshot provided.
+## 1.1.1. **Confirm Fabric Section and Workspace**
+Make sure that you are in the Fabric section and in the workspace that you created in previous excercise.
+![Step](../screenshots/1/Pipeline1.png)
 
-![Step](../screenshots/1/1.jpg)
-
-## 1.1.2. **Confirm Data Factory Access** 
-Ensure you are in the Data Factory section. Begin exploring data integration at scale using data pipelines.
+## 1.1.2. **Create a New Pipeline** 
+Click on `New item` and then `Data pipeline`.
 
 > [!IMPORTANT]  
 > Please be aware that when accessing the data pipeline configuration pop-up, there may be a brief delay before it appears. Allow a few seconds for the pop-up window to load completely. In this window, you will have the option to specify the name of the data pipeline. It is important to avoid clicking multiple times during this delay, as this could result in the creation of multiple data pipelines inadvertently.
 
-![Step](../screenshots/1/2.jpg)
+![Step](../screenshots/1/Pipeline2.png)
 
 
-## 1.1.3. **Create and Name Your Data Pipeline**
-Name your data pipeline, recommended to be `LoadRawTaxiData`. Select `Pipeline Activity` and then `Copy Data`.
-
-![Step](../screenshots/1/3.jpg)
-
-## 1.1.4. **Edit Pipeline Elements**
-Make adjustments and observe the changes in the main screen's editing area.
-![Step](../screenshots/1/4.jpg)
+## 1.1.3. **Name Your Data Pipeline**
+Name your data pipeline, recommended to be `LoadRawTaxiData`.
+![Step](../screenshots/1/Pipeline3.png)
 
 
-## 1.1.5. **Configure Data Store**
-In the new tab, set the data store type to `External` and then click `New Connection`.
-![Step](../screenshots/1/5.jpg)
+## 1.1.4. **Edit Pipeline Activity**
+Select `Pipeline Activity` and then `Copy Data`.
+![Step](../screenshots/1/Pipeline4.png)
 
 
-## 1.1.6. **Add Connection to Blob Storage**
-Change the filter from `All` to `Azure` and select `Azure Blob Storage` for the new connection.
-![Step](../screenshots/1/6.jpg)
+## 1.1.5. **Edit Pipeline Elements**
+Make adjustments and observe changes in the main editing area.
+![Step](../screenshots/1/Pipeline5.png)
 
 
-## 1.1.7. **Set Connection Details** 
+## 1.1.6. **Configure Data Store**
+In the `Source` tab, `Select` a connection and choose `More`.
+![Step](../screenshots/1/Pipeline6.png)
+
+
+## 1.1.7. **Add Connection to Blob Storage**
+Click on `New` and select `Azure Blobs` for the new connection.
+![Step](../screenshots/1/Pipeline7.png)
+
+
+## 1.1.8. **Set Connection Details** 
    - Copy and paste the URL from the task description into the relevant field.
-     - Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
+   - Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
    - For connection type, choose `Create a new connection`.
    - Retain the automatically generated connection name or modify it if necessary.
    - Select `Shared Access Signature (SAS)` for authentication.
 
-![Step](../screenshots/1/7.jpg)
+![Step](../screenshots/1/Pipeline8.png)
 
-## 1.1.8. **Enter SAS Token**
+## 1.1.9. **Enter SAS Token**
 Paste the SAS token from the description. This token grants temporary access to the blob storage, which will expire after a set duration.
 
 SAS Token (Read Only) `sv=2024-11-04&ss=bfqt&srt=sco&sp=rlacuptfx&se=2026-04-02T19:07:44Z&st=2025-04-02T11:07:44Z&spr=https&sig=dMB4e%2BN%2BBsXfBR%2FRwbrWKxja3t1Bzjm4q%2BqNTw03mcQ%3D`
-![Step](../screenshots/1/8.jpg)
+![Step](../screenshots/1/Pipeline9.png)
 
-## 1.1.9. **Test Connection**
+## 1.1.10. **Test Connection**
 Verify that the connection name is correctly displayed, then test the connection. If successful, click `Browse`.
-![Step](../screenshots/1/9.jpg)
+![Step](../screenshots/1/Pipeline10.png)
 
-## 1.1.10. **Navigate Blob Storage**
+## 1.1.11. **Navigate Blob Storage**
 Browse the blob storage and select the `taxidata` folder.
-![Step](../screenshots/1/10.jpg)
+![Step](../screenshots/1/Pipeline11.png)
 
-## 1.1.11. **Select Data File**
+## 1.1.12. **Select Data File**
 Choose a specific Parquet file and click `OK`.
-![Step](../screenshots/1/11.jpg)
+![Step](../screenshots/1/Pipeline12.png)
 
-## 1.1.12. **File Path and Format**
-Note additional elements in the file path section. Change the file format to `Parquet` and click `Preview Data`.
-![Step](../screenshots/1/12.jpg)
+## 1.1.13. **File Path and Format**
+Note additional elements in the file path section. Change the file format to `Parquet` and click `Preview data`.
+![Step](../screenshots/1/Pipeline13.png)
 
-## 1.1.13. **Preview External Data**
+## 1.1.14. **Preview External Data**
 Review the data preview showing the table contents from the external blob storage, then close the preview window.
-![Step](../screenshots/1/13.jpg)
+![Step](../screenshots/1/Pipeline14.png)
 
-## 1.1.14. **Define Data Destination**
-Switch to the `Destination` tab, select `Storage Workspace`, then `Lakehouse` and click `New` to create a new Lakehouse.
-![Step](../screenshots/1/14.jpg)
+## 1.1.15. **Set Data Destination**
+Switch to the `Destination` tab, select `More`.
+![Step](../screenshots/1/Pipeline15.png)
 
-## 1.1.15. **Name the Lakehouse**
-Follow [the naming conventions provided](../exercise-0-setup/naming-convention.md), input the name, and click `Create`.
-![Step](../screenshots/1/15.jpg)
+## 1.1.16. **Define Data Destination**
+In the `Home` section select `Lakehouse` and click `New` to create a new Lakehouse.
+![Step](../screenshots/1/Pipeline16.png)
 
-## 1.1.16. **Review Lakehouse**
+## 1.1.17. **Name the Lakehouse**
+Select your workspace. Follow [the naming conventions provided](../exercise-0-setup/naming-convention.md), input the name, and click `Create and connect`.
+![Step](../screenshots/1/Pipeline17.png)
+
+## 1.1.18. **Review Lakehouse**
 Verify the newly created Lakehouse is visible under the appropriate tab.
-![Step](../screenshots/1/16.jpg)
+![Step](../screenshots/1/Pipeline18.png)
 
-## 1.1.17. **Configure Advanced Options**
-Expand the `Advanced Options` and select the desired table action, such as `Append`. Specify the table by clicking `New`.
-![Step](../screenshots/1/17.jpg)
+## 1.1.19. **Configure Options**
+Select the desired table action, such as `Append`. Specify the table by clicking `New`.
+![Step](../screenshots/1/Pipeline19.png)
 
-## 1.1.18. **Set Table Name**
+## 1.1.20. **Set Table Name**
 Name the table as `green201501` according to [the naming conventions](../exercise-0-setup/naming-convention.md), click `Create`, then return to the `General` tab.
-![Step](../screenshots/1/18.jpg)
+![Step](../screenshots/1/Pipeline20.png)
 
-## 1.1.19. **Detail Copy Activity**
+## 1.1.21. **Detail Copy Activity**
 Name the copy activity to reflect its purpose, e.g., `Load NYC Taxi Green 2015 Jan`. Review and, if necessary, adjust the timeout, retry policies, and explore advanced options.
-![Step](../screenshots/1/19.jpg)
+![Step](../screenshots/1/Pipeline21.png)
 
-## 1.1.20. **Validate Pipeline**
+## 1.1.22. **Validate Pipeline**
 Ensure the pipeline is error-free by clicking `Validate`. Once validated, close the sidebar.
-![Step](../screenshots/1/20.jpg)
+![Step](../screenshots/1/Pipeline22.png)
 
-## 1.1.21. **Save and Run Pipeline**
+## 1.1.23. **Save and Run Pipeline**
 Save your pipeline settings by clicking `Save`, then initiate the pipeline by clicking `Run`.
-![Step](../screenshots/1/21.jpg)
+![Step](../screenshots/1/Pipeline23.png)
 
 
 > [!NOTE]
-> Fabric's intelligent compute resources are dynamically adjusted based on historical usage, peak demands, and current activity levels. With nearly 600 of us today working simultaneously, primarily within the same region, startup times for Spark compute instances may be longer than usual. Typically, our starter pool initiates new Spark sessions in about 10 seconds. However, due to today's high volume, we may transition to the on-demand pool, resulting in wait times of approximately 2 to 3 minutes for some sessions.
+> Fabric's intelligent compute resources are dynamically adjusted based on historical usage, peak demands, and current activity levels. With many of us today working simultaneously, primarily within the same region, startup times for Spark compute instances may be longer than usual. Typically, our starter pool initiates new Spark sessions in about 10 seconds.
 
 
-## 1.1.22. **Monitor Pipeline Execution**
+## 1.1.24. **Monitor Pipeline Execution**
 Observe the notification indicating the pipeline is running, then switch to the `Output` tab.
-![Step](../screenshots/1/22.jpg)
+![Step](../screenshots/1/Pipeline24.png)
 
-## 1.1.23. **Confirm Pipeline Success**
-Check the completion time and ensure the pipeline has succeeded. Click on the highlighted activity name for more details.
-![Step](../screenshots/1/23.jpg)
+## 1.1.25. **Confirm Pipeline Success**
+Check the completion time and ensure the pipeline has succeeded.
+![Step](../screenshots/1/Pipeline25.png)
 
-## 1.1.24. **Review Data Transfer Details**
-In the sidebar, review details such as total duration and the amount of data transferred. Then navigate back to your workspace using the icon indicated as number three.
-![Step](../screenshots/1/24.jpg)
+## 1.1.26. **Review Data Transfer Details**
+Click on the highlighted activity name for more details. In the sidebar, review details such as total duration and the amount of data transferred. Then navigate back to your workspace using the icon indicated as number four.
+![Step](../screenshots/1/Pipeline26.png)
 
-## 1.1.25. **Access Your Workspace**
-In your workspace, you should find the `LoadRawTaxiData` pipeline and the `bronzerawdata` Lakehouse. Enter the Lakehouse.
-![Step](../screenshots/1/25.jpg)
+## 1.1.27. **Access Your Workspace**
+In your workspace, you should find the `LoadRawTaxiData` pipeline and the `bronzerawdata` Lakehouse. Enter the Lakehouse by clicking on the ellipsis and then `Open`.
+![Step](../screenshots/1/Pipeline27.png)
 
-## 1.1.26. **Review Data Table**
+## 1.1.28. **Review Data Table**
 In the `Tables` section, observe the new table and preview the data it contains.
 
-![Step](../screenshots/1/26.jpg)
+![Step](../screenshots/1/Pipeline28.png)
+
 
 ---
 
@@ -207,34 +216,37 @@ You can work with the data in the lakehouse in two modes:
 
 Fabric's data warehouse experience allows you to transition from the lake view of the Lakehouse (which supports data engineering and Apache Spark) to the SQL experiences that a traditional data warehouse would provide.
 
-![Step](../screenshots/1/27.jpg)
+![Step](../screenshots/1/Lakehouse2.png)
 
 ## 1.2.2. **Explore Lakehouse Properties**
 In the `Tables` section of your Lakehouse, click the three dots next to your table name and select `Properties` from the dropdown menu.
-![Step](../screenshots/1/28.jpg)
+![Step](../screenshots/1/Lakehouse3.png)
 
 ## 1.2.3. **Data Format and Management**
 Observe that the table's data format is listed as `Managed`, indicating that the table is a managed entity. Also, note that this table has been optimized using Z-order optimization; further details can be found in the extra section.
-![Step](../screenshots/1/29.jpg)
+![Step](../screenshots/1/Lakehouse4.managed.png)
 
 > [!TIP]
 > Explore managed vs unmanaged tables for Fabric Spark by [reviewing an article written by our teammate Aitor, who is part of the Customer Advisory Team](https://murggu.medium.com/creating-managed-and-external-spark-tables-in-fabric-lakehouse-ef6212e75e81).
 
 ## 1.2.4. **Review Table Files**
-Return to the Lakehouse overview, expand the table options, and select `Files` to examine the data. Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
-![Step](../screenshots/1/30.jpg)
+Return to the Lakehouse overview, expand the table options, and select `Files` to examine the data. 
+![Step](../screenshots/1/Lakehouse5a.png)
+
+Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
+![Step](../screenshots/1/Lakehouse5b.png)
 
 ## 1.2.5. **Final Lakehouse Overview**
 Navigate back to the main Lakehouse view, expand the table options for the final time, and select `Maintenance`.
-![Step](../screenshots/1/31.jpg)
+![Step](../screenshots/1/Lakehouse6.maintenance.png)
 
 ## 1.2.6. **Maintenance Options and Optimization**
 Here, you will find options for optimizing file size and vacuuming, which involves removing files that are no longer needed. Both processes can be automated. This section also details how Z-order optimization is applied to your data; hover over the information icon for more details.
-![Step](../screenshots/1/32.jpg)
+![Step](../screenshots/1/Lakehouse7.png)
 
 ## 1.2.7. **Completion of Task**
 With the exploration of the Lakehouse's features and maintenance options, this task is now completed.
-![Step](../screenshots/1/33.jpg)
+
 
 
 </details>
@@ -262,60 +274,59 @@ Remember, our team is here to guide you through every step of this process. Do n
 
 ## 1.3.1. Expand File Options
 Expand on the options for the file section by clicking the three dots for the `Files`. Then, select the `New Shortcut` option.
-![Step](../screenshots/1/34.jpg)
+![Step](../screenshots/1/Shortcut1.png)
 
 ## 1.3.2. Shortcut Options
-There are multiple source options available for accessing data directly without copying. Currently, shortcuts support data from OneLake, Amazon S3, Azure Data Lake Storage Gen2, and Dataverse. Select `Azure Data Lake Storage Gen2` as indicated on the screen and click `Next`.
-![Step](../screenshots/1/35.jpg)
+There are multiple source options available for accessing data directly without copying. Currently, shortcuts support data from OneLake, Amazon S3, Azure Data Lake Storage Gen2, Dataverse, Amazon S3 Compatible and Google Cloud Storage. Select `Azure Data Lake Storage Gen2` as indicated on the screen.
+![Step](../screenshots/1/Shortcut2.png)
 
 ## 1.3.3. Configure New Shortcut
-Provide the necessary URL by copying and pasting it from the task description. Then, choose your connection, retaining the automatically generated name if possible. For authentication, select `SAS token`, paste the provided token, and then click `Next` after filling in all details.
+Click on Create new connection radio button at the top and provide the necessary URL by copying and pasting it from the task description. Then, choose your connection, retaining the automatically generated name if possible. For authentication, select SAS token, paste the provided token, 
+and then click Next after filling in all details.
 
 * Blob Storage Account URL `https://transportation23kotco.dfs.core.windows.net/`
 * SAS Token (Read Only) `sv=2024-11-04&ss=bfqt&srt=sco&sp=rwlacupx&se=2026-04-02T20:49:20Z&st=2025-04-02T12:49:20Z&spr=https&sig=3o8OvFzu8NP9MtVxaG1dnzoczi%2B1a6uLQiq7lEZDGlI%3D`
 
-![Step](../screenshots/1/36.jpg)
+![Step](../screenshots/1/Shortcut3.png)
 
 **If you encounter the error message `The specified connection name already exists. Try choosing a different name`, please make sure that the name you choose for the connection is unique.**
 
 ## 1.3.4. Verify ADLS Gen2 Access
-Ensure correct configuration by checking the folder named `2023`. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click `Next`.
+Ensure correct configuration by checking the folder named 2023. Inside it, locate a Parquet file. Confirm the selection of the appropriate folder as shown on the screen, then click Next and then Create.
 
 > ![!IMPORTANT]
 > We are creating a demo to a folder named 2023, and you need to just observe and ack that inside that folder there is a required file (as presented on the screenshot). 
 
-![Step](../screenshots/1/37.jpg)
+![Step](../screenshots/1/Shortcut4.png)
 
 ## 1.3.5. Shortcut Configuration Success
 Successfully configured access to your data via shortcuts, without needing to copy it. The shortcut should now appear under the `Files` section, indicating a link to a folder containing Parquet files.
-![Step](../screenshots/1/38.jpg)
+![Step](../screenshots/1/Shortcut5.png)
 
 ## 1.3.6. Load to Table (Delta Table) Parquet Data
-To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load Tables`.
-![Step](../screenshots/1/39.jpg)
+To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load to Tables` and then New table.
+![Step](../screenshots/1/Shortcut6.png)
 
-## 1.3.7. Select and Name New Table
-Choose the `New Table` option as presented on the screen and Name the new table as `green202301` as we follow [the provided naming conventions](../exercise-0-setup/naming-convention.md), then click `Load`.
-![Step](../screenshots/1/40.jpg)
-
-![Step](../screenshots/1/41.jpg)
+## 1.3.7. Name New Table
+Name the new table as `green202301` as we follow [the provided naming conventions](../exercise-0-setup/naming-convention.md), then click `Load`.
+![Step](../screenshots/1/Shortcut7.png)
 
 ## 1.3.8. Notification of Loading Process
 Acknowledge the notification indicating that your file is currently being loaded into the table.
-![Step](../screenshots/1/42.jpg)
+![Step](../screenshots/1/Shortcut8.png)
 
 ## 1.3.9. Refresh Lakehouse
 After the loading process completes, refresh the Lakehouse by clicking the three dots next to the table and selecting `Refresh`. A new table should now be visible.
 
 ## 1.3.10. Open in Notebook
 Notice that Fabric has generated a new notebook for you, containing the SQL to load your data from the newly created table.
-![Step](../screenshots/1/43.jpg)
+![Step](../screenshots/1/Shortcut10a.png)
 
-![Step](../screenshots/1/44.jpg)
+![Step](../screenshots/1/Shortcut10b.png)
 
 ## 1.3.11. Verify Notebook Configuration
 Following the correct execution, you should observe two tables under the `Tables` section and one folder under `Files`. Confirm everything is correct, then run the cell containing the PySpark code by clicking the run icon.
-![Step](../screenshots/1/45.jpg)
+![Step](../screenshots/1/Shortcut11.png)
 
 ## 1.3.12. Execute Query
 The query should execute within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
@@ -324,7 +335,7 @@ The query should execute within a few seconds, demonstrating the seamless integr
 > Fabric Spark enforces a cores-based throttling and queueing mechanism, where users can submit jobs based on the purchased Fabric capacity SKUs. The queueing mechanism is a simple FIFO-based queue, which checks for available job slots and automatically retries the jobs once the capacity has become available. When users submit notebook or lakehouse jobs like Load to Table when their capacity is at its maximum utilization due to concurrent running jobs using all the Spark Vcores available for their purchased Fabric capacity SKU, they're throttled with the message **HTTP Response code 430: Unable to submit this request because all the available capacity is currently being used. The suggested solutions are to cancel a currently running job, increase the available capacity, or try again later.**.
 
 
-![Step](../screenshots/1/46.jpg)
+![Step](../screenshots/1/Shortcut12.png)
 
 > [!WARNING]
 > In Fabric, when you attach a Lakehouse to a notebook, metadata is saved in the notebook file. If you share this notebook by exporting and downloading it, the person receiving it will see a warning that it was linked to another Lakehouse. To prevent this, clear the notebook's attachments before sharing. If receiving a notebook with attachments, assign it to a new Lakehouse to avoid conflicts. 
@@ -334,13 +345,14 @@ The query should execute within a few seconds, demonstrating the seamless integr
 
 ## 1.3.13. Confirm Default Lakehouse
 Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
-![Step](../screenshots/1/47.jpg)
+![Step](../screenshots/1/Shortcut13.png)
+
 
 
 ## Task 1.4 Management of Spark Sessions
 Learn to manage and terminate Spark sessions within your workspace to ensure efficient resource utilization and cost management.
 
-Note that the default session expiration time for Starter and Spark Pools is set to 20 minutes. A Spark pool will be deallocated if not used for 2 minutes after session expiration.
+Note that the default session expiration time for Starter and Spark Pools is set to 20 minutes. You can reset it or change it to higher duration by clicking on the Session Ready link at the bottom left of the notebook. A Spark pool will be deallocated if not used for 2 minutes after session expiration.
 
 **Action required <ins>after</ins> you follow the provided screenshots and descriptions.**
 
@@ -348,30 +360,30 @@ Note that the default session expiration time for Starter and Spark Pools is set
 
 1.  On the screenshot I demo (via the screenshots, there is no live or gif demo) loading parquet data into a Delta table using the 'Load to Table' feature.
    
-     ![Load Data](../screenshots/extra/mh1.jpg)
+     ![Load Data](../screenshots/1/SparkSession1.png)
 2. The table creation was successful as indicated by the notification on the screen. I navigate to the monitoring hub to showcase the current activity.
 
-     ![Monitoring Hub](../screenshots/extra/mh2.jpg)
+     ![Monitoring Hub](../screenshots/1/SparkSession2.png)
 
 
 2. Inside the Monitoring Hub, we observe, the activity is still running. Read the explanation for why; it's presented in the screenshot. Click on the three dots "..." and select "View details",
 
-     ![View Details](../screenshots/extra/mh3.jpg)
+     ![View Details](../screenshots/1/SparkSession3.png)
 
 3. In the details view, point out the crucial information. Pay special attention to the highlighted content in the screenshot.
-     ![Session Details](../screenshots/extra/mh4.jpg)
+     ![Session Details](../screenshots/1/SparkSession4.png)
 
 4. After reviewing all the callouts elements, the necessity to cancell the session is clear. Let me show you how to do that. Again, click on the three dots, and click 'cancel'.
 
-     ![Cancel Session](../screenshots/extra/mh5.jpg)
+     ![Cancel Session](../screenshots/1/SparkSession5.png)
    
     Display how to confirm this action by choosing "Yes, stop".
 
-    ![Confirm Termination](../screenshots/extra/mh6.jpg)
+    ![Confirm Termination](../screenshots/1/SparkSession6.png)
 
 5. Confirm that the session has been successfully terminated as seen on screen.
 
-     ![Termination Confirmation](../screenshots/extra/mh7.jpg)
+     ![Termination Confirmation](../screenshots/1/SparkSession7.png)
 
 **Discuss with instructors the impact of Fabric capacities and Fabric regions, [concurrency limits](https://learn.microsoft.com/en-us/fabric/data-engineering/spark-job-concurrency-and-queueing), as well as the intelligent pooling mechanism, and the variance between workshop and real-world scenarios.** 
 

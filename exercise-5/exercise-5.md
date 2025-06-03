@@ -1,12 +1,16 @@
 # Exercise 5 - Latest Fabric Features
 
 > [!NOTE]
-> Timebox: 40 minutes
+> Timebox: 30 minutes
 > 
 > [Back to Agenda](./../README.md#agenda) | [Back to Exercise 4](./../exercise-4/exercise-4.md) | [Up next extra exercises](../exercise-extra/extra.md)
 > #### List of exercises:
 > *  [Stay Updated and Bookmark Essentials](#stay-updated-and-bookmark-essentials)
 > *  [Fabric Runtimes and Python User-defined Table Functions (UDTFs)](#fabric-runtimes-and-python-user-defined-table-functions-udtfs)
+> *  [Native Execution Engine](#native-execution-engine)
+> *  [Lakehouse Schema](#lakehouse-schema)
+> *  [Notebook Utilities](#notebookutils)
+> *  [Spark Connector for Fabric DW](#spark-connector-for-fabric-dw)
 > *  [Managed Private Endpoints](#managed-private-endpoints)
 > *  [Autotune Query Tuning](#autotune-query-tuning)
 > *  [Spark vs Pandas](#spark-vs-pandas)
@@ -22,7 +26,7 @@ Dive into the latest and greatest from Fabric
 * **Voice Your Ideas**: At Fabric, your voice matters. If there's something you'd like to see improved or introduced, express your ideas on [Fabric Ideas](https://ideas.fabric.microsoft.com/). Tailor your suggestions to specific workloads for clarity. We're all ears and ready to adapt our semester plans to meet your needs. This shift from reactive to proactive engagement empowers you to influence Fabric's future direction. An outstanding instance of this is the introduction of experimental runtimes following your feedback. So, why wait? Share your thoughts and be a part of shaping Fabric's evolution.
 
 > [!IMPORTANT]
-> This is also a great opportunity to remind you to always use the latest GA runtime version. Experiment with the Preview version, but for production-level workloads, use the GA version. Additionally, we will soon publish the lifecycle for runtimes. We aim to introduce a new release every six months, and a natural consequence for Spark is that we will have to run deprecation cycles for outdated, unsupported runtimes. Migrate your production workloads before the deprecation date because once the runtime is deprecated, there will be no way to create new pools, and your jobs will be disabled within 90 days following the deprecation.
+> This is also a great opportunity to remind you to always use the latest GA runtime version. Experiment with the Preview version, but for production-level workloads, use the GA version. We aim to introduce a new release every six months, and a natural consequence for Spark is that we will have to run deprecation cycles for outdated, unsupported runtimes. Migrate your production workloads before the deprecation date because once the runtime is deprecated, there will be no way to create new pools, and your jobs will be disabled within 90 days following the deprecation.
 
 ---
 
@@ -51,7 +55,7 @@ Refer to the following table for a detailed comparison of Apache Spark versions 
 | **R**                | 4.2.2                       | 4.2.2                          | N/A                           |
 
 > [!TIP] 
-> Explore the latest runtime version [Runtime 1.3 Details](https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3). Fabric Runtime 1.3, an experimental stage release, offers early access to new features and Apache Spark APIs, including the LTS version Spark 3.5.
+> Explore the latest runtime version [Runtime 1.3 Details](https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3). Fabric Runtime 1.3 is generally available now. 
 
 The objective of this task is to dive into the newer runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
 
@@ -61,16 +65,15 @@ Switch to the experimental Runtime version 1.3 to utilize new features:
 
 1. Navigate to the 'Workspace settings' within your Fabric workspace.
 2. Access the 'Data Engineering/Science' tab and select 'Spark Settings'.
-3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 Experimental (Spark 3.5, Delta 3 OSS)', and confirm your changes. This sets Runtime 1.3 as your default.
+3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 (Spark 3.5, Delta 3.2)', and confirm your changes. This sets Runtime 1.3 as your default.
 
-![Steps](https://learn.microsoft.com/en-us/fabric/data-engineering/media/mrs/runtime13.png#lightbox)
+![Step](../screenshots/5/5.01.png)
 
 ## 2. Initiating a New Notebook
 Create and configure a new notebook:
 
 1. Start a new notebook session in your workspace.
-2. Note that Spark 3.5 sessions may take 2-5 minutes to initiate due to the absence of starter pools in the early experimental phase.
-3. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
+2. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
 
 ## 3. Exploring UDTFs with Fabric
 Explore the unique capabilities of UDTFs for comprehensive data transformations:
@@ -119,6 +122,22 @@ Each new Runtime version introduces an expanded API, new methods, and transforma
 Now, apply this knowledge to calculate comprehensive costs beyond the example. 
 
 ---
+
+# Native Execution Engine
+The Native Execution Engine can greatly enhance the performance for your Spark jobs and queries. The engine has been rewritten in C++ and operates in columnar mode and uses vectorized processing. The Native Execution Engine offers superior query performance – encompassing data processing, ETL, data science, and interactive queries – all directly on your data lake. Overall, Fabric Spark delivers a 4x speed-up on the sum of execution time of all 99 queries in the TPC-DS 1TB benchmark when compared against Apache Spark. This engine is fully compatible with Apache Spark™ APIs (including Spark SQL API) and engine's seamless integration means it requires no code modifications and avoids vendor lock-in. Learn more about Native Execution Engine [here](https://learn.microsoft.com/en-us/fabric/data-engineering/native-execution-engine-overview).
+
+# Lakehouse Schema 
+Lakehouse supports the creation of custom schemas. Schemas allow you to group your tables together for better data discovery, access control, and more. To enable schema support for your lakehouse, check the box next to Lakehouse schemas (Public Preview) when you create it. Once you create the lakehouse, you can find a default schema named `dbo` under `Tables`. This schema is always there and can't be changed or removed. To create a new schema, hover over `Tables`, select …, and choose `New schema`. Enter your schema name and select `Create`. You'll see your schema listed under `Tables` in alphabetical order.
+
+Bring multiple tables with schema shortcut - To reference multiple Delta tables from other Fabric lakehouse or external storage, use schema shortcut that displays all tables under the chosen schema or folder. Any changes to the tables in the source location also appear in the schema. To create a schema shortcut, hover over `Tables`, select on …, and choose `New schema shortcut`. Then select a schema on another lakehouse, or a folder with Delta tables on your external storage like Azure Data Lake Storage (ADLS) Gen2. That creates a new schema with your referenced tables. Learn more about Lakehouse Schema [here](https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-schemas).
+
+# NotebookUtils
+Notebook Utilities (`NotebookUtils`) is a built-in package to help you easily perform common tasks in Fabric Notebook. You can use NotebookUtils to work with file systems, to get environment variables, to chain notebooks together, run multiple notebooks, and to work with secrets. The NotebookUtils package is available in PySpark (Python) Scala, SparkR notebooks, and Fabric pipelines. 
+
+Please note, MsSparkUtils has been officially renamed to NotebookUtils. The existing code will remain backward compatible and won't cause any breaking changes. It is strongly recommend upgrading to notebookutils to ensure continued support and access to new features. The mssparkutils namespace will be retired in the future. Learn more about NotebookUtils [here](https://learn.microsoft.com/en-us/fabric/data-engineering/notebook-utilities).
+
+# Spark Connector for Fabric DW
+The Spark Connector for Fabric Data Warehouse (DW) empowers a Spark developer or a data scientist to access and work on data from Fabric DW and SQL analytics endpoint of the lakehouse (either from within the same workspace or from across workspaces) with a simplified Spark API. It hides the underlying complexity involved, automatically discovers the SQL endpoint based on the context of the specified warehouse/lakehouse and literally works with just one line of code. This connector has been designed to keep security in mind and takes a minimalistic approach. Hence it requires minimal permission to work with Fabric SQL engines and honors security models (like Object Level Security (OLS)/ Row Level Security (RLS)/ Column Level Security (CLS)) defined at the SQL engine level while accessing a table or view. The connector is shipped as a default library within Fabric Runtime and no separate installation will be necessary to make use of it. Learn more about Spark Connector for Fabric DW [here](https://learn.microsoft.com/en-us/fabric/data-engineering/spark-data-warehouse-connector).
 
 # Managed Private Endpoints
 
@@ -233,10 +252,10 @@ Dive deep into the functionalities of Data Wrangler within Fabric, focusing spec
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
 
-![Step](../screenshots/5/dw.jpg)
-![Step](../screenshots/5/dw1.jpg)
-![Step](../screenshots/5/dw2.jpg)
-![Step](../screenshots/5/dw3.jpg)
+![Step](../screenshots/5/DW01.png)
+![Step](../screenshots/5/DW02.png)
+![Step](../screenshots/5/DW03.png)
+![Step](../screenshots/5/DW04.png)
 
 ## Exploratory Data Analysis
 
@@ -244,9 +263,10 @@ Utilize the grid-like data display to review your dataset. Pay attention to the 
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
 Leverage built-in visualizations to understand data distributions, correlations, and outliers. Experiment with different chart types to best represent your data.
 
-![Step](../screenshots/5/dw4.jpg)
-![Step](../screenshots/5/dw5.jpg)
-![Step](../screenshots/5/dw6.jpg)
+![Step](../screenshots/5/DW5.png)
+![Step](../screenshots/5/DW6.png)
+![Step](../screenshots/5/DW7.png)
+
 
 ## Data Cleaning Operations
 
@@ -259,7 +279,7 @@ Evaluate the impact of your data transformations on the summary statistics and v
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
 
-![Step](../screenshots/5/dw7.jpg)
+![Step](../screenshots/5/DW8.png)
 
 ## To learn more, I encourage you to watch the Fabric Espresso episode about Data Wrangler.
 [![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)

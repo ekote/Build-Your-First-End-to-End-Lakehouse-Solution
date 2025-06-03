@@ -33,7 +33,7 @@ The goal is to obtain the SQL connection string for your Lakehouse's SQL analyti
 2. **Copy the SQL Connection String**:
    - From the available options, select `Copy SQL connection string`.
    - This action copies the connection string to your clipboard, ensuring you have the necessary information to establish a SQL connection.
-     ![Copy Connection String](../screenshots/3/CopyConnectionString.png)
+     ![Copy Connection String](../screenshots/3/3.1.png)
 
 3. **Utilize the Connection String**:
    - With the connection string now on your clipboard, you can use it to connect to your Lakehouse SQL analytics endpoint.
@@ -48,7 +48,7 @@ Ensure that you handle the connection string securely, as it provides access to 
 > [!TIP]
 > If you are interested in lineage and connecting through Azure Data Studio, [proceed to this additional exercise](../exercise-extra/extra.md#lineage).
  
-The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS. [Download the latest generally available (GA) version of SQL Server Management Studio (SSMS) 20.0 (485 MB)](https://aka.ms/ssmsfullsetup)
+The goal of this task is to establish a connection to a Fabric SQL Endpoint using SQL Server Management Studio (SSMS), enabling you to query and manage your data directly from SSMS. [Download the latest generally available (GA) version of SQL Server Management Studio (SSMS) (485 MB)](https://aka.ms/ssmsfullsetup)
 
 1. **Open SQL Server Management Studio**:
    - Launch SSMS on your computer. The `Connect to Server` window should automatically appear upon opening the application. If you're already in SSMS but not connected, navigate to Object Explorer, click `Connect`, and then select `Database Engine`.
@@ -61,10 +61,19 @@ The goal of this task is to establish a connection to a Fabric SQL Endpoint usin
 
     ![password](../screenshots/3/pwd.jpg)
 
-4. **Enter User Credentials**:
+   - If you encounter issues with `Microsoft Entra Password`...
+
+    ![password](../screenshots/3/3.2.3.2.png)
+
+     ... try using `Microsoft Entra MFA` option.
+
+    ![password](../screenshots/3/3.2.3.3.png)
+   
+
+5. **Enter User Credentials**:
    - In the authentication window that appears, enter your workshop user email or your enterprise email ID. Follow the prompts to complete the multifactor authentication process.
 
-5. **Explore the Lakehouse**:
+6. **Explore the Lakehouse**:
    - Once connected, the Object Explorer panel in SSMS will show the connected Lakehouse. You can expand the server node to view the databases (lakehouses) and navigate through tables, views, and other objects available for querying.
 
 > [!IMPORTANT]
@@ -142,19 +151,20 @@ Learn how to share a Lakehouse with team members or stakeholders within your wor
 1. **Navigate to Your Lakehouse**:
    - In your Workspace, locate the Lakehouse you wish to share.
    - Click the **Share** button located next to the lakehouse name.
-     ![Lakehouse Share](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f33d4f80-d24e-4804-b81f-ea4fd2f3188d)
-
-2. **Configure Sharing Settings**:
+   
+    ![Copy Connection String](../screenshots/3/3.4.1.png)
+   
+3. **Configure Sharing Settings**:
    - In the Sharing dialog, enter the name or email address of the individuals you wish to share the Lakehouse with.
    - Assign the appropriate permissions by checking the relevant boxes. By default, sharing the Lakehouse grants access to the lakehouse, the associated SQL endpoint, and the default semantic model.
    
-   ![Lakehouse Sharing Dialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
+    ![Copy Connection String](../screenshots/3/3.4.2.png)
 
-3. **Notification Settings**:
+4. **Notification Settings**:
    - If you want to notify the recipients via email, check the **`Notify recipients by mail`** option.
    - Include an optional message to provide context or instructions for the recipients.
 
-4. **Finalize Sharing**:
+5. **Finalize Sharing**:
    - Once you've configured the sharing settings and notification preferences, click **Grant** to finalize sharing the Lakehouse.
 
 > [!IMPORTANT]
@@ -169,22 +179,22 @@ Learn how to share a notebook with team members within your workspace, allowing 
 1. **Open the Notebook**:
    - Navigate to the notebook that you wish to share.
    - Click on the **Share** button located on the notebook toolbar.
-     ![Share Button](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/496e0f19-3d63-4e6f-9698-1adcbdf2f052)
+     ![Copy Connection String](../screenshots/3/3.5.png)
 
 2. **Set Permissions**:
    - In the sharing settings, select the category of **people who can view this notebook**.
    - Assign appropriate permissions by selecting from **Share**, **Edit**, or **Run**. This will determine what recipients can do with the notebook.
-     ![Set Permissions](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f6674e9e-791e-4f7b-84b6-43b2140e0e6d)
+        ![Copy Connection String](../screenshots/3/3.5.2.png)
 
 3. **Share the Notebook**:
    - After setting the permissions, click **Apply**.
    - You can then choose to send the notebook directly to your team members or copy the link and distribute it manually. Recipients will be able to access the notebook according to the permissions you have set.
-     ![Share Options](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/0a097d72-0a5e-4617-8920-6fd0439d8cad)
+        ![Copy Connection String](../screenshots/3/3.5.3.png)
 
 4. **Manage Notebook Permissions**:
    - For additional permission settings or to update access, navigate to the Workspace item list.
    - Click **More options** next to your notebook and select **Manage permissions**. Here, you can modify who has access and what level of access they hold.
-     ![Manage Permissions](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b37e8de8-36d8-4a4b-accb-4b67c901f26a)
+        ![Copy Connection String](../screenshots/3/3.5.4.png)
 
 
 > [!NOTE]
