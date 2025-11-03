@@ -11,10 +11,12 @@ Visit the Microsoft Fabric website at https://fabric.microsoft.com/.
 
 ## 2. Log In with Assigned Credentials
 Use the credentials provided on the business card located on your table.
+
 ![Login](../screenshots/start/a1.jpg)
 
 ## 3. Enter Your Password and Sign In
-Input your password in the designated field and click the `Sign In` button.
+Input your password in the designated field and click the `Sign in` button.
+
 ![Login](../screenshots/start/a2.jpg)
 
 ## 4. Update Your Password
@@ -27,26 +29,32 @@ You are required to update your password upon first login. Please follow the pro
 
 ## 5. Setup Multi-Factor Authentication (MFA)
 As per Tenants' policy, setting up MFA is required. However, you can defer this by selecting `Ask Me Later.`
+
 ![Login](../screenshots/start/a10.jpg)
 
 ## 6. Welcome to Microsoft Fabric
 You have successfully logged in to Microsoft Fabric!
+
 ![Login](../screenshots/start/a4.jpg)
 
 ## 7. Explore Switcher
 Click the Microsoft Fabric icon in the bottom-left corner to explore Fabric and Power BI switcher.
+
 ![Login](../screenshots/start/a5.jpg)
 
 ## 8. Explore Help Options
 Click the Help & Support menu in the top-right corner to explore all available assistance options.
+
 ![Login](../screenshots/start/a7.jpg)
 
 ## 9. Explore Settings and Admin Portal
 Click the Settings menu in the top-right corner to explore the options. Note that while you cannot configure some of the settings due to access restrictions, you are welcome to browse.
+
 ![Login](../screenshots/start/a8.jpg)
 
 ## 10. Navigate Back and Create a Workspace
 Return to the main screen and click on `New workspace` to begin creating a new workspace.
+
 ![Login](../screenshots/start/a11.jpg)
 
 <!-- ## 11. Access Workspaces
@@ -64,6 +72,7 @@ Give your new workspace a name, adhering to the provided naming convention. Veri
 
 ## 12. Workspace Creation Complete
 Congratulations, your new workspace has been successfully created! This dedicated space is for you to innovate and build today.
+
 ![Login](../screenshots/start/a15.jpg)
 
 
@@ -98,6 +107,7 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
 ## 14. Download the exercise files
  
 [Click here to download the repository as a Zip](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.zip) or [here to download tar.gz package](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/archive/refs/tags/fabcon.tar.gz) to your local machine. Alternatively, you can clone the [workshop GitHub repository](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/tree/fabcon)."
+
 ![Download or Clone Repository](../screenshots/start/CloneDownloadRepo.png)
 
 ---
