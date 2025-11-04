@@ -30,132 +30,135 @@ For those who complete the primary tasks ahead of time, we've prepared [addition
 
 # Task 1.1 Create a pipeline that ingests data from an external Azure Blob Storage account and writes it to Lakehouse (Bronze layer)
 
-## 1.1.1. **Switch to Data Factory View**
-Navigate to the Data Factory section by following the numbered instructions on the screenshot provided.
+## 1.1.1. **Confirm Fabric Section and Workspace**
+Confirm you're in the Fabric section and inside the workspace you created in the previous exercise, following the numbered steps in the screenshot.
 
-![Step](../screenshots/1/1.jpg)
+![Step](../screenshots/1/new/1.jpg)
 
-## 1.1.2. **Confirm Data Factory Access** 
-Ensure you are in the Data Factory section. Begin exploring data integration at scale using data pipelines.
+## 1.1.2. **Create New Pipeline** 
+Click on `New item` and then `Data pipeline`.
 
 > [!IMPORTANT]  
 > Please be aware that when accessing the data pipeline configuration pop-up, there may be a brief delay before it appears. Allow a few seconds for the pop-up window to load completely. In this window, you will have the option to specify the name of the data pipeline. It is important to avoid clicking multiple times during this delay, as this could result in the creation of multiple data pipelines inadvertently.
 
-![Step](../screenshots/1/2.jpg)
+![Step](../screenshots/1/new/2.jpg)
 
+## 1.1.3. **Name Your Pipeline**
+Name your data pipeline, recommended to be `LoadRawTaxiData`. 
 
-## 1.1.3. **Create and Name Your Data Pipeline**
-Name your data pipeline, recommended to be `LoadRawTaxiData`. Select `Pipeline Activity` and then `Copy Data`.
+![Step](../screenshots/1/new/3.jpg)
 
-![Step](../screenshots/1/3.jpg)
+## 1.1.4. **Create Pipeline Activity**
+Select `Pipeline Activity` and then `Copy Data`
+![Step](../screenshots/1/new/4.jpg)
 
-## 1.1.4. **Edit Pipeline Elements**
+## 1.1.5. **Edit pipeline elements**
 Make adjustments and observe the changes in the main screen's editing area.
-![Step](../screenshots/1/4.jpg)
+![Step](../screenshots/1/new/5.jpg)
 
 
-## 1.1.5. **Configure Data Store**
-In the new tab, set the data store type to `External` and then click `New Connection`.
-![Step](../screenshots/1/5.jpg)
+## 1.1.6. **Configure Data Source**
+In the `Source` tab, `Select` a connection and choose `Browse all`.
+![Step](../screenshots/1/new/6.jpg)
 
 
-## 1.1.6. **Add Connection to Blob Storage**
-Change the filter from `All` to `Azure` and select `Azure Blob Storage` for the new connection.
-![Step](../screenshots/1/6.jpg)
+## 1.1.7. **Add Connection to Blob Storage**
+Click on `View more` button and select `Azure Blobs` for the new connection.
+![Step](../screenshots/1/new/7.jpg)
 
 
-## 1.1.7. **Set Connection Details** 
+## 1.1.8. **Set Connection Details** 
    - Copy and paste the URL from the task description into the relevant field.
      - Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
    - For connection type, choose `Create a new connection`.
    - Retain the automatically generated connection name or modify it if necessary.
+   - Data gateway leave as (none)
    - Select `Shared Access Signature (SAS)` for authentication.
 
-![Step](../screenshots/1/7.jpg)
+![Step](../screenshots/1/new/8.jpg)
 
-## 1.1.8. **Enter SAS Token**
+## 1.1.9. **Enter SAS Token**
 Paste the SAS token from the description. This token grants temporary access to the blob storage, which will expire after a set duration.
 
 SAS Token (Read Only) `sv=2024-11-04&ss=bfqt&srt=sco&sp=rlacuptfx&se=2026-04-02T19:07:44Z&st=2025-04-02T11:07:44Z&spr=https&sig=dMB4e%2BN%2BBsXfBR%2FRwbrWKxja3t1Bzjm4q%2BqNTw03mcQ%3D`
-![Step](../screenshots/1/8.jpg)
+![Step](../screenshots/1/new/9.jpg)
 
-## 1.1.9. **Test Connection**
+## 1.1.10. **Test Connection**
 Verify that the connection name is correctly displayed, then test the connection. If successful, click `Browse`.
-![Step](../screenshots/1/9.jpg)
+![Step](../screenshots/1/new/10.jpg)
 
-## 1.1.10. **Navigate Blob Storage**
+## 1.1.11. **Navigate Blob Storage**
 Browse the blob storage and select the `taxidata` folder.
-![Step](../screenshots/1/10.jpg)
+![Step](../screenshots/1/new/11.jpg)
 
-## 1.1.11. **Select Data File**
+## 1.1.12. **Select Data File**
 Choose a specific Parquet file and click `OK`.
-![Step](../screenshots/1/11.jpg)
+![Step](../screenshots/1/new/12.jpg)
 
-## 1.1.12. **File Path and Format**
+## 1.1.13. **File Path and Format**
 Note additional elements in the file path section. Change the file format to `Parquet` and click `Preview Data`.
-![Step](../screenshots/1/12.jpg)
+![Step](../screenshots/1/new/13.jpg)
 
-## 1.1.13. **Preview External Data**
+## 1.1.14. **Preview External Data**
 Review the data preview showing the table contents from the external blob storage, then close the preview window.
-![Step](../screenshots/1/13.jpg)
+![Step](../screenshots/1/new/14.jpg)
 
-## 1.1.14. **Define Data Destination**
-Switch to the `Destination` tab, select `Storage Workspace`, then `Lakehouse` and click `New` to create a new Lakehouse.
-![Step](../screenshots/1/14.jpg)
+## 1.1.15. **Define Data Destination**
+Switch to the `Destination` tab, `Select` a connection and choose `Browse all`.
+![Step](../screenshots/1/new/15.jpg)
 
-## 1.1.15. **Name the Lakehouse**
-Follow [the naming conventions provided](../exercise-0-setup/naming-convention.md), input the name, and click `Create`.
-![Step](../screenshots/1/15.jpg)
+## 1.1.16. **Create and Name the Lakehouse**
+Under `New Fabric item` select `Lakehouse` to create new Lakehouse. As workspace select your current workspace and for the name follow [the naming conventions provided](../exercise-0-setup/naming-convention.md), input the name, and click `Create and connect`.
+![Step](../screenshots/1/new/16.jpg)
 
-## 1.1.16. **Review Lakehouse**
+## 1.1.17. **Review Lakehouse**
 Verify the newly created Lakehouse is visible under the appropriate tab.
-![Step](../screenshots/1/16.jpg)
+![Step](../screenshots/1/new/17.jpg)
 
-## 1.1.17. **Configure Advanced Options**
-Expand the `Advanced Options` and select the desired table action, such as `Append`. Specify the table by clicking `New`.
-![Step](../screenshots/1/17.jpg)
+## 1.1.18. **Configure Options**
+Select the desired table action, such as `Append`. Specify the table by clicking `New`.
+![Step](../screenshots/1/new/18.jpg)
 
-## 1.1.18. **Set Table Name**
+## 1.1.19. **Set Table Name**
 Name the table as `green201501` according to [the naming conventions](../exercise-0-setup/naming-convention.md), click `Create`, then return to the `General` tab.
-![Step](../screenshots/1/18.jpg)
+![Step](../screenshots/1/new/19.jpg)
 
-## 1.1.19. **Detail Copy Activity**
+## 1.1.20. **Detail Copy Activity**
 Name the copy activity to reflect its purpose, e.g., `Load NYC Taxi Green 2015 Jan`. Review and, if necessary, adjust the timeout, retry policies, and explore advanced options.
-![Step](../screenshots/1/19.jpg)
+![Step](../screenshots/1/new/20.jpg)
 
-## 1.1.20. **Validate Pipeline**
+## 1.1.21. **Validate Pipeline**
 Ensure the pipeline is error-free by clicking `Validate`. Once validated, close the sidebar.
-![Step](../screenshots/1/20.jpg)
+![Step](../screenshots/1/new/21.jpg)
 
-## 1.1.21. **Save and Run Pipeline**
+## 1.1.22. **Save and Run Pipeline**
 Save your pipeline settings by clicking `Save`, then initiate the pipeline by clicking `Run`.
-![Step](../screenshots/1/21.jpg)
+![Step](../screenshots/1/new/22.jpg)
 
 
 > [!NOTE]
 > Fabric's intelligent compute resources are dynamically adjusted based on historical usage, peak demands, and current activity levels. With nearly 600 of us today working simultaneously, primarily within the same region, startup times for Spark compute instances may be longer than usual. Typically, our starter pool initiates new Spark sessions in about 10 seconds. However, due to today's high volume, we may transition to the on-demand pool, resulting in wait times of approximately 2 to 3 minutes for some sessions.
 
-
-## 1.1.22. **Monitor Pipeline Execution**
+## 1.1.23. **Monitor Pipeline Execution**
 Observe the notification indicating the pipeline is running, then switch to the `Output` tab.
-![Step](../screenshots/1/22.jpg)
+![Step](../screenshots/1/new/23.jpg)
 
-## 1.1.23. **Confirm Pipeline Success**
+## 1.1.24. **Confirm Pipeline Success**
 Check the completion time and ensure the pipeline has succeeded. Click on the highlighted activity name for more details.
-![Step](../screenshots/1/23.jpg)
+![Step](../screenshots/1/new/24.jpg)
 
-## 1.1.24. **Review Data Transfer Details**
+## 1.1.25. **Review Data Transfer Details**
 In the sidebar, review details such as total duration and the amount of data transferred. Then navigate back to your workspace using the icon indicated as number three.
-![Step](../screenshots/1/24.jpg)
+![Step](../screenshots/1/new/25.jpg)
 
-## 1.1.25. **Access Your Workspace**
+## 1.1.26. **Access Your Workspace**
 In your workspace, you should find the `LoadRawTaxiData` pipeline and the `bronzerawdata` Lakehouse. Enter the Lakehouse.
-![Step](../screenshots/1/25.jpg)
+![Step](../screenshots/1/new/26.jpg)
 
-## 1.1.26. **Review Data Table**
+## 1.1.27. **Review Data Table**
 In the `Tables` section, observe the new table and preview the data it contains.
 
-![Step](../screenshots/1/26.jpg)
+![Step](../screenshots/1/new/27.jpg)
 
 ---
 
