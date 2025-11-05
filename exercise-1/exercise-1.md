@@ -127,12 +127,12 @@ Name the table as `green201501` according to [the naming conventions](../exercis
 Name the copy activity to reflect its purpose, e.g., `Load NYC Taxi Green 2015 Jan`. Review and, if necessary, adjust the timeout, retry policies, and explore advanced options.
 ![Step](../screenshots/1/new/20.jpg)
 
-## 1.1.21. **Validate Pipeline**
-Ensure the pipeline is error-free by clicking `Validate`. Once validated, close the sidebar.
+## 1.1.21. **Validate and Save Pipeline**
+Ensure the pipeline is error-free by clicking `Validate`. Once validated, close the sidebar and Save your pipeline settings by clicking `Save`.
 ![Step](../screenshots/1/new/21.jpg)
 
-## 1.1.22. **Save and Run Pipeline**
-Save your pipeline settings by clicking `Save`, then initiate the pipeline by clicking `Run`.
+## 1.1.22. **Run Pipeline**
+Initiate the pipeline by clicking `Run`.
 ![Step](../screenshots/1/new/22.jpg)
 
 
@@ -172,7 +172,7 @@ In the `Tables` section, observe the new table and preview the data it contains.
 > 
 > Remember, you can always return to this exercise later.
 
-details>
+<details>
 
 <summary>Click <ins>here</ins> to expand the Task 1.2 Discover the Lakehouse </summary>
 
@@ -224,7 +224,7 @@ Observe that the table's data format is listed as `Managed`, indicating that the
 > Explore managed vs unmanaged tables for Fabric Spark by [reviewing an article written by our teammate Aitor, who is part of the Customer Advisory Team](https://murggu.medium.com/creating-managed-and-external-spark-tables-in-fabric-lakehouse-ef6212e75e81).
 
 ## 1.2.4. **Review Table Files**
-Return to the Lakehouse overview, expand the table options, and select `Files` to examine the data. Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
+Return to the Lakehouse overview, expand the table options, and select `View Files` to examine the data. Notice that your loaded data is in Parquet format, which is now part of a Delta Lake due to the conversion process.
 ![Step](../screenshots/1/new/31.jpg)
 ![Step](../screenshots/1/new/32.jpg)
 
@@ -233,7 +233,7 @@ Navigate back to the main Lakehouse view, expand the table options for the final
 ![Step](../screenshots/1/new/33.jpg)
 
 ## 1.2.6. **Maintenance Options and Optimization**
-Here, you will find options for optimizing file size and vacuuming, which involves removing files that are no longer needed. Both processes can be automated. This section also details how Z-order optimization is applied to your data; hover over the information icon for more details.
+Here, you will find options for optimizing file size and vacuuming, which involves removing files that are no longer needed. Both processes can be automated. This section also details how V-order optimization is applied to your data; hover over the information icon for more details.
 ![Step](../screenshots/1/new/34.jpg)
 
 ## 1.2.7. **Completion of Task**
@@ -295,7 +295,7 @@ Successfully configured access to your data via shortcuts, without needing to co
 ![Step](../screenshots/1/new/41.jpg)
 
 ## 1.3.6. Load to Table (Delta Table) Parquet Data
-To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load Tables`, and choose `New Table` option as presented on the screen.
+To transform the Parquet data into a Delta table, click the three dots next to the file name as shown on the screen, then select `Load to Tables`, and choose `New Table` option as presented on the screen.
 ![Step](../screenshots/1/new/42.jpg)
 
 ## 1.3.7. Select and Name New Table
@@ -311,8 +311,7 @@ After the loading process completes, refresh the Lakehouse by clicking the three
 ![Step](../screenshots/1/new/45.jpg)
 
 ## 1.3.10. Create Notebook
-To create notebook click `New notebook` option under `Open Notebook`.
-Notice that Fabric has generated a new notebook for you with single cell.
+To create notebook click `New notebook` option under `Open Notebook`. Notice that Fabric has generated a new notebook for you with single cell.
 ![Step](../screenshots/1/new/46.jpg)
 
 ![Step](../screenshots/1/new/47.jpg)
