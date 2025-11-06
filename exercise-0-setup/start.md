@@ -12,12 +12,12 @@ Visit the Microsoft Fabric website at https://fabric.microsoft.com/.
 ## 2. Log In with Assigned Credentials
 Use the credentials provided on the business card located on your table.
 
-![Login](../screenshots/start/a1.jpg)
+![Login](../screenshots/start/new/1.jpg)
 
 ## 3. Enter Your Password and Sign In
 Input your password in the designated field and click the `Sign in` button.
 
-![Login](../screenshots/start/a2.jpg)
+![Login](../screenshots/start/new/2.jpg)
 
 ## 4. Update Your Password
 You are required to update your password upon first login. Please follow the prompts to do so.
@@ -25,37 +25,37 @@ You are required to update your password upon first login. Please follow the pro
 > [!TIP]  
 > **We advise you to write your password on the back side of the business card along with your login details, in case you may need to restart your PC and forget the password.**
 
-![Login](../screenshots/start/a9.jpg)
+![Login](../screenshots/start/new/9.jpg)
 
 ## 5. Setup Multi-Factor Authentication (MFA)
 As per Tenants' policy, setting up MFA is required. However, you can defer this by selecting `Ask Me Later.`
 
-![Login](../screenshots/start/a10.jpg)
+![Login](../screenshots/start/new/10.jpg)
 
 ## 6. Welcome to Microsoft Fabric
 You have successfully logged in to Microsoft Fabric!
 
-![Login](../screenshots/start/a4.jpg)
+![Login](../screenshots/start/new/4.jpg)
 
 ## 7. Explore Switcher
 Click the Microsoft Fabric icon in the bottom-left corner to explore Fabric and Power BI switcher.
 
-![Login](../screenshots/start/a5.jpg)
+![Login](../screenshots/start/new/5.jpg)
 
 ## 8. Explore Help Options
 Click the Help & Support menu in the top-right corner to explore all available assistance options.
 
-![Login](../screenshots/start/a7.jpg)
+![Login](../screenshots/start/new/7.jpg)
 
 ## 9. Explore Settings and Admin Portal
 Click the Settings menu in the top-right corner to explore the options. Note that while you cannot configure some of the settings due to access restrictions, you are welcome to browse.
 
-![Login](../screenshots/start/a8.jpg)
+![Login](../screenshots/start/new/8.jpg)
 
 ## 10. Navigate Back and Create a Workspace
 Return to the main screen and click on `New workspace` to begin creating a new workspace.
 
-![Login](../screenshots/start/a11.jpg)
+![Login](../screenshots/start/new/11.jpg)
 
 <!-- ## 11. Access Workspaces
 Click on the `Workspaces` icon located on the left part of the screen.
@@ -68,12 +68,12 @@ A sidebar will appear with a list of all accessible subscriptions. Follow the in
 ## 11. Name Your Workspace
 Give your new workspace a name, adhering to the provided naming convention. Verify the name and click `Apply.` Follow the naming convention and assign a name: `urban-innovation-deNNN`, where `NNN` represents the number assigned to you. For example, `urban-innovation-de001` (Estera’s workspace).
 
-![Login](../screenshots/start/a14.jpg)
+![Login](../screenshots/start/new/14.jpg)
 
 ## 12. Workspace Creation Complete
 Congratulations, your new workspace has been successfully created! This dedicated space is for you to innovate and build today.
 
-![Login](../screenshots/start/a15.jpg)
+![Login](../screenshots/start/new/15.jpg)
 
 
 ## 13. Adjust default pool size to 2 nodes
@@ -88,20 +88,20 @@ To ensure smooth operation for multiple concurrent workshops happening today, yo
    - Confirm that you are within the correct workspace view.
    - Access the workspace settings as indicated in the Fabric UI.
 
-![One Node](../screenshots/extra/aonenode1.jpg)
+![One Node](../screenshots/extra/new/aonenode1.jpg)
 
 2. **Modify Default Pool Configuration**:
    - Go to Data Engineering / Data Science in the left navigation panel of the Workspace settings -> and then click on Spark settings. 
    - Locate the "Default pool for workspace" setting.
    - Click on the pencil icon to edit the pool settings.
 
-![One Node](../screenshots/extra/aonenode2.jpg)
+![One Node](../screenshots/extra/new/aonenode2.jpg)
 
 3. **Adjust Autoscale Settings and Save Changes**:
    - In the default pool configuration, change the autoscale maximum setting from 10 to 2. This limits the maximum number of nodes to 2 to prevent resource over-allocation.
    - Confirm and save your modifications to the default pool settings.
 
-![One Node](../screenshots/extra/aonenode3.jpg)
+![One Node](../screenshots/extra/new/aonenode3.jpg)
 
 
 ## 14. Download the exercise files
