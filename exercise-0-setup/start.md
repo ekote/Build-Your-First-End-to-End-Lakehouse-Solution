@@ -29,11 +29,11 @@ As per Tenants' policy, setting up MFA is required. However, you can defer this 
 ![Login](../screenshots/start/new/10.jpg)
 
 ## 6. Welcome to Microsoft Fabric
-You have successfully logged in to Microsoft Fabric!
+You have successfully logged in to Microsoft Fabric! Click the Microsoft Fabric icon in the bottom-left corner to explore Fabric and Power BI switcher.  
 ![Login](../screenshots/start/new/4.jpg)
 
 ## 7. Explore Switcher
-Click the Microsoft Fabric icon in the bottom-left corner to explore Fabric and Power BI switcher.  
+Explore Fabric and Power BI switcher.  
 ![Login](../screenshots/start/new/5.jpg)
 
 ## 8. Explore Help Options
