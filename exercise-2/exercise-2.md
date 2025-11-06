@@ -112,7 +112,7 @@ Explanation of the code:
 ## 2.2.3. Using Multiple Programming Languages in Fabric Notebooks
 Fabric Notebooks support various programming languages, including PySpark, Scala, SQL, and R. To switch to SQL, for example, use the %%sql magic command at the beginning of a notebook cell.
 
-![Step](../screenshots/2/6.jpg)
+![Step](../screenshots/2/new/6.jpg)
 
 ```python
 %%sql
@@ -150,35 +150,30 @@ Open Link in a New Tab [provided URL](https://raw.githubusercontent.com/ekote/Bu
 > [!TIP]
 > Download the file to your local machine from this link [Download Discount Data](https://raw.githubusercontent.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/fabcon/exercise-2/NYC-Taxi-Discounts-Per-Day.csv).
 
-![Step](../screenshots/2/7.jpg)
+![Step](../screenshots/2/new/7.jpg)
 
 ## 2.3.2. Uploading Data to the Lakehouse
 To integrate this discount data with existing datasets:
 * Go to the `Files` section in your Lakehouse. 
 * Click on the three dots to access additional options and select the `Upload` button. 
 * Choose `Upload Files` from the menu.
-![Step](../screenshots/2/10.jpg)
+![Step](../screenshots/2/new/10.jpg)
 
 ## 2.3.3. File Selection for Upload
 Select the recently downloaded file, likely named NYC-Taxi-Discounts-Per-Day.csv, then initiate the upload by clicking the `Upload` button.
-![Step](../screenshots/2/11.jpg)
+![Step](../screenshots/2/new/11.jpg)
 
 ## 2.3.4. Verifying Upload to the Lakehouse
 The file should upload within a few seconds. This method provides a straightforward approach to augmenting your Lakehouse data.
-![Step](../screenshots/2/12.jpg)
+![Step](../screenshots/2/new/12.jpg)
 
 ## 2.3.5. Refreshing and Locating the File
 Refresh the Lakehouse's `Files` section to view the newly uploaded file. Employ the drag-and-drop feature to move this file into your notebook. This action will generate a cell prepopulated with code, which you can execute to review the new data.
-![Step](../screenshots/2/13.jpg)
+![Step](../screenshots/2/new/13.jpg)
 
 ## 2.3.6. Renaming the Notebook
 Assign an appropriate name to your notebook reflecting its purpose, such as `Data Exploration` or `Discount Analysis`, to maintain clarity and organization within your projects.
-![Step](../screenshots/2/14.jpg)
-
-## 2.3.7. Switching to Data Engineering View
-Finally, transition to the `Data Engineering` tab, adhering to the instructions depicted on-screen, to continue your data analysis journey with the newly integrated datasets.
-![Step](../screenshots/2/15.jpg)
-
+![Step](../screenshots/2/new/14.jpg)
 
 [//]: # (![Step]&#40;../media/2/8.jpg&#41;)
 
@@ -187,23 +182,23 @@ Finally, transition to the `Data Engineering` tab, adhering to the instructions 
 # Task 2.4 Import pre-made notebook 
 
 > [!NOTE]  
-> You can import one or more existing notebooks from your local computer to a Fabric workspace from the Data Engineering or the Data Science homepage. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
+> You can import one or more existing notebooks from your local computer to a Fabric workspace. Fabric notebooks recognize the standard Jupyter Notebook .ipynb files, and source files like .py, .scala, and .sql, and create new notebook items accordingly.
 
 ## 2.4.1. Importing the Notebook
-If you have not downloaded the repository ([Step 16. Download the exercise files](../exercise-0-setup/start.md#16-download-the-exercise-files)), **you can download just a separate notebook. [This screenshot presents the steps to do that.](../screenshots/extra/download-notebook.jpg)**
+If you have not downloaded the repository ([Step 14. Download the exercise files](../exercise-0-setup/start.md#14-download-the-exercise-files)), **you can download just a separate notebook. [This screenshot presents the steps to do that.](../screenshots/extra/download-notebook.jpg)**
 
-Ensure you are in the `Data Engineering` context of your Fabric workspace. Then, navigate to your workspace, and select the `New` where you'll find an option to upload notebooks, symbolized by a notebook icon. 
+Navigate to your workspace, and select the `Import` where you'll find an option to upload notebooks, symbolized by a notebook icon. 
 
 Click this icon to open the upload sidebar, similar to how you previously uploaded a file. From here, choose the notebook you've recently downloaded, named [notebook-2.ipynb](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/blob/fabcon/exercise-2/notebook-2.ipynb), and initiate the upload.
-![Step](../screenshots/2/importnotebook.jpg)
+![Step](../screenshots/2/new/importnotebook.jpg)
 
 ## 2.4.2. Notification
 Once you start the upload, you'll receive a notification indicating that the import of the file is underway. Wait for this process to complete; it typically takes only a few moments.
-![Step](../screenshots/2/17.jpg)
+![Step](../screenshots/2/new/15.jpg)
 
 ## 2.4.3. Accessing the Imported Notebook
 After the import completes, locate the newly imported notebook in the `urban-innovation-de{NNN}`, where NNN represents the number assigned to you. Click on the three dots associated with the notebook and select `Open Notebook`. For convenience, you can open the notebook in the background, which will make its icon continuously accessible from the vertical sidebar on the left.
-![Step](../screenshots/2/18.jpg)
+![Step](../screenshots/2/new/16.jpg)
 
 
 Congratulations, you've successfully completed the task and enhanced your data engineering capabilities with a pre-made notebook!
@@ -215,24 +210,20 @@ Congratulations, you've successfully completed the task and enhanced your data e
 This step-by-step guide will help you to integrate your Lakehouse with the pre-made notebook for effective data manipulation and analysis.
 
 ## 2.5.1. Accessing Lakehouse Options
-In your opened notebook, locate the section referring to Lakehouses, typically shown in the screenshot provided within the notebook. Click on this section to view your Lakehouse options.
-![Step](../screenshots/2/19.jpg)
+In your opened notebook, locate the Data Iteams section in the Explorer pane on the left.
+![Step](../screenshots/2/new/17.jpg)
 
 ## 2.5.2. Adding a Lakehouse
-Within the Lakehouse options, click on the `Add` button to initiate the process of linking a Lakehouse to your notebook.
-![Step](../screenshots/2/20.jpg)
+Within the Lakehouse options, click on the `Add data items` button to initiate the process of linking a Lakehouse to your notebook and select an `Existing Lakehouse` from the available choices.
+![Step](../screenshots/2/new/18.jpg)
 
-## 2.5.3. Selecting the Existing Lakehouse
-Choose the option to select an `Existing Lakehouse` from the available choices. After making this selection, click the `Add` button to proceed.
-![Step](../screenshots/2/21.jpg)
+## 2.5.3. Choosing Your Lakehouse
+From the list of available Lakehouses, identify and select your own, named `bronzerawdata`. Be careful to choose the correct one to ensure accurate data analysis. Once confirmed, click `Connect` to attach it to your notebook.
+![Step](../screenshots/2/new/19.jpg)
 
-## 2.5.4. Choosing Your Lakehouse
-From the list of available Lakehouses, identify and select your own, named `bronzerawdata`. Be careful to choose the correct one to ensure accurate data analysis. Once confirmed, click `Add` to attach it to your notebook.
-![Step](../screenshots/2/22.jpg)
-
-## 2.5.5. Confirmation
+## 2.5.4. Confirmation
 Verify that your Lakehouse, `bronzerawdata`, is now correctly linked and visible within your notebook settings. This confirmation ensures that you are all set for executing data-related tasks within the notebook.
-![Step](../screenshots/2/23.jpg)
+![Step](../screenshots/2/new/20.jpg)
 
 
 ---
@@ -241,17 +232,14 @@ Verify that your Lakehouse, `bronzerawdata`, is now correctly linked and visible
 # Task 2.6 Create a silver lakehouse
 The last task before fully immersing ourselves in data engineering work within the notebook is to create and attach a new Silver Lakehouse. Please follow these steps:
 
-## 2.6.1. Click on the pin icon next to the Default Lakehouse, `bronzerawdata`. Then select `Add Lakehouse`.
-![Step](../screenshots/2/24.jpg)
+## 2.6.1. Click on the pin icon `Add data items` above the Default Lakehouse, `bronzerawdata`. Then select `New lakehouse` option.
+![Step](../screenshots/2/new/21.jpg)
 
-## 2.6.2. Choose `New Lakehouse` and click `Add`.
-![Step](../screenshots/2/25.jpg)
+## 2.6.2. Follow the naming convention and enter a name for the Lakehouse. The suggested name is `silvercleansed`.
+![Step](../screenshots/2/new/22.jpg)
 
-## 2.6.3. Follow the naming convention and enter a name for the Lakehouse. The suggested name is `silvercleansed`.
-![Step](../screenshots/2/26.jpg)
-
-## 2.6.4. Confirm that your notebook is now linked to two Lakehouses: the default one (bronze) and the newly added one (silver). Once this is verified, we can begin our data engineering work.
-![Step](../screenshots/2/27.jpg)
+## 2.6.3. Confirm that your notebook is now linked to two Lakehouses: the default one (bronze) and the newly added one (silver). Once this is verified, we can begin our data engineering work.
+![Step](../screenshots/2/new/23.jpg)
 
 ---
 
