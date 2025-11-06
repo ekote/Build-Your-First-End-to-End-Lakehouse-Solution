@@ -265,7 +265,8 @@ Congratulations, you have completed the advanced data engineering notebook. Now,
 
 
 > [!TIP]
-> Refresh your lakehouse (use the three dots "..." and then click the refresh button) to double-check if the tables are in the lakehouse.
+> Refresh your lakehouse to double-check if the tables are in the lakehouse.
+> ![Step](../screenshots/2/new/24.jpg)
 
 ## Pre-Automation Quality Check
 Ensure the following before starting the automation process:
@@ -277,32 +278,33 @@ Ensure the following before starting the automation process:
 Once all is set, proceed with the automation.
 
 ## 2.8.1. **Starting Point**
-Navigate to `Home` as depicted in the instructions.
-![Step](../screenshots/2/28.jpg)
+Make sure you are in your fabric workspace, select `New item` and then choose `Pipeline`.
+![Step](../screenshots/2/new/25.jpg)
 
-## 2.8.2. **Data Pipeline Creation**
-Click on `Data Pipeline` and name the new pipeline `Bronze2Silver`.
-![Step](../screenshots/2/29.jpg)
+## 2.8.2. **Name and Create Pipeline Creation**
+Name the new pipeline `Bronze2Silver` and hit `Create`.
+![Step](../screenshots/2/new/26.jpg)
 
 ## 2.8.3. **Pipeline Activity**
 Select the `ForEach` activity as shown on the screen.
-![Step](../screenshots/2/30.jpg)
+![Step](../screenshots/2/new/27.jpg)
 
-## 2.8.4. **General Settings for Each Activity**
-Provide a name for each `ForEach` element.
-![Step](../screenshots/2/31.jpg)
+## 2.8.4. **General Settings for ForEach Activity**
+Provide a name for `ForEach` element.
+![Step](../screenshots/2/new/28.jpg)
 
 ## 2.8.5. **Pipeline Variables**
 Firstly, click on the background pane (first step from the screenshot in the pink rectangle) to see the tab with parameters and variables.
 
 In the pipeline settings tab, navigate to `Variables`. Here, create a new variable named `table_name`, set its type to `Array`, and assign the default value `["green201501", "green202301"]`. **Follow the specific step presented in the screenshot.**
 
-![Step](../screenshots/2/32.jpg)
+![Step](../screenshots/2/new/29.jpg)
 
 ## 2.8.6. **ForEach Settings**
 In the `ForEach` settings, select `Sequential`. To add dynamic content, open the sidebar and select the `table_name` variable. Confirm by clicking `OK`. **Follow the specific step presented in the screenshot.**
 
-![Step](../screenshots/2/33.jpg)
+![Step](../screenshots/2/new/30.jpg)
+![Step](../screenshots/2/new/31.jpg)
 
 > [!NOTE]  
 > Sequential specifies whether the loop should be executed sequentially or in parallel. Maximum of 50 loop iterations can be executed at once in parallel. For example, if you have a ForEach activity iterating over a copy activity with 10 different source and sink datasets with isSequential set to False, all copies are executed at once.
@@ -312,34 +314,28 @@ In the `ForEach` settings, select `Sequential`. To add dynamic content, open the
 
 ## 2.8.7. **Adding Notebook Activity**
 Under `Activities`, choose `Notebook`.
-![Step](../screenshots/2/34.jpg)
+![Step](../screenshots/2/new/32.jpg)
 
 ## 2.8.8. **Notebook Settings**
-From the General Tab (presented in the screenshot), go the `Settings` tab for the notebook, as illustrated.
-![Step](../screenshots/2/35.jpg)
+Select the notebook activity and go the `Settings` tab for the notebook, as illustrated. Adjust the workspace and notebook settings, for workspace choose your current workspace, for notebook opt for the `notebook-2` that you uploaded previously.
+![Step](../screenshots/2/new/33.jpg)
 
-## 2.8.9. **Select Workspace**
-Choose your workspace.
-![Step](../screenshots/2/36.jpg)
-
-## 2.8.10. **Select Notebook and Base Parameters**
-Opt for the `notebook-2` that you uploaded previously.
+## 2.8.9. **Select  Base Parameters**
 Add a new parameter named `table_name`, with type `String` and value `@item()`. `@item()` comes again from dynamic content (Pipeline expression builder).
+![Step](../screenshots/2/new/34.jpg)
 
-![Step](../screenshots/2/37.jpg)
+## 2.8.10. **Validation**
+After configuring, click `Validate` to ensure there are no errors.
+![Step](../screenshots/2/new/35.jpg)
 
-## 2.8.11. **Validation**
-After configuring, click `Validate` to ensure there are no errors. Click on `Run`.
-![Step](../screenshots/2/38.jpg)
-
-## 2.8.12. **Execution**
+## 2.8.11. **Execution**
 Save the settings and initiate the run by clicking the `Run` button.
-![Step](../screenshots/2/39.jpg)
+![Step](../screenshots/2/new/36.jpg)
 
-## 2.8.13. **Observation and Optimization**
+## 2.8.12. **Observation and Optimization**
 Note that the execution of the two notebooks occurs sequentially, typically taking two minutes each. However, as these notebooks do not depend on each other, consider modifying the pipeline to run the notebooks in parallel for efficiency.
 
-![Step](../screenshots/2/40.jpg)
+![Step](../screenshots/2/new/37.jpg)
 
 > [!TIP]
 > (1) Instead of iterating through notebooks with a ForEach loop, you may consider structuring your approach to input various values into a single notebook execution. This can be complemented by coding loops within the notebook itself. 
@@ -386,17 +382,17 @@ Review the screenshots provided to compare and confirm the setup in your Lakehou
 The final task before delving into data science work (Exercise 4) within the notebook is to create a new Gold Lakehouse named `goldcurated`.
 
 Please follow these steps:
-## 2.10.1. From the view of all artifacts you have created inside your workspace, click on the `New` button.
-![Step](../screenshots/2/60.jpg)
+## 2.10.1. From the view of all artifacts you have created inside your workspace, click on the `New Item` button.
+![Step](../screenshots/2/new/38.jpg)
 
 ## 2.10.2. Then select `Lakehouse` from the extensive list.
-![Step](../screenshots/2/61.jpg)
+![Step](../screenshots/2/new/39.jpg)
 
 ## 2.10.3. Adhere to the naming convention and enter a name for the Lakehouse. The suggested name is `goldcurated`.
-![Step](../screenshots/2/62.jpg)
+![Step](../screenshots/2/new/40.jpg)
 
 ## 2.10.4. Confirm that your Gold Lakehouse has been created.
-![Step](../screenshots/2/63.jpg)
+![Step](../screenshots/2/new/41.jpg)
 
 
 
