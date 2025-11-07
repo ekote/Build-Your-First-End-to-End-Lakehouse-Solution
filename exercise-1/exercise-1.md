@@ -320,11 +320,11 @@ To create notebook click `New notebook` option under `Open Notebook`. Notice tha
 Following the correct execution, you should observe two tables under the `Tables` section and one folder under `Files`. Confirm everything is correct.
 ![Step](../screenshots/1/new/48.jpg)
 
-## 1.3.12. Execute Query
+## 1.3.12. Create Query
 Create the Query by draging and dropping table name into notebook body.
 ![Step](../screenshots/1/new/49.jpg)
 
-## 1.3.12. Execute Query
+## 1.3.13. Execute Query
 To execute hit the play button on the left side of cell, it should finish within a few seconds, demonstrating the seamless integration and ease of use provided by Fabric as a true SaaS solution. Review the results displayed in the table.
 
 > [!IMPORTANT]
@@ -339,7 +339,7 @@ To execute hit the play button on the left side of cell, it should finish within
 > 
 > ![Step](../screenshots/1/warning.png) 
 
-## 1.3.13. Confirm Default Lakehouse
+## 1.3.14. Confirm Default Lakehouse
 Ensure that the `bronzerawdata` Lakehouse is set as the default for the notebook. Once confirmed, the task is successfully completed. Congratulations!
 ![Step](../screenshots/1/new/51.jpg)
 
