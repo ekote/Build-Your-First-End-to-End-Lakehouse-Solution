@@ -170,20 +170,24 @@ Learn how to share a notebook with team members within your workspace, allowing 
 1. **Open the Notebook**:
    - Navigate to the notebook that you wish to share.
    - Click on the **Share** button located on the notebook toolbar.
+   
      ![Share Button](../screenshots/3/new/5.png)
 2. **Set Permissions**:
    - In the sharing settings, select the category of **people who can view this notebook**.
    - Assign appropriate permissions by selecting from **Share**, **Edit**, or **Run**. This will determine what recipients can do with the notebook.
+
      ![Set Permissions](../screenshots/3/new/6.png)
 
 3. **Share the Notebook**:
    - After setting the permissions, click **Apply**.
    - You can then choose to send the notebook directly to your team members or copy the link and distribute it manually. Recipients will be able to access the notebook according to the permissions you have set.
+
      ![Share Options](../screenshots/3/new/7.png)
 
 4. **Manage Notebook Permissions**:
    - For additional permission settings or to update access, navigate to the Workspace item list.
    - Click **More options** next to your notebook and select **Manage permissions**. Here, you can modify who has access and what level of access they hold.
+
      ![Manage Permissions](../screenshots/3/new/8.png)
 
 
