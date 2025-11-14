@@ -117,7 +117,7 @@ In this exercise, we will check the monitoring application for our pipeline and 
 7. Inside the monitoring snapshot, scroll through to view the executed values within the notebook, ensuring full transparency of the operations carried out.
    ![Monitoring](../screenshots/extra/new/8.jpg)
 
-8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green201501".
+8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green202301".
 
 9. Observe the execution details such as the duration, default lake house setting, and queue duration to understand the efficiency and performance of your job.
 
