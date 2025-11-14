@@ -47,30 +47,29 @@ Refer to the following table for a detailed comparison of Apache Spark versions 
 | **Java**             | 8                           | 11                             | 11                            |
 | **Scala**            | 2.12.15                     | 2.12.17                        | 2.12.17                       |
 | **Python**           | 3.10                        | 3.10                           | 3.10                          |
-| **Delta Lake**       | 2.2.0                       | 2.4.0                          | 3.0.0                         |
-| **R**                | 4.2.2                       | 4.2.2                          | N/A                           |
+| **Delta Lake**       | 2.2.0                       | 2.4.0                          | 3.2                           |
+| **R**                | 4.2.2                       | 4.2.2                          | 	4.4.1                     |
 
 > [!TIP] 
-> Explore the latest runtime version [Runtime 1.3 Details](https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3). Fabric Runtime 1.3, an experimental stage release, offers early access to new features and Apache Spark APIs, including the LTS version Spark 3.5.
+> Explore the latest runtime version [Runtime 1.3 Details](https://learn.microsoft.com/en-us/fabric/data-engineering/runtime-1-3).
 
-The objective of this task is to dive into the newer runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
+The objective of this task is to dive into the newest runtime version, specifically to explore and utilize Python User-defined Table Functions (UDTFs) introduced in Spark 3.5. UDTFs are powerful for transforming data, particularly for expanding one row into multiple rows. Learn more about Python UDTFs [here](https://spark.apache.org/docs/latest/api/python/user_guide/sql/python_udtf.html).
 
-## 1. Integrating Experimental Public Preview Runtime 1.3
+## 1. Integrating Runtime 1.3
 
-Switch to the experimental Runtime version 1.3 to utilize new features:
+Confirm you are using Runtime version 1.3 to utilize new features:
 
 1. Navigate to the 'Workspace settings' within your Fabric workspace.
 2. Access the 'Data Engineering/Science' tab and select 'Spark Settings'.
-3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 Experimental (Spark 3.5, Delta 3 OSS)', and confirm your changes. This sets Runtime 1.3 as your default.
+3. In the 'Environment' section, choose 'Runtime Versions', select '1.3 (Spark 3.5, Delta 3.2)', and confirm your changes. This sets Runtime 1.3 as your default.
 
-![Steps](https://learn.microsoft.com/en-us/fabric/data-engineering/media/mrs/runtime13.png#lightbox)
+![Steps](../screenshots/5/new/1.jpg)
 
 ## 2. Initiating a New Notebook
 Create and configure a new notebook:
 
 1. Start a new notebook session in your workspace.
-2. Note that Spark 3.5 sessions may take 2-5 minutes to initiate due to the absence of starter pools in the early experimental phase.
-3. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
+2. Verify the Spark version by executing `sc.version` in your notebook to confirm Spark 3.5 is active.
 
 ## 3. Exploring UDTFs with Fabric
 Explore the unique capabilities of UDTFs for comprehensive data transformations:
@@ -79,7 +78,7 @@ Explore the unique capabilities of UDTFs for comprehensive data transformations:
 3. Apply the provided example code to a specific table from either your bronze or silver lakehouse data, focusing on the 'fare_amount' column.
 4. Perform the transformations and observe the outcome on a subset of the data, applying a 5% discount as an example.
 
-![Step](../screenshots/5/1.jpg)
+![Step](../screenshots/5/new/2.jpg)
 
 <details>
 
@@ -173,11 +172,9 @@ Click [here](https://learn.microsoft.com/en-us/fabric/security/security-managed-
 # Autotune Query Tuning
 When discussing Spark runtimes, we inevitably address the crucial topic of performance, which concerns us all. In response to this, we have developed 'Autotune', a feature designed to optimize Spark settings for your jobs, enhancing efficiency and effectiveness.
 
-This week marks the transition of Autotune to public review, accessible across all regions. This presents you with a unique opportunity to view a demonstration that has yet to be released to the public. Below, you will find a link to this exclusive demo.
+Autotune can be activated through the Spark configuration setting within the environment. To enable autotune, either create a new environment or, for the existing environment, set the Spark property 'spark.ms.autotune.enabled = true'.
 
-Please look out for further announcements regarding Autotune throughout the week. We are excited to share more information about this innovative feature with you.
-
-* [Watch the exclusive demo](https://1drv.ms/v/s!ApCaji7rcQaQ3rNv8g7pBnLdrwQBfQ?e=R7GiEq) that has not been yet released.
+* [Watch the exclusive demo](https://1drv.ms/v/s!ApCaji7rcQaQ3rNv8g7pBnLdrwQBfQ?e=R7GiEq)
 
 * For more information on Autotune, please review the documentation available at [Autotune in Fabric Data Engineering](https://learn.microsoft.com/en-us/fabric/data-engineering/autotune?tabs=sparksql).
 
@@ -233,10 +230,9 @@ Dive deep into the functionalities of Data Wrangler within Fabric, focusing spec
 Open your Fabric environment and navigate to the Data Wrangler tool within your notebook.
 Load a Pandas DataFrame that you wish to analyze. If you don't have a specific dataset in mind, utilize a sample dataset provided within the platform.
 
-![Step](../screenshots/5/dw.jpg)
-![Step](../screenshots/5/dw1.jpg)
-![Step](../screenshots/5/dw2.jpg)
-![Step](../screenshots/5/dw3.jpg)
+![Step](../screenshots/5/new/dw1.jpg)
+![Step](../screenshots/5/new/dw2.jpg)
+![Step](../screenshots/5/new/dw3.jpg)
 
 ## Exploratory Data Analysis
 
@@ -244,9 +240,9 @@ Utilize the grid-like data display to review your dataset. Pay attention to the 
 Generate dynamic summary statistics to gain quick insights into the mean, median, mode, min, and max of your data columns.
 Leverage built-in visualizations to understand data distributions, correlations, and outliers. Experiment with different chart types to best represent your data.
 
-![Step](../screenshots/5/dw4.jpg)
-![Step](../screenshots/5/dw5.jpg)
-![Step](../screenshots/5/dw6.jpg)
+![Step](../screenshots/5/new/dw4.jpg)
+![Step](../screenshots/5/new/dw5.jpg)
+![Step](../screenshots/5/new/dw6.jpg)
 
 ## Data Cleaning Operations
 
@@ -259,7 +255,7 @@ Evaluate the impact of your data transformations on the summary statistics and v
 As you apply transformations within Data Wrangler, observe the automatic generation of corresponding code in either Pandas or PySpark.
 Save the generated code back to your notebook as a reusable function. This practice not only enhances your understanding of data transformations but also builds a library of custom functions for future analysis.
 
-![Step](../screenshots/5/dw7.jpg)
+![Step](../screenshots/5/new/dw7.jpg)
 
 ## To learn more, I encourage you to watch the Fabric Espresso episode about Data Wrangler.
 [![FabricEspresso](https://img.youtube.com/vi/-g6KveKQXu4/0.jpg)](https://www.youtube.com/watch?v=-g6KveKQXu4)
@@ -271,31 +267,25 @@ Save the generated code back to your notebook as a reusable function. This pract
 
 Visual Studio Code for the Web provides a free, zero-install Microsoft Visual Studio Code experience running entirely in your browser, allowing you to quickly and safely browse source code repositories and make lightweight code changes. 
 
-## Install the Synapse VS Code extension for the Web
-
-1. Go to https://insider.vscode.dev from your browser.
-1. Select the **Extensions** icon in the left navigation bar.
-1. Search for **Synapse** and select the **Synapse VS Code - Remotes** extension
-1. click **Install**.
-
-![VSCODE](../screenshots/5/vs1.jpg)
-
-
-## Open a notebook (e.g., notebook-2) with the Synapse VS Code extension for the Web
+## Open a notebook (e.g., notebook-2) with the Fabric Data Engineering - Remote VS Code extension for the Web
 
 You can open a notebook in the VS Code for the Web experience by clicking the **Open in VS Code(Web)** button on the notebook authoring page in the Fabric portal. After you select the button, a separate browser tab is opened with the VS Code for the web experience. If you haven't already installed the extension, it is automatically installed, and activated, and the notebook is opened.
-![VSCODE](../screenshots/5/vs2.jpg)
-![VSCODE](../screenshots/5/vs3.jpg)
-![VSCODE](../screenshots/5/vs4.jpg)
+![VSCODE](../screenshots/5/new/vs1.jpg)
+![VSCODE](../screenshots/5/new/vs2.jpg)
+
+## Install Jupyter extension
+To select a Python kernel, install the Jupyter extension by following the steps shown in the screenshot. After the extension installs, refresh the page.
+
+![VSCODE](../screenshots/5/new/vs3.jpg)
 
 
 ## Run notebooks in the VS Code for the Web experience
 
-You can run a notebook in the VS Code for the web experience by selecting the **Run** button in the notebook editor. Before you run the notebook, make sure to select the **Synapse VS Code -Remote** as the kernel. The kernel is selected in the top right corner of the notebook editor.
+You can run a notebook in the VS Code for the web experience by selecting the **Run** button in the notebook editor. Before you run the notebook, make sure to select the **Microsoft Fabric Runtime** as the kernel. The kernel is selected in the top right corner of the notebook editor.
 
-![VSCODE](../screenshots/5/vs5.jpg)
-
-![VSCODE](../screenshots/5/vs6.jpg)
+![VSCODE](../screenshots/5/new/vs4.jpg)
+![VSCODE](../screenshots/5/new/vs5.jpg)
+![VSCODE](../screenshots/5/new/vs6.jpg)
 
 
 ## To learn more, I encourage you to watch the Fabric Espresso episode about VSCode.
