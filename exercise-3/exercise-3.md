@@ -33,7 +33,8 @@ The goal is to obtain the SQL connection string for your Lakehouse's SQL analyti
 2. **Copy the SQL Connection String**:
    - From the available options, select `Copy SQL connection string`.
    - This action copies the connection string to your clipboard, ensuring you have the necessary information to establish a SQL connection.
-     ![Copy Connection String](../screenshots/3/CopyConnectionString.png)
+     ![Copy Connection String](../screenshots/3/new/CopyConnectionString.png)
+     ![Copy Connection String](../screenshots/3/new/CopyConnectionString2.png)
 
 3. **Utilize the Connection String**:
    - With the connection string now on your clipboard, you can use it to connect to your Lakehouse SQL analytics endpoint.
@@ -142,13 +143,13 @@ Learn how to share a Lakehouse with team members or stakeholders within your wor
 1. **Navigate to Your Lakehouse**:
    - In your Workspace, locate the Lakehouse you wish to share.
    - Click the **Share** button located next to the lakehouse name.
-     ![Lakehouse Share](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f33d4f80-d24e-4804-b81f-ea4fd2f3188d)
+     ![Lakehouse Share](../screenshots/3/new/3.png)
 
 2. **Configure Sharing Settings**:
    - In the Sharing dialog, enter the name or email address of the individuals you wish to share the Lakehouse with.
    - Assign the appropriate permissions by checking the relevant boxes. By default, sharing the Lakehouse grants access to the lakehouse, the associated SQL endpoint, and the default semantic model.
    
-   ![Lakehouse Sharing Dialog](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b7d04784-d5c6-44d9-accb-4e7119d6fea8)
+   ![Lakehouse Sharing Dialog](../screenshots/3/new/4.png)
 
 3. **Notification Settings**:
    - If you want to notify the recipients via email, check the **`Notify recipients by mail`** option.
@@ -169,22 +170,25 @@ Learn how to share a notebook with team members within your workspace, allowing 
 1. **Open the Notebook**:
    - Navigate to the notebook that you wish to share.
    - Click on the **Share** button located on the notebook toolbar.
-     ![Share Button](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/496e0f19-3d63-4e6f-9698-1adcbdf2f052)
-
+   
+     ![Share Button](../screenshots/3/new/5.png)
 2. **Set Permissions**:
    - In the sharing settings, select the category of **people who can view this notebook**.
    - Assign appropriate permissions by selecting from **Share**, **Edit**, or **Run**. This will determine what recipients can do with the notebook.
-     ![Set Permissions](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/f6674e9e-791e-4f7b-84b6-43b2140e0e6d)
+
+     ![Set Permissions](../screenshots/3/new/6.png)
 
 3. **Share the Notebook**:
    - After setting the permissions, click **Apply**.
    - You can then choose to send the notebook directly to your team members or copy the link and distribute it manually. Recipients will be able to access the notebook according to the permissions you have set.
-     ![Share Options](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/0a097d72-0a5e-4617-8920-6fd0439d8cad)
+
+     ![Share Options](../screenshots/3/new/7.png)
 
 4. **Manage Notebook Permissions**:
    - For additional permission settings or to update access, navigate to the Workspace item list.
    - Click **More options** next to your notebook and select **Manage permissions**. Here, you can modify who has access and what level of access they hold.
-     ![Manage Permissions](https://github.com/ekote/Build-Your-First-End-to-End-Lakehouse-Solution/assets/63069887/b37e8de8-36d8-4a4b-accb-4b67c901f26a)
+
+     ![Manage Permissions](../screenshots/3/new/8.png)
 
 
 > [!NOTE]

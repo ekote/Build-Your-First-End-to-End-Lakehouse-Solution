@@ -1,6 +1,10 @@
-# Build Your First End to End Lakehouse Solution
+# Build Your First End to End Lakehouse Solution during Big Data CONFERENCE Europe 2025 - AI, Cloud and Data Conference Vilnius, Lithuanian
 
-Join the workshop to master building end-to-end data solutions with Microsoft Fabric. Learn to integrate, transform, and manage data in a lakehouse, utilizing Fabric pipelines, dataflows, notebooks, and Spark. Understand how BI analysts and data scientists utilize lakehouse data to enhance decision-making.
+Welcome to Big Data Conference Europe 2025—an event dedicated to advancing the future of AI, cloud, and data innovation.
+
+This workshop gives you practical, hands-on experience in building a complete lakehouse solution using Microsoft Fabric. You’ll learn how to integrate, transform, and manage data across the entire lifecycle with pipelines, dataflows, notebooks, and Spark. You’ll also see how BI analysts and data scientists leverage the lakehouse to accelerate insights and strengthen decision-making.
+
+---
 
 **Workshop Goals**
 - Master Fabric Data Integration and Data Engineering and Data Science.
@@ -24,29 +28,32 @@ Join the workshop to master building end-to-end data solutions with Microsoft Fa
 > [!TIP]
 > You can progress through these exercises at your own pace. While we have structured logical breaks within the session, these are merely suggestions. You are not required to stop if you prefer to continue working. These breaks are provided to accommodate those who may need them. Feel free to continue through the material as fits your learning style and needs.
 
+**The schedule can be adjusted to align with participants’ availability, exercise needs, and the group’s overall velocity. The break period will remain unchanged.**
 
 > [!IMPORTANT]
-> 9:00 am - 9:30 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+> 9:00 am - 9:45 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+>
+> To get login and password to Fabric go to (link)[https://docs.google.com/spreadsheets/d/1DtEgCO2EII814Bps3vO9RpiOd752RPpt0y78gEtFq0c/edit?usp=sharing].
 > 
-> 9:30 am - 10:00 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md) 
+> 9:45 am - 10:50 am - [Exercise 1 - Data Ingestion Foundations](./exercise-1/exercise-1.md) 
 > 
-> 10:00 am - 10:15 am - Coffee break 15 minutes
+> 10:50 am - 11:15 am - Coffee break 25 minutes
 > 
-> 10:15 am - 10:45 am - [Exercise 1 - Ingest data with data pipelines and shortcuts](./exercise-1/exercise-1.md)
+> 11:15 am - 12:45 am - [Exercise 2 - Data Transformation with Spark. + Data Wrangler](./exercise-2/exercise-2.md)
 > 
-> 10:45 am - 11:45 pm - [Exercise 2 - Transform data using Notebooks and Spark clusters](./exercise-2/exercise-2.md)
+> 12:45 am - 13:30 pm - Lunch break - 45 minutes
 > 
-> 11:45 am - 12:45 pm - Lunch 60 minutes
+> 13:30 pm - 15:10 pm - [Exercise 3 -  Data Wrangler's based Pipeline + Collaboration and SQL Analytics ++ Q&A](./exercise-3/exercise-3.md)
 > 
-> 12:45 pm - 01:15 pm - [Exercise 3 - Collaborate inside Notebooks and share Lakehouse. Use SQL Endpoint and SSMS](./exercise-3/exercise-3.md)
+> 15:10 pm - 15:35 pm - Break 10 minutes
 > 
-> 01:15 pm - 01:25 pm - Break 10 minutes
-> 
-> 01:25 pm - 02:25 pm - [Exercise 4 - Serve and consume data using Power BI and Data Science ](./exercise-4/exercise-4.md)
+> 01:25 pm - 02:25 pm - [Exercise 4 - Serve and consume data using Power BI](./exercise-4/exercise-4.md)
 > 
 > 02:25 pm - 02:35 pm - Break 10 minutes
 > 
-> 02:35 pm - 03:05 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
+> 17:00 pm - 17:30 pm - [Exercise 5 - Latest Fabric Features](./exercise-5/exercise-5.md)
 > 
-> 03:05 pm - 04:00 pm - Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
+> 17:30 pm - 18:00 pm - Wrap-up and Q&A. Buffer, Recap and [Extra exercises](exercise-extra/extra.md)
 >
+
+

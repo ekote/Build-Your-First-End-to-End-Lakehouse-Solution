@@ -254,17 +254,17 @@ To enable HC for your notebook follow the steps:
 
 1. Navigate to the Run tab in the menu ribbon and select on the session type dropdown that has Standard selected as the default option. Select New high concurrency session.
 
-![HC](../screenshots/extra/HighConcurrency1.png)
 
-2. Once the high concurrency session has started, you could now add upto 10 notebooks in the high concurrency session.
+![HC](../screenshots/extra/new/hc1.jpg)
 
-![HC](../screenshots/extra/HighConcurrency2.png)
+2. Once the high concurrency session has started, you could now add up to 5 notebooks in the high concurrency session.
 
-3. Once the notebook has been attached, you can start executing the notebook steps instantly.
+![HC](../screenshots/extra/new/hc2.jpg)
 
-![HC](../screenshots/extra/HighConcurrency3.png)
 
-[Read more here.](https://learn.microsoft.com/en-us/fabric/data-engineering/configure-high-concurrency-session-notebooks)
+3. You can start executing the notebook steps instantly.
+
+To learn more about high concurenncy session [read more here.](https://learn.microsoft.com/en-us/fabric/data-engineering/configure-high-concurrency-session-notebooks)
 
 
 ---
@@ -276,7 +276,7 @@ Understand the relationships and flow of data within your Fabric workspace using
 1. **Access Lineage View**:
    - Navigate to the workspace toolbar within your Fabric environment.
    - Open the lineage view to visualize how different items within your workspace are interconnected.
-     ![Lineage View](../screenshots/extra/Lineage1.png)
+     ![Lineage View](../screenshots/extra/new/linage1.jpg)
 
 2. **Explore Workspace Items and Connections**:
    - In the lineage view, examine the connections between all the items located in your workspace.
@@ -285,19 +285,12 @@ Understand the relationships and flow of data within your Fabric workspace using
 3. **Highlight Specific Item Lineage**:
    - To highlight the lineage for a specific item, select the arrow at the bottom right corner of the card.
    
-     ![Specific Item Lineage](../screenshots/extra/Lineage2.png)
+     ![Specific Item Lineage](../screenshots/extra/new/linage2.jpg)
 
 4. **Understand External Tool Integration**:
-   - Recognize the role of external tools like Azure Data Studio in managing and developing databases across different platforms.
-   - Note how Azure Data Studio supports various databases and enhances workflow with features like IntelliSense, code snippets, and source control integration.
+   - Recognize the role of external tools like Azure Visual Studio Code or SQL Server Management Studio (SSMS) in managing and developing databases across different platforms.
    
-     ![Connecting with Azure Data Studio](../screenshots/extra/Lineage3.png)
-
-    Azure Data Studio is a lightweight, cross-platform data management and development tool with connectivity to popular cloud and on-premises databases. Azure Data Studio supports Windows, macOS, and Linux, with immediate capability to connect to Azure SQL and SQL Server. Browse the extension library for more database support options including MySQL, PostgreSQL, and CosmosDB. Azure Data Studio's familiar interface offers a modern editor experience with IntelliSense, code snippets, source control integration, and an integrated terminal. Engineered with the data platform user in mind, its extensibility allows users to customize their experience by installing the extensions relevant to their workflow, including database migrations, charting, GitHub Copilot, and more!
-
-> [!TIP]
-> For a deeper understanding and comparison between SQL Server Management Studio (SSMS) and Azure Data Studio, visit the following link: [Azure Data Studio and SSMS Feature Comparison](https://learn.microsoft.com/en-us/azure-data-studio/what-is-azure-data-studio#feature-comparison-with-sql-server-management-studio-ssms).
-
+     ![Connecting with Azure Visual Studio Code](../screenshots/extra/new/linage3.jpg)
 
 # Specify the File Format and Compression Type for Sink Datasets in Data Factory
 
@@ -305,7 +298,7 @@ Based on Wikipedia, Snappy (formerly known as Zippy) is a fast data compression 
 
 Given this information, you might question the decision to use gzip instead of Snappy and how you can modify this setting. Here's how to proceed:
 
-1. Navigate to Data Factory and open the first pipeline you have created, which loads raw data into a bronze Lakehouse.
+1. Navigate to the workspace view and open the first pipeline you have created, which loads raw data into a bronze Lakehouse.
 2. In the pipeline, go to the 'Source' tab and then click 'Settings'.
 3. The next step is to review all the compression types supported for the Parquet format. Deciding on the correct compression type can be challenging; therefore, let's compare the two main types: Snappy and gzip.
 
@@ -316,7 +309,7 @@ Your choice should be guided by what you intend to do with the data being loaded
 
 You can change your compression type in the settings menu of the source tab:
 
-![Compression Settings](../screenshots/extra/FileFormat.png)
+![Compression Settings](../screenshots/extra/new/1.jpg)
 
 Based on benchmarks, gzip is more suited for long-term static storage, making it the preferred choice for data in the Gold layer. For data that is accessed more frequently (hot data), Snappy or LZO might be better options:
 
@@ -336,29 +329,29 @@ In this exercise, we will check the monitoring application for our pipeline and 
 1. To open the Monitoring hub, select "Monitoring" from the navigation pane. The hub displays information in a table format, listing Fabric activities by start time, with the latest activities at the top.
 
 2. Use the "Filter" button to refine the results in the monitoring hub table as shown in the screenshot. This makes navigation easier.
-   ![Monitoring](../screenshots/extra/Monitoring.png)
+   ![Monitoring](../screenshots/extra/new/3.jpg)
 
 3. Based on the filtered results, open the specific pipeline as demonstrated in the following image:
-   ![Monitoring](../screenshots/extra/Monitoring2.png)
+   ![Monitoring](../screenshots/extra/new/4.jpg)
 
 4. Inside the monitoring hub, switch to the "Gantt Tab" to observe the notebook execution times. A successful execution is indicated by the prevalent green color.
-   ![Monitoring](../screenshots/extra/Monitoring3.png)
+   ![Monitoring](../screenshots/extra/new/5.jpg)
 
 5. Click on the name of the notebook you are monitoring.
-   ![Monitoring](../screenshots/extra/Monitoring4.png)
+   ![Monitoring](../screenshots/extra/new/6.jpg)
 
 6. In the notebook's detailed view, focus on two important sections: the Spark monitoring URL and the monitoring snapshot. Click on "Monitoring Snapshot".
-   ![Monitoring](../screenshots/extra/Monitoring5.png)
+   ![Monitoring](../screenshots/extra/new/7.jpg)
 
 7. Inside the monitoring snapshot, scroll through to view the executed values within the notebook, ensuring full transparency of the operations carried out.
-   ![Monitoring](../screenshots/extra/Monitoring6.png)
+   ![Monitoring](../screenshots/extra/new/8.jpg)
 
-8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green201501".
+8. Note the parameters section, showing how the notebook was parameterized, for instance with the table name "green202301".
 
 9. Observe the execution details such as the duration, default lake house setting, and queue duration to understand the efficiency and performance of your job.
 
 10. Return to the "Resources" tab to review metrics such as total duration, total idle time, and efficiency. A low efficiency percentage, like 15%, suggests there is significant room for improvement in the pipeline, code, and compute settings.
-    ![Monitoring](../screenshots/extra/Monitoring7.jpg)
+    ![Monitoring](../screenshots/extra/new/9.jpg)
 
 Consider sharing any optimization strategies with the workshop hosts and your colleagues to enhance the overall efficiency of your pipeline.
 
@@ -367,7 +360,7 @@ Consider sharing any optimization strategies with the workshop hosts and your co
 # Medallion architecture
 A Medallion architecture is a data design pattern used to organize data in a Lakehouse, with the goal of progressively improving the quality and structure of the data as it flows through each layer of the architecture, starting from the Bronze layer, then to the Silver layer, and finally to the Gold layer.
 
-![image-alt-text](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/243714iAF59794D11862CC4/image-dimensions/521x259?v=v2)
+![image-alt-text](https://learn.microsoft.com/en-us/fabric/onelake/media/onelake-medallion-lakehouse-architecture/onelake-medallion-lakehouse-architecture-example.png)
 
 This incremental and progressive improvement enables you to maintain data quality and structure while also improving data processing performance. Medallion architectures are sometimes referred to as "multi-hop" architectures because data flows through multiple layers.
 
@@ -424,7 +417,7 @@ result_table_name = f"{table_name}_avg_fare_per_month"
 average_fare_per_month.write.format("delta").mode("overwrite").saveAsTable(f"silvercleansed.{result_table_name}")
 ```
 
-![Medallion Architecture](../screenshots/extra/medarch01.png)
+![Medallion Architecture](../screenshots/extra/new/medarch.jpg)
 
 ## Medallion Architecture Data Design and Lakehouse Patterns | Microsoft Fabric Data Factory
 
@@ -442,18 +435,18 @@ In this exercise, you'll learn how to schedule a notebook to run multiple times 
 1. **Access the Notebook**:
    - Open the notebook from the second exercise. 
    - Click on the scheduling icon presented in the screenshot to access the scheduling options.
-     ![Scheduling Icon](../screenshots/extra/ScheduleNotebook1.png)
+     ![Scheduling Icon](../screenshots/extra/new/10.jpg)
 
 2. **Configure the Schedule**:
-   - Switch to the "Schedule" tab where you will find various options to set up your notebook's schedule.
-   - Start by enabling the schedule function to make the notebook run automatically according to your specified timing.
-     ![Schedule Tab](../screenshots/extra/ScheduleNotebook2.png)
-
+   - Switch to the "Schedule" tab and click on the `Add Schedule` button
+   ![Schedule Tab](../screenshots/extra/new/11.jpg)
+     
 3. **Define the Schedule Details**:
    - Set the notebook to repeat daily.
    - Schedule the execution times for your notebook, for example, at 7:00 AM and 10:00 AM. Ensure that these times align with your workflow and data processing needs.
    - Specify the start and end dates for the scheduled runs, defining how long the notebook should follow this schedule.
    - Select the appropriate time zone for your schedule, ensuring accuracy in execution times.
+   ![Schedule Tab](../screenshots/extra/new/12.jpg)
 
 4. **Apply and Confirm Changes**:
    - After configuring the settings, apply the changes to activate the schedule.
@@ -474,17 +467,17 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
 
 1. **Navigate to Workspace Settings**:
    - Go to the workspace view in your Microsoft Fabric environment.
-   - Click on the three dots (ellipsis) to access the workspace settings.
-     ![Workspace Settings](../screenshots/extra/WorkspaceSettings1.png)
+   - Click on the `Workspace settings` button.
+     ![Workspace Settings](../screenshots/extra/new/13.jpg)
 
 2. **Access Data Engineering/Science Settings**:
    - Click on "Data Engineering/Science" and then select "Spark Settings".
    - Click on the "Default Pool for Workspace" and expand the selection to view more options.
-     ![Spark Settings](../screenshots/extra/NewSpark2.png)
+     ![Spark Settings](../screenshots/extra/new/14.jpg)
 
 3. **Create a New Spark Pool**:
    - Click on the "New Pool" button to start configuring a new Spark pool.
-     ![New Pool](../screenshots/extra/NewSpark3.png)
+     ![New Pool](../screenshots/extra/new/15.jpg)
 
 4. **Configure the New Spark Pool**:
    - Assign a meaningful name to your new Spark pool.
@@ -492,12 +485,12 @@ In this exercise, you'll be addressing the lack of dynamic job execution capabil
    - Enable auto-scaling to allow the pool to adjust based on workload automatically.
    - Enable "Dynamic Allocation for Executors" to optimize resource utilization during job execution.
    - Always remember to save your changes after configuring the settings.
-     ![Pool Configuration](../screenshots/extra/NewSpark4.png)
+     ![Pool Configuration](../screenshots/extra/new/16.jpg)
 
 5. **Finalize and Save Changes**:
    - After configuring the new Spark pool, Microsoft Fabric will redirect you back to the Spark settings screen.
    - A message will appear at the top part of the screen indicating that there are unsaved changes. Ensure to review and save these changes.
-     ![Unsaved Changes](../screenshots/extra/NewSpark5.png)
+     ![Unsaved Changes](../screenshots/extra/new/17.jpg)
 
 
 > [!IMPORTANT]  
@@ -525,19 +518,19 @@ In this exercise, you will verify whether a table has been saved with or without
    - In the first cell of the notebook, disable V-Order optimization and save the DataFrame as a new table.
    - In a separate cell, enable V-Order optimization and save the DataFrame as another table.
    - Execute both cells to create two versions of the table: one with V-Order enabled and one without.
-     ![Notebook Setup](../screenshots/extra/Vorder1.png)
+     ![Notebook Setup](../screenshots/extra/new/18.jpg)
 
 3. **Verify File Properties**:
    - Navigate to the Lakehouse, then to Lakehouse Explorer.
    - Locate your tables, click on the three dots next to the table names, and select "View Files".
    - Enter the `_delta_log` folder and open the JSON files associated with both tables.
-     ![Lakehouse Explorer](../screenshots/extra/Vorder2.png)
+     ![Lakehouse Explorer](../screenshots/extra/new/19.jpg)
 
 4. **Compare File Contents**:
    - Reformat the JSON files for easier comparison.
    - Check for the presence of V-Order optimization indicators, typically found in the tags section of the JSON log.
    - Pay attention to the number of output rows and the size of output bytes between the tables saved with and without V-Order.
-     ![File Comparison](../screenshots/extra/27.jpg)
+     ![File Comparison](../screenshots/extra/new/20.jpg)
 
 
 Review the [Microsoft documentation on Delta optimization and V-Order](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) for a deeper understanding and context.  By understanding the impact and functioning of V-Order, you can make informed decisions about its use in your data storage and processing strategies. Remember, the goal is not just to see if V-Order is applied, but also to understand its benefits and implications.
