@@ -69,18 +69,18 @@ Click on `View more` button and select `Azure Blobs` for the new connection.
 
 ## 1.1.8. **Set Connection Details** 
    - Copy and paste the URL from the task description into the relevant field.
-     - Blob Storage Account URL `https://transportationkotcorp.blob.core.windows.net/`
+     - Blob Storage Account URL `https://nyctaxidataforfabric.blob.core.windows.net/`
    - For connection type, choose `Create a new connection`.
    - Retain the automatically generated connection name or modify it if necessary.
    - Data gateway leave as (none)
-   - Select `Shared Access Signature (SAS)` for authentication.
+   - Select `Account Keu` for authentication.
 
 ![Step](../screenshots/1/new/8.jpg)
 
 ## 1.1.9. **Enter SAS Token**
-Paste the SAS token from the description. This token grants temporary access to the blob storage, which will expire after a set duration.
+Paste the Account Key from the description. This token grants temporary access to the blob storage, which will expire after a set duration.
 
-SAS Token (Read Only) `sv=2024-11-04&ss=bfqt&srt=sco&sp=rlacuptfx&se=2026-04-02T19:07:44Z&st=2025-04-02T11:07:44Z&spr=https&sig=dMB4e%2BN%2BBsXfBR%2FRwbrWKxja3t1Bzjm4q%2BqNTw03mcQ%3D`
+Account Key `Hr6IoFdZu+7rIV0CaTyhVlWQEnLUcul2fpCVF93beT3HXsatQ2VUqXKXG96VJUyMweAcwaMGUNSm+AStTN1vUQ==`
 ![Step](../screenshots/1/new/9.jpg)
 
 ## 1.1.10. **Test Connection**
@@ -120,7 +120,7 @@ Select the desired table action, such as `Append`. Specify the table by clicking
 ![Step](../screenshots/1/new/18.jpg)
 
 ## 1.1.19. **Set Table Name**
-Name the table as `green201501` according to [the naming conventions](../exercise-0-setup/naming-convention.md), click `Create`, then return to the `General` tab.
+Name the table as `green_202201_202301` according to [the naming conventions](../exercise-0-setup/naming-convention.md), click `Create`, then return to the `General` tab.
 ![Step](../screenshots/1/new/19.jpg)
 
 ## 1.1.20. **Detail Copy Activity**
@@ -271,10 +271,11 @@ There are multiple source options available for accessing data directly without 
 ![Step](../screenshots/1/new/36.jpg)
 
 ## 1.3.3. Configure New Shortcut
-Provide the necessary URL by copying and pasting it from the task description. Then, choose your connection, retaining the automatically generated name if possible. For authentication, select `SAS token`, paste the provided token, and then click `Next` after filling in all details.
+Provide the necessary URL by copying and pasting it from the task description. Then, choose your connection, retaining the automatically generated name if possible. For authentication, select `Account key`, paste the provided token, and then click `Next` after filling in all details.
 
-* Blob Storage Account URL `https://transportation23kotco.dfs.core.windows.net/`
-* SAS Token (Read Only) `sv=2024-11-04&ss=bfqt&srt=sco&sp=rwlacupx&se=2026-04-02T20:49:20Z&st=2025-04-02T12:49:20Z&spr=https&sig=3o8OvFzu8NP9MtVxaG1dnzoczi%2B1a6uLQiq7lEZDGlI%3D`
+* Blob Storage Account URL `https://nyctaxiforfabric.dfs.core.windows.net/`
+* Account Key `uAY69YSq5bNPLJFGs6oDJSZDAG1wUD00/vY/aBemxFelhdutrZG30KqzWvIvdmN2U8YNWmvBbTrv+ASt4XaNBw==`
+
 
 ![Step](../screenshots/1/new/37.jpg)
 
