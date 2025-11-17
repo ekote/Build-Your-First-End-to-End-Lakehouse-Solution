@@ -89,7 +89,9 @@ Verify that the connection name is correctly displayed, then test the connection
 
 ## 1.1.11. **Navigate Blob Storage**
 Browse the blob storage and select the `taxidata` folder.
-![Step](../screenshots/1/new/11.jpg)
+
+> Root folder > nyc > green_202201_202301
+<!-- ![Step](../screenshots/1/new/11.jpg) -->
 
 ## 1.1.12. **Select Data File**
 Choose a specific Parquet file and click `OK`.
