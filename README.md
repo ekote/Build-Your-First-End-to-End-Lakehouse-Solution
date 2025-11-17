@@ -7,12 +7,11 @@ This workshop gives you practical, hands-on experience in building a complete la
 ---
 
 **Workshop Goals**
-- Master Fabric Data Integration and Data Engineering and Data Science.
-- Develop a complete data workflow: ingestion, preparation, serving, and operationalization.
+- Master Microsoft Fabric Data Integration and Data Engineering.
+- Develop a complete data workflow: ingestion, preparation, and serving.
 
 **Project Context: Urban Mobility Transformation**
 - Use Microsoft Fabric to analyze New York City's taxi data for improved urban planning and transportation safety.
-- Aim: Better traffic forecasting, route management, and safety measures, leading to enhanced urban transport services and infrastructure.
 
 **Lakehouse Solution Benefits**
 - Unified urban transport data analysis.
