@@ -1,6 +1,6 @@
-# Build Your First End to End Lakehouse Solution during Big Data CONFERENCE Europe 2025 - AI, Cloud and Data Conference Vilnius, Lithuanian
+# 🇱🇹 Build Your First End to End Lakehouse Solution during Big Data CONFERENCE Europe 2025 - AI, Cloud and Data Conference Vilnius, Lithuanian
 
-Welcome to Big Data Conference Europe 2025—an event dedicated to advancing the future of AI, cloud, and data innovation.
+Welcome to Big Data Conference Europe 2025 🇱🇹 — an event dedicated to advancing the future of AI, cloud, and data innovation.
 
 This workshop gives you practical, hands-on experience in building a complete lakehouse solution using Microsoft Fabric. You’ll learn how to integrate, transform, and manage data across the entire lifecycle with pipelines, dataflows, notebooks, and Spark. You’ll also see how BI analysts and data scientists leverage the lakehouse to accelerate insights and strengthen decision-making.
 
