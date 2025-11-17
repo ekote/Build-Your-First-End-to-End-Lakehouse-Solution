@@ -32,6 +32,8 @@ This workshop gives you practical, hands-on experience in building a complete la
 
 > [!IMPORTANT]
 > 9:00 am - 9:45 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+>
+> To get login and password to Fabric go to (link)[https://docs.google.com/spreadsheets/d/1DtEgCO2EII814Bps3vO9RpiOd752RPpt0y78gEtFq0c/edit?usp=sharing].
 > 
 > 9:45 am - 10:50 am - [Exercise 1 - Data Ingestion Foundations](./exercise-1/exercise-1.md) 
 > 
