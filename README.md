@@ -1,4 +1,4 @@
-# Build Your First End to End Lakehouse Solution
+# Build Your First End to End Lakehouse Solution during Big Data CONFERENCE Europe 2025 - AI, Cloud and Data Conference Vilnius, Lithuanian
 
 Join the workshop to master building end-to-end data solutions with Microsoft Fabric. Learn to integrate, transform, and manage data in a lakehouse, utilizing Fabric pipelines, dataflows, notebooks, and Spark. Understand how BI analysts and data scientists utilize lakehouse data to enhance decision-making.
 
