@@ -4,6 +4,11 @@ Welcome to [Big Data Conference Europe 2025](https://bigdataconference.eu/) 🇱
 
 This workshop gives you practical, hands-on experience in building a complete lakehouse solution using Microsoft Fabric. You’ll learn how to integrate, transform, and manage data across the entire lifecycle with pipelines, dataflows, notebooks, and Spark. You’ll also see how BI analysts and data scientists leverage the lakehouse to accelerate insights and strengthen decision-making.
 
+
+> [!IMPORTANT]
+> Join a group on Whatsapp: https://chat.whatsapp.com/Ffj9gyzwMjDEq1mlpM4UnF
+
+
 ---
 
 **Workshop Goals**
