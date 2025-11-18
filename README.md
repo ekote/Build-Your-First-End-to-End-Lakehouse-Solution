@@ -35,11 +35,12 @@ This workshop gives you practical, hands-on experience in building a complete la
 **The schedule can be adjusted to align with participants’ availability, exercise needs, and the group’s overall velocity. The break period will remain unchanged.**
 
 > [!IMPORTANT]
-> 9:00 am - 9:45 am - [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+> 9:00 am - 9:45 am - Introduction, Set Up and Overview of Fabric Data Platform
 >
-> To get login and password to Fabric go to (link)[https://docs.google.com/spreadsheets/d/1DtEgCO2EII814Bps3vO9RpiOd752RPpt0y78gEtFq0c/edit?usp=sharing].
+> 1. To get login and password to Fabric go to [this spreadsheet and reserve your login from the list](https://docs.google.com/spreadsheets/d/1DtEgCO2EII814Bps3vO9RpiOd752RPpt0y78gEtFq0c/edit?usp=sharing).
 >
-> Review and keep open [the provided naming conventions](/exercise-0-setup/naming-convention.md).
+> 2. [Introduction, Set Up and Overview of Fabric Data Platform](exercise-0-setup/start.md)
+> 3. Review and keep open [the provided naming conventions](/exercise-0-setup/naming-convention.md).
 > 
 > 9:45 am - 10:50 am - [Exercise 1 - Data Ingestion Foundations](./exercise-1/exercise-1.md) 
 > 
